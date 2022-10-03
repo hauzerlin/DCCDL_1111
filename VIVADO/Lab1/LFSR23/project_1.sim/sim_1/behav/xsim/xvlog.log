@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCL/VIVADO/Lab1/LFSR23/LFSR23.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR_23
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCL/VIVADO/Lab1/LFSR23/practice_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR23_tb

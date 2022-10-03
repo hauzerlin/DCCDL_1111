@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Gold_code.srcs/sources_1/new/Gold_top.v" \
+"../../../../Gold_code.srcs/sources_1/new/LFSR103.v" \
+"../../../../Gold_code.srcs/sources_1/new/LFSR133.v" \
+"../../../../Gold_code.srcs/sim_1/new/gold_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

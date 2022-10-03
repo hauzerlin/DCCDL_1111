@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Sep 27 19:16:40 2022
+# Process ID: 3276
+# Current directory: D:/1111/DCCL/VIVADO/Lab1/LFSR23/project_1.runs/synth_1
+# Command line: vivado.exe -log LFSR_23.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source LFSR_23.tcl
+# Log file: D:/1111/DCCL/VIVADO/Lab1/LFSR23/project_1.runs/synth_1/LFSR_23.vds
+# Journal file: D:/1111/DCCL/VIVADO/Lab1/LFSR23/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source LFSR_23.tcl -notrace
