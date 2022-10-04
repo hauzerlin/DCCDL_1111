@@ -7,7 +7,7 @@
 rng(32,"twister"); % Pseudo-random
 rand_temp = randperm(256)-129;
 rand_32 = rand_temp(1,1:32)
-% stem ((1:32),rand_32);
+stem ((1:32),rand_32);
 
 num = 32;
 mat_32_with_index = matrix_add_index(rand_32, num)
@@ -32,6 +32,9 @@ end
 
 fprintf("\nThe minimum in value is %d\n",min_value); 
 fprintf("The index is %d\n\n", min_index);
+
+fprintf("\nThe maximum in value is %d\n",max(rand_32)); 
+fprintf("The index is %d\n\n", find(rand_32==max(rand_32)));
 
 %% Procedure 2
 
