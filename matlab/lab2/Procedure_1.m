@@ -47,13 +47,25 @@ for clock = 1:32
     mat_32(1,1) = mat_32_with_index(1,33-clock);
 end
 
+fprintf("The inputs values and index is:\n");
+for i= 1:32
+    fprintf("%2d: Values/Index: %4d/%2d\n", i, value_remove_index(mat_32(1,i), num), ...
+            index_value(mat_32(1,i), num));
+end
+
+fprintf("\n\nSecond layer:\n")
+
 for i = 1:16
     if(comparator(mat_32(1,2*i), mat_32(1,2*i-1)))
         mat_16(1,i) = mat_32(1,2*i);
     else 
         mat_16(1,i) = mat_32(1,2*i-1);
     end
+    fprintf("%2d: Values/Index: %4d/%2d\n", i, value_remove_index(mat_16(1,i), num), ...
+            index_value(mat_16(1,i), num))
 end
+
+fprintf("\n\nThird layer:\n")
 
 for i = 1:8
     if(comparator(mat_16(1,2*i), mat_16(1,2*i-1)))
@@ -61,7 +73,11 @@ for i = 1:8
     else 
         mat_8(1,i) = mat_16(1,2*i-1);
     end
+    fprintf("%2d: Values/Index: %4d/%2d\n", i, value_remove_index(mat_8(1,i), num), ...
+        index_value(mat_8(1,i), num))
 end
+
+fprintf("\n\nFourth layer:\n")
 
 for i = 1:4
     if(comparator(mat_8(1,2*i), mat_8(1,2*i-1)))
@@ -69,7 +85,11 @@ for i = 1:4
     else 
         mat_4(1,i) = mat_8(1,2*i-1);
     end
+    fprintf("%2d: Values/Index: %4d/%2d\n", i, value_remove_index(mat_4(1,i), num), ...
+    index_value(mat_4(1,i), num))
 end
+
+fprintf("\n\nFifth layer:\n")
 
 for i = 1:2
     if(comparator(mat_4(1,2*i), mat_4(1,2*i-1)))
@@ -77,7 +97,11 @@ for i = 1:2
     else 
         mat_2(1,i) = mat_4(1,2*i-1);
     end
+    fprintf("%2d: Values/Index: %4d/%2d\n", i, value_remove_index(mat_2(1,i), num), ...
+    index_value(mat_2(1,i), num))
 end
+
+fprintf("\n\nSixth layer:\n")
 
     if(comparator(mat_4(1,2), mat_4(1,1)))
         min_value_with_index = mat_2(1,2);
@@ -85,9 +109,10 @@ end
         min_value_with_index = mat_2(1,1);
     end
 
-min_value = value_remove_index(min_value_with_index, num)
-min_index = index_value(min_value_with_index, num)
+min_value = value_remove_index(min_value_with_index, num);
+min_index = index_value(min_value_with_index, num);
 
+fprintf("Values/Index: %4d/%2d\n", min_value, min_index)
 
 %% Procedure 3
 
@@ -96,6 +121,10 @@ min_index = index_value(min_value_with_index, num)
     sort_4 = mat_32_with_index(1,1:4)
     sort_4 = sort4(sort_4)     
 
-
+ 
 %% Procedure 4
 
+    Top6 = SelectTop6(mat_32_with_index,32)
+
+    ans_32 = sort(mat_32_with_index);
+    ans_6 = ans_32(1, 27:32)
