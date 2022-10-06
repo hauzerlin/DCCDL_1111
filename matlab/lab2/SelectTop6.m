@@ -11,7 +11,7 @@ function [Top6] = SelectTop6 (in_matrix, num)
         for j = 1:4
             op_matrix(j,i) = in_matrix(1,4*(i-1)+j);
         end
-        op_matrix(1:4, i) = sort4(op_matrix(1:4,i)');
+        op_matrix(1:4, i) = flip(sort4(op_matrix(1:4,i)'));
     end
     
     max_value = 0;

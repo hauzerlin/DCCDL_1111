@@ -52,8 +52,11 @@ end
 
 fprintf("The inputs values and index is:\n");
 for i= 1:32
-    fprintf("%2d: Values/Index: %4d/%2d\n", i, value_remove_index(mat_32(1,i), num), ...
+    fprintf("%2d: Values/Index: %4d/%2d", i, value_remove_index(mat_32(1,i), num), ...
             index_value(mat_32(1,i), num));
+    if(mod(i,4))fprintf("\t\t");
+    else fprintf("\n");
+    end
 end
 
 fprintf("\n\nSecond layer:\n")
@@ -64,8 +67,11 @@ for i = 1:16
     else 
         mat_16(1,i) = mat_32(1,2*i-1);
     end
-    fprintf("%2d: Values/Index: %4d/%2d\n", i, value_remove_index(mat_16(1,i), num), ...
+    fprintf("%2d: Values/Index: %4d/%2d", i, value_remove_index(mat_16(1,i), num), ...
             index_value(mat_16(1,i), num))
+    if(mod(i,4))fprintf("\t\t");
+    else fprintf("\n");
+    end
 end
 
 fprintf("\n\nThird layer:\n")
@@ -76,8 +82,11 @@ for i = 1:8
     else 
         mat_8(1,i) = mat_16(1,2*i-1);
     end
-    fprintf("%2d: Values/Index: %4d/%2d\n", i, value_remove_index(mat_8(1,i), num), ...
+    fprintf("%2d: Values/Index: %4d/%2d", i, value_remove_index(mat_8(1,i), num), ...
         index_value(mat_8(1,i), num))
+    if(mod(i,4))fprintf("\t\t");
+    else fprintf("\n");
+    end
 end
 
 fprintf("\n\nFourth layer:\n")
@@ -88,8 +97,11 @@ for i = 1:4
     else 
         mat_4(1,i) = mat_8(1,2*i-1);
     end
-    fprintf("%2d: Values/Index: %4d/%2d\n", i, value_remove_index(mat_4(1,i), num), ...
+    fprintf("%2d: Values/Index: %4d/%2d", i, value_remove_index(mat_4(1,i), num), ...
     index_value(mat_4(1,i), num))
+    if(mod(i,4))fprintf("\t\t");
+    else fprintf("\n");
+    end
 end
 
 fprintf("\n\nFifth layer:\n")
@@ -100,8 +112,11 @@ for i = 1:2
     else 
         mat_2(1,i) = mat_4(1,2*i-1);
     end
-    fprintf("%2d: Values/Index: %4d/%2d\n", i, value_remove_index(mat_2(1,i), num), ...
+    fprintf("%2d: Values/Index: %4d/%2d", i, value_remove_index(mat_2(1,i), num), ...
     index_value(mat_2(1,i), num))
+    if(mod(i,2))fprintf("\t\t");
+    else fprintf("\n");
+    end
 end
 
 fprintf("\n\nSixth layer:\n")
@@ -121,13 +136,21 @@ fprintf("Values/Index: %4d/%2d\n", min_value, min_index)
 
 % Sort4
     
-    sort_4 = mat_32_with_index(1,1:4)
+    before_sort_4 = mat_32_with_index(1,1:4)
     sort_4 = sort4(sort_4)     
 
  
 %% Procedure 4
 
-    Top6 = SelectTop6(mat_32_with_index,32)
+    Top6_index = zeros(1,6);
+    Top6_value = zeros(1,6);
+
+    Top6 = SelectTop6(mat_32_with_index,32);
+    Top6_value = matrix_remove_index(Top6,32,6)
+     for i = 1:6
+    Top6_index(1,i) = index_value(Top6(1,i),32);
+    end
+    Top6_index
 
     ans_32 = sort(mat_32_with_index);
-    ans_6 = ans_32(1, 27:32)
+    using_sort_ans_6 = matrix_remove_index(ans_32(1, 27:32),32, 6)

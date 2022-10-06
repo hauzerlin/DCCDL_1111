@@ -23,5 +23,5 @@ function [ mat_sort4 ] = sort4 ( mat_4 )
         mat_4(1,2) = temp;
     end
 
-    mat_sort4 = mat_4;
+    mat_sort4 = flip(mat_4);
 end
