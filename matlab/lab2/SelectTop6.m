@@ -16,7 +16,7 @@ function [Top6] = SelectTop6 (in_matrix, num)
     
     max_value = 0;
     for i = 1:6
-        max_value = op_matrix(4-index_matrix(1,1),1);
+          = op_matrix(4-index_matrix(1,1),1);
         for j = 1:group_num
             if(comparator(max_value,op_matrix((4-index_matrix(1,j)),j)))
                 max_value = op_matrix((4-index_matrix(1,j)),j);

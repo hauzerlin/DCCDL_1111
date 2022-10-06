@@ -164,7 +164,7 @@ G_fpcc = temp
 
 x1= linspace(1,64,64); % 設定x軸為1~64，並分割成64等分
 plot(x1,G_fpcc)
-
+G_code_trf(1:63,1)
 %% R7
 
 % Check the full-period cross-correlation of S1 and remaining 64sequences.
