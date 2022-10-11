@@ -1,0 +1,8 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/1111/DCCDL/VIVADO/Lab2/serial_comparator2/serial_comparator2.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/1111/DCCDL/VIVADO/Lab2/serial_comparator2/serial_comparator2.srcs/sim_1/new/feed_test_tb.v,1665481562,verilog,,,,feed_test_tb,,,,,,,,
+D:/1111/DCCDL/VIVADO/Lab2/serial_comparator2/serial_comparator2.srcs/sources_1/new/lab2_top.v,1665465802,verilog,,D:/1111/DCCDL/VIVADO/Lab2/serial_comparator2/serial_comparator2.srcs/sources_1/new/max_comparator.v,,lab2_top,,,,,,,,
+D:/1111/DCCDL/VIVADO/Lab2/serial_comparator2/serial_comparator2.srcs/sources_1/new/max_comparator.v,1665466914,verilog,,D:/1111/DCCDL/VIVADO/Lab2/serial_comparator2/serial_comparator2.srcs/sim_1/new/feed_test_tb.v,,max_comparator,,,,,,,,
