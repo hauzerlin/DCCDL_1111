@@ -1,7 +1,7 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
 "../../../../serial_comparator2.srcs/sources_1/new/lab2_top.v" \
-"../../../../serial_comparator2.srcs/sources_1/new/min_comparator.v" \
+"../../../../serial_comparator2.srcs/sources_1/new/max_comparator.v" \
 "../../../../serial_comparator2.srcs/sim_1/new/feed_test_tb.v" \
 
 # compile glbl module

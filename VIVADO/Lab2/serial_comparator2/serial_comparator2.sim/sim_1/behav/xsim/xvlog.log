@@ -1,6 +1,6 @@
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab2/serial_comparator2/serial_comparator2.srcs/sources_1/new/lab2_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module lab2_top
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab2/serial_comparator2/serial_comparator2.srcs/sources_1/new/min_comparator.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module min_comparator
+INFO: [VRFC 10-311] analyzing module lab2_result1_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab2/serial_comparator2/serial_comparator2.srcs/sources_1/new/max_comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module max_comparator
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab2/serial_comparator2/serial_comparator2.srcs/sim_1/new/feed_test_tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module feed_test_tb

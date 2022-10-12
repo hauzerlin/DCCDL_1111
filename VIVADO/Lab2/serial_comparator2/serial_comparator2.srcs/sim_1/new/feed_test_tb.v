@@ -23,7 +23,7 @@ module feed_test_tb;
     wire compare_result;
     wire [12:0] out_value;
     
-    lab2_top min_com(.clk(clk), .in_value_a(in_value_a), .in_value_b(in_value_b), .out_value(out_value) ,.compare_result(compare_result));
+    lab2_result1_top min_com(.clk(clk), .in_value_a(in_value_a), .in_value_b(in_value_b), .out_value(out_value) ,.compare_result(compare_result));
     
     initial begin
         $readmemh(`central_pattern, central_pat_mem);
