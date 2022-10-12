@@ -1,0 +1,10 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/1111/DCCDL/VIVADO/Lab2/Sort4/Sort4.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/1111/DCCDL/VIVADO/Lab2/Sort4/Sort4.srcs/sim_1/new/sort4_tb.sv,1665586575,systemVerilog,,,,sort4_tb,,,,,,,,
+D:/1111/DCCDL/VIVADO/Lab2/Sort4/Sort4.srcs/sources_1/new/sort4.sv,1665585834,systemVerilog,,D:/1111/DCCDL/VIVADO/Lab2/Sort4/Sort4.srcs/sim_1/new/sort4_tb.sv,,sort4,,,,,,,,
+D:/1111/DCCDL/VIVADO/Lab2/serial_comparator2/serial_comparator2.srcs/sources_1/new/parallel_comparator32.sv,1665580269,systemVerilog,,,,parallel_comparator32,,,,,,,,
+D:/1111/DCCDL/VIVADO/Lab2/test_result2/max_comparator.sv,1665585310,systemVerilog,,D:/1111/DCCDL/VIVADO/Lab2/Sort4/Sort4.srcs/sources_1/new/sort4.sv,,max_comparator,,,,,,,,
+D:/1111/DCCDL/VIVADO/Lab2/test_result2/min_comparator.sv,1665555544,systemVerilog,,D:/1111/DCCDL/VIVADO/Lab2/serial_comparator2/serial_comparator2.srcs/sources_1/new/parallel_comparator32.sv,,min_comparator,,,,,,,,
