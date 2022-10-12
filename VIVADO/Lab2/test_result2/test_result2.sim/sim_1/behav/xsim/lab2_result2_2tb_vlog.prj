@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../min_comparator.sv" \
+"../../../../test_result2.srcs/sources_1/new/parallel_comparator16.sv" \
+"../../../../../serial_comparator2/serial_comparator2.srcs/sources_1/new/parallel_comparator32.sv" \
+"../../../../test_result2.srcs/sources_1/new/parallel_comparator4.sv" \
+"../../../../test_result2.srcs/sources_1/new/parallel_comparator8.sv" \
+"../../../../../serial_comparator2/serial_comparator2.srcs/sim_1/new/lab2_result2_2tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

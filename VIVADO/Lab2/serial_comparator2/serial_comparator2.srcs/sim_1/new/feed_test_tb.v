@@ -7,7 +7,7 @@
 //                     8'd77, 8'd71, 8'd36, 8'd64, -8'd118, -8'd107, 8'd94, -8'd20,
 //                     -8'd64, -8'd122, 8'd88, -8'd26, -8'd19, -8'd57, -8'd68, -8'd43 };
 
-module feed_test_tb;
+module lab2_result_tb;
     
     `define central_pattern "../../../../rand32.dat"
     // Inputs

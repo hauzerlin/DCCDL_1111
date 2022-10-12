@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log lab2_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab2_top.tcl
+EAStep vivado -log parallel_comparator32.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source parallel_comparator32.tcl

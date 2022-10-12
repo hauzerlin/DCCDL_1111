@@ -14,7 +14,7 @@ module lab2_result1_top(clk, in_value_a, in_value_b, out_value, compare_result);
     wire compare_result;
     wire [12:0] out_value;
     
-    max_comparator min_com(.in_value_a(in_value_a), .in_value_b(in_value_b), .compare_result(compare_result), .out_value(out_value));
+    min_comparator min_com(.in_value_a(in_value_a), .in_value_b(in_value_b), .compare_result(compare_result), .out_value(out_value));
     
     
 endmodule
