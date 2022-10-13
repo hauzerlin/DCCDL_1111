@@ -1,0 +1,7 @@
+Breakpoint File Version 1.0
+101 true D:/1111/DCCDL/VIVADO/Lab2/selectTOP6/selectTOP6.srcs/sources_1/new/selectTOP6.sv
+112 true D:/1111/DCCDL/VIVADO/Lab2/selectTOP6/selectTOP6.srcs/sources_1/new/selectTOP6.sv
+147 true D:/1111/DCCDL/VIVADO/Lab2/selectTOP6/selectTOP6.srcs/sources_1/new/selectTOP6.sv
+159 true D:/1111/DCCDL/VIVADO/Lab2/selectTOP6/selectTOP6.srcs/sources_1/new/selectTOP6.sv
+135 true D:/1111/DCCDL/VIVADO/Lab2/selectTOP6/selectTOP6.srcs/sources_1/new/selectTOP6.sv
+123 true D:/1111/DCCDL/VIVADO/Lab2/selectTOP6/selectTOP6.srcs/sources_1/new/selectTOP6.sv
