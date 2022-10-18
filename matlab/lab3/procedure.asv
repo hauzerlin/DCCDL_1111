@@ -20,7 +20,7 @@ ff_hp_array = fft(hp_array);    %convert function to frequency domain
 mag = 20*log10(abs(ff_hp_array)); % caculate magnitude of function
 phase = angle(ff_hp_array)*2*pi; % caculate phase of function
 
-faxis = 0.5*linspace(0,1,17)
+faxis = 0.5*linspace(0,1,17) %   fs/sample
 
 % plot1 'time domain'
 subplot(311),plot((-16:16), hp_array)
@@ -50,18 +50,30 @@ end
 
 y_func = zeros(1,129);
 for n = 1:129
+
     for m = 1:n
 
-%           h = m
-%           x = n-m+1
-        if m>32 
+        if m>33 
               break 
-        elseif n>33
-
-        y_func(1,n) = y_func(1,n) + x_func(1,m)* hp_array(1,n-m+1);
+%         elseif n>33
+%         num = n-m+1;
+%         else 
+%         num = n-m+1;
+        end
+%           h = m
+%           x = num
+        y_func(1,n) = y_func(1,n) + x_func(1,n-m+1)* hp_array(1,m);
 
     end
 end
+
+ttf_x_func = fft(x_func);
+ttf_y_func = fft(y_func);
+mag_x = 20*log10(abs(ttf_x_func)); % caculate magnitude of function
+mag_y = 20*log10(abs(ttf_y_func)); % caculate magnitude of function
+phase_x = angle(ttf_x_func)*2*pi; % caculate phase of function
+phase_y = angle(ttf_y_func)*2*pi; % caculate phase of function
+faxis_p2 = 
 
 % plot1 'time domain'
 subplot(321),plot((0:128), x_func)
@@ -75,5 +87,12 @@ ylabel('value');
 grid on;
 
 % plot2 'magnitude of frequency domain'
+subplot(323),plot(faxis, mag_x(1:64));
+xlabel('Frequency (Hz/sample)'), ylabel('Magnitude (dB)');
+grid on;
+
+subplot(324),plot(faxis, mag_y(1:64));
+xlabel('Frequency (Hz/sample)'), ylabel('Magnitude (dB)');
+grid on;
 
 % plot3 'phase of frequency domain'
