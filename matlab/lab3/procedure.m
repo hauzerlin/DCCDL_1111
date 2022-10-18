@@ -118,15 +118,38 @@ grid on;
 %% procedure 3
 format long
 
-x_transction = zeros(1,129);
-h_transction = zeros(1,33);
+input_test_region = 17-6+1;
 
-fraction_length = 14;
+x_trunsction = zeros(1,129);
+h_trunsction = zeros(1,33);
+y_trunsction = zeros((input_test_region),129);
+error = zeros(1,(input_test_region));
 
-for i = 1:129
-    x_transction(1,i) = truncation(x_array(1,i),fraction_length);
+for j = 6:17
+    fraction_length = j;
+    
+    for i = 1:129
+        x_trunsction(1,i) = truncation(x_array(1,i),fraction_length);
+    end
+    
+%     for i = 1:33
+%         h_trunsction(1,i) = truncation(hp_array(1,i), fraction_length);
+%     end
+    
+    for n = 1:129
+        for m = 1:n
+            if m>33  % The 'hp_array' length is 33, so 'm' cannot more than 33.
+                  break 
+            end
+            y_trunsction(j-5,n) = y_trunsction(j-5,n) + x_trunsction(1,n-m+1)* hp_array(1,m);
+        end
+    end
+    error(1,j-5) = sqrt(sum((y_trunsction(j-5,:) - y_array) .^2)/129);
 end
 
-for i = 1:33
-    h_transction(1,i) = truncation(hp_array(1,i), fraction_length);
-end
+plot((6:17),error)
+set(gca, 'YScale', 'log')
+
+hold on
+upper_bound(1,1:12) = 2^-13;
+plot((6:17),upper_bound)
