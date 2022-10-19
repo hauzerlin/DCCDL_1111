@@ -15,8 +15,8 @@ switch (p)
         b = 11;
 end
     
-upper_bound3 = 2^a;
-upper_bound4 = 2^b;
+upper_bound3 = 2^-a;
+upper_bound4 = 2^-b;
 
 Alpha = 0.5; %alpha
 T = 1;       % sampling cycle
@@ -34,12 +34,23 @@ for n = -16:16
                                     sinc(Alpha*t/T-1/4)*cos(pi*t/T-pi/4)));
 end
 
-ff_hp_array = fft(hp_array);    %convert function to frequency domain
-mag = 20*log10(abs(ff_hp_array)); % caculate magnitude of function
-phase = angle(ff_hp_array)*2*pi; % caculate phase of function
 
+
+a_array = zeros(1,33);
+a_array(1,1) = 1;
+
+[mag , ff] = freqz(hp_array,a_array,2048,8);
+[phase, ff_p] = phasez(hp_array,a_array,1024,8)
+% ff_a_array = fft(a_array);
+% ff_h_array = fft(hp_array);
+% ff_hp_array = ff_a_array./ff_h_array;    %convert function to frequency domain
+% 
+% mag = 20*log10(abs(ff_hp_array)); % caculate magnitude of function
+% phase = angle(ff_hp_array)*2*pi; % caculate phase of function
+% 
 faxis = 4*linspace(0,1,17); %   fs/sample
-
+faxis_freqz=linspace(0,1,512);
+% 
 % plot1 'time domain'
 subplot(311),plot((-16:16), hp_array)
 xlabel('time');
@@ -47,13 +58,13 @@ ylabel('value');
 grid on;
 
 % plot2 'magnitude of frequency domain'
-subplot(312),plot(faxis, mag(1:17));
+subplot(312),plot(ff/4, 20*log10(abs(mag)));
 % subplot(312),plot(faxis, mag);
 xlabel('Frequency (Hz/sample)'), ylabel('Magnitude (dB)');
 grid on;
 
 % plot3 'phase of frequency domain'
-subplot(313),plot(faxis, phase(1:17));
+subplot(313),plot(ff_p/4, phase);
 % subplot(313),plot(faxis, phase);
 xlabel('Frequency (Hz/sample)'), ylabel('Phase (deg)');
 grid on;
@@ -77,13 +88,32 @@ for n = 1:129
     end
 end
 
-ttf_x_func = fft(x_array); % Fourier Transform of x_func
-ttf_y_func = fft(y_array); % Fourier Transform of y_func
-mag_x = 20*log10(abs(ttf_x_func)); % caculate magnitude of ttf_x_func
-mag_y = 20*log10(abs(ttf_y_func)); % caculate magnitude of ttf_y_func
-phase_x = angle(ttf_x_func)*2*pi; % caculate phase of ttf_x_func
-phase_y = angle(ttf_y_func)*2*pi; % caculate phase of ttf_y_func
-faxis_p2 = 8*linspace(0,1,64);
+xx_array = zeros(1,129);
+xx_array(1,1) = 1;
+[x_mag, ff] = freqz(x_array,xx_array,512, 8);
+[x_phase, ff] = phasez(x_array,xx_array,512, 8);
+[y_mag, ff] = freqz(y_array,xx_array,512,8);
+[y_phase, ff] = phasez(y_array,xx_array,512,8);
+subplot(323);plot(ff/4 ,20*log10(abs(x_mag)));
+grid on;
+
+subplot(325);plot(ff/4 , x_phase);
+grid on;
+
+subplot(324);plot(ff/4 ,20*log10(abs(y_mag)));
+grid on;
+
+subplot(326);plot(ff/4 , y_phase);
+grid on;
+
+
+% ttf_x_func = fft(x_array); % Fourier Transform of x_func
+% ttf_y_func = fft(y_array); % Fourier Transform of y_func
+% mag_x = 20*log10(abs(ttf_x_func)); % caculate magnitude of ttf_x_func
+% mag_y = 20*log10(abs(ttf_y_func)); % caculate magnitude of ttf_y_func
+% phase_x = angle(ttf_x_func)*2*pi; % caculate phase of ttf_x_func
+% phase_y = angle(ttf_y_func)*2*pi; % caculate phase of ttf_y_func
+% faxis_p2 = 8*linspace(0,1,64);
 
 % plot1 'time domain'
 subplot(321),plot((0:128), x_array)
@@ -96,60 +126,328 @@ xlabel('time');
 ylabel('value');
 grid on;
 
-% plot2 'magnitude of frequency domain'
-subplot(323),plot(faxis_p2, mag_x(1:64));
-xlabel('Frequency (Hz/sample)'), ylabel('Magnitude (dB)');
-grid on;
-
-subplot(324),plot(faxis_p2, mag_y(1:64));
-xlabel('Frequency (Hz/sample)'), ylabel('Magnitude (dB)');
-grid on;
-
-% plot3 'phase of frequency domain'
-subplot(325),plot(faxis_p2, phase_x(1:64));
-xlabel('Frequency (Hz/sample)'), ylabel('Phase (randians)');
-grid on;
-
-subplot(326),plot(faxis_p2, phase_y(1:64));
-xlabel('Frequency (Hz/sample)'), ylabel('Phase (randians)');
-grid on;
+% % plot2 'magnitude of frequency domain'
+% subplot(323),plot(faxis_p2, mag_x(1:64));
+% xlabel('Frequency (Hz/sample)'), ylabel('Magnitude (dB)');
+% grid on;
+% 
+% subplot(324),plot(faxis_p2, mag_y(1:64));
+% xlabel('Frequency (Hz/sample)'), ylabel('Magnitude (dB)');
+% grid on;
+% 
+% % plot3 'phase of frequency domain'
+% subplot(325),plot(faxis_p2, phase_x(1:64));
+% xlabel('Frequency (Hz/sample)'), ylabel('Phase (randians)');
+% grid on;
+% 
+% subplot(326),plot(faxis_p2, phase_y(1:64));
+% xlabel('Frequency (Hz/sample)'), ylabel('Phase (randians)');
+% grid on;
 
 
 %% procedure 3
 format long
 
-input_test_region = 17-6+1;
+%---Output error versus input word-lengths---%
 
-x_trunsction = zeros(1,129);
-h_trunsction = zeros(1,33);
-y_trunsction = zeros((input_test_region),129);
-error = zeros(1,(input_test_region));
+input_test_region_a = 20-6+1;
 
-for j = 6:17
+x_trunsction_a = zeros(1,129);
+h_trunsction_a = zeros(1,33);
+y_trunsction_a = zeros((input_test_region_a),129);
+error_a = zeros(1,(input_test_region_a));
+
+for j = 6:20
     fraction_length = j;
     
     for i = 1:129
-        x_trunsction(1,i) = truncation(x_array(1,i),fraction_length);
+        x_trunsction_a(1,i) = truncation(x_array(1,i),fraction_length);
     end
-    
-%     for i = 1:33
-%         h_trunsction(1,i) = truncation(hp_array(1,i), fraction_length);
-%     end
-    
+     
     for n = 1:129
         for m = 1:n
             if m>33  % The 'hp_array' length is 33, so 'm' cannot more than 33.
                   break 
             end
-            y_trunsction(j-5,n) = y_trunsction(j-5,n) + x_trunsction(1,n-m+1)* hp_array(1,m);
+            y_trunsction_a(j-5,n) = y_trunsction_a(j-5,n) + x_trunsction_a(1,n-m+1)* hp_array(1,m);
         end
     end
-    error(1,j-5) = sqrt(sum((y_trunsction(j-5,:) - y_array) .^2)/129);
+    error_a(1,j-5) = sqrt(sum((y_trunsction_a(j-5,:) - y_array) .^2)/129);
 end
 
-plot((6:17),error)
+% plot((6:20),error_a)
+% set(gca, 'YScale', 'log')
+
+hold on
+% upper_bound(1,1:12) = upper_bound3;
+% plot((6:17),upper_bound)
+
+%---Output error versus coefficient word-lengths---%
+
+input_test_region_b = 20-6+1;
+
+x_trunsction_b = zeros(1,129);
+h_trunsction_b = zeros(1,33);
+y_trunsction_b = zeros((input_test_region_b),129);
+error_b = zeros(1,(input_test_region_b));
+
+for j = 6:20
+    fraction_length = j;
+    
+    for i = 1:129
+        x_trunsction_b(1,i) = truncation(x_array(1,i),16);
+    end
+    
+    for i = 1:33
+        h_trunsction_b(1,i) = truncation(hp_array(1,i), fraction_length);
+    end
+
+    for n = 1:129
+        for m = 1:n
+            if m>33  % The 'hp_array' length is 33, so 'm' cannot more than 33.
+                  break 
+            end
+            y_trunsction_b(j-5,n) = y_trunsction_b(j-5,n) + x_trunsction_b(1,n-m+1)* h_trunsction_b(1,m);
+        end
+    end
+    error_b(1,j-5) = sqrt(sum((y_trunsction_b(j-5,:) - y_array) .^2)/129);
+end
+% plot((6:20),error_b)
+% set(gca, 'YScale', 'log')
+% 
+% hold on
+% upper_bound(1,1:15) = upper_bound3;
+% plot((6:20),upper_bound)
+
+%---Output error versus word-lengths after multiplication---%
+
+input_test_region_c = 20-6+1;
+
+x_trunsction_c = zeros(1,129);
+h_trunsction_c = zeros(1,33);
+y_trunsction_c = zeros((input_test_region_c),129);
+y_result_c = zeros(input_test_region_c,129);
+error_c = zeros(1,(input_test_region_c));
+
+for j = 6:20
+    fraction_length = j;
+    
+    for i = 1:129
+        x_trunsction_c(1,i) = truncation(x_array(1,i),16);
+    end
+    
+    for i = 1:33
+        h_trunsction_c(1,i) = truncation(hp_array(1,i), 17);
+    end
+
+    for n = 1:129
+        for m = 1:n
+            if m>33  % The 'hp_array' length is 33, so 'm' cannot more than 33.
+                  break 
+            end
+            y_result_c(j-5,n) = x_trunsction_c(1,n-m+1)* h_trunsction_c(1,m);
+            y_trunsction_c(j-5,n) = y_trunsction_c(j-5,n) + truncation(y_result_c(j-5,n),fraction_length);
+        end
+    end
+    error_c(1,j-5) = sqrt(sum((y_trunsction_c(j-5,:) - y_array) .^2)/129);
+end
+
+% plot((6:20),error_c)
+% set(gca, 'YScale', 'log')
+% hold on
+% upper_bound(1,1:15) = upper_bound3;
+% plot((6:20),upper_bound)
+
+%---Output error versus word-lengths after addition---%
+
+input_test_region_d = 25-6+1;
+
+x_trunsction_d = zeros(1,129);
+h_trunsction_d = zeros(1,33);
+y_trunsction_d = zeros((input_test_region_d),129);
+y_result_d = zeros(input_test_region_d,129);
+error_d = zeros(1,(input_test_region_d));
+
+for j = 6:25
+    fraction_length = j;
+    
+    for i = 1:129
+        x_trunsction_d(1,i) = truncation(x_array(1,i),16);
+    end
+    
+    for i = 1:33
+        h_trunsction_d(1,i) = truncation(hp_array(1,i), 17);
+    end
+
+    for n = 1:129
+        for m = 1:n
+            if m>33  % The 'hp_array' length is 33, so 'm' cannot more than 33.
+                  break 
+            end
+            y_result_d(j-5,n) = x_trunsction_c(1,n-m+1)* h_trunsction_c(1,m);
+            y_trunsction_d(j-5,n)  = ...
+                truncation((y_trunsction_d(j-5,n) + truncation(y_result_d(j-5,n),19)) ,fraction_length);
+        end
+    end
+    error_d(1,j-5) = sqrt(sum((y_trunsction_d(j-5,:) - y_array) .^2)/129);
+end
+plot((6:25),error_d)
 set(gca, 'YScale', 'log')
 
 hold on
-upper_bound(1,1:12) = 2^-13;
-plot((6:17),upper_bound)
+upper_bound(1,1:20) = upper_bound3;
+plot((6:25),upper_bound) 
+
+%% procedure 4
+
+format long
+
+%---Output error versus input word-lengths---%
+
+input_test_region_a = 20-6+1;
+
+x_trunsction_a = zeros(1,129);
+h_trunsction_a = zeros(1,33);
+y_trunsction_a = zeros((input_test_region_a),129);
+error_a = zeros(1,(input_test_region_a));
+
+for j = 6:20
+    fraction_length = j;
+    
+    for i = 1:129
+        x_trunsction_a(1,i) = truncation(x_array(1,i),fraction_length);
+    end
+     
+    for n = 1:129
+        for m = 1:n
+            if m>33  % The 'hp_array' length is 33, so 'm' cannot more than 33.
+                  break 
+            end
+            y_trunsction_a(j-5,n) = y_trunsction_a(j-5,n) + x_trunsction_a(1,n-m+1)* hp_array(1,m);
+        end
+    end
+    error_a(1,j-5) = sqrt(sum((y_trunsction_a(j-5,:) - y_array) .^2)/129);
+end
+
+% plot((6:20),error_a)
+% set(gca, 'YScale', 'log')
+
+hold on
+% upper_bound(1,1:12) = upper_bound3;
+% plot((6:17),upper_bound)
+
+%---Output error versus coefficient word-lengths---%
+
+input_test_region_b = 20-6+1;
+
+x_trunsction_b = zeros(1,129);
+h_trunsction_b = zeros(1,33);
+y_trunsction_b = zeros((input_test_region_b),129);
+error_b = zeros(1,(input_test_region_b));
+
+for j = 6:20
+    fraction_length = j;
+    
+    for i = 1:129
+        x_trunsction_b(1,i) = truncation(x_array(1,i),16);
+    end
+    
+    for i = 1:33
+        h_trunsction_b(1,i) = truncation(hp_array(1,i), fraction_length);
+    end
+
+    for n = 1:129
+        for m = 1:n
+            if m>33  % The 'hp_array' length is 33, so 'm' cannot more than 33.
+                  break 
+            end
+            y_trunsction_b(j-5,n) = y_trunsction_b(j-5,n) + x_trunsction_b(1,n-m+1)* h_trunsction_b(1,m);
+        end
+    end
+    error_b(1,j-5) = sqrt(sum((y_trunsction_b(j-5,:) - y_array) .^2)/129);
+end
+% plot((6:20),error_b)
+% set(gca, 'YScale', 'log')
+% 
+% hold on
+% upper_bound(1,1:15) = upper_bound3;
+% plot((6:20),upper_bound)
+
+%---Output error versus word-lengths after multiplication---%
+
+input_test_region_c = 20-6+1;
+
+x_trunsction_c = zeros(1,129);
+h_trunsction_c = zeros(1,33);
+y_trunsction_c = zeros((input_test_region_c),129);
+y_result_c = zeros(input_test_region_c,129);
+error_c = zeros(1,(input_test_region_c));
+
+for j = 6:20
+    fraction_length = j;
+    
+    for i = 1:129
+        x_trunsction_c(1,i) = truncation(x_array(1,i),16);
+    end
+    
+    for i = 1:33
+        h_trunsction_c(1,i) = truncation(hp_array(1,i), 17);
+    end
+
+    for n = 1:129
+        for m = 1:n
+            if m>33  % The 'hp_array' length is 33, so 'm' cannot more than 33.
+                  break 
+            end
+            y_result_c(j-5,n) = x_trunsction_c(1,n-m+1)* h_trunsction_c(1,m);
+            y_trunsction_c(j-5,n) = y_trunsction_c(j-5,n) + truncation(y_result_c(j-5,n),fraction_length);
+        end
+    end
+    error_c(1,j-5) = sqrt(sum((y_trunsction_c(j-5,:) - y_array) .^2)/129);
+end
+
+% plot((6:20),error_c)
+% set(gca, 'YScale', 'log')
+% hold on
+% upper_bound(1,1:15) = upper_bound3;
+% plot((6:20),upper_bound)
+
+%---Output error versus word-lengths after addition---%
+
+input_test_region_d = 25-6+1;
+
+x_trunsction_d = zeros(1,129);
+h_trunsction_d = zeros(1,33);
+y_trunsction_d = zeros((input_test_region_d),129);
+y_result_d = zeros(input_test_region_d,129);
+error_d = zeros(1,(input_test_region_d));
+
+for j = 6:25
+    fraction_length = j;
+    
+    for i = 1:129
+        x_trunsction_d(1,i) = truncation(x_array(1,i),16);
+    end
+    
+    for i = 1:33
+        h_trunsction_d(1,i) = truncation(hp_array(1,i), 17);
+    end
+
+    for n = 1:129
+        for m = 1:n
+            if m>33  % The 'hp_array' length is 33, so 'm' cannot more than 33.
+                  break 
+            end
+            y_result_d(j-5,n) = x_trunsction_c(1,n-m+1)* h_trunsction_c(1,m);
+            y_trunsction_d(j-5,n)  = ...
+                truncation((y_trunsction_d(j-5,n) + truncation(y_result_d(j-5,n),19)) ,fraction_length);
+        end
+    end
+    error_d(1,j-5) = sqrt(sum((y_trunsction_d(j-5,:) - y_array) .^2)/129);
+end
+plot((6:25),error_d)
+set(gca, 'YScale', 'log')
+
+hold on
+upper_bound(1,1:20) = upper_bound3;
+plot((6:25),upper_bound) 
