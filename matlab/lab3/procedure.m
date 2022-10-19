@@ -39,7 +39,7 @@ end
 a_array = zeros(1,33);
 a_array(1,1) = 1;
 
-[mag , ff] = freqz(hp_array,a_array,2048,8);
+[mag , ff] = freqz(hp_array,a_array,1024,8);
 [phase, ff_p] = phasez(hp_array,a_array,1024,8)
 % ff_a_array = fft(a_array);
 % ff_h_array = fft(hp_array);
@@ -175,12 +175,13 @@ for j = 6:20
     error_a(1,j-5) = sqrt(sum((y_trunsction_a(j-5,:) - y_array) .^2)/129);
 end
 
-% plot((6:20),error_a)
-% set(gca, 'YScale', 'log')
-
-hold on
-% upper_bound(1,1:12) = upper_bound3;
-% plot((6:17),upper_bound)
+subplot(221),plot((6:20),error_a)
+title('Output error versus input word-lengths');
+xlabel('word-lengths'), ylabel('Output error versus');
+set(gca, 'YScale', 'log')
+hold on,grid on;
+upper_bound_a(1,1:15) = upper_bound3;
+plot((6:20),upper_bound_a)
 
 %---Output error versus coefficient word-lengths---%
 
@@ -212,12 +213,14 @@ for j = 6:20
     end
     error_b(1,j-5) = sqrt(sum((y_trunsction_b(j-5,:) - y_array) .^2)/129);
 end
-% plot((6:20),error_b)
-% set(gca, 'YScale', 'log')
-% 
-% hold on
-% upper_bound(1,1:15) = upper_bound3;
-% plot((6:20),upper_bound)
+subplot(222),plot((6:20),error_b)
+set(gca, 'YScale', 'log')
+title('Output error versus coefficient word-lengths');
+xlabel('word-lengths'), ylabel('Output error versus');
+
+hold on,grid on;
+upper_bound_b(1,1:15) = upper_bound3;
+plot((6:20),upper_bound_b)
 
 %---Output error versus word-lengths after multiplication---%
 
@@ -252,11 +255,13 @@ for j = 6:20
     error_c(1,j-5) = sqrt(sum((y_trunsction_c(j-5,:) - y_array) .^2)/129);
 end
 
-% plot((6:20),error_c)
-% set(gca, 'YScale', 'log')
-% hold on
-% upper_bound(1,1:15) = upper_bound3;
-% plot((6:20),upper_bound)
+subplot(223),plot((6:20),error_c)
+set(gca, 'YScale', 'log')
+title('Output error versus word-lengths after multiplication');
+xlabel('word-lengths'), ylabel('Output error versus');
+hold on,grid on;
+upper_bound_c(1,1:15) = upper_bound3;
+plot((6:20),upper_bound_c)
 
 %---Output error versus word-lengths after addition---%
 
@@ -291,12 +296,15 @@ for j = 6:25
     end
     error_d(1,j-5) = sqrt(sum((y_trunsction_d(j-5,:) - y_array) .^2)/129);
 end
-plot((6:25),error_d)
+subplot(224),plot((6:25),error_d)
 set(gca, 'YScale', 'log')
+title('Output error versus word-lengths after multiplication');
+xlabel('word-lengths'), ylabel('Output error versus');
 
-hold on
-upper_bound(1,1:20) = upper_bound3;
-plot((6:25),upper_bound) 
+
+hold on, grid on;
+upper_bound_d(1,1:20) = upper_bound3;
+plot((6:25),upper_bound_d) 
 
 %% procedure 4
 
@@ -309,6 +317,7 @@ input_test_region_a = 20-6+1;
 x_trunsction_a = zeros(1,129);
 h_trunsction_a = zeros(1,33);
 y_trunsction_a = zeros((input_test_region_a),129);
+D_flip_flop_a = zeros (input_test_region_a,33);
 error_a = zeros(1,(input_test_region_a));
 
 for j = 6:20
@@ -319,61 +328,81 @@ for j = 6:20
     end
      
     for n = 1:129
-        for m = 1:n
-            if m>33  % The 'hp_array' length is 33, so 'm' cannot more than 33.
-                  break 
-            end
-            y_trunsction_a(j-5,n) = y_trunsction_a(j-5,n) + x_trunsction_a(1,n-m+1)* hp_array(1,m);
+        
+        for m = 1:33
+            D_flip_flop_a(j-5,33-m+1) = D_flip_flop_a(j-5,33-m+1)+ x_trunsction_a(1,n) * hp_array(1,m);
         end
+            y_trunsction_a(j-5,n) = D_flip_flop_a(j-5,33);
+        for m = 1:32
+            D_flip_flop_a(j-5,34-m) = D_flip_flop_a(j-5,33-m);
+        end
+        D_flip_flop_a(j-5,1) = 0;
+
     end
     error_a(1,j-5) = sqrt(sum((y_trunsction_a(j-5,:) - y_array) .^2)/129);
 end
 
 % plot((6:20),error_a)
 % set(gca, 'YScale', 'log')
+% 
+% hold on
+% upper_bound(1,1:15) = upper_bound4;
+% plot((6:20),upper_bound)
 
-hold on
-% upper_bound(1,1:12) = upper_bound3;
-% plot((6:17),upper_bound)
 
-%---Output error versus coefficient word-lengths---%
 
+
+
+
+
+
+
+
+% %---Output error versus coefficient word-lengths---%
+% 
 input_test_region_b = 20-6+1;
 
 x_trunsction_b = zeros(1,129);
 h_trunsction_b = zeros(1,33);
 y_trunsction_b = zeros((input_test_region_b),129);
+D_flip_flop_b = zeros (input_test_region_b,33);
+
 error_b = zeros(1,(input_test_region_b));
 
 for j = 6:20
     fraction_length = j;
     
     for i = 1:129
-        x_trunsction_b(1,i) = truncation(x_array(1,i),16);
-    end
-    
-    for i = 1:33
-        h_trunsction_b(1,i) = truncation(hp_array(1,i), fraction_length);
+        x_trunsction_b(1,i) = truncation(x_array(1,i),15);
     end
 
+    for i = 1:33
+        h_trunsction_b(1,i) = truncation(hp_array(1,i),fraction_length);
+    end
+     
     for n = 1:129
-        for m = 1:n
-            if m>33  % The 'hp_array' length is 33, so 'm' cannot more than 33.
-                  break 
-            end
-            y_trunsction_b(j-5,n) = y_trunsction_b(j-5,n) + x_trunsction_b(1,n-m+1)* h_trunsction_b(1,m);
+        
+        for m = 1:33
+            D_flip_flop_b(j-5,33-m+1) = D_flip_flop_b(j-5,33-m+1)+ x_trunsction_b(1,n) * h_trunsction_b(1,m);
         end
+            y_trunsction_b(j-5,n) = D_flip_flop_b(j-5,33);
+        for m = 1:32
+            D_flip_flop_b(j-5,34-m) = D_flip_flop_b(j-5,33-m);
+        end
+        D_flip_flop_b(j-5,1) = 0;
+
     end
     error_b(1,j-5) = sqrt(sum((y_trunsction_b(j-5,:) - y_array) .^2)/129);
 end
+
 % plot((6:20),error_b)
 % set(gca, 'YScale', 'log')
 % 
 % hold on
-% upper_bound(1,1:15) = upper_bound3;
-% plot((6:20),upper_bound)
+% upper_bound(1,1:15) = upper_bound4;
+% plot((6:20),upper_bound) %15
 
-%---Output error versus word-lengths after multiplication---%
+% %---Output error versus word-lengths after multiplication---%
 
 input_test_region_c = 20-6+1;
 
@@ -381,27 +410,32 @@ x_trunsction_c = zeros(1,129);
 h_trunsction_c = zeros(1,33);
 y_trunsction_c = zeros((input_test_region_c),129);
 y_result_c = zeros(input_test_region_c,129);
+D_flip_flop_c = zeros (input_test_region_c,33);
 error_c = zeros(1,(input_test_region_c));
 
 for j = 6:20
     fraction_length = j;
     
     for i = 1:129
-        x_trunsction_c(1,i) = truncation(x_array(1,i),16);
-    end
-    
-    for i = 1:33
-        h_trunsction_c(1,i) = truncation(hp_array(1,i), 17);
+        x_trunsction_c(1,i) = truncation(x_array(1,i),15);
     end
 
+    for i = 1:33
+        h_trunsction_c(1,i) = truncation(hp_array(1,i),15);
+    end
+     
     for n = 1:129
-        for m = 1:n
-            if m>33  % The 'hp_array' length is 33, so 'm' cannot more than 33.
-                  break 
-            end
-            y_result_c(j-5,n) = x_trunsction_c(1,n-m+1)* h_trunsction_c(1,m);
-            y_trunsction_c(j-5,n) = y_trunsction_c(j-5,n) + truncation(y_result_c(j-5,n),fraction_length);
+        
+        for m = 1:33
+            D_flip_flop_c(j-5,33-m+1) = D_flip_flop_c(j-5,33-m+1)+ ...
+                truncation((x_trunsction_c(1,n) * h_trunsction_c(1,m)),fraction_length);
         end
+            y_trunsction_c(j-5,n) = D_flip_flop_c(j-5,33);
+        for m = 1:32
+            D_flip_flop_c(j-5,34-m) = D_flip_flop_c(j-5,33-m);
+        end
+        D_flip_flop_c(j-5,1) = 0;
+
     end
     error_c(1,j-5) = sqrt(sum((y_trunsction_c(j-5,:) - y_array) .^2)/129);
 end
@@ -409,10 +443,10 @@ end
 % plot((6:20),error_c)
 % set(gca, 'YScale', 'log')
 % hold on
-% upper_bound(1,1:15) = upper_bound3;
-% plot((6:20),upper_bound)
+% upper_bound(1,1:15) = upper_bound4;
+% plot((6:20),upper_bound) %16 or 17
 
-%---Output error versus word-lengths after addition---%
+% %---Output error versus word-lengths after addition---%
 
 input_test_region_d = 25-6+1;
 
@@ -420,34 +454,39 @@ x_trunsction_d = zeros(1,129);
 h_trunsction_d = zeros(1,33);
 y_trunsction_d = zeros((input_test_region_d),129);
 y_result_d = zeros(input_test_region_d,129);
+D_flip_flop_d = zeros (input_test_region_d,33);
 error_d = zeros(1,(input_test_region_d));
 
 for j = 6:25
     fraction_length = j;
     
     for i = 1:129
-        x_trunsction_d(1,i) = truncation(x_array(1,i),16);
-    end
-    
-    for i = 1:33
-        h_trunsction_d(1,i) = truncation(hp_array(1,i), 17);
+        x_trunsction_d(1,i) = truncation(x_array(1,i),15);
     end
 
+    for i = 1:33
+        h_trunsction_d(1,i) = truncation(hp_array(1,i),15);
+    end
+     
     for n = 1:129
-        for m = 1:n
-            if m>33  % The 'hp_array' length is 33, so 'm' cannot more than 33.
-                  break 
-            end
-            y_result_d(j-5,n) = x_trunsction_c(1,n-m+1)* h_trunsction_c(1,m);
-            y_trunsction_d(j-5,n)  = ...
-                truncation((y_trunsction_d(j-5,n) + truncation(y_result_d(j-5,n),19)) ,fraction_length);
+        
+        for m = 1:33
+            D_flip_flop_d(j-5,33-m+1) = D_flip_flop_d(j-5,33-m+1)+ ...
+                truncation((x_trunsction_d(1,n) * h_trunsction_d(1,m)),fraction_length);
         end
+            y_trunsction_d(j-5,n) = D_flip_flop_d(j-5,33);
+        for m = 1:32
+            D_flip_flop_d(j-5,34-m) = D_flip_flop_d(j-5,33-m);
+        end
+        D_flip_flop_d(j-5,1) = 0;
+
     end
     error_d(1,j-5) = sqrt(sum((y_trunsction_d(j-5,:) - y_array) .^2)/129);
 end
+
 plot((6:25),error_d)
 set(gca, 'YScale', 'log')
 
 hold on
-upper_bound(1,1:20) = upper_bound3;
-plot((6:25),upper_bound) 
+upper_bound(1,1:20) = upper_bound4;
+plot((6:25),upper_bound) %16
