@@ -41,27 +41,28 @@ a_array(1,1) = 1;
 
 [mag , ff] = freqz(hp_array,a_array,1024,8);
 [phase, ff_p] = phasez(hp_array,a_array,1024,8);
+[h_fv, ff_fv] = fvtool(hp_array, a_array)
 
 % plot1 'time domain'
-% subplot(311)
+subplot(321)
 stem((-16:16), hp_array)
 title('impluse response')
-xlabel('time'), ylabel('value');
+xlabel('samples'), ylabel('Amplitude');
 grid on;
 
 % plot2 'magnitude of frequency domain'
-% subplot(312)
+subplot(323)
 plot(ff/4, 20*log10(abs(mag)));
 title('frequency response')
-xlabel('Frequency (Hz/sample)'), ylabel('Magnitude (dB)');
+xlabel('Normalized Frequency (Hz/sample)'), ylabel('Magnitude (dB)');
 grid on;
 
 % plot3 'phase of frequency domain'
-% subplot(313),
-% plot(ff_p/4, phase);
-% title('frequency response')
-% xlabel('Frequency (Hz/sample)'), ylabel('Phase (radian)');
-% grid on;
+subplot(325),
+plot(ff_p/4, phase);
+title('frequency response')
+xlabel('Normalized Frequency (Hz/ sample)'), ylabel('Phase (radians)');
+grid on;
 
 
 %% Procdure 2
@@ -82,10 +83,16 @@ for n = 1:(129+33-1)
     end
 end
 
+
+
 xx_array = zeros(1,129);
 yy_array = zeros(1,161);
 xx_array(1,1) = 1;
 yy_array(1,1) = 1;
+
+[yy_fv, fy_fv ] = fvtool(y_array, yy_array)
+% [xx_fv, fx_fv] = fvtool(x_array, xx_array)
+
 [x_mag, ff] = freqz(x_array,xx_array,512, 8);
 [x_phase, ff] = phasez(x_array,xx_array,512, 8);
 [y_mag, ff] = freqz(y_array,yy_array,512,8);
@@ -94,15 +101,15 @@ yy_array(1,1) = 1;
 % ---plot1 'time domain'--- %
 
 subplot(321)
-plot((0:128), x_array(1:129))
+stem((0:128), x_array(1:129))
 title(' input time domain waveform')
-xlabel('time'), ylabel('value');
+xlabel('samples'), ylabel('Amplitude');
 grid on;
 
 subplot(322)
-plot((0:160), y_array)
-title(' output time domain waveform ')
-xlabel('time'), ylabel('value');
+stem((0:160), y_array)
+title(' output time domain waveform')
+xlabel('samples'), ylabel('Amplitude');
 grid on;
 
 
@@ -111,13 +118,13 @@ grid on;
 subplot(323);
 plot(ff/4 ,20*log10(abs(x_mag)));
 title('input frequency-domain response')
-xlabel('Frequency (Hz/sample)'), ylabel('Magnitude (dB)');
+xlabel('Normalized Frequency (Hz/sample)'), ylabel('Magnitude (dB)');
 grid on;
 
 subplot(324);
 plot(ff/4 ,20*log10(abs(y_mag)));
 title('output frequency-domain response')
-xlabel('Frequency (Hz/sample)'), ylabel('Magnitude (dB)');
+xlabel('Normalized Frequency (Hz/sample)'), ylabel('Magnitude (dB)');
 grid on;
 
 
@@ -126,13 +133,13 @@ grid on;
 subplot(326);
 plot(ff/4 , y_phase);
 title('output frequency-domain response')
-xlabel('Frequency (Hz/sample)'), ylabel('Phase (radian)');
+xlabel('Normalized Frequency (Hz/sample)'), ylabel('Phase (radians)');
 grid on;
 
 subplot(325);
 plot(ff/4 , x_phase);
 title('input frequency-domain response')
-xlabel('Frequency (Hz/sample)'), ylabel('Phase (radian)');
+xlabel('Normalized Frequency (Hz/sample)'), ylabel('Phase (radians)');
 grid on;
 
 
@@ -166,13 +173,14 @@ for j = 6:20
     error_a(1,j-5) = sqrt(sum((y_trunsction_a(j-5,:) - y_array) .^2)/161);
 end
 
-subplot(221),plot((6:20),error_a)
+subplot(221),plot((6:20),error_a)    %S2.16
 title('Output error versus input word-lengths');
-xlabel('word-lengths'), ylabel('Output error versus');
+yline(2^(-13),'-r','2 ^-^1^3')
+xlabel('word-lengths (bits)'), ylabel('Output error');
 set(gca, 'YScale', 'log')
-hold on,grid on;
-upper_bound_a(1,1:15) = upper_bound3;
-plot((6:20),upper_bound_a)
+% hold on,grid on;
+% upper_bound_a(1,1:15) = upper_bound3;
+% plot((6:20),upper_bound_a)
 
 %---Output error versus coefficient word-lengths---%
 
@@ -187,7 +195,7 @@ for j = 6:20
     fraction_length = j;
     
     for i = 1:129
-        x_trunsction_b(1,i) = truncation(x_array(1,i),16);
+        x_trunsction_b(1,i) = truncation(x_array(1,i),17);
     end
     
     for i = 1:33
@@ -204,14 +212,15 @@ for j = 6:20
     end
     error_b(1,j-5) = sqrt(sum((y_trunsction_b(j-5,:) - y_array) .^2)/161);
 end
-subplot(222),plot((6:20),error_b)
+subplot(222),plot((6:20),error_b) %S2.17
 set(gca, 'YScale', 'log')
+yline(2^(-13),'-r','2 ^-^1^3')
 title('Output error versus coefficient word-lengths');
-xlabel('word-lengths'), ylabel('Output error versus');
+xlabel('word-lengths (bits)'), ylabel('Output error');
 
-hold on,grid on;
-upper_bound_b(1,1:15) = upper_bound3;
-plot((6:20),upper_bound_b)
+% hold on,grid on;
+% upper_bound_b(1,1:15) = upper_bound3;
+% plot((6:20),upper_bound_b)
 
 %---Output error versus word-lengths after multiplication---%
 
@@ -227,7 +236,7 @@ for j = 6:20
     fraction_length = j;
     
     for i = 1:129
-        x_trunsction_c(1,i) = truncation(x_array(1,i),16);
+        x_trunsction_c(1,i) = truncation(x_array(1,i),17);
     end
     
     for i = 1:33
@@ -246,13 +255,14 @@ for j = 6:20
     error_c(1,j-5) = sqrt(sum((y_trunsction_c(j-5,:) - y_array) .^2)/129);
 end
 
-subplot(223),plot((6:20),error_c)
+subplot(223),plot((6:20),error_c) %S5.19
 set(gca, 'YScale', 'log')
+yline(2^(-13),'-r','2 ^-^1^3')
 title('Output error versus word-lengths after multiplication');
-xlabel('word-lengths'), ylabel('Output error versus');
-hold on,grid on;
-upper_bound_c(1,1:15) = upper_bound3;
-plot((6:20),upper_bound_c)
+xlabel('word-lengths (bits)'), ylabel('Output error');
+% hold on,grid on;
+% upper_bound_c(1,1:15) = upper_bound3;
+% plot((6:20),upper_bound_c)
 
 %---Output error versus word-lengths after addition---%
 
@@ -268,7 +278,7 @@ for j = 6:25
     fraction_length = j;
     
     for i = 1:129
-        x_trunsction_d(1,i) = truncation(x_array(1,i),16);
+        x_trunsction_d(1,i) = truncation(x_array(1,i),17);
     end
     
     for i = 1:33
@@ -287,15 +297,16 @@ for j = 6:25
     end
     error_d(1,j-5) = sqrt(sum((y_trunsction_d(j-5,:) - y_array) .^2)/161);
 end
-subplot(224),plot((6:25),error_d)
+subplot(224),plot((6:25),error_d) %S10.19
 set(gca, 'YScale', 'log')
-title('Output error versus word-lengths after multiplication');
-xlabel('word-lengths'), ylabel('Output error versus');
+yline(2^(-13),'-r','2 ^-^1^3')
+title('Output error versus word-lengths after addition');
+xlabel('word-lengths (bits)'), ylabel('Output error');
 
 
-hold on, grid on;
-upper_bound_d(1,1:20) = upper_bound3;
-plot((6:25),upper_bound_d) 
+% hold on, grid on;
+% upper_bound_d(1,1:20) = upper_bound3;
+% plot((6:25),upper_bound_d) 
 
 %% procedure 4
 
@@ -333,8 +344,11 @@ for j = 6:20
     error_a(1,j-5) = sqrt(sum((y_trunsction_a(j-5,:) - y_array) .^2)/161);
 end
 
-subplot(221),plot((6:20),error_a);
+subplot(221),plot((6:20),error_a);  %S2.14
+title('Output error versus input word-lengths');
 set(gca, 'YScale', 'log')
+yline(2^(-11),'-r','2 ^-^1^1')
+xlabel('word-lengths (bits)'), ylabel('Output error');
 
 hold on
 upper_bound_4(1,1:15) = upper_bound4;
@@ -380,9 +394,12 @@ for j = 6:20
     error_b(1,j-5) = sqrt(sum((y_trunsction_b(j-5,:) - y_array) .^2)/161);
 end
 
-subplot(222),plot((6:20),error_b);
+subplot(222),plot((6:20),error_b); %S2.14
+title('Output error versus coefficient word-lengths');
 set(gca, 'YScale', 'log')
+xlabel('word-lengths (bits)'), ylabel('Output error');
 
+yline(2^(-11),'-r','2 ^-^1^1')
 hold on
 upper_bound_4(1,1:15) = upper_bound4;
 plot((6:20),upper_bound_4) %15
@@ -425,8 +442,12 @@ for j = 6:20
     error_c(1,j-5) = sqrt(sum((y_trunsction_c(j-5,:) - y_array) .^2)/161);
 end
 
-subplot(223),plot((6:20),error_c);
+subplot(223),plot((6:20),error_c); %S5.18
+title('Output error versus word-lengths after multiplication');
 set(gca, 'YScale', 'log')
+xlabel('word-lengths (bits)'), ylabel('Output error');
+
+yline(2^(-11),'-r','2 ^-^1^1')
 hold on
 upper_bound_4(1,1:15) = upper_bound4;
 plot((6:20),upper_bound_4) %16 or 17
@@ -469,9 +490,12 @@ for j = 6:25
     error_d(1,j-5) = sqrt(sum((y_trunsction_d(j-5,:) - y_array) .^2)/161);
 end
 
-subplot(224),plot((6:25),error_d)
+subplot(224),plot((6:25),error_d) %S10.18
+title('Output error versus word-lengths after addition');
 set(gca, 'YScale', 'log')
+xlabel('word-lengths (bits)'), ylabel('Output error');
 
+yline(2^(-11),'-r','2 ^-^1^1')
 hold on
 upper_bound(1,1:20) = upper_bound4;
 plot((6:25),upper_bound) %16
