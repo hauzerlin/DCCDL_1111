@@ -41,7 +41,7 @@ a_array(1,1) = 1;
 
 [mag , ff] = freqz(hp_array,a_array,1024,8);
 [phase, ff_p] = phasez(hp_array,a_array,1024,8);
-[h_fv, ff_fv] = fvtool(hp_array, a_array)
+fvtool(hp_array, a_array)
 
 % plot1 'time domain'
 subplot(321)
@@ -54,15 +54,34 @@ grid on;
 subplot(323)
 plot(ff/4, 20*log10(abs(mag)));
 title('frequency response')
-xlabel('Normalized Frequency (Hz/sample)'), ylabel('Magnitude (dB)');
+xlabel('Normalized Frequency (\times\pi rad/sample)'), ylabel('Magnitude (dB)');
 grid on;
 
 % plot3 'phase of frequency domain'
 subplot(325),
 plot(ff_p/4, phase);
 title('frequency response')
-xlabel('Normalized Frequency (Hz/ sample)'), ylabel('Phase (radians)');
+xlabel('Normalized Frequency (\times\pi rad/sample)'), ylabel('Phase (radians)');
 grid on;
+
+
+low = zeros(1, 33);
+low(1,1:33) = 1;
+high = sin(10^4*pi*(-16:16));
+
+w_low = conv(hp_array, low);
+w_high = conv(hp_array , high);
+
+subplot(322), stem ((-32:32)./8, w_low);
+title('直流訊號作為input')
+xlabel('samples'), ylabel('value');
+
+
+subplot(324), stem ((-32:32)./8, w_high);
+title('sin(10k*pi/8)作為input')
+xlabel('samples'), ylabel('value');
+
+
 
 
 %% Procdure 2
