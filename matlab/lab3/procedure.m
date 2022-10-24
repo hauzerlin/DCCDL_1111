@@ -109,7 +109,7 @@ yy_array = zeros(1,161);
 xx_array(1,1) = 1;
 yy_array(1,1) = 1;
 
-[yy_fv, fy_fv ] = fvtool(y_array, yy_array)
+% [yy_fv, fy_fv ] = fvtool(y_array, yy_array)
 % [xx_fv, fx_fv] = fvtool(x_array, xx_array)
 
 [x_mag, ff] = freqz(x_array,xx_array,512, 8);
@@ -166,6 +166,9 @@ grid on;
 format long
 
 %---Output error versus input word-lengths---%
+vivado3_x = zeros(1,161);
+vivado3_y = zeros(1,161);
+vivado3_h = zeros(1,33);
 
 input_test_region_a = 20-6+1;
 
@@ -298,10 +301,12 @@ for j = 6:25
     
     for i = 1:129
         x_trunsction_d(1,i) = truncation(x_array(1,i),17);
+        vivado3_x(1,i) = floor(x_array(1,i)*(2^17));
     end
     
     for i = 1:33
         h_trunsction_d(1,i) = truncation(hp_array(1,i), 17);
+        vivado3_h(1,i) = floor(hp_array(1,i)*(2^17))
     end
 
     for n = 1:161
@@ -316,6 +321,11 @@ for j = 6:25
     end
     error_d(1,j-5) = sqrt(sum((y_trunsction_d(j-5,:) - y_array) .^2)/161);
 end
+
+    for i = 1:161
+    vivado3_y(1,i) = floor(y_trunsction_d(13,i)*(2^18));
+    end
+
 subplot(224),plot((6:25),error_d) %S10.19
 set(gca, 'YScale', 'log')
 yline(2^(-13),'-r','2 ^-^1^3')
@@ -487,10 +497,12 @@ for j = 6:25
     
     for i = 1:161
         x_trunsction_d(1,i) = truncation(x_array(1,i),15);
+        vivado3_x(1,i) = floor(x_array(1,i)*(2^15));
     end
 
     for i = 1:33
         h_trunsction_d(1,i) = truncation(hp_array(1,i),15);
+        vivado3_h(1,i) = floor(hp_array(1,i)*(2^15));
     end
      
     for n = 1:161
@@ -508,6 +520,11 @@ for j = 6:25
     end
     error_d(1,j-5) = sqrt(sum((y_trunsction_d(j-5,:) - y_array) .^2)/161);
 end
+
+
+    for i = 1:161
+    vivado3_y(1,i) = floor(y_trunsction_d(11,i)*(2^16));
+    end
 
 subplot(224),plot((6:25),error_d) %S10.18
 title('Output error versus word-lengths after addition');
