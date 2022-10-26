@@ -1,0 +1,9 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/1111/DCCDL/VIVADO/Lab3/direct_form_fir/direct_form_fir.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/1111/DCCDL/VIVADO/Lab3/direct_form_fir/direct_form_fir.srcs/sim_1/new/derict_fir_tb.v,1666784987,verilog,,,,derict_fir_tb,,,,,,,,
+D:/1111/DCCDL/VIVADO/Lab3/direct_form_fir/direct_form_fir.srcs/sources_1/new/direct_form_fir_top.v,1666782559,verilog,,D:/1111/DCCDL/VIVADO/Lab3/direct_form_fir/direct_form_fir.srcs/sources_1/new/s11_18_add.v,,direct_form_fir_top,,,,,,,,
+D:/1111/DCCDL/VIVADO/Lab3/direct_form_fir/direct_form_fir.srcs/sources_1/new/s11_18_add.v,1666686372,verilog,,D:/1111/DCCDL/VIVADO/Lab3/direct_form_fir/direct_form_fir.srcs/sources_1/new/s2_17_mult.v,,s11_18_add,,,,,,,,
+D:/1111/DCCDL/VIVADO/Lab3/direct_form_fir/direct_form_fir.srcs/sources_1/new/s2_17_mult.v,1666702538,verilog,,D:/1111/DCCDL/VIVADO/Lab3/direct_form_fir/direct_form_fir.srcs/sim_1/new/derict_fir_tb.v,,s2_17_mult,,,,,,,,

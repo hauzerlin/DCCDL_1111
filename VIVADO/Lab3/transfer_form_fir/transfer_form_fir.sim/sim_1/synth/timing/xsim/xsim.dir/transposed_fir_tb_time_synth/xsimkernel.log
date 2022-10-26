@@ -1,0 +1,7 @@
+Running: xsim.dir/transposed_fir_tb_time_synth/xsimk.exe -simmode gui -wdb transposed_fir_tb_time_synth.wdb -simrunnum 0 -socket 63563
+Design successfully loaded
+Design Loading Memory Usage: 52772 KB (Peak: 52772 KB)
+Design Loading CPU Usage: 187 ms
+Simulation completed
+Simulation Memory Usage: 61248 KB (Peak: 61248 KB)
+Simulation CPU Usage: 640 ms

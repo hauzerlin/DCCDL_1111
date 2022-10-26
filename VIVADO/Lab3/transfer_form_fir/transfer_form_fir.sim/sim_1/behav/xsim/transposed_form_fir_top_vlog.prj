@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../transfer_form_fir.srcs/sources_1/new/s11_16_add.v" \
+"../../../../transfer_form_fir.srcs/sources_1/new/s2_15_mult.v" \
+"../../../../transfer_form_fir.srcs/sources_1/new/transposed_form_fir_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

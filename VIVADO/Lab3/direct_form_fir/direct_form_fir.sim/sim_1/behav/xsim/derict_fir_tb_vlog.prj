@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../direct_form_fir.srcs/sources_1/new/direct_form_fir_top.v" \
+"../../../../direct_form_fir.srcs/sources_1/new/s11_18_add.v" \
+"../../../../direct_form_fir.srcs/sources_1/new/s2_17_mult.v" \
+"../../../../direct_form_fir.srcs/sim_1/new/derict_fir_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
