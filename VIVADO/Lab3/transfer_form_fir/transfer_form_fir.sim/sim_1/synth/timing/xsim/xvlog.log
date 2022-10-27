@@ -48,7 +48,6 @@ INFO: [VRFC 10-311] analyzing module s2_15_mult_43
 INFO: [VRFC 10-311] analyzing module s2_15_mult_44
 INFO: [VRFC 10-311] analyzing module s2_15_mult_45
 INFO: [VRFC 10-311] analyzing module s2_15_mult_46
-INFO: [VRFC 10-311] analyzing module s2_15_mult_47
 INFO: [VRFC 10-311] analyzing module transposed_form_fir_top
 INFO: [VRFC 10-311] analyzing module glbl
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab3/transfer_form_fir/transfer_form_fir.srcs/sim_1/new/transposed_fir_tb.v" into library xil_defaultlib

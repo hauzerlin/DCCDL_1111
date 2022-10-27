@@ -18,9 +18,6 @@ proc create_report { reportName command } {
   }
 }
 set_param chipscope.maxJobs 2
-set_msg_config -id {Common 17-41} -limit 10000000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a200tfbv676-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -45,6 +42,9 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc D:/1111/DCCDL/VIVADO/Lab3/transfer_form_fir/transfer_form_fir.srcs/constrs_1/new/transposed_timing.xdc
+set_property used_in_implementation false [get_files D:/1111/DCCDL/VIVADO/Lab3/transfer_form_fir/transfer_form_fir.srcs/constrs_1/new/transposed_timing.xdc]
+
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 

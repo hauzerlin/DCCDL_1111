@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Tue Oct 25 21:18:43 2022
+| Date             : Wed Oct 26 20:54:19 2022
 | Host             : DESKTOP-J7D9945 running 64-bit major release  (build 9200)
 | Command          : report_power -file direct_form_fir_top_power_routed.rpt -pb direct_form_fir_top_power_summary_routed.pb -rpx direct_form_fir_top_power_routed.rpx
 | Design           : direct_form_fir_top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.166        |
+| Total On-Chip Power (W)  | 0.165        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.035        |
+| Dynamic (W)              | 0.034        |
 | Device Static (W)        | 0.131        |
 | Effective TJA (C/W)      | 1.9          |
 | Max Ambient (C)          | 84.7         |
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |     0.006 |     3696 |       --- |             --- |
-|   LUT as Logic |     0.005 |     2134 |    133800 |            1.59 |
+| Slice Logic    |     0.006 |     3716 |       --- |             --- |
+|   LUT as Logic |     0.005 |     2133 |    133800 |            1.59 |
 |   CARRY4       |     0.001 |      622 |     33450 |            1.86 |
-|   Register     |    <0.001 |      606 |    267600 |            0.23 |
+|   Register     |    <0.001 |      626 |    267600 |            0.23 |
 |   Others       |     0.000 |      136 |       --- |             --- |
-| Signals        |     0.007 |     4207 |       --- |             --- |
+| Signals        |     0.007 |     4228 |       --- |             --- |
 | DSPs           |     0.009 |       33 |       740 |            4.46 |
 | I/O            |     0.010 |       52 |       400 |           13.00 |
 | Static Power   |     0.131 |          |           |                 |
-| Total          |     0.166 |          |           |                 |
+| Total          |     0.165 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -141,7 +141,7 @@ Table of Contents
 +---------------------+-----------+
 | Name                | Power (W) |
 +---------------------+-----------+
-| direct_form_fir_top |     0.035 |
+| direct_form_fir_top |     0.034 |
 |   adder32           |     0.006 |
 +---------------------+-----------+
 

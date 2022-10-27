@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab3/direct_form_fir/direct_form_fir.srcs/sources_1/new/direct_form_fir_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module direct_form_fir_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab3/direct_form_fir/direct_form_fir.srcs/sources_1/new/s11_18_add.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module s11_18_add
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab3/direct_form_fir/direct_form_fir.srcs/sources_1/new/s2_17_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module s2_17_mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab3/direct_form_fir/direct_form_fir.srcs/sim_1/new/derict_fir_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module derict_fir_tb

@@ -13,22 +13,34 @@ module derict_fir_tb;
     
     always #15 clk = ~clk;
     
-    always @(posedge clk)
+//    always @(posedge clk)
+//    begin
+//        if(en_input ==1)
+//        begin
+//            if(counter < 161)
+//            begin
+//                x <= memory_x[counter];
+//                counter = counter+1;
+//            end
+//            else
+//            begin
+//                x <= x;
+//                counter = counter+1;
+//            end        
+//        end
+//    end    
+        
+    initial 
     begin
-        if(en_input ==1)
-        begin
-            if(counter < 161)
+//        if(en_input ==1)
+//        begin
+        #120
+            for (counter = 0; counter<161; counter = counter+1)
             begin
-                x <= memory_x[counter];
-                counter = counter+1;
+                #30 x <= memory_x[counter];
             end
-            else
-            begin
-                x <= x;
-                counter = counter+1;
-            end        
-        end
-    end    
+//        end
+    end
         
     initial
     begin

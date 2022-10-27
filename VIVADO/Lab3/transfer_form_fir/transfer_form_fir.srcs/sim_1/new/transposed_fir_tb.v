@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 
 module transposed_fir_tb;
-reg clk, en_rst;
+reg clk, en_rst, en_input;
     reg signed [0:17] x;
     reg signed [0:17] memory_x[0:160];
     
@@ -11,33 +11,37 @@ reg clk, en_rst;
 
     transposed_form_fir_top DUT(.clk(clk), .input_x(x), .output_y(y), .en_x(en_rst));
     
-    always #20 clk = ~clk;
+    always #25 clk = ~clk;
     
-    always @(posedge clk)
+  initial 
     begin
-        if(counter < 161)
-        begin
-            x <= memory_x[counter];
-            counter = counter+1;
-        end
-        else
-        begin
-            x <= x;
-            counter = counter+1;
-        end        
-    end    
+//        if(en_input ==1)
+//        begin
+        #180
+        
+            for (counter = 0; counter<161; counter = counter+1)
+            begin
+                #50 x <= memory_x[counter];
+            end
+//        end
+    end
         
     initial
     begin
         #100 en_rst <= 1'b1;
              clk <= 1'b0;
-        #30 en_rst <= 1'b0;
+             en_input <= 1'b0;
+             x <= 20'd0;
+        #80 en_rst <= 1'b0;  
+            en_input <= 1'b1;
+
     end
+    
     
     
     initial
     begin
-      memory_x[  0] = 18'd32768;
+    memory_x[  0] = 18'd32768;
     memory_x[  1] = -18'd3212;
     memory_x[  2] = -18'd39161;
     memory_x[  3] = -18'd9513;
