@@ -1,4 +1,4 @@
-`timescale 1ns / 10ps
+`timescale 1ns / 1ps
 module direct_form_fir_top(clk, input_x, output_y, en_x);
 
     input clk, en_x;

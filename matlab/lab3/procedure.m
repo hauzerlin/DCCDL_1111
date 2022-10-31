@@ -325,6 +325,7 @@ end
     for i = 1:161
     vivado3_y(1,i) = floor(y_trunsction_d(13,i)*(2^18));
     end
+    truncation_y3 = y_trunsction_d(20,:);
 
 subplot(224),plot((6:25),error_d) %S10.19
 set(gca, 'YScale', 'log')
@@ -521,7 +522,7 @@ for j = 6:25
     error_d(1,j-5) = sqrt(sum((y_trunsction_d(j-5,:) - y_array) .^2)/161);
 end
 
-
+    truncation_y4 = y_trunsction_d(15,:);
     for i = 1:161
     vivado3_y(1,i) = floor(y_trunsction_d(11,i)*(2^16));
     end
@@ -535,3 +536,29 @@ yline(2^(-11),'-r','2 ^-^1^1')
 hold on
 upper_bound(1,1:20) = upper_bound4;
 plot((6:25),upper_bound) %16
+
+%% result 5
+
+    %trunsctioned y in  Q3 = truncation_y3
+    %trunsctioned y in  Q4 = truncation_y4
+    %floating-point  y = y_array
+
+    b_array = zeros(1,161);
+    b_array(1,1) = 1;
+
+    fvtool(y_array, b_array)
+    fvtool(truncation_y3, b_array)
+    fvtool(truncation_y4, b_array)
+
+%% others
+
+subplot(211);
+plot((1:161),truncation_y4);
+hold on
+plot((1:161),y_array);
+
+subplot(212);
+plot((1:161),(y_array-truncation_y4))
+title('The errors of hardware outputs and Matlab Floating-point results');
+xlabel('samples'), ylabel('error');
+yline(2^(-11),'-r','2 ^-^1^1')

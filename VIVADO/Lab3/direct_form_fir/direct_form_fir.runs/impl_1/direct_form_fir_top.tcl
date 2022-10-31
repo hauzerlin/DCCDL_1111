@@ -68,12 +68,16 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 2
-  reset_param project.defaultXPMLibraries 
-  open_checkpoint D:/1111/DCCDL/VIVADO/Lab3/direct_form_fir/direct_form_fir.runs/impl_1/direct_form_fir_top.dcp
+  create_project -in_memory -part xc7a200tfbg676-1
+  set_property design_mode GateLvl [current_fileset]
+  set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir D:/1111/DCCDL/VIVADO/Lab3/direct_form_fir/direct_form_fir.cache/wt [current_project]
   set_property parent.project_path D:/1111/DCCDL/VIVADO/Lab3/direct_form_fir/direct_form_fir.xpr [current_project]
   set_property ip_output_repo D:/1111/DCCDL/VIVADO/Lab3/direct_form_fir/direct_form_fir.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
+  add_files -quiet D:/1111/DCCDL/VIVADO/Lab3/direct_form_fir/direct_form_fir.runs/synth_1/direct_form_fir_top.dcp
+  read_xdc D:/1111/DCCDL/VIVADO/Lab3/direct_form_fir/direct_form_fir.srcs/constrs_1/new/direct_timing.xdc
+  link_design -top direct_form_fir_top -part xc7a200tfbg676-1
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {

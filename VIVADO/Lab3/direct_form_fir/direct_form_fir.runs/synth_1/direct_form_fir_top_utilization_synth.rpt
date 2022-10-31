@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Wed Oct 26 20:27:14 2022
+| Date         : Thu Oct 27 19:14:43 2022
 | Host         : DESKTOP-J7D9945 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file direct_form_fir_top_utilization_synth.rpt -pb direct_form_fir_top_utilization_synth.pb
 | Design       : direct_form_fir_top
