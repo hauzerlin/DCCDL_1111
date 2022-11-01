@@ -80,6 +80,8 @@ xx2(1,1) = 1;
 xx3 = zeros(1,79);
 xx3(1,1) = 1;
 
-fvtool(xx1,linear_x(2:40));
-fvtool(xx2,Second_order_x(2:80));
-fvtool(xx3,Piecewise_parabolic_x(22:100));
+fvtool(linear_x(2:40),xx1);
+% fvtool(linear_x,1);
+
+fvtool(Second_order_x(2:80),xx2);
+fvtool(Piecewise_parabolic_x(22:100),xx3);
