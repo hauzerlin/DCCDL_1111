@@ -17,11 +17,13 @@ for i =1:41
 end
  
 stem (mm,linear_x)
+title('linear interpolator impluse response')
+xlabel('samples'),ylabel(values);
 
 %% Second-order polynomial interpolator
 
 Second_order_x = zeros(1,81);
-Second_order_mm = linspace(-2,2,81);
+Second_order_mm = linspace(-2,1,61);
 
 impluse = [0 0 1 0 0 0 0];
 
@@ -40,12 +42,14 @@ for i = 1:81
     end
 end
 
-stem (Second_order_mm,Second_order_x)
+stem (Second_order_mm,Second_order_x(1:61))
+title('Second order interpolator impluse response')
+xlabel('samples'),ylabel(values);
 
 %% Piecewise parabolic interpolator 
 
 Piecewise_parabolic_x = zeros(1,121);
-Piecewise_parabolic_mm = linspace(-3,3,121);
+Piecewise_parabolic_mm = linspace(-2,2,81);
 
 impluse = [ 0 0 0 1 0 0 0 0 ];
 u = 0;
@@ -66,7 +70,9 @@ for i = 21:101
     end
 end
 
-stem (Piecewise_parabolic_mm,Piecewise_parabolic_x)
+stem (Piecewise_parabolic_mm,Piecewise_parabolic_x(21:101))
+title('Piecewise parabolic interpolator impluse response')
+xlabel('samples'),ylabel(values);
 
 
 %% procedure2
