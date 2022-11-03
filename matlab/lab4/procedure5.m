@@ -8,7 +8,7 @@ error_result = zeros(1, 20); % 1 ~ 20
 
 trunscation_input = zeros(1,52);
 trunscation_mu = zeros(1,8);
-mu = [0 1/8 2/8 3/8 4/8 5/8 6/8 7/8]
+mu = [0 1/8 2/8 3/8 4/8 5/8 6/8 7/8];
 trunscation_y = zeros(fraction_length,385);
 fi = 5;
 Ts = 1; 
@@ -61,6 +61,8 @@ end
 
 % subplot(222);
 plot((1:20),error_result) %S2.17
+title('different word-length input versus the root mean squared error');
+xlabel('word-length(bits)'),ylabel('RMSE of output');
 set(gca, 'YScale', 'log')
 hold on
 yline(2^(-12),'-r','2 ^-^1^2')
@@ -96,6 +98,8 @@ end
 
 % subplot(222);
 plot((1:20),error_result) %S2.17
+title('different word-length u versus the root mean squared error');
+xlabel('word-length(bits)'),ylabel('RMSE of output');
 set(gca, 'YScale', 'log')
 hold on
 yline(2^(-12),'-r','2 ^-^1^2')

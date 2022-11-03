@@ -87,7 +87,7 @@ Piecewise_parabolic_x4 = zeros(1,97);
 Piecewise_parabolic_mm4 = linspace(12,24,97);
 
 u = 0;
-a = 0.5;
+a = 0.75;
 
 for i = 9:105
     C_1 = -a*u + a*u*u;
@@ -111,3 +111,4 @@ error_piecewise = floating_x4 - Piecewise_parabolic_x4;
 stem(Piecewise_parabolic_mm4, error_piecewise);
 title('error between the floating-poing result and Piecewise parabolic interpolator')
 xlabel('samples'),ylabel('errors')
+hold on

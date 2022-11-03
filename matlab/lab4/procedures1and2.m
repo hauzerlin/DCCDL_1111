@@ -18,7 +18,7 @@ end
  
 stem (mm,linear_x)
 title('linear interpolator impluse response')
-xlabel('samples'),ylabel(values);
+xlabel('samples'),ylabel('values');
 
 %% Second-order polynomial interpolator
 
@@ -44,7 +44,7 @@ end
 
 stem (Second_order_mm,Second_order_x(1:61))
 title('Second order interpolator impluse response')
-xlabel('samples'),ylabel(values);
+xlabel('samples'),ylabel('values');
 
 %% Piecewise parabolic interpolator 
 
@@ -72,22 +72,22 @@ end
 
 stem (Piecewise_parabolic_mm,Piecewise_parabolic_x(21:101))
 title('Piecewise parabolic interpolator impluse response')
-xlabel('samples'),ylabel(values);
+xlabel('samples'),ylabel('values');
 
 
 %% procedure2
 
-xx1 = zeros(1,39);
+xx1 = zeros(1,41);
 xx1(1,1) = 1;
 
-xx2 = zeros(1,79);
+xx2 = zeros(1,81);
 xx2(1,1) = 1;
 
-xx3 = zeros(1,79);
+xx3 = zeros(1,81);
 xx3(1,1) = 1;
 
-fvtool(linear_x(2:40),xx1);
+fvtool(linear_x,xx1);
 % fvtool(linear_x,1);
 
-fvtool(Second_order_x(2:80),xx2);
-fvtool(Piecewise_parabolic_x(22:100),xx3);
+fvtool(Second_order_x,xx2);
+fvtool(Piecewise_parabolic_x(21:101),xx3);
