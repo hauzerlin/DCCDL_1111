@@ -136,9 +136,16 @@ fprintf("Values/Index: %4d/%2d\n", min_value, min_index)
 
 % Sort4
     
-    before_sort_4 = mat_32_with_index(1,1:4)
-    sort_4 = sort4(sort_4)     
-
+%     before_sort_4 = mat_32_with_index(1,1:4)
+%     sort_4 = sort4(sort_4)     
+    array1 = sort4(mat_32_with_index(1,1:4))
+    array2 = sort4(mat_32_with_index(1,5:8))
+    array3 = sort4(mat_32_with_index(1,9:12))
+    array4 = sort4(mat_32_with_index(1,13:16))
+    array5 = sort4(mat_32_with_index(1,17:20))
+    array6 = sort4(mat_32_with_index(1,21:24))
+    array7 = sort4(mat_32_with_index(1,25:28))
+    array8 = sort4(mat_32_with_index(1,29:32))
  
 %% Procedure 4
 
