@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a200tfbg676-1" LaunchTime="1665580273">
+  <File Type="PA-TCL" Name="parallel_comparator32.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="parallel_comparator32_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="parallel_comparator32_reports.tcl"/>
+  <File Type="RDS-RDS" Name="parallel_comparator32.vds"/>
+  <File Type="RDS-UTIL" Name="parallel_comparator32_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="parallel_comparator32_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="parallel_comparator32.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="parallel_comparator32_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="parallel_comparator32_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/min_comparator.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../serial_comparator/serial_comparator.srcs/sources_1/new/min_comparator.v"/>
+        <Attr Name="ImportTime" Val="1665461129"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/parallel_comparator32.sv">
+      <FileInfo SFType="Verilog">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/parallel_comparator_32.sv">
+      <FileInfo SFType="Verilog">
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/lab2_result1_top.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/max_comparator.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../serial_comparator/serial_comparator.srcs/sources_1/new/max_comparator.v"/>
+        <Attr Name="ImportTime" Val="1665461129"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/lab2_top.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="parallel_comparator32"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

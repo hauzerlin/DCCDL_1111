@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sort4_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="sort4_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="999993716fs"></ZoomStartTime>
+      <ZoomEndTime time="1000001257fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="102"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/sort4_tb/in_mat4" type="array">
+      <obj_property name="ElementShortName">in_mat4[0:3][12:0]</obj_property>
+      <obj_property name="ObjectShortName">in_mat4[0:3][12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sort4_tb/out_mat4" type="array">
+      <obj_property name="ElementShortName">out_mat4[0:3][12:0]</obj_property>
+      <obj_property name="ObjectShortName">out_mat4[0:3][12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sort4_tb/in_index" type="array">
+      <obj_property name="ElementShortName">in_index[0:3][4:0]</obj_property>
+      <obj_property name="ObjectShortName">in_index[0:3][4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sort4_tb/in_value" type="array">
+      <obj_property name="ElementShortName">in_value[0:3][7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_value[0:3][7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sort4_tb/out_index" type="array">
+      <obj_property name="ElementShortName">out_index[0:3][4:0]</obj_property>
+      <obj_property name="ObjectShortName">out_index[0:3][4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sort4_tb/out_value" type="array">
+      <obj_property name="ElementShortName">out_value[0:3][7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_value[0:3][7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>
