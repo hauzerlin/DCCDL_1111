@@ -89,7 +89,7 @@ Piecewise_parabolic_mm3 = linspace(48,96,385);
 
 % impluse = [ 0 0 0 1 0 0 0 0 ];
 u = 0;
-a = 0.75;
+a = 0.5;
 
 for i = 9:393
     C_1 = -a*u + a*u*u;
@@ -109,7 +109,7 @@ end
 error_piecewise = floating_x3 - Piecewise_parabolic_x3; 
 
 % stem (Piecewise_parabolic_mm3,Piecewise_parabolic_x3)
-stem(Piecewise_parabolic_mm3, error_piecewise);
+plot(Piecewise_parabolic_mm3, Piecewise_parabolic_x3); %error_piecewise);
 title('error between the floating-poing result and Piecewise parabolic interpolator')
 xlabel('samples'),ylabel('errors')
 hold on
