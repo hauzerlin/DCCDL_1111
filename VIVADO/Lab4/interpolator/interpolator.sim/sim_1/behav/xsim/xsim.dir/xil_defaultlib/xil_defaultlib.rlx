@@ -1,0 +1,11 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v,1667997424,verilog,,,,interpolator_top_tb,,,,,,,,
+D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/v1_tb.v,1667986603,verilog,,,,v1_tb,,,,,,,,
+D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/v2_tb.v,1667977012,verilog,,,,v2_tb,,,,,,,,
+D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/interpolator_top.v,1668004503,verilog,,D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/v1.v,,interpolator_top,,,,,,,,
+D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/v1.v,1668005481,verilog,,D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2.v,,v1,,,,,,,,
+D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2.v,1668002375,verilog,,D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v,,v2,,,,,,,,

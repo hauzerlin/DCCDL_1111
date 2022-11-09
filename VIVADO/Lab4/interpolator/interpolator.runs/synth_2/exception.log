@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file D:\1111\DCCDL\VIVADO\Lab4\interpolator\interpolator.runs\synth_2/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: 沒有使用權限

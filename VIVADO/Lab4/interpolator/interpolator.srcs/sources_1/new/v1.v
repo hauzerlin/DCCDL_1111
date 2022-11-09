@@ -6,10 +6,11 @@ parameter out_length = 18;
 
 input clk, rst;
 input signed [0:in_length-1]xin;
-output signed [0:out_length-1]out;
+output  signed [0:out_length-1]out;
 
 reg signed [0:in_length-1] dff [0:2];
-wire signed [0:in_length] buf_ff1, buf_ff2, buf_ff3, buf_ff4;
+wire signed [0:in_length-2] buf_ff1, buf_ff3, buf_ff4;
+wire signed [0:in_length-1]buf_ff2;
 wire signed [0:in_length] mult_1_5;
 wire signed [0:out_length-1] add_ff [0:3];
 wire signed [0:out_length-1] next_add [0:1];
@@ -23,14 +24,18 @@ assign buf_ff3 = dff[1]/2;
 assign buf_ff4 = dff[2]/2;
 
 
-assign add_ff[0] = {{2{buf_ff1[0]}},buf_ff1[0:15]};
+assign add_ff[0] = {{4{buf_ff1[0]}},buf_ff1[0:13]};
 assign add_ff[1] = {{3{buf_ff2[0]}},buf_ff2[0:14]};
-assign add_ff[2] = {{2{buf_ff3[0]}},buf_ff3[0:15]};
-assign add_ff[3] = {{2{buf_ff4[0]}},buf_ff4[0:15]};
+assign add_ff[2] = {{4{buf_ff3[0]}},buf_ff3[0:13]};
+assign add_ff[3] = {{4{buf_ff4[0]}},buf_ff4[0:13]};
 
 assign next_add[0] = -add_ff[0] + add_ff[1];
 assign next_add[1] = next_add[0] - add_ff[2];
 assign out = next_add[1] - add_ff[3];
+//always @(*)
+//begin
+//    out = next_add[1] - add_ff[3];
+//end
 
 always @(posedge clk)
 begin
@@ -43,7 +48,7 @@ begin
     end
     else
     begin
-        for(m=0; m<1; m=m+1)
+        for(m=0; m<2; m=m+1)
         begin
             dff[m+1] <= dff[m];
         end
