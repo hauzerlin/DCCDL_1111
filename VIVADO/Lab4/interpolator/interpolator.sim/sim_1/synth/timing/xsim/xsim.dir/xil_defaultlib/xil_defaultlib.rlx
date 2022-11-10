@@ -2,6 +2,7 @@
 2019.1
 May 24 2019
 15:06:07
-D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/synth/timing/xsim/interpolator_top_tb_time_synth.v,1668004575,verilog,,D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v,,glbl;interpolator_top;v1;v2,,,,,,,,
+D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/synth/timing/xsim/interpolator_top_tb_time_synth.v,1668073802,verilog,,D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/count_div_8.v,,glbl;interpolator_top;v1;v2,,,,,,,,
 D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v,1667992321,verilog,,,,interpolator_top_tb,,,,,,,,
 D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/v2_tb.v,1667975980,verilog,,,,v2_tb,,,,,,,,
+,,,,D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v,,count_div_8,,,,,,,,

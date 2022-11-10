@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Wed Nov  9 22:53:59 2022
+| Date             : Thu Nov 10 19:58:01 2022
 | Host             : DESKTOP-J7D9945 running 64-bit major release  (build 9200)
 | Command          : report_power -file interpolator_top_power_routed.rpt -pb interpolator_top_power_summary_routed.pb -rpx interpolator_top_power_routed.rpx
 | Design           : interpolator_top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.272        |
+| Total On-Chip Power (W)  | 0.279        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.141        |
+| Dynamic (W)              | 0.148        |
 | Device Static (W)        | 0.131        |
 | Effective TJA (C/W)      | 1.9          |
 | Max Ambient (C)          | 84.5         |
@@ -52,17 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |     0.004 |      489 |       --- |             --- |
-|   LUT as Logic |     0.004 |      283 |    133800 |            0.21 |
-|   CARRY4       |    <0.001 |       52 |     33450 |            0.16 |
-|   Register     |    <0.001 |       81 |    267600 |            0.03 |
+| Clocks         |     0.001 |        3 |       --- |             --- |
+| Slice Logic    |     0.004 |      614 |       --- |             --- |
+|   LUT as Logic |     0.004 |      332 |    133800 |            0.25 |
+|   CARRY4       |    <0.001 |       56 |     33450 |            0.17 |
+|   Register     |    <0.001 |      152 |    267600 |            0.06 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
 |   Others       |     0.000 |        6 |       --- |             --- |
-| Signals        |     0.008 |      529 |       --- |             --- |
-| I/O            |     0.128 |      161 |       400 |           40.25 |
+| Signals        |     0.010 |      559 |       --- |             --- |
+| I/O            |     0.133 |      163 |       400 |           40.75 |
 | Static Power   |     0.131 |          |           |                 |
-| Total          |     0.272 |          |           |                 |
+| Total          |     0.279 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,11 +72,11 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.043 |       0.013 |      0.030 |
-| Vccaux    |       1.800 |     0.041 |       0.010 |      0.031 |
+| Vccint    |       1.000 |     0.045 |       0.015 |      0.030 |
+| Vccaux    |       1.800 |     0.041 |       0.011 |      0.031 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
-| Vcco18    |       1.800 |     0.066 |       0.061 |      0.005 |
+| Vcco18    |       1.800 |     0.068 |       0.063 |      0.005 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
@@ -141,8 +141,8 @@ Table of Contents
 +------------------+-----------+
 | Name             | Power (W) |
 +------------------+-----------+
-| interpolator_top |     0.141 |
-|   dft1           |     0.005 |
+| interpolator_top |     0.148 |
+|   dft1           |     0.002 |
 |   dft2           |     0.002 |
 +------------------+-----------+
 

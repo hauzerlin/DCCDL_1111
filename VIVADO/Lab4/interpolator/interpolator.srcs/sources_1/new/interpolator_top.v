@@ -1,31 +1,35 @@
 `timescale 1ns / 1ps
 
-module interpolator_top(clk, rst, xin , out , test1, test2, test3, test4, test5);
+module interpolator_top(clk, rst, in_en, xin , out, test1, test2, test3, test4, test5);
 parameter in_length = 15;
 parameter out_length = 18;
 
-input clk, rst;
+input clk, rst, in_en;
 input signed [0:in_length-1]xin;
-output signed [0:23]out;
+output signed [0:24]out;
 output signed [0:23] test1, test2, test3, test4, test5;
 
 reg clk_8, start_en;
 reg signed [0:in_length-1] dff [0:1];
 reg [0:1] count8;
 reg [0:1] start_count;
-reg [0:2] mu;
+reg signed [0:3] mu;
 wire signed [0:out_length-1] v1_out, v2_out;
-wire signed [0:out_length-1] v1_out_result, v2_out_result;
-wire signed [0:23] mult_out1, add_out1, mult_out2;
-wire signed [0:20] mult_result1;
-wire signed [0:23] mult_result2;
-wire signed [0:23] add_buff1;
-wire signed [0:23] add_buff2;
+//reg signed [0:out_length-1] v1_out_buff, v2_out_buff;
+reg signed [0:out_length-1] v1_out_result, v2_out_result, v0_out_result;
+reg signed [0:23] final_buff1, final_buff2;
+wire signed [0:24] mult_out1, add_out1, mult_out2;
+wire signed [0:29] mult_result1;
+wire signed [0:24] mult_result2;
+wire signed [0:24] add_buff1;
+wire signed [0:24] add_buff2;
 //wire signed [0:in_length-2] buf_ff1, buf_ff3, buf_ff4;
 
 integer m =0;
 
 v1 dft1(.clk(clk_8), .rst(rst), .xin(xin) , .out(v1_out));
+//v1_mod dft1(.clk(clk_8), .rst(rst), .xin(xin) , .out(v1_out));
+//v2_mod dft2(.clk(clk_8), .rst(rst), .xin(xin) , .out(v2_out));
 v2 dft2(.clk(clk_8), .rst(rst), .xin(xin) , .out(v2_out));
 
 assign mult_result1 =  v2_out_result * mu;
@@ -33,60 +37,70 @@ assign mult_result2 =  add_out1 * mu;
 //assign add_buff1 = {{6{v1_out[0]}},v1_out[0:17]};
 //assign add_buff2 = {{9{dff[1][0]}},dff[1]};
 
-assign mult_out1 = {{6{mult_result1[0]}},mult_result1[0:17]};
+//assign mult_out1 = {{3{mult_result1[0]}},mult_result1[0:20]};
+assign mult_out1 = {mult_result1[2:26]};
 assign add_out1 = mult_out1 + v1_out_result;
-assign mult_out2 = {{3{mult_result2[0]}},mult_result2[0:20]};
-assign out = mult_out2 + dff[1];
+assign mult_out2 = {{3{mult_result2[0]}},mult_result2[0:21]};
+//assign mult_out2 = {mult_result2[0:23]};
+//assign out = mult_out2 + dff[1];
+assign out = final_buff1 + final_buff2;
 
 assign test1 = mult_out1;
 assign test2 = add_out1;
 assign test3 = mult_out2;
-assign test4 = v1_out_result;
-assign test5 = v2_out_result;
 
-//always @(posedge clk)
-//begin
-//    v1_out_result <= v1_out;
-//    v2_out_result <= v2_out;
-//end
+assign test4 = v1_out;
+assign test5 = v2_out;
 
- assign    v1_out_result = v1_out;
- assign    v2_out_result = v2_out;
-always @(posedge clk)
+always @(posedge clk_8)
 begin
-    if(rst)begin
-    count8 = 2'b0;
-    end 
-    else 
-    if(count8 == 2'b11)
-    begin
-        count8 = 2'b0;
-    end
-    else 
-    begin
-        count8= count8+1;
-    end
+    v0_out_result <= dff[1];
+    v1_out_result <= v1_out;
+    v2_out_result <= v2_out;
 end
 
-always @(posedge clk)
-begin
-    if (rst)begin
-    clk_8 = 1'b1;
-    end
-    else if (count8 == 2'b11)begin
-    clk_8 = ~clk_8;
-    end
+always @(posedge clk)begin
+    final_buff1 <= mult_out2;
+    final_buff2 <= v0_out_result;
 end
 
+reg [2:0] cnt;
+
+always@(posedge clk or posedge rst) 
+begin
+    if (rst)
+        cnt <= 3'd0;
+    else if (cnt == 3'd7) // 0 ~ 7
+        cnt <= 3'd0;
+    else
+        cnt <= cnt + 3'd1;
+end
+
+always@(posedge clk or posedge rst) 
+begin
+    if (rst)
+        clk_8 <= 3'd0;
+    else if (cnt < 4) // 0 ~ 3
+        clk_8 <= 3'd0;
+    else              // 4 ~ 7
+        clk_8 <= 3'd1;
+end
 always @(posedge clk)
 begin
-    if(rst ==1)
+    if(in_en ==0)
         begin
-        mu = 3'b0;
+        mu <= -3'd1;
         end
-    else  
+    else
+        begin
+        if(mu > 3'd6)
+        begin
+            mu <= 3'd0;
+        end
+        else  
         begin     
-         mu = mu + 1'b1;
+         mu <= mu + 1'b1;
+       end
        end
 end
 
@@ -96,7 +110,7 @@ begin
             begin
                 for( m=0; m<1; m=m+1)
                 begin
-                    dff[m] = 15'b0;
+                    dff[m] <= 15'b0;
                 end
             end
             else

@@ -1,5 +1,6 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
+"../../../../interpolator.srcs/sources_1/new/count_div_8.v" \
 "../../../../interpolator.srcs/sources_1/new/interpolator_top.v" \
 "../../../../interpolator.srcs/sources_1/new/v1.v" \
 "../../../../v2.v" \

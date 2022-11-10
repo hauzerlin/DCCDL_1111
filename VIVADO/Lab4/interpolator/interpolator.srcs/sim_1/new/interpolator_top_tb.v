@@ -4,15 +4,18 @@ module interpolator_top_tb;
 parameter in_length = 15;
 parameter out_length = 18;
 
+wire  clk_8;
 reg [1:0] count8;
-reg clk, clk_8, rst, in_en;
+reg clk, rst, in_en;
+//reg clk, clk_8, rst, in_en;
 reg signed [0:in_length-1]xin;
 wire signed [0:23]out;
 wire signed [0:23]test1,test2,test3,test4,test5;
 reg signed [0:in_length-1] v2_in [0:52];
 integer i=0;
 
-interpolator_top dft1(.clk(clk), .rst(rst), .xin(xin) , .out(out), .test1(test1), .test2(test2), .test3(test3), .test4(test4), .test5(test5));
+interpolator_top dft1(.clk(clk), .rst(rst), .in_en(in_en), .xin(xin) , .out(out), .test1(test1), .test2(test2), .test3(test3), .test4(test4), .test5(test5));
+count_div_8 div8(.clk(clk), .reset(rst), .clk_8(clk_8));
 
 always #10 clk = ~clk;
 
@@ -25,6 +28,7 @@ begin
     #90
         rst =0;
     #40
+    #50
         in_en=1;
 end
 
@@ -49,31 +53,31 @@ begin
     end
 end
 
-always @(posedge clk)
-begin
-    if(rst)begin
-    count8 = 2'b0;
-    end 
-    else 
-    if(count8 == 2'b11)
-    begin
-        count8 = 2'b0;
-    end
-    else 
-    begin
-        count8= count8+1;
-    end
-end
+//always @(posedge clk)
+//begin
+//    if(rst)begin
+//    count8 = 2'b0;
+//    end 
+//    else 
+//    if(count8 == 2'b11)
+//    begin
+//        count8 = 2'b0;
+//    end
+//    else 
+//    begin
+//        count8= count8+1;
+//    end
+//end
 
-always @(posedge clk)
-begin
-    if (rst)begin
-    clk_8 <= 1'b1;
-    end
-    else if (count8 == 2'b00)begin
-    clk_8 = ~clk_8;
-    end
-end
+//always @(posedge clk)
+//begin
+//    if (rst)begin
+//    clk_8 <= 1'b1;
+//    end
+//    else if (count8 == 2'b00)begin
+//    clk_8 = ~clk_8;
+//    end
+//end
 
 initial
 begin
