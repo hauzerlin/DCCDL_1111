@@ -1,0 +1,933 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Nov 10 19:12:02 2022
+# Process ID: 6936
+# Current directory: D:/1111/DCCDL/VIVADO/Lab4/interpolator
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8852 D:\1111\DCCDL\VIVADO\Lab4\interpolator\interpolator.xpr
+# Log file: D:/1111/DCCDL/VIVADO/Lab4/interpolator/vivado.log
+# Journal file: D:/1111/DCCDL/VIVADO/Lab4/interpolator\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:08 . Memory (MB): peak = 857.820 ; gain = 164.789
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'interpolator_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj interpolator_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/count_div_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module count_div_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/interpolator_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interpolator_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/v1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interpolator_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/behav/xsim'
+"xelab -wto bc69e60959fa4fb89b44e66e781bc6ae --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot interpolator_top_tb_behav xil_defaultlib.interpolator_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto bc69e60959fa4fb89b44e66e781bc6ae --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot interpolator_top_tb_behav xil_defaultlib.interpolator_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.v1
+Compiling module xil_defaultlib.v2
+Compiling module xil_defaultlib.interpolator_top
+Compiling module xil_defaultlib.count_div_8
+Compiling module xil_defaultlib.interpolator_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot interpolator_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "interpolator_top_tb_behav -key {Behavioral:sim_1:Functional:interpolator_top_tb} -tclbatch {interpolator_top_tb.tcl} -view {D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2_tb_behav.wcfg
+source interpolator_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'interpolator_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 912.098 ; gain = 0.000
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'interpolator_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj interpolator_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/count_div_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module count_div_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/interpolator_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interpolator_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/v1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interpolator_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/behav/xsim'
+"xelab -wto bc69e60959fa4fb89b44e66e781bc6ae --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot interpolator_top_tb_behav xil_defaultlib.interpolator_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto bc69e60959fa4fb89b44e66e781bc6ae --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot interpolator_top_tb_behav xil_defaultlib.interpolator_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.v1
+Compiling module xil_defaultlib.v2
+Compiling module xil_defaultlib.interpolator_top
+Compiling module xil_defaultlib.count_div_8
+Compiling module xil_defaultlib.interpolator_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot interpolator_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "interpolator_top_tb_behav -key {Behavioral:sim_1:Functional:interpolator_top_tb} -tclbatch {interpolator_top_tb.tcl} -view {D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2_tb_behav.wcfg
+source interpolator_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'interpolator_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 931.078 ; gain = 1.879
+run all
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'interpolator_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj interpolator_top_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/behav/xsim'
+"xelab -wto bc69e60959fa4fb89b44e66e781bc6ae --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot interpolator_top_tb_behav xil_defaultlib.interpolator_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto bc69e60959fa4fb89b44e66e781bc6ae --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot interpolator_top_tb_behav xil_defaultlib.interpolator_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 931.078 ; gain = 0.000
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+export_ip_user_files -of_objects  [get_files D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/interpolator_top.v] -no_script -reset -force -quiet
+remove_files  D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/interpolator_top.v
+add_files -norecurse D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/interpolator_top.v
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/v2_mod.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/add_s4_13.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/interpolator_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/v2_mod.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/add_s4_13.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/interpolator_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/v2_mod.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/add_s4_13.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/interpolator_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+set_property top interpolator_top [current_fileset]
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'interpolator_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj interpolator_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/count_div_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module count_div_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/interpolator_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interpolator_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/v1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interpolator_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/behav/xsim'
+"xelab -wto bc69e60959fa4fb89b44e66e781bc6ae --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot interpolator_top_tb_behav xil_defaultlib.interpolator_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto bc69e60959fa4fb89b44e66e781bc6ae --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot interpolator_top_tb_behav xil_defaultlib.interpolator_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.v1
+Compiling module xil_defaultlib.v2
+Compiling module xil_defaultlib.interpolator_top
+Compiling module xil_defaultlib.count_div_8
+Compiling module xil_defaultlib.interpolator_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot interpolator_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "interpolator_top_tb_behav -key {Behavioral:sim_1:Functional:interpolator_top_tb} -tclbatch {interpolator_top_tb.tcl} -view {D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2_tb_behav.wcfg
+source interpolator_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'interpolator_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 977.645 ; gain = 0.000
+run all
+reset_run synth_3
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.runs/synth_3
+
+launch_runs impl_3 -jobs 4
+[Thu Nov 10 19:32:07 2022] Launched synth_3...
+Run output will be captured here: D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.runs/synth_3/runme.log
+[Thu Nov 10 19:32:07 2022] Launched impl_3...
+Run output will be captured here: D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.runs/impl_3/runme.log
+launch_simulation -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [Device 21-403] Loading part xc7a200tfbg676-1
+INFO: [Netlist 29-17] Analyzing 55 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.089 . Memory (MB): peak = 1978.703 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.089 . Memory (MB): peak = 1978.703 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1978.703 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 2124.539 ; gain = 1144.531
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_3'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/impl/timing/xsim/interpolator_top_tb_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/impl/timing/xsim/interpolator_top_tb_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/impl/timing/xsim/interpolator_top_tb_time_impl.v
+INFO: [SIM-utils-37] SDF generated:D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/impl/timing/xsim/interpolator_top_tb_time_impl.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'interpolator_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/impl/timing/xsim'
+"xvlog --incr --relax -prj interpolator_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/impl/timing/xsim/interpolator_top_tb_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interpolator_top
+INFO: [VRFC 10-311] analyzing module v1
+INFO: [VRFC 10-311] analyzing module v2
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/count_div_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module count_div_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interpolator_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/impl/timing/xsim'
+"xelab -wto bc69e60959fa4fb89b44e66e781bc6ae --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot interpolator_top_tb_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.interpolator_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto bc69e60959fa4fb89b44e66e781bc6ae --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot interpolator_top_tb_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.interpolator_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "interpolator_top_tb_time_impl.sdf", for root module "interpolator_top_tb/dft1".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "interpolator_top_tb_time_impl.sdf", for root module "interpolator_top_tb/dft1".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.FDCE_default
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.LUT5
+Compiling module xil_defaultlib.v1
+Compiling module xil_defaultlib.v2
+Compiling module simprims_ver.FDSE_default
+Compiling module simprims_ver.OBUF
+Compiling module xil_defaultlib.interpolator_top
+Compiling module xil_defaultlib.count_div_8
+Compiling module xil_defaultlib.interpolator_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot interpolator_top_tb_time_impl
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/impl/timing/xsim/xsim.dir/interpolator_top_tb_time_impl/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/impl/timing/xsim/xsim.dir/interpolator_top_tb_time_impl/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Nov 10 19:35:48 2022. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Nov 10 19:35:48 2022...
+run_program: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 2139.457 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "interpolator_top_tb_time_impl -key {Post-Implementation:sim_1:Timing:interpolator_top_tb} -tclbatch {interpolator_top_tb.tcl} -view {D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2_tb_behav.wcfg
+WARNING: Simulation object /interpolator_top_tb/dft1/count8 was not found in the design.
+WARNING: Simulation object /interpolator_top_tb/dft1/dft2/buf_ff1 was not found in the design.
+WARNING: Simulation object /interpolator_top_tb/dft1/dft2/buf_ff2 was not found in the design.
+WARNING: Simulation object /interpolator_top_tb/dft1/dft2/buf_ff3 was not found in the design.
+WARNING: Simulation object /interpolator_top_tb/dft1/dft2/buf_ff4 was not found in the design.
+source interpolator_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2162.254 ; gain = 0.902
+xsim: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2162.254 ; gain = 22.797
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'interpolator_top_tb_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:50 ; elapsed = 00:01:01 . Memory (MB): peak = 2162.254 ; gain = 1182.246
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/v2_mod.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/add_s4_13.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/interpolator_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/v2_mod.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/add_s4_13.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/interpolator_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/v2_mod.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/add_s4_13.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/interpolator_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/v2_mod.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/add_s4_13.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/interpolator_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/v2_mod.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/add_s4_13.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/interpolator_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/v2_mod.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/add_s4_13.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/interpolator_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/v2_mod.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/add_s4_13.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/interpolator_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2422.520 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'interpolator_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj interpolator_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/count_div_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module count_div_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/interpolator_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interpolator_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/v1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interpolator_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/behav/xsim'
+"xelab -wto bc69e60959fa4fb89b44e66e781bc6ae --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot interpolator_top_tb_behav xil_defaultlib.interpolator_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto bc69e60959fa4fb89b44e66e781bc6ae --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot interpolator_top_tb_behav xil_defaultlib.interpolator_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.v1
+Compiling module xil_defaultlib.v2
+Compiling module xil_defaultlib.interpolator_top
+Compiling module xil_defaultlib.count_div_8
+Compiling module xil_defaultlib.interpolator_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot interpolator_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2422.520 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/v2_mod.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/add_s4_13.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/interpolator_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'interpolator_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj interpolator_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/count_div_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module count_div_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/interpolator_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interpolator_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/v1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interpolator_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/behav/xsim'
+"xelab -wto bc69e60959fa4fb89b44e66e781bc6ae --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot interpolator_top_tb_behav xil_defaultlib.interpolator_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto bc69e60959fa4fb89b44e66e781bc6ae --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot interpolator_top_tb_behav xil_defaultlib.interpolator_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.v1
+Compiling module xil_defaultlib.v2
+Compiling module xil_defaultlib.interpolator_top
+Compiling module xil_defaultlib.count_div_8
+Compiling module xil_defaultlib.interpolator_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot interpolator_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 2422.520 ; gain = 0.000
+run all
+save_wave_config {D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2_tb_behav.wcfg}
+reset_run synth_3
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.runs/synth_3
+
+launch_runs impl_3 -jobs 4
+[Thu Nov 10 19:41:34 2022] Launched synth_3...
+Run output will be captured here: D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.runs/synth_3/runme.log
+[Thu Nov 10 19:41:34 2022] Launched impl_3...
+Run output will be captured here: D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.runs/impl_3/runme.log
+close_design
+launch_simulation -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [Netlist 29-17] Analyzing 55 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.097 . Memory (MB): peak = 2422.520 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.097 . Memory (MB): peak = 2422.520 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2422.520 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_3'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/impl/timing/xsim/interpolator_top_tb_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/impl/timing/xsim/interpolator_top_tb_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/impl/timing/xsim/interpolator_top_tb_time_impl.v
+INFO: [SIM-utils-37] SDF generated:D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/impl/timing/xsim/interpolator_top_tb_time_impl.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'interpolator_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/impl/timing/xsim'
+"xvlog --incr --relax -prj interpolator_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/impl/timing/xsim/interpolator_top_tb_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interpolator_top
+INFO: [VRFC 10-311] analyzing module v1
+INFO: [VRFC 10-311] analyzing module v2
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/count_div_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module count_div_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interpolator_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/impl/timing/xsim'
+"xelab -wto bc69e60959fa4fb89b44e66e781bc6ae --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot interpolator_top_tb_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.interpolator_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto bc69e60959fa4fb89b44e66e781bc6ae --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot interpolator_top_tb_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.interpolator_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "interpolator_top_tb_time_impl.sdf", for root module "interpolator_top_tb/dft1".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "interpolator_top_tb_time_impl.sdf", for root module "interpolator_top_tb/dft1".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.FDCE_default
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.LUT5
+Compiling module xil_defaultlib.v1
+Compiling module xil_defaultlib.v2
+Compiling module simprims_ver.FDSE_default
+Compiling module simprims_ver.OBUF
+Compiling module xil_defaultlib.interpolator_top
+Compiling module xil_defaultlib.count_div_8
+Compiling module xil_defaultlib.interpolator_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot interpolator_top_tb_time_impl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 2422.520 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "interpolator_top_tb_time_impl -key {Post-Implementation:sim_1:Timing:interpolator_top_tb} -tclbatch {interpolator_top_tb.tcl} -view {D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2_tb_behav.wcfg
+WARNING: Simulation object /interpolator_top_tb/dft1/count8 was not found in the design.
+WARNING: Simulation object /interpolator_top_tb/dft1/dft2/buf_ff1 was not found in the design.
+WARNING: Simulation object /interpolator_top_tb/dft1/dft2/buf_ff2 was not found in the design.
+WARNING: Simulation object /interpolator_top_tb/dft1/dft2/buf_ff3 was not found in the design.
+WARNING: Simulation object /interpolator_top_tb/dft1/dft2/buf_ff4 was not found in the design.
+source interpolator_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /interpolator_top_tb/dft1/v1_out_result_reg[9]/TChk150_1579 at time 449043 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /interpolator_top_tb/dft1/v1_out_result_reg[8]/TChk153_1582 at time 449043 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'interpolator_top_tb_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 2422.520 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/v2_mod.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/add_s4_13.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/interpolator_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/v2_mod.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/add_s4_13.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/interpolator_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/v2_mod.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/add_s4_13.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/interpolator_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/v2_mod.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/add_s4_13.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/interpolator_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/v2_mod.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/add_s4_13.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/interpolator_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/v2_mod.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/add_s4_13.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/interpolator_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/v2_mod.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/add_s4_13.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/interpolator_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/v2_mod.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/add_s4_13.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/interpolator_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/v2_mod.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/add_s4_13.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/interpolator_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/v2_mod.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/add_s4_13.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/interpolator_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/v2_mod.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/add_s4_13.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/interpolator_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'interpolator_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj interpolator_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/count_div_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module count_div_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/interpolator_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interpolator_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/v1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interpolator_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/behav/xsim'
+"xelab -wto bc69e60959fa4fb89b44e66e781bc6ae --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot interpolator_top_tb_behav xil_defaultlib.interpolator_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto bc69e60959fa4fb89b44e66e781bc6ae --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot interpolator_top_tb_behav xil_defaultlib.interpolator_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 24 differs from formal bit length 25 for port 'out' [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v:17]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.v1
+Compiling module xil_defaultlib.v2
+Compiling module xil_defaultlib.interpolator_top
+Compiling module xil_defaultlib.count_div_8
+Compiling module xil_defaultlib.interpolator_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot interpolator_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "interpolator_top_tb_behav -key {Behavioral:sim_1:Functional:interpolator_top_tb} -tclbatch {interpolator_top_tb.tcl} -view {D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2_tb_behav.wcfg
+source interpolator_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'interpolator_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2574.910 ; gain = 144.652
+run all
+reset_run synth_3
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.runs/synth_3
+
+launch_runs impl_3 -jobs 4
+[Thu Nov 10 19:54:35 2022] Launched synth_3...
+Run output will be captured here: D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.runs/synth_3/runme.log
+[Thu Nov 10 19:54:35 2022] Launched impl_3...
+Run output will be captured here: D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.runs/impl_3/runme.log
+close_design
+launch_simulation -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [Netlist 29-17] Analyzing 56 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.129 . Memory (MB): peak = 2574.910 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.129 . Memory (MB): peak = 2574.910 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2574.910 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_3'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/impl/timing/xsim/interpolator_top_tb_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/impl/timing/xsim/interpolator_top_tb_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/impl/timing/xsim/interpolator_top_tb_time_impl.v
+INFO: [SIM-utils-37] SDF generated:D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/impl/timing/xsim/interpolator_top_tb_time_impl.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'interpolator_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/impl/timing/xsim'
+"xvlog --incr --relax -prj interpolator_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/impl/timing/xsim/interpolator_top_tb_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interpolator_top
+INFO: [VRFC 10-311] analyzing module v1
+INFO: [VRFC 10-311] analyzing module v2
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sources_1/new/count_div_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module count_div_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interpolator_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/impl/timing/xsim'
+"xelab -wto bc69e60959fa4fb89b44e66e781bc6ae --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot interpolator_top_tb_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.interpolator_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto bc69e60959fa4fb89b44e66e781bc6ae --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot interpolator_top_tb_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.interpolator_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 24 differs from formal bit length 25 for port 'out' [D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.srcs/sim_1/new/interpolator_top_tb.v:17]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "interpolator_top_tb_time_impl.sdf", for root module "interpolator_top_tb/dft1".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "interpolator_top_tb_time_impl.sdf", for root module "interpolator_top_tb/dft1".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.FDCE_default
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.LUT5
+Compiling module xil_defaultlib.v1
+Compiling module xil_defaultlib.v2
+Compiling module simprims_ver.FDSE_default
+Compiling module simprims_ver.OBUF
+Compiling module xil_defaultlib.interpolator_top
+Compiling module xil_defaultlib.count_div_8
+Compiling module xil_defaultlib.interpolator_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot interpolator_top_tb_time_impl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2574.910 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.sim/sim_1/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "interpolator_top_tb_time_impl -key {Post-Implementation:sim_1:Timing:interpolator_top_tb} -tclbatch {interpolator_top_tb.tcl} -view {D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config D:/1111/DCCDL/VIVADO/Lab4/interpolator/v2_tb_behav.wcfg
+WARNING: Simulation object /interpolator_top_tb/dft1/count8 was not found in the design.
+WARNING: Simulation object /interpolator_top_tb/dft1/dft2/buf_ff1 was not found in the design.
+WARNING: Simulation object /interpolator_top_tb/dft1/dft2/buf_ff2 was not found in the design.
+WARNING: Simulation object /interpolator_top_tb/dft1/dft2/buf_ff3 was not found in the design.
+WARNING: Simulation object /interpolator_top_tb/dft1/dft2/buf_ff4 was not found in the design.
+source interpolator_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /interpolator_top_tb/dft1/v1_out_result_reg[9]/TChk150_1592 at time 289683 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2574.910 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'interpolator_top_tb_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 2574.910 ; gain = 0.000
+run all
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /interpolator_top_tb/dft1/v1_out_result_reg[9]/TChk153_1595 at time 1249683 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /interpolator_top_tb/dft1/v1_out_result_reg[9]/TChk153_1595 at time 1569683 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /interpolator_top_tb/dft1/v1_out_result_reg[9]/TChk150_1592 at time 1729683 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /interpolator_top_tb/dft1/v1_out_result_reg[8]/TChk150_1592 at time 1729683 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /interpolator_top_tb/dft1/v1_out_result_reg[7]/TChk153_1595 at time 1729683 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /interpolator_top_tb/dft1/v1_out_result_reg[9]/TChk153_1595 at time 1889683 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /interpolator_top_tb/dft1/v1_out_result_reg[9]/TChk150_1592 at time 2049683 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /interpolator_top_tb/dft1/v1_out_result_reg[8]/TChk153_1595 at time 2049683 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /interpolator_top_tb/dft1/v1_out_result_reg[9]/TChk153_1595 at time 2369683 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /interpolator_top_tb/dft1/v1_out_result_reg[9]/TChk153_1595 at time 3809683 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /interpolator_top_tb/dft1/v1_out_result_reg[9]/TChk150_1592 at time 3969683 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /interpolator_top_tb/dft1/v1_out_result_reg[8]/TChk153_1595 at time 3969683 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /interpolator_top_tb/dft1/v1_out_result_reg[9]/TChk153_1595 at time 4289683 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /interpolator_top_tb/dft1/v1_out_result_reg[9]/TChk153_1595 at time 5729683 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /interpolator_top_tb/dft1/v1_out_result_reg[9]/TChk150_1592 at time 5889683 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /interpolator_top_tb/dft1/v1_out_result_reg[8]/TChk153_1595 at time 5889683 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /interpolator_top_tb/dft1/v1_out_result_reg[9]/TChk153_1595 at time 6209683 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /interpolator_top_tb/dft1/v1_out_result_reg[9]/TChk153_1595 at time 7649683 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /interpolator_top_tb/dft1/v1_out_result_reg[9]/TChk150_1592 at time 7969683 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /interpolator_top_tb/dft1/v1_out_result_reg[8]/TChk153_1595 at time 7969683 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /interpolator_top_tb/dft1/v1_out_result_reg[9]/TChk153_1595 at time 8129683 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 2574.910 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 10 20:01:45 2022...

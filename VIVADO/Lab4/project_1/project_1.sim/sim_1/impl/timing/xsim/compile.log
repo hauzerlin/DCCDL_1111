@@ -1,0 +1,9 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dale/Desktop/project_1/project_1.sim/sim_1/impl/timing/xsim/interpolator_top_tb_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interpolator_top
+INFO: [VRFC 10-311] analyzing module v1
+INFO: [VRFC 10-311] analyzing module v2
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dale/Desktop/project_1/project_1.srcs/sources_1/new/count_div_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module count_div_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dale/Desktop/project_1/project_1.srcs/sim_1/new/interpolator_top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interpolator_top_tb

@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Nov 11 00:52:19 2022
+# Process ID: 8340
+# Current directory: D:/1111/DCCDL/VIVADO/Lab4/interpolator
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13916 D:\1111\DCCDL\VIVADO\Lab4\interpolator\interpolator.xpr
+# Log file: D:/1111/DCCDL/VIVADO/Lab4/interpolator/vivado.log
+# Journal file: D:/1111/DCCDL/VIVADO/Lab4/interpolator\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 812.828 ; gain = 173.434
+update_compile_order -fileset sources_1
+open_run impl_3
+INFO: [Device 21-403] Loading part xc7a200tfbg676-1
+INFO: [Netlist 29-17] Analyzing 54 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 1859.953 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 1859.953 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1859.953 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:36 ; elapsed = 00:00:33 . Memory (MB): peak = 2001.160 ; gain = 1131.578
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+reset_run synth_3
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.runs/synth_3
+
+launch_runs impl_3 -to_step write_bitstream -jobs 4
+[Fri Nov 11 00:53:48 2022] Launched synth_3...
+Run output will be captured here: D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.runs/synth_3/runme.log
+[Fri Nov 11 00:53:48 2022] Launched impl_3...
+Run output will be captured here: D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.runs/impl_3/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 11 01:21:09 2022...

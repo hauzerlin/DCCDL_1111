@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Nov 11 00:53:51 2022
+# Process ID: 18428
+# Current directory: D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.runs/synth_3
+# Command line: vivado.exe -log interpolator_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source interpolator_top.tcl
+# Log file: D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.runs/synth_3/interpolator_top.vds
+# Journal file: D:/1111/DCCDL/VIVADO/Lab4/interpolator/interpolator.runs/synth_3\vivado.jou
+#-----------------------------------------------------------
+source interpolator_top.tcl -notrace

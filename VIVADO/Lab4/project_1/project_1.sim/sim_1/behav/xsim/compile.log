@@ -1,0 +1,11 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dale/Desktop/project_1/project_1.srcs/sources_1/new/count_div_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module count_div_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dale/Desktop/project_1/project_1.srcs/sources_1/new/interpolator_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interpolator_top
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/Dale/Desktop/project_1/project_1.srcs/sources_1/new/interpolator_top.v:151]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dale/Desktop/project_1/project_1.srcs/sources_1/new/v1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dale/Desktop/interpolator/v2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dale/Desktop/project_1/project_1.srcs/sim_1/new/interpolator_top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interpolator_top_tb
