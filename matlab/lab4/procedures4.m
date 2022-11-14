@@ -112,3 +112,7 @@ stem(Piecewise_parabolic_mm4, error_piecewise);
 title('error between the floating-poing result and Piecewise parabolic interpolator')
 xlabel('samples'),ylabel('errors')
 hold on
+
+%% verilog out
+
+syn_out = importdata("matlab_use\syn_out.txt");
