@@ -36,10 +36,10 @@ function c_ans = CSD (input_b)
         s(i) = xor(num_sn(i+1),num_sn(i+2));
     end
 
-    g = s;
-    g(length(s)+1) = 0;
+%     g = s;
+%     g(length(s)+1) = 0;
     for i = 1:length_b
-        g(i) = and(~g(i+1),s(i));
+        g(length_b+1-i) = and(~g(length_b+1-i+1),s(length_b+1-i));
     end
     s
     g
