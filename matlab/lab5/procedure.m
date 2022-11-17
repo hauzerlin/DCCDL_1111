@@ -246,7 +246,7 @@ end
 
 plot(avg_phase_err)
 set(gca, 'YScale', 'log')
-title('The average phase error versus different elementary angles');
+title('The average phase error versus different elementary angles word-length');
 yline(0.4*2^(-9),'-r','0.4*2 ^-^9')
 
 xlabel('bits'), ylabel('the average phase errors')
