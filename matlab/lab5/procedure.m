@@ -24,7 +24,6 @@ title('scaling factor S(N)');
 
 %% procedure 2
 
-
 clear
 clc
 
@@ -80,6 +79,91 @@ for i =1:11
 
     end
 end
+
+
+
+%% procedure 2_1
+
+clear
+clc
+
+beta = mod(5,4)+1;
+alpha = zeros(1,11);
+
+for i = 0:10
+    alpha(1,i+1) = (5*i+beta)*pi/25;
+end
+
+xin = zeros(1,11);
+yin = zeros(1,11);
+xout = zeros(1,11);
+yout = zeros(1,11);
+
+ang = zeros(1,20);
+float_ang = zeros(1,11);
+floting_error = zeros(11,20);
+num = zeros(11,1);
+shift_ang = zeros(11,20);
+
+for i = 0:10
+    xin(1,i+1) = abs(truncation(sin(alpha(1,i+1)), 12));
+    yin(1,i+1) = truncation(cos(alpha(1,i+1)), 12);
+    float_ang(1,i+1) = atan(yin(1,i+1)/xin(1,i+1));
+end
+
+
+
+for k = 1:16 % traunctions
+    for i =1:11 % 11 inputs
+        num(i,1) = 0;
+        cnt = 0;
+        mu_i = 0;
+        x0 = xin(1,i);
+        y0 = yin(1,i);
+        ang0 = 0;
+        for j =1 :20  % 20 roations
+            mu_i = -sign(y0);
+    
+            x1 = x0;
+            y1 = y0;
+            ang1 = ang0;
+    
+%             x0 = truncation((x1 - truncation(mu_i*(2^(-cnt))*y1, 12)),k);
+%             y0 = truncation( mu_i*(2^(-cnt))*x1, 12) + y1;
+            x0 = x1 - truncation(mu_i*(2^(-cnt))*y1, 12);
+            y0 = truncation((truncation(mu_i*(2^(-cnt))*x1, 12) + y1),k);
+            ang0 = ang1 - mu_i*atan(2^(-cnt));
+
+            cnt = cnt+1;
+            num(i,1) = num(i,1)+1;
+
+            ang(i,cnt) = ang0;
+        end
+
+        floting_error(i,k) = (float_ang(1,i) - ang(i,20))^2;
+%           sqrt(sum((trunscation_y(i,:) - Piecewise_parabolic_x3) .^2)/385);
+%         avg_phase_err(1,i) = sqrt(sum(float_ang(1,) - ang(i,20) .^2)/385))
+    end
+end
+
+avg_phase_err = sqrt(mean(floting_error));
+% avg_cnt = 1;
+% while(true)
+for avg_cnt = 1:20
+    if((avg_phase_err(1,avg_cnt)) <(0.4*2^(-9)))
+        break
+    end
+%     avg_cnt= avg_cnt+1;
+end
+
+plot(avg_phase_err)
+set(gca, 'YScale', 'log')
+% title('different word-length of X(i) versus the root mean squared error');
+title('different word-length of Y(i) versus the root mean squared error');
+xlabel('word-length(bits)'),ylabel('RMSE of output');
+% title('The average phase error');
+% xlabel('numbers of micro-rotations 𝑁'), ylabel('the average phase errors')
+yline(0.4*2^(-9),'-r','0.4*2 ^-^9')
 
 
 %% procedure 3
@@ -184,6 +268,8 @@ yin = zeros(1,11);
 xout = zeros(1,11);
 yout = zeros(1,11);
 out_angle =zeros(1,11);
+fix_ele_angle = zeros(20,20);
+float_ele_angle = zeros(20,20);
 
 ang = zeros(1,20);
 num = zeros(11,1);
@@ -213,7 +299,6 @@ for k =1:20
             x0 = x1 - truncation(mu_i*(2^(-cnt))*y1, 12);
             y0 = truncation( mu_i*(2^(-cnt))*x1, 12) + y1;
             ang0 = ang1 - truncation(mu_i*atan(2^(-cnt)),k);
-            
             %
             cnt = cnt+1;
             num(i,1) = num(i,1)+1;
@@ -228,11 +313,11 @@ for k =1:20
 %                 break
 %             end
           end
-          phase_error(i,k) = abs(out_angle(1,i)-ang0);
+          phase_error(i,k) = abs(out_angle(1,i)-ang0)^2;
 
     end
 end
-avg_phase_err = mean(phase_error);
+avg_phase_err = sqrt(mean(phase_error));
 
 % avg_cnt = 1;
 % while(true)
@@ -243,6 +328,18 @@ for avg_cnt = 1:20
 %     avg_cnt= avg_cnt+1;
 end
 
+
+for i = 1:20 % fraction part
+    for j= 1:20 % N step
+        fix_ele_angle(i,j) = truncation(atan(2^(-j+1)),i);
+        float_ele_angle(i,j) = atan(2^(-j+1));
+    end
+end
+
+for i=1:14
+    temp = (2^13)*truncation(fix_ele_angle(13,i),13)
+    bin_fix = dec2bin(temp)
+end
 
 plot(avg_phase_err)
 set(gca, 'YScale', 'log')
@@ -326,6 +423,9 @@ while(true)
 end
 
 plot(avg_magnitude_err)
+title('The error of the magnitude versus different number of micro-rotations')
+xlabel('the number of the required micro-rotations(N)');
+ylabel('error of the magnitude function');
 set(gca, 'YScale', 'log')
 yline(0.002,'-r','0.2%')
 
@@ -350,35 +450,106 @@ for i = 1:35
 end
 
 one_of_s_n = 1./s_n;
-trun_sn = 2^14 * truncation(s_n, 14);
+trun_sn = 2^12 * truncation(s_n, 12);
 
 bin_sn = dec2bin(trun_sn);
 
 the_sn = bin_sn(11,:);
 num_sn = zeros(1, length(the_sn)) ;
 
-for i=1:length(the_sn)
-    if(the_sn(i)=='1')
-        num_sn(i) = 1;
-    else
-        num_sn(i) = 0;
+bin2dec(the_sn)
+CSD_in = append('00',the_sn);
+CSD_sn = CSD(CSD_in)
+
+
+
+beta = mod(5,4)+1;
+alpha = zeros(1,11);
+
+for i = 0:10
+    alpha(1,i+1) = (5*i+beta)*pi/25;
+end
+
+xin = zeros(1,11);
+yin = zeros(1,11);
+
+xout = zeros(1,11);
+yout = zeros(1,11);
+out_angle =zeros(1,11);
+fix_ele_angle = zeros(20,20);
+float_ele_angle = zeros(20,20);
+
+ang = zeros(1,20);
+num = zeros(11,1);
+
+for i = 0:10
+    xin(1,i+1) = abs(truncation(sin(alpha(1,i+1)), 12));
+    yin(1,i+1) = truncation(cos(alpha(1,i+1)), 12);
+    out_angle(1,i+1) = atan(yin(1,i+1)/xin(1,i+1));
+end
+for k =1:20
+    for i =1:11
+        num(i,1) = 0;
+        cnt = 0;
+        mu_i = 0;
+        x0 = xin(1,i);
+        y0 = yin(1,i);
+        ang0 = 0;
+    
+%         while(true)
+          for m = 1:11
+            mu_i = -sign(y0);
+    
+            x1 = x0;
+            y1 = y0;
+            ang1 = ang0;
+    
+            x0 = x1 - truncation(mu_i*(2^(-cnt))*y1, 12);
+            y0 = truncation( mu_i*(2^(-cnt))*x1, 12) + y1;
+            ang0 = ang1 - truncation(mu_i*atan(2^(-cnt)),k);
+            %
+            cnt = cnt+1;
+            num(i,1) = num(i,1)+1;
+    
+            xout(i,cnt) = x0;
+            yout(i,cnt) = y0;
+            ang(i,cnt) = ang0;
+
+
+      
+%             if (abs(atan(y0/x0))< (0.4*2^(-9)))
+%                 break
+%             end
+          end
+          phase_error(i,k) = abs(out_angle(1,i)-ang0)^2;
+
+    end
+end
+avg_phase_err = sqrt(mean(phase_error));
+
+% avg_cnt = 1;
+% while(true)
+for avg_cnt = 1:20
+    if((avg_phase_err(1,avg_cnt)) <(0.4*2^(-9)))
+        break
+    end
+%     avg_cnt= avg_cnt+1;
+end
+
+
+for i = 1:20 % fraction part
+    for j= 1:20 % N step
+        fix_ele_angle(i,j) = truncation(atan(2^(-j)),i);
+        float_ele_angle(i,j) = atan(2^(-j));
     end
 end
 
-b =0;
-b_min_one = '0';
-g = 0;
-b_n = the_sn(1);
+plot(avg_phase_err)
+set(gca, 'YScale', 'log')
+title('The average phase error versus different elementary angles word-length');
+yline(0.4*2^(-9),'-r','0.4*2 ^-^9')
 
-si = zeros(1, length(the_sn));
-gi = zeros(1, 1+length(the_sn));
-one_or_min_one = zeros(1, length(the_sn));
-
-ci = zeros(1, length(the_sn));
-
-% for i = 1: length(the_sn)
-%     
-% end
+xlabel('bits'), ylabel('the average phase errors')
 
 %% procedure 6
 
