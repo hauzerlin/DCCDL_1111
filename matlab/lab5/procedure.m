@@ -39,13 +39,18 @@ yin = zeros(1,11);
 xout = zeros(1,11);
 yout = zeros(1,11);
 
+test_ang = zeros(1,11);
+
 ang = zeros(1,20);
 num = zeros(11,1);
 shift_ang = zeros(11,20);
 
 for i = 0:10
     xin(1,i+1) = abs(truncation(sin(alpha(1,i+1)), 12));
+%     xin(1,i+1) = (truncation(sin(alpha(1,i+1)), 12));
     yin(1,i+1) = truncation(cos(alpha(1,i+1)), 12);
+%     test_ang(1,i+1) = atan(yin(1,i+1)/xin(1,i+1));
+%     rev_angle(1,i+1) = atan (yin(1,i+1)/abs(xin(1,i+1)));
 end
 
 for i =1:11
@@ -87,6 +92,12 @@ end
 clear
 clc
 
+% file_x = fopen('./xin.txt','w');
+% file_x_bin = fopen('./xin_bin.txt','w');
+
+% file_y = fopen('./yin.txt','w');
+% file_y_bin = fopen('.yin_bin.txt','w');
+
 beta = mod(5,4)+1;
 alpha = zeros(1,11);
 
@@ -107,10 +118,18 @@ shift_ang = zeros(11,20);
 
 for i = 0:10
     xin(1,i+1) = abs(truncation(sin(alpha(1,i+1)), 12));
+    xin_orgrin(1,i+1) = truncation(sin(alpha(1,i+1)), 12);
     yin(1,i+1) = truncation(cos(alpha(1,i+1)), 12);
     float_ang(1,i+1) = atan(yin(1,i+1)/xin(1,i+1));
 end
 
+% for k = 1:11
+%     nbytes_x = fprintf(file_x,'xin[%2d] = %d;\n' , k-1, (2^12)*xin_orgrin(1,k));
+%     nbytes_x2 = fprintf(file_x_bin,'xin[%2d] = %s;\n' , k-1, dec2bin((2^12)*xin_orgrin(1,k),14));
+% 
+%     nbytes_y = fprintf(file_y,'yin[%2d] = %d;\n' , k-1, (2^12)*yin(1,k));
+%     nbytes_y2 = fprintf(file_y_bin,'yin[%2d] = %s;\n' , k-1, dec2bin((2^12)*yin(1,k),14));
+% end
 
 
 for k = 1:16 % traunctions
@@ -155,6 +174,8 @@ for avg_cnt = 1:20
     end
 %     avg_cnt= avg_cnt+1;
 end
+
+% ST = fclose('all');
 
 plot(avg_phase_err)
 set(gca, 'YScale', 'log')
@@ -226,7 +247,9 @@ for i =1:11
         yout(i,cnt) = y0;
         ang(i,cnt) = ang0;
 
-        phase_error(i,cnt) = abs(out_angle(1,i)-ang0); %)-abs( 
+%         phase_error(i,cnt) = abs(out_angle(1,i)-ang0); %)-abs( 
+        phase_error(i,k) = abs(atan(y0/x0))^2;
+
         float_error(1,i) = abs(out_angle(1,i)-ang0);
 
 %         if (abs(atan(y0/x0))< (0.4*2^(-9)))
@@ -234,7 +257,7 @@ for i =1:11
 %         end
     end
 end
-avg_phase_err = mean(phase_error);
+avg_phase_err =sqrt( mean(phase_error));
 % avg_cnt = 1;
 % while(true)
 for avg_cnt = 1:20
@@ -308,14 +331,15 @@ for k =1:20
             ang(i,cnt) = ang0;
 
 
-      
-%             if (abs(atan(y0/x0))< (0.4*2^(-9)))
-%                 break
-%             end
           end
           phase_error(i,k) = abs(out_angle(1,i)-ang0)^2;
+%             phase_error(i,k) = abs(atan(y0/x0))^2;
+
+%         phase_error(k,m) = abs(atan(y0/x0))^2;
 
     end
+%     phase_error(i,k) = abs(atan(y0/x0))^2;
+
 end
 avg_phase_err = sqrt(mean(phase_error));
 
@@ -337,8 +361,8 @@ for i = 1:20 % fraction part
 end
 
 for i=1:14
-    temp = (2^13)*truncation(fix_ele_angle(13,i),13)
-    bin_fix = dec2bin(temp)
+    temp = (2^13)*truncation(fix_ele_angle(13,i),13);
+    bin_fix = dec2bin(temp);
 end
 
 plot(avg_phase_err)
@@ -437,6 +461,9 @@ clc
 
 format long
 
+file_ele_angle = fopen('./elementry_ang.txt','w');
+file_ele_angle_bin = fopen('./elementry_ang_bin.txt','w');
+
 s_n = ones(1,35);       % s1.14 (16 bits)
 temp_2 = zeros(1,35);
 
@@ -451,6 +478,8 @@ end
 
 one_of_s_n = 1./s_n;
 trun_sn = 2^12 * truncation(s_n, 12);
+
+sn_11 = s_n(1,11);
 
 bin_sn = dec2bin(trun_sn);
 
@@ -474,10 +503,12 @@ xin = zeros(1,11);
 yin = zeros(1,11);
 
 xout = zeros(1,11);
+sxout = zeros(11,1);
 yout = zeros(1,11);
 out_angle =zeros(1,11);
 fix_ele_angle = zeros(20,20);
 float_ele_angle = zeros(20,20);
+
 
 ang = zeros(1,20);
 num = zeros(11,1);
@@ -506,7 +537,7 @@ for k =1:20
     
             x0 = x1 - truncation(mu_i*(2^(-cnt))*y1, 12);
             y0 = truncation( mu_i*(2^(-cnt))*x1, 12) + y1;
-            ang0 = ang1 - truncation(mu_i*atan(2^(-cnt)),k);
+            ang0 = ang1 - mu_i*atan(2^(-cnt));
             %
             cnt = cnt+1;
             num(i,1) = num(i,1)+1;
@@ -521,11 +552,15 @@ for k =1:20
 %                 break
 %             end
           end
+          sxout(i,1) = x0 * sn_11;
+          sx_compare(i,k) = truncation(x0 * truncation(sn_11,k), k);
+
+          sn_error(i,k) = abs(sxout(i,1)-sx_compare(i,k))^2;
           phase_error(i,k) = abs(out_angle(1,i)-ang0)^2;
 
     end
 end
-avg_phase_err = sqrt(mean(phase_error));
+avg_phase_err = sqrt(mean(sn_error));
 
 % avg_cnt = 1;
 % while(true)
@@ -539,17 +574,28 @@ end
 
 for i = 1:20 % fraction part
     for j= 1:20 % N step
-        fix_ele_angle(i,j) = truncation(atan(2^(-j)),i);
-        float_ele_angle(i,j) = atan(2^(-j));
+        fix_ele_angle(i,j) = truncation(atan(2^(-(j-1))),i);
+        float_ele_angle(i,j) = atan(2^(-(j-1)));
     end
 end
 
+
+bin_fix_ele_angle = fix_ele_angle(11,:)*(2^12);
+
+for k =1:11
+    nbytes = fprintf(file_ele_angle,'N[%2d] = %d;\n' , k-1, bin_fix_ele_angle(1,k));
+    nbytes2 = fprintf(file_ele_angle_bin,'N[%2d] = %s;\n' , k-1, dec2bin(bin_fix_ele_angle(1,k),12));
+end
+
+
+ST = fclose('all');
+
 plot(avg_phase_err)
 set(gca, 'YScale', 'log')
-title('The average phase error versus different elementary angles word-length');
+title('output RMSE versus different S(N) word-length');
 yline(0.4*2^(-9),'-r','0.4*2 ^-^9')
 
-xlabel('bits'), ylabel('the average phase errors')
+xlabel('S(N) word-length(bits)'), ylabel('Output RMSE')
 
 %% procedure 6
 

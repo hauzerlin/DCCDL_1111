@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../arctangent.srcs/sources_1/new/arctan_top.v" \
+"../../../../arctangent.srcs/sources_1/new/arctangent0.v" \
+"../../../../arctangent.srcs/sources_1/new/arctangent1.v" \
+"../../../../arctangent.srcs/sources_1/new/initial_stage.v" \
+"../../../../arctangent.srcs/sim_1/new/top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,11 @@
+yout[ 0] = 0;
+yout[ 1] = 1;
+yout[ 2] = -3;
+yout[ 3] = 1;
+yout[ 4] = -7;
+yout[ 5] = -1;
+yout[ 6] = 0;
+yout[ 7] = 0;
+yout[ 8] = 0;
+yout[ 9] = -4;
+yout[10] = 0;
