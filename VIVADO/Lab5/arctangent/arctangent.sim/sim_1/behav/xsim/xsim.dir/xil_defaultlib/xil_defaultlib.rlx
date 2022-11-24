@@ -1,14 +1,10 @@
-0.6
-2019.1
-May 24 2019
-15:06:07
-D:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
-D:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.srcs/sim_1/new/arctan1_tb.v,1669207838,verilog,,,,arctan1_tb,,,,,,,,
-D:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.srcs/sim_1/new/init_to_arctan2_tb.v,1669289594,verilog,,,,init_to_arctan2_tb,,,,,,,,
-D:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.srcs/sim_1/new/scaling_tb.v,1669206599,verilog,,,,scaling_tb,,,,,,,,
-D:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.srcs/sim_1/new/top_tb.v,1669289195,verilog,,,,top_tb,,,,,,,,
-D:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.srcs/sources_1/new/arctan_top.v,1669292034,verilog,,D:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.srcs/sources_1/new/arctangent0.v,,arctan_top,,,,,,,,
-D:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.srcs/sources_1/new/arctangent0.v,1669293332,verilog,,D:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.srcs/sources_1/new/arctangent1.v,,arctangent0,,,,,,,,
-D:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.srcs/sources_1/new/arctangent1.v,1669291356,verilog,,D:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.srcs/sources_1/new/initial_stage.v,,arctangent1,,,,,,,,
-D:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.srcs/sources_1/new/initial_stage.v,1669207775,verilog,,D:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.srcs/sim_1/new/top_tb.v,,initial_stage,,,,,,,,
-D:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.srcs/sources_1/new/scaling_xin.v,1669113270,verilog,,D:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.srcs/sim_1/new/scaling_tb.v,,scaling_xin,,,,,,,,
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+E:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.sim/sim_1/behav/xsim/glbl.v,1669304200,verilog,,,,glbl,,,,,,,,
+E:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.srcs/sim_1/new/top_tb.v,1669304201,verilog,,,,top_tb,,,,,,,,
+E:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.srcs/sources_1/new/arctan_top.v,1669307916,verilog,,E:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.srcs/sources_1/new/arctangent0.v,,arctan_top,,,,,,,,
+E:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.srcs/sources_1/new/arctangent0.v,1669305314,verilog,,E:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.srcs/sources_1/new/arctangent1.v,,arctangent0,,,,,,,,
+E:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.srcs/sources_1/new/arctangent1.v,1669305465,verilog,,E:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.srcs/sources_1/new/initial_stage.v,,arctangent1,,,,,,,,
+E:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.srcs/sources_1/new/initial_stage.v,1669306508,verilog,,E:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.srcs/sim_1/new/top_tb.v,,initial_stage,,,,,,,,

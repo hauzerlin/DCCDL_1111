@@ -3,7 +3,7 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="top_tb_time_synth.wdb" id="1">
+      <db_ref path="top_tb_behav.wdb" id="1">
          <top_modules>
             <top_module name="glbl" />
             <top_module name="top_tb" />
@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="82660000fs"></ZoomStartTime>
-      <ZoomEndTime time="253460001fs"></ZoomEndTime>
-      <Cursor1Time time="242060000fs"></Cursor1Time>
+      <ZoomStartTime time="74350fs"></ZoomStartTime>
+      <ZoomEndTime time="297986fs"></ZoomEndTime>
+      <Cursor1Time time="1000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="119"></NameColumnWidth>
+      <NameColumnWidth column_width="115"></NameColumnWidth>
       <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="10" />
+   <WVObjectSize size="11" />
    <wvobject fp_name="/top_tb/x" type="array">
       <obj_property name="ElementShortName">x[0:14]</obj_property>
       <obj_property name="ObjectShortName">x[0:14]</obj_property>
@@ -44,6 +44,26 @@
       <obj_property name="ObjectShortName">ang_out[0:14]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
+   <wvobject fp_name="/top_tb/x_init_0" type="array">
+      <obj_property name="ElementShortName">x_init_0[0:14]</obj_property>
+      <obj_property name="ObjectShortName">x_init_0[0:14]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/y_init_0" type="array">
+      <obj_property name="ElementShortName">y_init_0[0:14]</obj_property>
+      <obj_property name="ObjectShortName">y_init_0[0:14]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/x_0_1" type="array">
+      <obj_property name="ElementShortName">x_0_1[0:14]</obj_property>
+      <obj_property name="ObjectShortName">x_0_1[0:14]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/y_0_1" type="array">
+      <obj_property name="ElementShortName">y_0_1[0:14]</obj_property>
+      <obj_property name="ObjectShortName">y_0_1[0:14]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
    <wvobject fp_name="/top_tb/xout" type="array">
       <obj_property name="ElementShortName">xout[0:14]</obj_property>
       <obj_property name="ObjectShortName">xout[0:14]</obj_property>
@@ -52,21 +72,6 @@
    <wvobject fp_name="/top_tb/yout" type="array">
       <obj_property name="ElementShortName">yout[0:14]</obj_property>
       <obj_property name="ObjectShortName">yout[0:14]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/top_tb/top/dft1/Q" type="array">
-      <obj_property name="ElementShortName">Q[13:0]</obj_property>
-      <obj_property name="ObjectShortName">Q[13:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/top_tb/top/dft2/A" type="array">
-      <obj_property name="ElementShortName">A[0:14]</obj_property>
-      <obj_property name="ObjectShortName">A[0:14]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/top_tb/top/dft2/Q" type="array">
-      <obj_property name="ElementShortName">Q[13:0]</obj_property>
-      <obj_property name="ObjectShortName">Q[13:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
 </wave_config>

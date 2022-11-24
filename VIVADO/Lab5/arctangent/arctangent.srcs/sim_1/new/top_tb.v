@@ -5,6 +5,10 @@ reg signed [0:13] xdata [0:10];
 reg signed [0:13] ydata [0:10];
 wire signed [0:14] xout;
 wire signed [0:14] yout;
+wire signed [0:14] x_init_0, y_init_0;
+wire signed [0:14] x_0_1, y_0_1;
+wire signed [0:14] x_00, y_00;
+
 wire signed [0:14] ang_out;
 reg signed [0:14] x0, y0, ang0;
 reg signed [0:14] x;
@@ -14,7 +18,7 @@ reg rst;
 reg en;
 integer cnt ;
 
- arctan_top top(clk, rst, x, y, xout, yout, ang_out);
+ arctan_top top(clk, rst, x, y,x_init_0, y_init_0, x_0_1, y_0_1, xout, yout, ang_out);
  
 always @(posedge clk)
 begin
