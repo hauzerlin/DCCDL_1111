@@ -1,0 +1,33 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctan_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arctan_top
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctan_top.v:65]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arctangent0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arctangent1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arctangent10
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent11.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arctangent11
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arctangent2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arctangent3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arctangent4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arctangent5
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arctangent6
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arctangent7
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arctangent8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent9.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arctangent9
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/initial_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module initial_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab5/arctangent_1124/arctangent.srcs/sources_1/new/scaling_xin.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scaling_xin
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sim_1/new/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb

@@ -1,0 +1,498 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Nov 25 19:40:49 2022
+# Process ID: 20044
+# Current directory: D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log arctan_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source arctan_top.tcl
+# Log file: D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.runs/synth_1/arctan_top.vds
+# Journal file: D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source arctan_top.tcl -notrace
+Command: synth_design -top arctan_top -part xc7a200tfbg676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbg676-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19788 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 848.168 ; gain = 179.281
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'arctan_top' [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctan_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'initial_stage' [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/initial_stage.v:2]
+WARNING: [Synth 8-567] referenced signal 'rev' should be on the sensitivity list [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/initial_stage.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'initial_stage' (1#1) [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/initial_stage.v:2]
+WARNING: [Synth 8-689] width (15) of port connection 'xin' does not match port width (14) of module 'initial_stage' [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctan_top.v:43]
+WARNING: [Synth 8-689] width (15) of port connection 'yin' does not match port width (14) of module 'initial_stage' [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctan_top.v:43]
+INFO: [Synth 8-6157] synthesizing module 'arctangent0' [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent0.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'arctangent0' (2#1) [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent0.v:2]
+INFO: [Synth 8-6157] synthesizing module 'arctangent1' [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent1.v:2]
+WARNING: [Synth 8-567] referenced signal 'ang_in' should be on the sensitivity list [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'arctangent1' (3#1) [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent1.v:2]
+INFO: [Synth 8-6157] synthesizing module 'arctangent2' [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent2.v:2]
+WARNING: [Synth 8-567] referenced signal 'ang_in' should be on the sensitivity list [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent2.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'arctangent2' (4#1) [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent2.v:2]
+INFO: [Synth 8-6157] synthesizing module 'arctangent3' [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent3.v:2]
+WARNING: [Synth 8-567] referenced signal 'ang_in' should be on the sensitivity list [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent3.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'arctangent3' (5#1) [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent3.v:2]
+INFO: [Synth 8-6157] synthesizing module 'arctangent4' [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent4.v:2]
+WARNING: [Synth 8-567] referenced signal 'ang_in' should be on the sensitivity list [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent4.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'arctangent4' (6#1) [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent4.v:2]
+INFO: [Synth 8-6157] synthesizing module 'arctangent5' [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent5.v:2]
+WARNING: [Synth 8-567] referenced signal 'ang_in' should be on the sensitivity list [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent5.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'arctangent5' (7#1) [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent5.v:2]
+INFO: [Synth 8-6157] synthesizing module 'arctangent6' [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent6.v:2]
+WARNING: [Synth 8-567] referenced signal 'ang_in' should be on the sensitivity list [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent6.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'arctangent6' (8#1) [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent6.v:2]
+INFO: [Synth 8-6157] synthesizing module 'arctangent7' [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent7.v:2]
+WARNING: [Synth 8-567] referenced signal 'ang_in' should be on the sensitivity list [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent7.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'arctangent7' (9#1) [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent7.v:2]
+INFO: [Synth 8-6157] synthesizing module 'arctangent8' [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent8.v:2]
+WARNING: [Synth 8-567] referenced signal 'ang_in' should be on the sensitivity list [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent8.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'arctangent8' (10#1) [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent8.v:2]
+INFO: [Synth 8-6157] synthesizing module 'arctangent9' [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent9.v:2]
+WARNING: [Synth 8-567] referenced signal 'ang_in' should be on the sensitivity list [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent9.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'arctangent9' (11#1) [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent9.v:2]
+INFO: [Synth 8-6157] synthesizing module 'arctangent10' [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent10.v:2]
+WARNING: [Synth 8-567] referenced signal 'ang_in' should be on the sensitivity list [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent10.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'arctangent10' (12#1) [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent10.v:2]
+INFO: [Synth 8-6157] synthesizing module 'arctangent11' [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent11.v:2]
+WARNING: [Synth 8-567] referenced signal 'ang_in' should be on the sensitivity list [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent11.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'arctangent11' (13#1) [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent11.v:2]
+INFO: [Synth 8-6157] synthesizing module 'scaling_xin' [D:/1111/DCCDL/VIVADO/Lab5/arctangent_1124/arctangent.srcs/sources_1/new/scaling_xin.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'scaling_xin' (14#1) [D:/1111/DCCDL/VIVADO/Lab5/arctangent_1124/arctangent.srcs/sources_1/new/scaling_xin.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'arctan_top' (15#1) [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctan_top.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 912.055 ; gain = 243.168
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 912.055 ; gain = 243.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 912.055 ; gain = 243.168
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/constrs_1/new/arctangent.xdc]
+Finished Parsing XDC File [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/constrs_1/new/arctangent.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1044.191 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1044.191 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1044.191 ; gain = 375.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1044.191 ; gain = 375.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1044.191 ; gain = 375.305
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent1.v:16]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent1.v:16]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent2.v:16]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent2.v:16]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent3.v:16]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent3.v:16]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent4.v:16]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent4.v:16]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent5.v:16]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent5.v:16]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent6.v:16]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent6.v:16]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent7.v:16]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent7.v:16]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent8.v:16]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent8.v:16]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent9.v:16]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent9.v:16]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent10.v:16]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent10.v:16]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent11.v:16]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent11.v:16]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1044.191 ; gain = 375.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     15 Bit       Adders := 13    
+	   3 Input     15 Bit       Adders := 24    
+	   6 Input     15 Bit       Adders := 1     
++---Registers : 
+	               15 Bit    Registers := 41    
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 25    
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module arctan_top 
+Detailed RTL Component Info : 
++---Registers : 
+	               15 Bit    Registers := 41    
+Module initial_stage 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     15 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 1     
+Module arctangent0 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     15 Bit       Adders := 2     
+	   2 Input     15 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 1     
+Module arctangent1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     15 Bit       Adders := 2     
+	   2 Input     15 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 2     
+	   2 Input     13 Bit        Muxes := 1     
+Module arctangent2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     15 Bit       Adders := 2     
+	   2 Input     15 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+Module arctangent3 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     15 Bit       Adders := 2     
+	   2 Input     15 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 1     
+Module arctangent4 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     15 Bit       Adders := 2     
+	   2 Input     15 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 2     
+Module arctangent5 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     15 Bit       Adders := 2     
+	   2 Input     15 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 2     
+Module arctangent6 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     15 Bit       Adders := 2     
+	   2 Input     15 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+Module arctangent7 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     15 Bit       Adders := 2     
+	   2 Input     15 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 1     
+Module arctangent8 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     15 Bit       Adders := 2     
+	   2 Input     15 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+Module arctangent9 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     15 Bit       Adders := 2     
+	   2 Input     15 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+Module arctangent10 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     15 Bit       Adders := 2     
+	   2 Input     15 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 2     
+Module arctangent11 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     15 Bit       Adders := 2     
+	   2 Input     15 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 2     
+Module scaling_xin 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     15 Bit       Adders := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ang_01_reg[14] )
+INFO: [Synth 8-3886] merging instance 'ang_01_reg[12]' (FDC) to 'ang_01_reg[11]'
+INFO: [Synth 8-3886] merging instance 'ang_12_reg[14]' (FDC) to 'ang_01_reg[14]'
+INFO: [Synth 8-3886] merging instance 'ang_01_reg[11]' (FDC) to 'ang_01_reg[10]'
+INFO: [Synth 8-3886] merging instance 'ang_01_reg[10]' (FDC) to 'ang_01_reg[8]'
+INFO: [Synth 8-3886] merging instance 'ang_01_reg[9]' (FDC) to 'ang_01_reg[6]'
+INFO: [Synth 8-3886] merging instance 'ang_01_reg[8]' (FDC) to 'ang_01_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ang_01_reg[7]' (FDC) to 'ang_01_reg[5]'
+INFO: [Synth 8-3886] merging instance 'ang_01_reg[6]' (FDC) to 'ang_01_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ang_01_reg[5]' (FDC) to 'ang_01_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ang_01_reg[4]' (FDC) to 'ang_01_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ang_01_reg[3]' (FDC) to 'ang_01_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ang_01_reg[1]' (FDC) to 'ang_01_reg[0]'
+INFO: [Synth 8-3886] merging instance 'init_y_reg[0]' (FDC) to 'init_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'init_x_reg[0]' (FDC) to 'init_x_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ang_01_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ang_23_reg[14] )
+INFO: [Synth 8-3886] merging instance 'ang_34_reg[14]' (FDC) to 'ang_23_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ang_23_reg[14] )
+INFO: [Synth 8-3886] merging instance 'ang_45_reg[14]' (FDC) to 'ang_23_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ang_23_reg[14] )
+INFO: [Synth 8-3886] merging instance 'ang_56_reg[14]' (FDC) to 'ang_23_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ang_23_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ang_67_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ang_78_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ang_89_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ang_910_reg[14] )
+INFO: [Synth 8-3886] merging instance 'ang_1011_reg[14]' (FDC) to 'ang_910_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ang_910_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ang_11s_reg[14] )
+INFO: [Synth 8-3886] merging instance 'ang_out_reg[14]' (FDC) to 'ang_11s_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ang_11s_reg[14] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1044.191 ; gain = 375.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1044.191 ; gain = 375.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1044.191 ; gain = 375.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1044.191 ; gain = 375.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1044.191 ; gain = 375.305
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1044.191 ; gain = 375.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1044.191 ; gain = 375.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1044.191 ; gain = 375.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1044.191 ; gain = 375.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1044.191 ; gain = 375.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   152|
+|3     |LUT1   |    60|
+|4     |LUT2   |   139|
+|5     |LUT3   |   316|
+|6     |LUT4   |    43|
+|7     |LUT5   |    10|
+|8     |LUT6   |    14|
+|9     |FDCE   |   588|
+|10    |IBUF   |    30|
+|11    |OBUF   |   105|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+--------------+------+
+|      |Instance |Module        |Cells |
++------+---------+--------------+------+
+|1     |top      |              |  1458|
+|2     |  dft1   |initial_stage |    87|
+|3     |  dft10  |arctangent8   |    19|
+|4     |  dft11  |arctangent9   |    19|
+|5     |  dft12  |arctangent10  |    17|
+|6     |  dft13  |arctangent11  |    19|
+|7     |  dft14  |scaling_xin   |    64|
+|8     |  dft2   |arctangent0   |    46|
+|9     |  dft3   |arctangent1   |    16|
+|10    |  dft4   |arctangent2   |    19|
+|11    |  dft5   |arctangent3   |    18|
+|12    |  dft6   |arctangent4   |     9|
+|13    |  dft7   |arctangent5   |    10|
+|14    |  dft8   |arctangent6   |    19|
+|15    |  dft9   |arctangent7   |    19|
++------+---------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1044.191 ; gain = 375.305
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1044.191 ; gain = 243.168
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1044.191 ; gain = 375.305
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 152 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1056.625 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+95 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1056.625 ; gain = 701.578
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1056.625 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.runs/synth_1/arctan_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file arctan_top_utilization_synth.rpt -pb arctan_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 25 19:41:27 2022...

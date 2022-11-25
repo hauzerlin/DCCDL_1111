@@ -1,0 +1,19 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.sim/sim_1/impl/timing/xsim/top_tb_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arctan_top
+INFO: [VRFC 10-311] analyzing module arctangent0
+INFO: [VRFC 10-311] analyzing module arctangent1
+INFO: [VRFC 10-311] analyzing module arctangent10
+INFO: [VRFC 10-311] analyzing module arctangent11
+INFO: [VRFC 10-311] analyzing module arctangent2
+INFO: [VRFC 10-311] analyzing module arctangent3
+INFO: [VRFC 10-311] analyzing module arctangent4
+INFO: [VRFC 10-311] analyzing module arctangent5
+INFO: [VRFC 10-311] analyzing module arctangent6
+INFO: [VRFC 10-311] analyzing module arctangent7
+INFO: [VRFC 10-311] analyzing module arctangent8
+INFO: [VRFC 10-311] analyzing module arctangent9
+INFO: [VRFC 10-311] analyzing module initial_stage
+INFO: [VRFC 10-311] analyzing module scaling_xin
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sim_1/new/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb
