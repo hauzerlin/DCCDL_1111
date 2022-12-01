@@ -1,15 +1,20 @@
 `timescale 1ns / 1ps
-module arctangent3( xin, yin, ang_in, xout, yout, ang_out);
+module arctangent3(input signed [0:14] xin,
+input signed [0:14] yin,
+input signed [0:14] ang_in,
+output reg signed [0:14] xout,
+output reg signed [0:14] yout,
+output reg signed [0:14] ang_out);
 
 //input clk;
-input signed [0:14] xin, yin;
-input signed [0:14] ang_in;
-output reg signed [0:14] xout, yout;
-output reg signed [0:14] ang_out;
+//input signed [0:14] xin, yin;
+//input signed [0:14] ang_in;
+//output reg signed [0:14] xout, yout;
+//output reg signed [0:14] ang_out;
 
 reg signed [0:14] xbuff, ybuff;
 
-always @(xin or yin)
+always @(xin or yin or ang_in)
 begin
     xbuff = xin>>>3;
     ybuff = yin>>>3;

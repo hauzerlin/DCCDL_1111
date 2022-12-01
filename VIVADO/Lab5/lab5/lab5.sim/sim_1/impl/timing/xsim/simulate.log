@@ -1,0 +1,6 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+WARNING: "C:/Xilinx/Vivado/2020.2/data/verilog/src/unisims/FDCE.v" Line 160: Timing violation in scope /top_tb/top/init_y_reg[14]/TChk160_3092 at time 105230 ps $recrem (negedge CLR,posedge C,(0:0:0),(0:0:0),notifier,rst_clk_enable_p,rst_clk_enable_p,CLR_dly,C_dly) 
+WARNING: "C:/Xilinx/Vivado/2020.2/data/verilog/src/unisims/FDCE.v" Line 160: Timing violation in scope /top_tb/top/init_y_reg[11]/TChk160_3092 at time 105234 ps $recrem (negedge CLR,posedge C,(0:0:0),(0:0:0),notifier,rst_clk_enable_p,rst_clk_enable_p,CLR_dly,C_dly) 
+WARNING: "C:/Xilinx/Vivado/2020.2/data/verilog/src/unisims/FDCE.v" Line 160: Timing violation in scope /top_tb/top/init_y_reg[12]/TChk160_3092 at time 105234 ps $recrem (negedge CLR,posedge C,(0:0:0),(0:0:0),notifier,rst_clk_enable_p,rst_clk_enable_p,CLR_dly,C_dly) 
+WARNING: "C:/Xilinx/Vivado/2020.2/data/verilog/src/unisims/FDCE.v" Line 160: Timing violation in scope /top_tb/top/init_y_reg[13]/TChk160_3092 at time 105234 ps $recrem (negedge CLR,posedge C,(0:0:0),(0:0:0),notifier,rst_clk_enable_p,rst_clk_enable_p,CLR_dly,C_dly) 

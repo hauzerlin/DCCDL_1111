@@ -1,0 +1,80 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Nov 30 19:27:20 2022
+# Process ID: 21960
+# Current directory: D:/1111/DCCDL/VIVADO/Lab5/arctangent
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9444 D:\1111\DCCDL\VIVADO\Lab5\arctangent\arctangent.xpr
+# Log file: D:/1111/DCCDL/VIVADO/Lab5/arctangent/vivado.log
+# Journal file: D:/1111/DCCDL/VIVADO/Lab5/arctangent\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.xpr
+update_compile_order -fileset sources_1
+close_project
+open_project D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_simulation
+open_wave_config D:/1111/DCCDL/VIVADO/Lab5/arctangent/arctan1_tb_behav.wcfg
+source top_tb.tcl
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_sim
+launch_simulation
+open_wave_config D:/1111/DCCDL/VIVADO/Lab5/arctangent/arctan1_tb_behav.wcfg
+source top_tb.tcl
+relaunch_sim
+run all
+launch_simulation -mode post-implementation -type timing
+open_wave_config D:/1111/DCCDL/VIVADO/Lab5/arctangent/arctan1_tb_behav.wcfg
+source top_tb.tcl
+run all
+relaunch_sim
+launch_simulation -mode post-synthesis -type timing
+open_wave_config D:/1111/DCCDL/VIVADO/Lab5/arctangent/arctan1_tb_behav.wcfg
+source top_tb.tcl
+close_sim
+current_sim simulation_3
+close_sim
+close_sim
+export_ip_user_files -of_objects  [get_files D:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.srcs/sim_1/new/arctan1_tb.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.srcs/sim_1/new/init_to_arctan2_tb.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.srcs/sim_1/new/scaling_tb.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {D:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.srcs/sim_1/new/arctan1_tb.v D:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.srcs/sim_1/new/init_to_arctan2_tb.v D:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.srcs/sim_1/new/scaling_tb.v}
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_project
+open_project D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+save_constraints
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_simulation
+open_wave_config D:/1111/DCCDL/VIVADO/Lab5/arctangent/arctan1_tb_behav.wcfg
+source top_tb.tcl
+launch_simulation -mode post-implementation -type timing
+open_wave_config D:/1111/DCCDL/VIVADO/Lab5/arctangent/arctan1_tb_behav.wcfg
+source top_tb.tcl
+current_sim simulation_5
+close_sim
+launch_simulation
+close_sim
+launch_simulation
+open_wave_config D:/1111/DCCDL/VIVADO/Lab5/arctangent/arctan1_tb_behav.wcfg
+source top_tb.tcl
+save_project_as implementation_good F:/lab5/1130/implementation_good -force
+close_sim

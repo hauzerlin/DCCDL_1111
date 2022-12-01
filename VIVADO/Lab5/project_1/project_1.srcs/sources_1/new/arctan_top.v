@@ -1,14 +1,20 @@
 `timescale 1ns / 1ps
 //module arctan_top(clk, rst, xin, yin,x_init_0, y_init_0, x_00, y_00, x_0_1, y_0_1, xout, yout, ang_out);
-module arctan_top(clk, rst, xin, yin,x_init_0, y_init_0, x_01, y_01, xout, yout, ang_out);
-input clk;
-input rst;
-input signed [0:13] xin, yin;
-output reg signed [0:14] xout, yout;
-output reg signed [0:14] ang_out;
+module arctan_top(input clk,
+input rst,
+input signed [0:13] xin,
+input signed [0:13] yin,
+output reg signed [0:14] xout,
+output reg signed [0:14] yout,
+output reg signed [0:14] ang_out);
+//input clk;
+//input rst;
+//input signed [0:13] xin, yin;
+//output reg signed [0:14] xout, yout;
+//output reg signed [0:14] ang_out;
 
 wire signed [0:14] x_out, y_out, ang__out;
-output wire signed [0:14] x_init_0, y_init_0;
+ wire signed [0:14] x_init_0, y_init_0;
 wire signed [0:14] x_0_1, y_0_1;
 wire signed [0:14] ang_0_1;
 wire signed [0:14] x_1_2, y_1_2, ang_1_2;
@@ -23,9 +29,9 @@ wire signed [0:14] x_9_10, y_9_10, ang_9_10;
 wire signed [0:14] x_10_11, y_10_11, ang_10_11;
 wire signed [0:14] x_11_s, y_11_s, ang_11_s;
 
-reg signed [0:14] init_x, init_y;
+reg signed [0:13] init_x, init_y;
 //output reg signed [0:14] x_00, y_00;
-output reg signed [0:14] x_01, y_01;
+reg signed [0:14] x_01, y_01;
 reg signed [0:14] ang_01;
 reg signed [0:14] x_12, y_12, ang_12;
 reg signed [0:14] x_23, y_23, ang_23;

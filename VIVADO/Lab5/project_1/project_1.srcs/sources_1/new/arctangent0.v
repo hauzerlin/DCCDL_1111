@@ -1,9 +1,13 @@
 `timescale 1ns / 1ps
-module arctangent0( xin, yin , xout, yout, ang_out);
+module arctangent0( input signed [0:14] xin,
+input signed [0:14] yin,
+output reg signed [0:14] xout,
+ output reg signed [0:14] yout,
+output reg signed [0:14] ang_out);
 //input clk;
-input signed [0:14] xin, yin;
-output reg signed [0:14] xout, yout;
-output reg signed [0:14] ang_out;
+//input signed [0:14] xin, yin;
+//output reg signed [0:14] xout, yout;
+//output reg signed [0:14] ang_out;
 
 reg signed [0:14] xbuff, ybuff;
 

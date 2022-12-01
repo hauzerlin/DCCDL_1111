@@ -1,0 +1,265 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Nov 25 21:36:05 2022
+# Process ID: 16868
+# Current directory: E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log arctan_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source arctan_top.tcl
+# Log file: E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.runs/synth_1/arctan_top.vds
+# Journal file: E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source arctan_top.tcl -notrace
+Command: synth_design -top arctan_top -part xc7a200tfbg676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbg676-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 6416
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1152.648 ; gain = 65.836
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'arctan_top' [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctan_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'initial_stage' [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/initial_stage.v:2]
+WARNING: [Synth 8-567] referenced signal 'rev' should be on the sensitivity list [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/initial_stage.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'initial_stage' (1#1) [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/initial_stage.v:2]
+WARNING: [Synth 8-689] width (15) of port connection 'xin' does not match port width (14) of module 'initial_stage' [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctan_top.v:43]
+WARNING: [Synth 8-689] width (15) of port connection 'yin' does not match port width (14) of module 'initial_stage' [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctan_top.v:43]
+INFO: [Synth 8-6157] synthesizing module 'arctangent0' [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent0.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'arctangent0' (2#1) [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent0.v:2]
+INFO: [Synth 8-6157] synthesizing module 'arctangent1' [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent1.v:2]
+WARNING: [Synth 8-567] referenced signal 'ang_in' should be on the sensitivity list [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'arctangent1' (3#1) [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent1.v:2]
+INFO: [Synth 8-6157] synthesizing module 'arctangent2' [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent2.v:2]
+WARNING: [Synth 8-567] referenced signal 'ang_in' should be on the sensitivity list [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent2.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'arctangent2' (4#1) [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent2.v:2]
+INFO: [Synth 8-6157] synthesizing module 'arctangent3' [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent3.v:2]
+WARNING: [Synth 8-567] referenced signal 'ang_in' should be on the sensitivity list [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent3.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'arctangent3' (5#1) [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent3.v:2]
+INFO: [Synth 8-6157] synthesizing module 'arctangent4' [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent4.v:2]
+WARNING: [Synth 8-567] referenced signal 'ang_in' should be on the sensitivity list [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent4.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'arctangent4' (6#1) [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent4.v:2]
+INFO: [Synth 8-6157] synthesizing module 'arctangent5' [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent5.v:2]
+WARNING: [Synth 8-567] referenced signal 'ang_in' should be on the sensitivity list [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent5.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'arctangent5' (7#1) [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent5.v:2]
+INFO: [Synth 8-6157] synthesizing module 'arctangent6' [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent6.v:2]
+WARNING: [Synth 8-567] referenced signal 'ang_in' should be on the sensitivity list [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent6.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'arctangent6' (8#1) [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent6.v:2]
+INFO: [Synth 8-6157] synthesizing module 'arctangent7' [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent7.v:2]
+WARNING: [Synth 8-567] referenced signal 'ang_in' should be on the sensitivity list [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent7.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'arctangent7' (9#1) [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent7.v:2]
+INFO: [Synth 8-6157] synthesizing module 'arctangent8' [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent8.v:2]
+WARNING: [Synth 8-567] referenced signal 'ang_in' should be on the sensitivity list [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent8.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'arctangent8' (10#1) [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent8.v:2]
+INFO: [Synth 8-6157] synthesizing module 'arctangent9' [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent9.v:2]
+WARNING: [Synth 8-567] referenced signal 'ang_in' should be on the sensitivity list [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent9.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'arctangent9' (11#1) [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent9.v:2]
+INFO: [Synth 8-6157] synthesizing module 'arctangent10' [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent10.v:2]
+WARNING: [Synth 8-567] referenced signal 'ang_in' should be on the sensitivity list [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent10.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'arctangent10' (12#1) [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent10.v:2]
+INFO: [Synth 8-6157] synthesizing module 'arctangent11' [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent11.v:2]
+WARNING: [Synth 8-567] referenced signal 'ang_in' should be on the sensitivity list [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent11.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'arctangent11' (13#1) [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctangent11.v:2]
+INFO: [Synth 8-6157] synthesizing module 'scaling_xin' [E:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.srcs/sources_1/new/scaling_xin.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'scaling_xin' (14#1) [E:/1111/DCCDL/VIVADO/Lab5/arctangent/arctangent.srcs/sources_1/new/scaling_xin.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'arctan_top' (15#1) [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/sources_1/new/arctan_top.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1207.000 ; gain = 120.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1207.000 ; gain = 120.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1207.000 ; gain = 120.188
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1207.000 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/constrs_1/new/arctangent.xdc]
+Finished Parsing XDC File [E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/constrs_1/new/arctangent.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1323.160 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1323.160 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1323.160 ; gain = 236.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1323.160 ; gain = 236.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1323.160 ; gain = 236.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1323.160 ; gain = 236.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   15 Bit       Adders := 13    
+	   3 Input   15 Bit       Adders := 24    
+	   6 Input   15 Bit       Adders := 1     
++---Registers : 
+	               15 Bit    Registers := 41    
++---Muxes : 
+	   2 Input   15 Bit        Muxes := 25    
+	   2 Input   14 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1323.160 ; gain = 236.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1323.160 ; gain = 236.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1323.160 ; gain = 236.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 1323.160 ; gain = 236.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1328.887 ; gain = 242.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1328.887 ; gain = 242.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1328.887 ; gain = 242.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1328.887 ; gain = 242.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1328.887 ; gain = 242.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1328.887 ; gain = 242.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   152|
+|3     |LUT1   |    60|
+|4     |LUT2   |   137|
+|5     |LUT3   |   304|
+|6     |LUT4   |    43|
+|7     |LUT5   |    10|
+|8     |LUT6   |    14|
+|9     |FDCE   |   588|
+|10    |IBUF   |    30|
+|11    |OBUF   |    45|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1328.887 ; gain = 242.074
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:40 . Memory (MB): peak = 1328.887 ; gain = 125.914
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1328.887 ; gain = 242.074
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1340.918 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 152 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1344.492 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:01:05 . Memory (MB): peak = 1344.492 ; gain = 257.680
+INFO: [Common 17-1381] The checkpoint 'E:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.runs/synth_1/arctan_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file arctan_top_utilization_synth.rpt -pb arctan_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 25 21:37:22 2022...

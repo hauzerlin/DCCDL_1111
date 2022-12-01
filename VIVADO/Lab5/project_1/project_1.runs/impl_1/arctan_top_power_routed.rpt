@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Fri Nov 25 19:45:11 2022
+| Date             : Wed Nov 30 21:40:19 2022
 | Host             : DESKTOP-J7D9945 running 64-bit major release  (build 9200)
 | Command          : report_power -file arctan_top_power_routed.rpt -pb arctan_top_power_summary_routed.pb -rpx arctan_top_power_routed.rpx
 | Design           : arctan_top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.179        |
+| Total On-Chip Power (W)  | 0.161        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.048        |
+| Dynamic (W)              | 0.030        |
 | Device Static (W)        | 0.131        |
 | Effective TJA (C/W)      | 1.9          |
 | Max Ambient (C)          | 84.7         |
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |     0.004 |     1372 |       --- |             --- |
-|   LUT as Logic |     0.003 |      527 |    133800 |            0.39 |
+| Slice Logic    |     0.004 |     1328 |       --- |             --- |
+|   LUT as Logic |     0.003 |      520 |    133800 |            0.39 |
 |   CARRY4       |    <0.001 |      152 |     33450 |            0.45 |
-|   Register     |    <0.001 |      618 |    267600 |            0.23 |
+|   Register     |    <0.001 |      588 |    267600 |            0.22 |
 |   Others       |     0.000 |       20 |       --- |             --- |
-| Signals        |     0.007 |      913 |       --- |             --- |
-| I/O            |     0.036 |      135 |       400 |           33.75 |
+| Signals        |     0.004 |      839 |       --- |             --- |
+| I/O            |     0.021 |       75 |       400 |           18.75 |
 | Static Power   |     0.131 |          |           |                 |
-| Total          |     0.179 |          |           |                 |
+| Total          |     0.161 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,11 +71,11 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.043 |       0.012 |      0.030 |
-| Vccaux    |       1.800 |     0.033 |       0.003 |      0.031 |
+| Vccint    |       1.000 |     0.040 |       0.010 |      0.030 |
+| Vccaux    |       1.800 |     0.032 |       0.002 |      0.031 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
-| Vcco18    |       1.800 |     0.022 |       0.017 |      0.005 |
+| Vcco18    |       1.800 |     0.015 |       0.010 |      0.005 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
@@ -140,7 +140,7 @@ Table of Contents
 +------------+-----------+
 | Name       | Power (W) |
 +------------+-----------+
-| arctan_top |     0.048 |
+| arctan_top |     0.030 |
 +------------+-----------+
 
 

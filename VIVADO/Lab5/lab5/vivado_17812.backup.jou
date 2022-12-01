@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Nov 26 16:31:03 2022
+# Process ID: 17812
+# Current directory: D:/Dale/Desktop/lab5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1620 D:\Dale\Desktop\lab5\lab5.xpr
+# Log file: D:/Dale/Desktop/lab5/vivado.log
+# Journal file: D:/Dale/Desktop/lab5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Dale/Desktop/lab5/lab5.xpr
+update_compile_order -fileset sources_1
+save_project_as lab5 D:/Dale/Desktop/project2/lab5 -force
+launch_simulation -mode post-synthesis -type functional
+launch_simulation
+open_wave_config D:/Dale/Desktop/project2/lab5/lab5.srcs/sim_1/imports/arctangent/arctan1_tb_behav.wcfg
+source top_tb.tcl
+run all
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+close_sim
+launch_runs impl_1 -jobs 4

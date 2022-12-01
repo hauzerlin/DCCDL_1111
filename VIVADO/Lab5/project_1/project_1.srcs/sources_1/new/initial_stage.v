@@ -1,42 +1,31 @@
 `timescale 1ns / 1ps
-module initial_stage(xin, yin, xout, yout);
+module initial_stage(input signed [0:13] xin, 
+input signed [0:13] yin, 
+output reg signed [0:14] xout, 
+output reg signed [0:14] yout);
 
 //input clk;
 //input rst;
-input signed [0:13] xin;
-input signed [0:13] yin;
-//input signed [0:14] ang;
+//input signed [0:13] xin;
+//input signed [0:13] yin;
+////input signed [0:14] ang;
 
-output reg signed [0:14] xout;
-output reg signed [0:14] yout;
+//output reg signed [0:14] xout;
+//output reg signed [0:14] yout;
 //output reg signed [0:14] ang_out;
 
 wire rev;
 
 assign rev = xin[0];
 
-always @(xin or yin)
-//always @(posedge clk or posedge rst)
+always @(xin or yin or rev)
 begin
-//    if(rst == 1'b1)
-//    begin
-//        xout <= 15'd4096;
-//        yout <= 15'd0;
-////        ang_out <= 15'd0;
-//    end
-//    else
+    yout = {{1{yin[0]}},yin};
     begin
-     if(rev==1'b0)
-     xout = {{1{xin[0]}},xin};
-     else 
-     xout = {{1{~xin[0]}},~xin}+ $signed(1'b1);
-//        case(rev)
-//            1'b0: xout = xin;
-//            1'b1: xout = xin*-1;
-//        endcase
-        yout = {{1{yin[0]}},yin};
-//        ang_out <= 15'd0;
+    if(rev==1'b0)
+    xout = {{1{xin[0]}},xin};
+    else 
+    xout = {{1{~xin[0]}},~xin}+ $signed(1'b1);
     end
 end
-
 endmodule

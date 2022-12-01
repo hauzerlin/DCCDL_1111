@@ -60,19 +60,22 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 2
-  reset_param project.defaultXPMLibraries 
-  open_checkpoint D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.runs/impl_1/arctan_top.dcp
+  create_project -in_memory -part xc7a200tfbg676-1
+  set_property design_mode GateLvl [current_fileset]
+  set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.cache/wt [current_project]
   set_property parent.project_path D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.xpr [current_project]
   set_property ip_output_repo D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
+  add_files -quiet D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.runs/synth_1/arctan_top.dcp
+  read_xdc D:/1111/DCCDL/VIVADO/Lab5/project_1/project_1.srcs/constrs_1/new/arctangent.xdc
+  link_design -top arctan_top -part xc7a200tfbg676-1
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {

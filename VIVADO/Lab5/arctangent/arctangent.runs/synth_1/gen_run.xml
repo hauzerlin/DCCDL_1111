@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a200tfbg676-1" LaunchTime="1669308988">
   <File Type="PA-TCL" Name="arctan_top.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="arctan_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="arctan_top_reports.tcl"/>
   <File Type="RDS-RDS" Name="arctan_top.vds"/>
   <File Type="RDS-UTIL" Name="arctan_top_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="arctan_top_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="arctan_top.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="arctan_top_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="arctan_top_timing_summary_synth.pb"/>
-  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PSRCDIR/sources_1">
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/arctangent0.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arctangent/arctangent.srcs/sources_1/new/arctangent0.v"/>
+        <Attr Name="ImportTime" Val="1669351185"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -20,6 +19,8 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/arctangent1.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arctangent/arctangent.srcs/sources_1/new/arctangent1.v"/>
+        <Attr Name="ImportTime" Val="1669351185"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -27,6 +28,8 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/initial_stage.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arctangent/arctangent.srcs/sources_1/new/initial_stage.v"/>
+        <Attr Name="ImportTime" Val="1669351185"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -34,12 +37,14 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/arctan_top.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arctangent/arctangent.srcs/sources_1/new/arctan_top.v"/>
+        <Attr Name="ImportTime" Val="1669351185"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/scaling_xin.v">
+    <File Path="$PPRDIR/../arctangent/arctangent.srcs/sources_1/new/scaling_xin.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -47,7 +52,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/arctangent2.v">
+    <File Path="$PPRDIR/../arctangent/arctangent.srcs/sources_1/new/arctangent2.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -55,7 +60,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/arctangent3.v">
+    <File Path="$PPRDIR/../arctangent/arctangent.srcs/sources_1/new/arctangent3.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -63,7 +68,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/arctangent4.v">
+    <File Path="$PPRDIR/../arctangent/arctangent.srcs/sources_1/new/arctangent4.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -71,7 +76,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/arctangent5.v">
+    <File Path="$PPRDIR/../arctangent/arctangent.srcs/sources_1/new/arctangent5.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -79,7 +84,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/arctangent8.v">
+    <File Path="$PPRDIR/../arctangent/arctangent.srcs/sources_1/new/arctangent8.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -87,7 +92,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/arctangent7.v">
+    <File Path="$PPRDIR/../arctangent/arctangent.srcs/sources_1/new/arctangent7.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -95,7 +100,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/arctangent6.v">
+    <File Path="$PPRDIR/../arctangent/arctangent.srcs/sources_1/new/arctangent6.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -103,7 +108,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/arctangent9.v">
+    <File Path="$PPRDIR/../arctangent/arctangent.srcs/sources_1/new/arctangent9.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -111,7 +116,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/arctangent10.v">
+    <File Path="$PPRDIR/../arctangent/arctangent.srcs/sources_1/new/arctangent10.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -128,6 +133,8 @@
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/new/arctangent.xdc">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arctangent/arctangent.srcs/constrs_1/new/arctangent.xdc"/>
+        <Attr Name="ImportTime" Val="1669351185"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>

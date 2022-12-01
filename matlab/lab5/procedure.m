@@ -610,3 +610,15 @@ for i = 1:12
     elementary_angles(1,i) = atan(1/(2^(i-1)));
     elementary_angles_out(1,i) = 2^(14) * truncation( atan(1/(2^(i-1))), 14);
 end
+
+
+%% error between verilog and matlab
+
+error = zeros(1,11);
+
+x1 = linspace(1,11,11);
+
+stem(x1,error)
+title('The error between the Verilog output and Matlab output')
+xlabel('index of inputs')
+ylabel('errors')

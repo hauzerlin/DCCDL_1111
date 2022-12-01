@@ -106,9 +106,12 @@ end
     
             x0 = truncation(x1 - truncation(mu_i*(2^(-cnt))*y1, 12),12);
             y0 = truncation(truncation( mu_i*(2^(-cnt))*x1, 12) + y1,12);
-            ang0 = ang1 - mu_i*atan(2^(-cnt));
+            ang0 = truncation(ang1 - truncation(mu_i*atan(2^(-cnt)),13),13);
+            ele_test_angle(i,cnt+1) = 2^13 *truncation(mu_i*atan(2^(-cnt)),12);
+
             cnt = cnt+1;
             num(i,1) = num(i,1)+1;
+
     
             xout(i,cnt) = x0;
             yout(i,cnt) = y0;
@@ -140,7 +143,7 @@ for i = 1:20 % fraction part
 end
 
 
-bin_fix_ele_angle = fix_ele_angle(11,:)*(2^13);
+bin_fix_ele_angle = fix_ele_angle(12,:)*(2^13);
 
 % for k =1:11
 %     nbytes = fprintf(file_ele_angle,'N[%2d] = %d;\n' , k-1, bin_fix_ele_angle(1,k));
