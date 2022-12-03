@@ -1,0 +1,35 @@
+butterfly_LI_real[ 0] = 0
+butterfly_LI_real[ 1] = -1449
+butterfly_LI_real[ 2] = 0
+butterfly_LI_real[ 3] = 1023
+butterfly_LI_imag[ 0] = 0
+butterfly_LI_imag[ 1] = 0
+butterfly_LI_imag[ 2] = 0
+butterfly_LI_imag[ 3] = 1024
+
+butterfly_UI_real[ 0] = 0
+butterfly_UI_real[ 1] = 1448
+butterfly_UI_real[ 2] = 0
+butterfly_UI_real[ 3] = 1023
+butterfly_UI_imag[ 0] = 0
+butterfly_UI_imag[ 1] = 0
+butterfly_UI_imag[ 2] = 0
+butterfly_UI_imag[ 3] = 1024
+
+butterfly_UO_real[ 0] = 0
+butterfly_UO_real[ 1] = -1
+butterfly_UO_real[ 2] = 0
+butterfly_UO_real[ 3] = 2046
+butterfly_UO_imag[ 0] = 0
+butterfly_UO_imag[ 1] = 0
+butterfly_UO_imag[ 2] = 0
+butterfly_UO_imag[ 3] = 2048
+
+butterfly_LO_real[ 0] = 0
+butterfly_LO_real[ 1] = 2897
+butterfly_LO_real[ 2] = 0
+butterfly_LO_real[ 3] = 0
+butterfly_LO_imag[ 0] = 0
+butterfly_LO_imag[ 1] = 0
+butterfly_LO_imag[ 2] = 0
+butterfly_LO_imag[ 3] = 0

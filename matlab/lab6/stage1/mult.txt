@@ -1,0 +1,9 @@
+mult_real[ 0] = 0
+mult_real[ 1] = 2048
+mult_real[ 2] = 0
+mult_real[ 3] = 0
+mult_imag[ 0] = 0
+mult_imag[ 1] = -2049
+mult_imag[ 2] = 0
+mult_imag[ 3] = 0
+

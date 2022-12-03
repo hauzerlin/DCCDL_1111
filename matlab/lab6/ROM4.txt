@@ -1,0 +1,4 @@
+rom4_real[ 0] = 1024;
+rom4_imag[ 0] = 0;
+rom4_real[ 1] = 0;
+rom4_imag[ 1] = -1024;
