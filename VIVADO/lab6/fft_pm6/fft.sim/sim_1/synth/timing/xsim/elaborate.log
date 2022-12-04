@@ -19,10 +19,10 @@ Compiling module simprims_ver.x_lut3_mux8
 Compiling module simprims_ver.LUT3
 Compiling module simprims_ver.LUT4
 Compiling module simprims_ver.CARRY4
-Compiling module simprims_ver.x_lut2_mux4
-Compiling module simprims_ver.LUT2
 Compiling module simprims_ver.x_lut1_mux2
 Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
 Compiling module simprims_ver.LUT5
 Compiling module xil_defaultlib.butterfly_8
 Compiling module simprims_ver.FDPE_default
@@ -34,6 +34,8 @@ Compiling module xil_defaultlib.stage_8
 Compiling module xil_defaultlib.butterfly_4
 Compiling module xil_defaultlib.mult_4
 Compiling module xil_defaultlib.stage_4
+Compiling module xil_defaultlib.stage_2
+Compiling module xil_defaultlib.ping_pong_access
 Compiling module xil_defaultlib.fft_top
 Compiling module xil_defaultlib.stage1_tb
 Compiling module xil_defaultlib.glbl

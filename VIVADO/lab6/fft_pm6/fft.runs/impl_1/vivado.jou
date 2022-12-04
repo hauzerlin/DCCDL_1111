@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sun Dec  4 19:46:16 2022
-# Process ID: 22316
+# Start of session at: Sun Dec  4 22:33:17 2022
+# Process ID: 30096
 # Current directory: D:/1111/DCCDL/VIVADO/lab6/fft_pm6/fft.runs/impl_1
 # Command line: vivado.exe -log fft_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source fft_top.tcl -notrace
 # Log file: D:/1111/DCCDL/VIVADO/lab6/fft_pm6/fft.runs/impl_1/fft_top.vdi

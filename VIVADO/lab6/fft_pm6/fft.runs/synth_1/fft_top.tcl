@@ -18,6 +18,7 @@ proc create_report { reportName command } {
   }
 }
 set_param chipscope.maxJobs 2
+set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a200tfbg676-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -38,6 +39,7 @@ read_verilog -library xil_defaultlib {
   D:/1111/DCCDL/VIVADO/lab6/fft_pm6/fft.srcs/sources_1/new/commutator_8.v
   D:/1111/DCCDL/VIVADO/lab6/fft_pm6/fft.srcs/sources_1/new/mult4.v
   D:/1111/DCCDL/VIVADO/lab6/fft_pm6/fft.srcs/sources_1/new/mult_8.v
+  D:/1111/DCCDL/VIVADO/lab6/fft_pm6/fft.srcs/sources_1/new/ping_pong_access.v
   D:/1111/DCCDL/VIVADO/lab6/fft_pm6/fft.srcs/sources_1/new/stage_2.v
   D:/1111/DCCDL/VIVADO/lab6/fft_pm6/fft.srcs/sources_1/new/stage_4.v
   D:/1111/DCCDL/VIVADO/lab6/fft_pm6/fft.srcs/sources_1/new/stage_8.v

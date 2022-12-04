@@ -13,8 +13,9 @@ reg [2:0] cnt;
 
 reg signed [12:0] LI_real, LI_imag, UI_real, UI_imag;
 wire signed [14:0]  LO_real, LO_imag, UO_real, UO_imag;
-wire signed [14:0] test1 , test2 , test3 , test4;
-fft_top dft1(clk, rst,  LI_real, LI_imag, UI_real, UI_imag, LO_real, LO_imag, UO_real, UO_imag , test1 , test2 , test3 , test4);
+//wire signed [14:0] test1 , test2 , test3 , test4;
+wire signed [15:0] p_real, p_imag;
+fft_top dft1(clk, rst,  LI_real, LI_imag, UI_real, UI_imag, LO_real, LO_imag, UO_real, UO_imag , p_real, p_imag);
 
 initial
 begin

@@ -84,3 +84,75 @@ launch_simulation -mode post-implementation -type timing
 open_wave_config D:/1111/DCCDL/VIVADO/lab6/fft_pm6/stage1_tb_behav.wcfg
 source stage1_tb.tcl
 save_wave_config {D:/1111/DCCDL/VIVADO/lab6/fft_pm6/stage1_tb_behav.wcfg}
+save_wave_config {D:/1111/DCCDL/VIVADO/lab6/fft_pm6/stage1_tb_behav.wcfg}
+close_sim
+close_sim
+close_design
+launch_simulation
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/fft_pm6/stage1_tb_behav.wcfg
+source stage1_tb.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close [ open D:/1111/DCCDL/VIVADO/lab6/fft_pm6/fft.srcs/sources_1/new/ping_pong_access.v w ]
+add_files D:/1111/DCCDL/VIVADO/lab6/fft_pm6/fft.srcs/sources_1/new/ping_pong_access.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_simulation -mode post-implementation -type timing
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/fft_pm6/stage1_tb_behav.wcfg
+source stage1_tb.tcl
+relaunch_sim
+launch_simulation -mode post-synthesis -type timing
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/fft_pm6/stage1_tb_behav.wcfg
+source stage1_tb.tcl
+relaunch_sim
+save_wave_config {D:/1111/DCCDL/VIVADO/lab6/fft_pm6/stage1_tb_behav.wcfg}
+close_sim
+save_wave_config {D:/1111/DCCDL/VIVADO/lab6/fft_pm6/stage1_tb_behav.wcfg}
+save_wave_config {D:/1111/DCCDL/VIVADO/lab6/fft_pm6/stage1_tb_behav.wcfg}
+current_sim simulation_10
+close_sim
+close_sim
+launch_simulation
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/fft_pm6/stage1_tb_behav.wcfg
+source stage1_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+current_design impl_1
+close_design
+launch_simulation -mode post-implementation -type timing
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/fft_pm6/stage1_tb_behav.wcfg
+source stage1_tb.tcl
+close_sim

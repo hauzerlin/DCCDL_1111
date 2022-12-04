@@ -4,6 +4,7 @@ INFO: [VRFC 10-311] analyzing module butterfly_8
 INFO: [VRFC 10-311] analyzing module fft_top
 INFO: [VRFC 10-311] analyzing module mult_4
 INFO: [VRFC 10-311] analyzing module mult_8
+INFO: [VRFC 10-311] analyzing module ping_pong_access
 INFO: [VRFC 10-311] analyzing module stage_2
 INFO: [VRFC 10-311] analyzing module stage_4
 INFO: [VRFC 10-311] analyzing module stage_8
