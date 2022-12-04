@@ -58,6 +58,7 @@ begin
     
     #100
     rst = 1'b0;
+    #10
     clk = 1'b0;
 end
 

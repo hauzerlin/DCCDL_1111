@@ -305,6 +305,11 @@ file_s_real = fopen('input_real.txt','w');
 file_s_imag = fopen('input_imag.txt','w');
 file_ans_real = fopen('ans_real.txt','w');
 file_ans_imag = fopen('ans_imag.txt','w');
+
+file_final_real = fopen('final_real.txt','w');
+file_final_imag = fopen('final_imag.txt','w');
+
+
 file_UI = fopen('UI.txt', 'w');
 
 for k= 1:8
@@ -343,6 +348,16 @@ end
 for k = 1:8
     fprintf(file_ans_real,'%d\n', ...
         (2^11)*truncation(real(S(k)),11));
+end
+
+
+for k = 1:8
+    fprintf(file_final_imag,'%d\n', ...
+        (2^11)*truncation(imag(final(k)),11));
+end
+for k = 1:8
+    fprintf(file_final_real,'%d\n', ...
+        (2^11)*truncation(real(final(k)),11));
 end
 ST = fclose('all');
 
@@ -534,12 +549,12 @@ for k = 1:4
 end
 
 file_mult2 =  fopen('stage2\mult.txt','w');
-for k = 1:2
+for k = 1:4
     fprintf(file_mult2, 'mult_real[%2d] = %d\n', ...
         k-1, (2^11)*truncation(real(M2(k)),11));
 end
 
-for k = 1:2
+for k = 1:4
     fprintf(file_mult2, 'mult_imag[%2d] = %d\n', ...
         k-1, (2^11)*truncation(imag(M2(k)),11));
 end

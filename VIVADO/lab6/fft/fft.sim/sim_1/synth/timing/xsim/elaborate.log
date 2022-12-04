@@ -27,6 +27,8 @@ Compiling module simprims_ver.LUT2
 Compiling module xil_defaultlib.butterfly_8
 Compiling module simprims_ver.FDPE_default
 Compiling module simprims_ver.SRL16E_default
+Compiling module simprims_ver.latchsre_ldce
+Compiling module simprims_ver.LDCE
 Compiling module simprims_ver.LUT6
 Compiling module simprims_ver.DSP48E1(ACASCREG=0,ALUMODEREG=0,...
 Compiling module simprims_ver.DSP48E1(ACASCREG=0,ALUMODEREG=0,...

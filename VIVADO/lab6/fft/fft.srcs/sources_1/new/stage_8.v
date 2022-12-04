@@ -80,7 +80,14 @@ begin
     end
     else
     begin
+        if(cnt==3'b111)
+        begin
+            cnt <= 3'b000;
+        end
+        else
+        begin
         cnt <= cnt + 1'b1;
+        end
         cnt1 <= cnt2;
         cnt2 <= cnt3;
         cnt3 <= cnt;
