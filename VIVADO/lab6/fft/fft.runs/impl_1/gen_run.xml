@@ -1,73 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a200tfbg676-1" LaunchTime="1670073020">
-  <File Type="BITSTR-BMM" Name="stage_8_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="stage_8_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="stage_8_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR" Name="stage_8_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="stage_8.tcl"/>
-  <File Type="OPT-TIMING" Name="stage_8_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="stage_8_opt.dcp"/>
-  <File Type="ROUTE-PWR-SUM" Name="stage_8_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="stage_8_reports.tcl"/>
-  <File Type="OPT-DRC" Name="stage_8_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="stage_8.hwdef"/>
-  <File Type="PWROPT-DCP" Name="stage_8_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="stage_8_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="stage_8_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="stage_8_placed.dcp"/>
-  <File Type="PLACE-IO" Name="stage_8_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="stage_8_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="stage_8_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="stage_8_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="stage_8_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="stage_8_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="stage_8_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BGN" Name="stage_8.bgn"/>
-  <File Type="PLACE-TIMING" Name="stage_8_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="stage_8_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="stage_8.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="stage_8_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="stage_8_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="stage_8_drc_physopted.rpt"/>
-  <File Type="BITSTR-MSK" Name="stage_8.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="stage_8_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="stage_8_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="stage_8_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="stage_8_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="stage_8_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="stage_8_drc_routed.pb"/>
+<GenRun Id="impl_1" LaunchPart="xc7a200tfbg676-1" LaunchTime="1670140767">
+  <File Type="BITSTR-BMM" Name="fft_top_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="fft_top_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="fft_top_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="fft_top_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="fft_top.tcl"/>
+  <File Type="OPT-TIMING" Name="fft_top_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="fft_top_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="fft_top_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="fft_top_reports.tcl"/>
+  <File Type="OPT-DRC" Name="fft_top_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="fft_top.hwdef"/>
+  <File Type="PWROPT-DCP" Name="fft_top_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="fft_top_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="fft_top_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="fft_top_placed.dcp"/>
+  <File Type="PLACE-IO" Name="fft_top_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="fft_top_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="fft_top_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="fft_top_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="fft_top_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="fft_top_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="fft_top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="fft_top.bgn"/>
+  <File Type="PLACE-TIMING" Name="fft_top_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="fft_top_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="fft_top.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="fft_top_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="fft_top_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="fft_top_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="fft_top.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="fft_top_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="fft_top_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="fft_top_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="fft_top_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="fft_top_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="fft_top_drc_routed.pb"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="stage_8.ltx"/>
-  <File Type="ROUTE-DRC-RPX" Name="stage_8_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="stage_8.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="stage_8_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="stage_8_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="stage_8.sysdef"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="stage_8_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="stage_8_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="stage_8_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="stage_8_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="stage_8_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="stage_8_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="stage_8_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="stage_8_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="stage_8_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="stage_8_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="stage_8_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="stage_8_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="stage_8_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="stage_8_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="stage_8_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="stage_8_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="stage_8_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="stage_8_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="stage_8_bus_skew_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="stage_8.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="stage_8_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-RBT" Name="stage_8.rbt"/>
-  <File Type="BITSTR-NKY" Name="stage_8.nky"/>
-  <File Type="BG-DRC" Name="stage_8.drc"/>
-  <File Type="RDI-RDI" Name="stage_8.vdi"/>
+  <File Type="BITSTR-LTX" Name="fft_top.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="fft_top_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="fft_top.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="fft_top_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="fft_top_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="fft_top.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="fft_top_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="fft_top_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="fft_top_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="fft_top_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="fft_top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="fft_top_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="fft_top_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="fft_top_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="fft_top_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="fft_top_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="fft_top_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="fft_top_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="fft_top_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="fft_top_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="fft_top_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="fft_top_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="fft_top_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="fft_top_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="fft_top_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="fft_top.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="fft_top_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="fft_top.rbt"/>
+  <File Type="BITSTR-NKY" Name="fft_top.nky"/>
+  <File Type="BG-DRC" Name="fft_top.drc"/>
+  <File Type="RDI-RDI" Name="fft_top.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
@@ -99,9 +99,40 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/fft_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/butterfly4.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/commutator_4.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/stage_4.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="stage_8"/>
+      <Option Name="TopModule" Val="fft_top"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
@@ -118,9 +149,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>

@@ -12,6 +12,7 @@ output reg signed [13:0] LO_real, LO_imag;
 output reg signed [13:0] UO_real, UO_imag;
 
 reg signed [13:0] LO_real_out, LO_imag_out;
+reg signed [13:0] UO_real_out, UO_imag_out;
 
 
 reg signed [12:0] LI_real_in, LI_imag_in;
@@ -44,14 +45,14 @@ commutator_8 commutator8(.rst(rst), .control(cnt[2]),
 butterfly_8 butterfly8( .clk(clk), .control(cnt[2]),  .LI_real(LO_real_c_b), .LI_imag(LO_imag_c_b), .UI_real(dff1_real), .UI_imag(dff1_imag),
              .LO_real(LO_real_b_m), .LO_imag(LO_imag_b_m), .UO_real(UO_real_b_m), .UO_imag(UO_imag_b_m));
              
-mult_8 mult8(.clk(clk), .en(cnt2[2]), .control(cnt2[1:0]),  .LI_real(LO_real_b_m), .LI_imag(LO_imag_b_m),
+mult_8 mult8(.clk(clk), .en(cnt[2]), .control(cnt[1:0]),  .LI_real(LO_real_b_m), .LI_imag(LO_imag_b_m),
              .LO_real(LO_real_m_out), .LO_imag(LO_imag_m_out));
              
 always @(posedge clk or posedge rst)
 begin
     if(rst == 1'b1)
     begin
-        cnt = 3'd7;
+        cnt <= 3'd7;
         cnt1 <= 3'd0;
         cnt2 <= 3'd0;
         cnt3 <= 3'd0;
@@ -79,7 +80,7 @@ begin
     end
     else
     begin
-        cnt = cnt + 1'b1;
+        cnt <= cnt + 1'b1;
         cnt1 <= cnt2;
         cnt2 <= cnt3;
         cnt3 <= cnt;
@@ -109,12 +110,13 @@ begin
 //        LO_imag = LO_imag_b_m;
 //        UO_real = UO_real_b_m;
 //        UO_imag = UO_imag_b_m;
-
+        UO_real_out<= UO_real_b_m;
+        UO_imag_out<= UO_imag_b_m;
         LO_real_out<= LO_real_m_out;
         LO_imag_out<= LO_imag_m_out;
 
-        UO_real = UO_real_b_m;
-        UO_imag = UO_imag_b_m;
+        UO_real = UO_real_out;
+        UO_imag = UO_imag_out;
         LO_real = LO_real_out;
         LO_imag = LO_imag_out;
 

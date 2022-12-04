@@ -15,7 +15,7 @@ assign L_imag_buff = UI_imag - LI_imag;
 assign U_real_buff = UI_real + LI_real;
 assign U_imag_buff = UI_imag + LI_imag;
 
-always @(posedge clk)
+always @(*)
 begin
     if(control == 1'b0)
     begin

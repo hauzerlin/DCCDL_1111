@@ -1,0 +1,7 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/LDCE.v" Line 155: Timing violation in scope /stage1_tb/dft1/dft1/mult8/LO_real_reg[4]_LDC/TChk155_17364 at time 227517 ps $recrem (posedge CLR,posedge G,(0:0:0),(0:0:0),notifier,tl_enable_p,tl_enable_p,CLR_dly,G_dly) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/LDCE.v" Line 155: Timing violation in scope /stage1_tb/dft1/dft1/mult8/LO_real_reg[4]_LDC/TChk155_17364 at time 387517 ps $recrem (posedge CLR,posedge G,(0:0:0),(0:0:0),notifier,tl_enable_p,tl_enable_p,CLR_dly,G_dly) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/LDCE.v" Line 155: Timing violation in scope /stage1_tb/dft1/dft1/mult8/LO_real_reg[4]_LDC/TChk155_17364 at time 547517 ps $recrem (posedge CLR,posedge G,(0:0:0),(0:0:0),notifier,tl_enable_p,tl_enable_p,CLR_dly,G_dly) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/LDCE.v" Line 155: Timing violation in scope /stage1_tb/dft1/dft1/mult8/LO_real_reg[4]_LDC/TChk155_17364 at time 707517 ps $recrem (posedge CLR,posedge G,(0:0:0),(0:0:0),notifier,tl_enable_p,tl_enable_p,CLR_dly,G_dly) 
+WARNING: "C:\Xilinx\Vivado\2019.1\data/verilog/src/unisims/LDCE.v" Line 155: Timing violation in scope /stage1_tb/dft1/dft1/mult8/LO_real_reg[4]_LDC/TChk155_17364 at time 867517 ps $recrem (posedge CLR,posedge G,(0:0:0),(0:0:0),notifier,tl_enable_p,tl_enable_p,CLR_dly,G_dly) 

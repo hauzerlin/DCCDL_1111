@@ -2,5 +2,5 @@
 2019.1
 May 24 2019
 15:06:07
-D:/1111/DCCDL/VIVADO/lab6/fft/fft.sim/sim_1/impl/timing/xsim/stage1_tb_time_impl.v,1670073211,verilog,,D:/1111/DCCDL/VIVADO/lab6/fft/fft.srcs/sim_1/new/stage1_tb.v,,butterfly_8;commutator_8;glbl;mult_8;stage_8,,,,,,,,
+D:/1111/DCCDL/VIVADO/lab6/fft/fft.sim/sim_1/impl/timing/xsim/stage1_tb_time_impl.v,1670140956,verilog,,D:/1111/DCCDL/VIVADO/lab6/fft/fft.srcs/sim_1/new/stage1_tb.v,,butterfly_8;fft_top;glbl;mult_8;stage_8,,,,,,,,
 D:/1111/DCCDL/VIVADO/lab6/fft/fft.srcs/sim_1/new/stage1_tb.v,1670066943,verilog,,,,stage1_tb,,,,,,,,

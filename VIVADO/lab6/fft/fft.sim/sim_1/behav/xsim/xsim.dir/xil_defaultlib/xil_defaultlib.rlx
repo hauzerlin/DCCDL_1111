@@ -2,13 +2,13 @@
 2019.1
 May 24 2019
 15:06:07
-D:/1111/DCCDL/VIVADO/lab6/fft/fft.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
-D:/1111/DCCDL/VIVADO/lab6/fft/fft.srcs/sim_1/new/stage1_tb.v,1670074007,verilog,,,,stage1_tb,,,,,,,,
+D:/1111/DCCDL/VIVADO/lab6/fft/fft.sim/sim_1/behav/xsim/glbl.v,1670135787,verilog,,,,glbl,,,,,,,,
+D:/1111/DCCDL/VIVADO/lab6/fft/fft.srcs/sim_1/new/stage1_tb.v,1670139641,verilog,,,,stage1_tb,,,,,,,,
 D:/1111/DCCDL/VIVADO/lab6/fft/fft.srcs/sources_1/new/butterfly4.v,1670079868,verilog,,D:/1111/DCCDL/VIVADO/lab6/fft/fft.srcs/sources_1/new/butterfly_8.v,,butterfly_4,,,,,,,,
-D:/1111/DCCDL/VIVADO/lab6/fft/fft.srcs/sources_1/new/butterfly_8.v,1670071105,verilog,,D:/1111/DCCDL/VIVADO/lab6/fft/fft.srcs/sources_1/new/commutator_4.v,,butterfly_8,,,,,,,,
+D:/1111/DCCDL/VIVADO/lab6/fft/fft.srcs/sources_1/new/butterfly_8.v,1670138501,verilog,,D:/1111/DCCDL/VIVADO/lab6/fft/fft.srcs/sources_1/new/commutator_8.v,,butterfly_8,,,,,,,,
 D:/1111/DCCDL/VIVADO/lab6/fft/fft.srcs/sources_1/new/commutator_4.v,1670079263,verilog,,D:/1111/DCCDL/VIVADO/lab6/fft/fft.srcs/sources_1/new/commutator_8.v,,commutator_4,,,,,,,,
-D:/1111/DCCDL/VIVADO/lab6/fft/fft.srcs/sources_1/new/commutator_8.v,1670056325,verilog,,D:/1111/DCCDL/VIVADO/lab6/fft/fft.srcs/sources_1/new/fft_top.v,,commutator_8,,,,,,,,
-D:/1111/DCCDL/VIVADO/lab6/fft/fft.srcs/sources_1/new/fft_top.v,1670079433,verilog,,D:/1111/DCCDL/VIVADO/lab6/fft/fft.srcs/sources_1/new/mult_8.v,,fft_top,,,,,,,,
-D:/1111/DCCDL/VIVADO/lab6/fft/fft.srcs/sources_1/new/mult_8.v,1670070570,verilog,,D:/1111/DCCDL/VIVADO/lab6/fft/fft.srcs/sources_1/new/stage_4.v,,mult_8,,,,,,,,
+D:/1111/DCCDL/VIVADO/lab6/fft/fft.srcs/sources_1/new/commutator_8.v,1670137951,verilog,,D:/1111/DCCDL/VIVADO/lab6/fft/fft.srcs/sources_1/new/fft_top.v,,commutator_8,,,,,,,,
+D:/1111/DCCDL/VIVADO/lab6/fft/fft.srcs/sources_1/new/fft_top.v,1670140099,verilog,,D:/1111/DCCDL/VIVADO/lab6/fft/fft.srcs/sources_1/new/mult_8.v,,fft_top,,,,,,,,
+D:/1111/DCCDL/VIVADO/lab6/fft/fft.srcs/sources_1/new/mult_8.v,1670138354,verilog,,D:/1111/DCCDL/VIVADO/lab6/fft/fft.srcs/sources_1/new/stage_8.v,,mult_8,,,,,,,,
 D:/1111/DCCDL/VIVADO/lab6/fft/fft.srcs/sources_1/new/stage_4.v,1670080250,verilog,,D:/1111/DCCDL/VIVADO/lab6/fft/fft.srcs/sources_1/new/stage_8.v,,stage_4,,,,,,,,
-D:/1111/DCCDL/VIVADO/lab6/fft/fft.srcs/sources_1/new/stage_8.v,1670072620,verilog,,D:/1111/DCCDL/VIVADO/lab6/fft/fft.srcs/sim_1/new/stage1_tb.v,,stage_8,,,,,,,,
+D:/1111/DCCDL/VIVADO/lab6/fft/fft.srcs/sources_1/new/stage_8.v,1670140754,verilog,,D:/1111/DCCDL/VIVADO/lab6/fft/fft.srcs/sim_1/new/stage1_tb.v,,stage_8,,,,,,,,

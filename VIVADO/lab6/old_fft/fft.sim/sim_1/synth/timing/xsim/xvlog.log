@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/lab6/fft/fft.sim/sim_1/synth/timing/xsim/stage1_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_top
+INFO: [VRFC 10-311] analyzing module mult_8
+INFO: [VRFC 10-311] analyzing module stage_8
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/lab6/fft/fft.srcs/sim_1/new/stage1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage1_tb

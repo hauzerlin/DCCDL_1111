@@ -50,7 +50,7 @@ assign imag_out3 = L_imag_buff3 + L_imag_buff3_2;
 assign imag_out4 = L_imag_buff4 + L_imag_buff4_2;
 
 
-always @(posedge clk or posedge en)
+always @(*)
 begin
     if(en == 1'b1)
     begin
