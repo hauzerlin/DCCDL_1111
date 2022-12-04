@@ -20,13 +20,10 @@ UO_real, UO_imag);
     begin
         for ( i = 0; i<4; i = i+1)
         begin
-//            for( j =0; j<2; j = j+1)
-//            begin
                 mem_a_real [i] <= 15'b0;
                 mem_b_real [i] <= 15'b0;
                 mem_a_imag [i] <= 15'b0;
                 mem_b_imag [i] <= 15'b0;
-//            end
         end
         UO_real <= 15'b0;
         UO_imag <= 15'b0;
@@ -65,19 +62,6 @@ UO_real, UO_imag);
                     mem_b_real[3] <= LI_real; // 7
                     mem_b_imag[3]<= LI_imag;
                 end
-//            default:
-//                begin
-//                    for ( i = 0; i<2; i = i+1)
-//                    begin
-//                    for( j =0; j<2; j = j+1)
-//                        begin
-//                            mem_a_real [i][j] <= mem_a_real [i][j];
-//                            mem_b_real [i][j] <= mem_b_real [i][j];
-//                            mem_a_imag [i][j] <= mem_a_imag [i][j];
-//                            mem_b_imag [i][j] <= mem_b_imag [i][j];
-//                        end
-//                    end
-//                end
             endcase
         end
             else

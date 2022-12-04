@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
-module mult_8(clk, en, control,  LI_real, LI_imag, LO_real, LO_imag);
-input clk;
+module mult_8(en, control,  LI_real, LI_imag, LO_real, LO_imag);
+
 input en;   //  rst or regular calculator
 input [1:0]control; // case: 1~4
 input signed [13:0] LI_real, LI_imag;

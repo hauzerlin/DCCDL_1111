@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a200tfbg676-1" LaunchTime="1670164362">
+<GenRun Id="impl_1" LaunchPart="xc7a200tfbg676-1" LaunchTime="1670172749">
   <File Type="BITSTR-BMM" Name="fft_top_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="fft_top_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="fft_top_timing_summary_init.rpt"/>
@@ -22,7 +22,6 @@
   <File Type="PLACE-CTRL" Name="fft_top_control_sets_placed.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="fft_top_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="fft_top_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BGN" Name="fft_top.bgn"/>
   <File Type="PLACE-TIMING" Name="fft_top_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="fft_top_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="fft_top.bin"/>
@@ -36,13 +35,10 @@
   <File Type="ROUTE-BLACKBOX-DCP" Name="fft_top_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="fft_top_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="fft_top_drc_routed.pb"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="fft_top.ltx"/>
   <File Type="ROUTE-DRC-RPX" Name="fft_top_drc_routed.rpx"/>
   <File Type="BITSTR-MMI" Name="fft_top.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="fft_top_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="fft_top_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="fft_top.sysdef"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="fft_top_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="fft_top_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="fft_top_route_status.rpt"/>
@@ -66,10 +62,20 @@
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="fft_top_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="fft_top.rbt"/>
   <File Type="BITSTR-NKY" Name="fft_top.nky"/>
+  <File Type="PDI-FILE" Name="fft_top.pdi"/>
+  <File Type="RCFI_FILE" Name="fft_top.rcfi"/>
+  <File Type="CFI_FILE" Name="fft_top.cfi"/>
+  <File Type="RNPI_FILE" Name="fft_top.rnpi"/>
+  <File Type="NPI_FILE" Name="fft_top.npi"/>
+  <File Type="RBD_FILE" Name="fft_top.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="fft_top.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="fft_top.sysdef"/>
+  <File Type="BG-BGN" Name="fft_top.bgn"/>
   <File Type="BG-DRC" Name="fft_top.drc"/>
   <File Type="RDI-RDI" Name="fft_top.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/butterfly4.v">
       <FileInfo>

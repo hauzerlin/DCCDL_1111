@@ -1,8 +1,8 @@
-Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sun Dec  4 22:33:54 2022
-| Host         : DESKTOP-J7D9945 running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Dec  5 00:53:27 2022
+| Host         : DESKTOP-PT5ER2J running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file fft_top_control_sets_placed.rpt
 | Design       : fft_top
 | Device       : xc7a200t
@@ -59,10 +59,10 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |              54 |            8 |
-| No           | No                    | Yes                    |             482 |          115 |
+| No           | No                    | Yes                    |             482 |          126 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |              28 |            8 |
-| Yes          | No                    | Yes                    |             348 |           91 |
+| Yes          | No                    | Yes                    |             348 |          132 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -70,18 +70,18 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------+--------------------------------+------------------+------------------+----------------+
-|  Clock Signal  |          Enable Signal         | Set/Reset Signal | Slice Load Count | Bel Load Count |
-+----------------+--------------------------------+------------------+------------------+----------------+
-|  clk_IBUF_BUFG | dft1/E[0]                      |                  |                8 |             28 |
-|  clk_IBUF_BUFG | dft4/UO_real[15]_i_1_n_0       | rst_IBUF         |               13 |             32 |
-|  clk_IBUF_BUFG | dft1/E[0]                      | rst_IBUF         |               16 |             60 |
-|  clk_IBUF_BUFG | dft4/mem_b_real[0][15]_i_1_n_0 | rst_IBUF         |               19 |             64 |
-|  clk_IBUF_BUFG | dft4/mem_a_real[0][15]_i_1_n_0 | rst_IBUF         |               16 |             64 |
-|  clk_IBUF_BUFG | dft4/mem_a_real                | rst_IBUF         |               12 |             64 |
-|  clk_IBUF_BUFG | dft4/mem_b_real                | rst_IBUF         |               15 |             64 |
-|  clk_IBUF_BUFG |                                |                  |                8 |            108 |
-|  clk_IBUF_BUFG |                                | rst_IBUF         |              115 |            482 |
-+----------------+--------------------------------+------------------+------------------+----------------+
++----------------+--------------------------------+------------------+------------------+----------------+--------------+
+|  Clock Signal  |          Enable Signal         | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+--------------------------------+------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | dft1/E[0]                      |                  |                8 |             28 |         3.50 |
+|  clk_IBUF_BUFG | write_en                       | rst_IBUF         |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG | dft1/E[0]                      | rst_IBUF         |               27 |             60 |         2.22 |
+|  clk_IBUF_BUFG | dft4/mem_b_real                | rst_IBUF         |               23 |             64 |         2.78 |
+|  clk_IBUF_BUFG | dft4/mem_a_real[0][15]_i_1_n_0 | rst_IBUF         |               20 |             64 |         3.20 |
+|  clk_IBUF_BUFG | dft4/mem_b_real[0][15]_i_1_n_0 | rst_IBUF         |               21 |             64 |         3.05 |
+|  clk_IBUF_BUFG | dft4/mem_a_real                | rst_IBUF         |               24 |             64 |         2.67 |
+|  clk_IBUF_BUFG |                                |                  |                8 |            108 |        13.50 |
+|  clk_IBUF_BUFG |                                | rst_IBUF         |              126 |            482 |         3.83 |
++----------------+--------------------------------+------------------+------------------+----------------+--------------+
 
 

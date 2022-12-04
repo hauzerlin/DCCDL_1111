@@ -1,2 +1,3 @@
-Vivado Simulator 2019.1
+Vivado Simulator 2020.2
 Time resolution is 1 ps
+WARNING: "C:/Xilinx/Vivado/2020.2/data/verilog/src/unisims/FDCE.v" Line 168: Timing violation in scope /stage1_tb/dft1/dft3/LO_real_reg[15]/TChk168_5588 at time 115285 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 

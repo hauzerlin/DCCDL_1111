@@ -1,7 +1,6 @@
 `timescale 1ns / 1ps
-module butterfly_8(clk, control,  LI_real, LI_imag, UI_real, UI_imag, LO_real, LO_imag, UO_real, UO_imag);
+module butterfly_8(control,  LI_real, LI_imag, UI_real, UI_imag, LO_real, LO_imag, UO_real, UO_imag);
 input control;
-input clk;
 input signed [12:0] LI_real, LI_imag;
 input signed [12:0] UI_real, UI_imag;
 output reg signed [13:0] LO_real, LO_imag;

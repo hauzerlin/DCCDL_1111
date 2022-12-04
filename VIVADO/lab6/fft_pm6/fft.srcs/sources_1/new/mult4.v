@@ -1,6 +1,5 @@
 `timescale 1ns / 1ps
-module mult_4(clk, en, control,  LI_real, LI_imag, LO_real, LO_imag);
-input clk;
+module mult_4( en, control,  LI_real, LI_imag, LO_real, LO_imag);
 input en;   //  rst or regular calculator
 input control; // case: 1~4 [2:0]c
 input signed [14:0] LI_real, LI_imag;
@@ -18,36 +17,24 @@ wire signed [26:0] real_out4, imag_out4;
 
 // real to real
 assign L_real_buff1 = LI_real * $signed(12'd1024);
-//assign L_real_buff2 = LI_real * $signed(12'd724);
 assign L_real_buff3 = LI_real * $signed(12'd0);
-//assign L_real_buff4 = LI_real * $signed(-12'd725);
 
 // imag to imag (-1)
 assign L_real_buff1_2 = LI_imag * $signed(12'd0);
-//assign L_real_buff2_2 = LI_imag * $signed(-12'd724);
 assign L_real_buff3_2 = LI_imag * $signed(-12'd1024);
-//assign L_real_buff4_2 = LI_imag * $signed(-12'd724);
 
 
 assign L_imag_buff1_2 = LI_real * $signed(12'd0);
-//assign L_imag_buff2_2 = LI_real * $signed(-12'd724);
 assign L_imag_buff3_2 = LI_real * $signed(-12'd1024);
-//assign L_imag_buff4_2 = LI_real * $signed(-12'd724);
 
 assign L_imag_buff1 = LI_imag * $signed(12'd1024);
-//assign L_imag_buff2 = LI_imag * $signed(12'd724);
 assign L_imag_buff3 = LI_imag * $signed(12'd0);
-//assign L_imag_buff4 = LI_imag * $signed(-12'd725);
 
 assign real_out1 =  L_real_buff1 - L_real_buff1_2;
-//assign real_out2 =  L_real_buff2 - L_real_buff2_2;
 assign real_out3 =  L_real_buff3 - L_real_buff3_2;
-//assign real_out4 =  L_real_buff4 - L_real_buff4_2;
 
 assign imag_out1 = L_imag_buff1 + L_imag_buff1_2;
-//assign imag_out2 = L_imag_buff2 + L_imag_buff2_2;
 assign imag_out3 = L_imag_buff3 + L_imag_buff3_2;
-//assign imag_out4 = L_imag_buff4 + L_imag_buff4_2;
 
 
 always @(*)
@@ -65,16 +52,6 @@ begin
             LO_real = real_out3[24:10];
             LO_imag = imag_out3[24:10];
             end
-//        2'd2:
-//            begin
-//            LO_real = real_out3[24:10];
-//            LO_imag = imag_out3[24:10];
-//            end
-//        2'd3:
-//            begin
-//            LO_real = real_out4[24:10];
-//            LO_imag = imag_out4[24:10];
-//            end
         default:
             begin
             LO_real = 15'b0;
