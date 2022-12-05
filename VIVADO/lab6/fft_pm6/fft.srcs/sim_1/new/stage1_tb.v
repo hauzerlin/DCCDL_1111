@@ -15,10 +15,50 @@ reg signed [12:0] LI_real, LI_imag, UI_real, UI_imag;
 wire signed [14:0]  LO_real, LO_imag, UO_real, UO_imag;
 //wire signed [14:0] test1 , test2 , test3 , test4;
 wire signed [15:0] p_real, p_imag;
+
+integer mcd1, mcd2, mcd3, mcd4;
+integer mcd5, mcd6, mcd7, mcd8; //LO_real, LO_imag, UO_real, UO_imag
+integer mcd9, mcd0; //p_real, p_imag
+
 fft_top dft1(clk, rst,  LI_real, LI_imag, UI_real, UI_imag, LO_real, LO_imag, UO_real, UO_imag , p_real, p_imag);
+
+always @(posedge clk)
+begin
+    $fwrite(mcd1,"UO_real = %d\nUO_imag = %d\nLO_real = %d\nLO_imag = %d\n\n", UO_real, UO_imag, LO_real, LO_imag);
+    $fwrite(mcd2,"%d\n%d\n%d\n%d\n\n", UO_real, UO_imag, LO_real, LO_imag);
+    $fwrite(mcd3,"out_real = %d\nout_imag = %d\n\n", p_real, p_imag);
+    $fwrite(mcd4,"%d\n%d\n\n", p_real, p_imag);
+    $fwrite(mcd5,"%d\n", UO_real);
+    $fwrite(mcd6,"%d\n", UO_imag);
+    $fwrite(mcd7,"%d\n", LO_real);
+    $fwrite(mcd8,"%d\n", LO_imag);
+    $fwrite(mcd9,"%d\n", p_real);
+    $fwrite(mcd0,"%d\n", p_imag);
+end
 
 initial
 begin
+//    mcd1 = $fopen("../../../../read_before_ping_pong.txt","w");
+//    mcd2 = $fopen("../../../../before_ping_pong.txt","w");
+//    mcd3 = $fopen("../../../../read_after_ping_pong.txt","w");
+//    mcd4 = $fopen("../../../../after_ping_pong.txt","w");
+//    mcd5 = $fopen("../../../../UO_real.txt","w");
+//    mcd6 = $fopen("../../../../UO_imag.txt","w");
+//    mcd7 = $fopen("../../../../LO_real.txt","w");
+//    mcd8 = $fopen("../../../../LO_imag.txt","w");
+//    mcd9 = $fopen("../../../../p_real.txt","w");
+//    mcd0 = $fopen("../../../../p_imag.txt","w");
+
+    mcd1 = $fopen("../../../../../read_before_ping_pong.txt","w");
+    mcd2 = $fopen("../../../../../before_ping_pong.txt","w");
+    mcd3 = $fopen("../../../../../read_after_ping_pong.txt","w");
+    mcd4 = $fopen("../../../../../after_ping_pong.txt","w");
+    mcd5 = $fopen("../../../../../UO_real.txt","w");
+    mcd6 = $fopen("../../../../../UO_imag.txt","w");
+    mcd7 = $fopen("../../../../../LO_real.txt","w");
+    mcd8 = $fopen("../../../../../LO_imag.txt","w");
+    mcd9 = $fopen("../../../../../p_real.txt","w");
+    mcd0 = $fopen("../../../../../p_imag.txt","w");
     rst = 1'b1;
     cnt = 3'd0;
     mem_LI_real[ 0] = 13'd0;

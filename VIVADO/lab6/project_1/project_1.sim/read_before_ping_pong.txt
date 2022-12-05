@@ -1,0 +1,225 @@
+UO_real =      0
+UO_imag =      0
+LO_real =      0
+LO_imag =      0
+
+UO_real =      0
+UO_imag =      0
+LO_real =      0
+LO_imag =      0
+
+UO_real =      0
+UO_imag =      0
+LO_real =      0
+LO_imag =      0
+
+UO_real =      0
+UO_imag =      0
+LO_real =      0
+LO_imag =      0
+
+UO_real =      0
+UO_imag =      0
+LO_real =      0
+LO_imag =      0
+
+UO_real =      0
+UO_imag =      0
+LO_real =      0
+LO_imag =      0
+
+UO_real =      0
+UO_imag =      0
+LO_real =      0
+LO_imag =      0
+
+UO_real =      0
+UO_imag =      0
+LO_real =      0
+LO_imag =      0
+
+UO_real =      0
+UO_imag =      0
+LO_real =      0
+LO_imag =      0
+
+UO_real =      0
+UO_imag =      0
+LO_real =      0
+LO_imag =      0
+
+UO_real =      0
+UO_imag =      0
+LO_real =      0
+LO_imag =      0
+
+UO_real =      0
+UO_imag =      0
+LO_real =      0
+LO_imag =      0
+
+UO_real =      0
+UO_imag =      0
+LO_real =      0
+LO_imag =      0
+
+UO_real =      0
+UO_imag =      0
+LO_real =      0
+LO_imag =      0
+
+UO_real =      0
+UO_imag =      0
+LO_real =      0
+LO_imag =      0
+
+UO_real =   2045
+UO_imag =   2048
+LO_real =  -2045
+LO_imag =  -2048
+
+UO_real =  -2048
+UO_imag =   2047
+LO_real =   2048
+LO_imag =  -2047
+
+UO_real =   2048
+UO_imag =  -2049
+LO_real =  -2048
+LO_imag =   2049
+
+UO_real =  -2049
+UO_imag =  -2048
+LO_real =   2049
+LO_imag =   2048
+
+UO_real =      0
+UO_imag =      0
+LO_real =      0
+LO_imag =      0
+
+UO_real =      0
+UO_imag =      0
+LO_real =      0
+LO_imag =      0
+
+UO_real =      0
+UO_imag =      0
+LO_real =      0
+LO_imag =      0
+
+UO_real =      0
+UO_imag =      0
+LO_real =      0
+LO_imag =      0
+
+UO_real =   2045
+UO_imag =   2048
+LO_real =  -2045
+LO_imag =  -2048
+
+UO_real =  -2048
+UO_imag =   2047
+LO_real =   2048
+LO_imag =  -2047
+
+UO_real =   2048
+UO_imag =  -2049
+LO_real =  -2048
+LO_imag =   2049
+
+UO_real =  -2049
+UO_imag =  -2048
+LO_real =   2049
+LO_imag =   2048
+
+UO_real =      0
+UO_imag =      0
+LO_real =      0
+LO_imag =      0
+
+UO_real =      0
+UO_imag =      0
+LO_real =      0
+LO_imag =      0
+
+UO_real =      0
+UO_imag =      0
+LO_real =      0
+LO_imag =      0
+
+UO_real =      0
+UO_imag =      0
+LO_real =      0
+LO_imag =      0
+
+UO_real =   2045
+UO_imag =   2048
+LO_real =  -2045
+LO_imag =  -2048
+
+UO_real =  -2048
+UO_imag =   2047
+LO_real =   2048
+LO_imag =  -2047
+
+UO_real =   2048
+UO_imag =  -2049
+LO_real =  -2048
+LO_imag =   2049
+
+UO_real =  -2049
+UO_imag =  -2048
+LO_real =   2049
+LO_imag =   2048
+
+UO_real =      0
+UO_imag =      0
+LO_real =      0
+LO_imag =      0
+
+UO_real =      0
+UO_imag =      0
+LO_real =      0
+LO_imag =      0
+
+UO_real =      0
+UO_imag =      0
+LO_real =      0
+LO_imag =      0
+
+UO_real =      0
+UO_imag =      0
+LO_real =      0
+LO_imag =      0
+
+UO_real =   2045
+UO_imag =   2048
+LO_real =  -2045
+LO_imag =  -2048
+
+UO_real =  -2048
+UO_imag =   2047
+LO_real =   2048
+LO_imag =  -2047
+
+UO_real =   2048
+UO_imag =  -2049
+LO_real =  -2048
+LO_imag =   2049
+
+UO_real =  -2049
+UO_imag =  -2048
+LO_real =   2049
+LO_imag =   2048
+
+UO_real =      0
+UO_imag =      0
+LO_real =      0
+LO_imag =      0
+
+UO_real =      0
+UO_imag =      0
+LO_real =      0
+LO_imag =      0
+

@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Dec  5 00:32:50 2022
+# Process ID: 19116
+# Current directory: E:/1111/DCCDL/VIVADO/lab6/fft_pm6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22516 E:\1111\DCCDL\VIVADO\lab6\fft_pm6\fft.xpr
+# Log file: E:/1111/DCCDL/VIVADO/lab6/fft_pm6/vivado.log
+# Journal file: E:/1111/DCCDL/VIVADO/lab6/fft_pm6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/1111/DCCDL/VIVADO/lab6/fft_pm6/fft.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+open_wave_config E:/1111/DCCDL/VIVADO/lab6/fft_pm6/stage1_tb_behav.wcfg
+source stage1_tb.tcl
+launch_simulation -mode post-implementation -type timing
+open_wave_config E:/1111/DCCDL/VIVADO/lab6/fft_pm6/stage1_tb_behav.wcfg
+source stage1_tb.tcl
+close_sim
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_simulation -mode post-implementation -type timing
+open_wave_config E:/1111/DCCDL/VIVADO/lab6/fft_pm6/stage1_tb_behav.wcfg
+source stage1_tb.tcl
+close_sim

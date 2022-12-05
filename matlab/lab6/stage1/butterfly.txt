@@ -17,16 +17,16 @@ butterfly_UI_imag[ 2] = 0
 butterfly_UI_imag[ 3] = 1024
 
 butterfly_UO_real[ 0] = 0
-butterfly_UO_real[ 1] = -1
+butterfly_UO_real[ 1] = 0
 butterfly_UO_real[ 2] = 0
-butterfly_UO_real[ 3] = 2046
+butterfly_UO_real[ 3] = 2047
 butterfly_UO_imag[ 0] = 0
 butterfly_UO_imag[ 1] = 0
 butterfly_UO_imag[ 2] = 0
 butterfly_UO_imag[ 3] = 2048
 
 butterfly_LO_real[ 0] = 0
-butterfly_LO_real[ 1] = 2897
+butterfly_LO_real[ 1] = 2896
 butterfly_LO_real[ 2] = 0
 butterfly_LO_real[ 3] = 0
 butterfly_LO_imag[ 0] = 0

@@ -1,0 +1,135 @@
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =   2045
+out_imag =   2048
+
+out_real =   2048
+out_imag =  -2049
+
+out_real =  -2048
+out_imag =   2047
+
+out_real =  -2049
+out_imag =  -2048
+
+out_real =  -2045
+out_imag =  -2048
+
+out_real =  -2048
+out_imag =   2049
+
+out_real =   2048
+out_imag =  -2047
+
+out_real =   2049
+out_imag =   2048
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+
+out_real =      0
+out_imag =      0
+

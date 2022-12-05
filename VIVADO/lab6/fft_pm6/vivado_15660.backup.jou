@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Dec  5 11:11:02 2022
+# Process ID: 15660
+# Current directory: D:/1111/DCCDL/VIVADO/lab6/fft_pm6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10152 D:\1111\DCCDL\VIVADO\lab6\fft_pm6\fft.xpr
+# Log file: D:/1111/DCCDL/VIVADO/lab6/fft_pm6/vivado.log
+# Journal file: D:/1111/DCCDL/VIVADO/lab6/fft_pm6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/1111/DCCDL/VIVADO/lab6/fft_pm6/fft.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+save_project_as fft_point8 D:/1111/DCCDL/VIVADO/lab6/fft_point8 -force
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_simulation -mode post-implementation -type timing
+source fft_top.tcl
+launch_simulation
+source fft_top.tcl
+close_sim
+close_sim

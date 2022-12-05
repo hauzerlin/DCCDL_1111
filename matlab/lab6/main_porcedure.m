@@ -107,8 +107,8 @@ plot(abs(final-S))
 
 
 %% procedure 4
-clc
-clear
+% clc
+% clear
 
 for j =0:3
     ROM8(j+1) = cos(2*j*pi/8) - (sin(2*j*pi/8))*1i;
@@ -123,15 +123,9 @@ end
 
 S = [ 1+i 1-i -1+i -1-i -1-i -1+i 1-i 1+i]; % Y0~Y7
 
-% S = [1+i, 1-i, -1+i, -1-i, 1+i, 1-i, -1+i, -1-i];
-
-% S = [ 1 2 3 4 5 6 7 8 ]
-
-% S = circshift(S,5);
 
 s_ans = ifft(S); % ans of y0~y7
 
-% cnt = 0;
 
 % stage1
 C1_LI = s_ans;
@@ -194,14 +188,26 @@ for cnt = 7:10
     [B3_UO(cnt-6), B3_LO(cnt-6)] = buttfly3(B3_UI(cnt-6),B3_LI(cnt-6),cnt);
 end
 
-final = [B3_UO(1) B3_UO(3) B3_UO(2) B3_UO(4) B3_LO(1) B3_LO(3) B3_LO(2) B3_LO(4)];
+final_floating = [B3_UO(1) B3_UO(3) B3_UO(2) B3_UO(4) B3_LO(1) B3_LO(3) B3_LO(2) B3_LO(4)];
 
-plot(abs(final-S))
+% plot(real(final_floating))
+% title('Real part of Y0~Y7');
+% % plot(imag(final_floating))
+% % title('Imaginary part of Y0~Y7');
+% xlabel('index')
+% ylabel('value')
 % set(gca, 'YScale', 'log')
 
-%% procedure 5
-clc
-clear
+% plot((real(final_floating)-real(S)))
+plot((imag(final_floating)-imag(S)))
+% title('Error between X0~X7 and Y0~Y7 (real part)')
+title('Error between X0~X7 and Y0~Y7 (imaginary part)')
+xlabel('index')
+ylabel('error')
+
+%% procedure 5  (after truncation)
+% clc
+% clear
 
 for j =0:3
     ROM8(j+1) = truncation(cos(2*j*pi/8),10) - truncation((sin(2*j*pi/8)),10)*1i;
@@ -562,3 +568,40 @@ fprintf(file_mult2,'\n');
 
 
 ST = fclose('all');
+
+
+%% error estimate
+
+verilog_p_real = importdata("implementation\p_real.txt");
+verilog_p_imag = importdata("implementation\p_imag.txt");
+
+matlab_p_real = (2^11)*truncation(real(final),11); % after truncation
+matlab_p_imag = (2^11)*truncation(imag(final),11);
+
+
+implementation_error_real = abs(verilog_p_real' - matlab_p_real);
+implementation_error_imag = abs(verilog_p_imag' - matlab_p_imag);
+
+matlab_p_real_floating = (2^11)*truncation(real(final_floating),11); % after truncation
+matlab_p_imag_floating = (2^11)*truncation(imag(final_floating),11);
+
+implementation_error_real_floating = abs(verilog_p_real' - matlab_p_real_floating);
+implementation_error_imag_floating = abs(verilog_p_imag' - matlab_p_imag_floating);
+
+% plot((0:7), implementation_error_real/(2^11))
+% plot((0:7),implementation_error_imag/(2^11))
+% plot((0:7),implementation_error_real_floating/(2^11))
+% plot((0:7),implementation_error_imag_floating/(2^11))
+% title('Error between matlab and verilog (real part)')
+% xlabel('index')
+% ylabel('error value')
+
+error_zero = zeros(1,8);
+plot((0:7),error_zero);
+
+% grid on;
+title('Error between matlab and verilog (real part)')
+% title('Error between matlab and verilog (imaginary part)')
+
+xlabel('index')
+ylabel('error value')
