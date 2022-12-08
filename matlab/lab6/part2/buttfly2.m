@@ -1,4 +1,4 @@
-function [high, low] = buttfly2(UI, LI, counter)
+function [high, low] = buttfly2(UI, LI, cnt)
 % buttfly第一級 buttfly
 % if input = N points
 %   0 ~ (N/2)-1 為 UO 

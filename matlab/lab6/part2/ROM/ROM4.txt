@@ -1,0 +1,5 @@
+$signed(12'd1024)
+$signed(12'd0)
+
+$signed(12'd0)
+$signed(12'd-1024)
