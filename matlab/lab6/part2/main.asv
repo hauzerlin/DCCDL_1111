@@ -92,10 +92,11 @@ for cnt =16:39
     [ control_stage2(cnt-15),C2_UO(cnt-15), C2_LO(cnt-15)] = commutator2(cnt, C2_UI(cnt-15), C2_LI(cnt-15));
 end
 
-C2_UO = circshift(C2_UO,8);
 
-B2_UI = C2_UO(1,9:24);
-B2_LI = C2_LO(1,9:24);
+C2_LO = circshift(C2_LO,-8);
+
+B2_UI = C2_UO(1,1:16);
+B2_LI = C2_LO(1,1:16);
 
 
 % for cnt = 6:9
@@ -109,10 +110,6 @@ M2 = B2_LO(1,1:16).*[ROM16(1,1:8) ROM16(1,1:8)];
 
 
 % stage3
-
-C2_UI = [B1_UO(1,1:16) zeros(1,8)];
-C2_LI = [ zeros(1,8) M1 ];
-
 
 C3_UI = [B2_UO  zeros(1,4)];
 C3_LI = [ zeros(1,4) M2 ];
@@ -136,9 +133,58 @@ B3_LO = B3_UI - B3_LI;
 M3 = B3_LO(1,1:16).*[ROM8(1,1:4) ROM8(1,1:4) ROM8(1,1:4) ROM8(1,1:4)];
 
 
+% stage 4
+
+C4_UI = [B3_UO  zeros(1,2)];
+C4_LI = [ zeros(1,2) M3 ];
+
+C4_UO = zeros(1,18);
+C4_LO = zeros(1,18);
+
+for cnt = 28:45
+    [ control_stage4(cnt-27),C4_UO(cnt-27), C4_LO(cnt-27)] = commutator4(cnt, C4_UI(cnt-27), C4_LI(cnt-27));
+end
+C4_LO = circshift(C4_LO,-2);
+
+
+B4_UI = C4_UO(1,1:16);
+B4_LI = C4_LO(1,1:16);
+
+
+B4_UO = B4_UI + B4_LI;
+B4_LO = B4_UI - B4_LI;
+
+M4 = B4_LO(1,1:16).*[ROM4(1,1:2) ROM4(1,1:2) ROM4(1,1:2) ROM4(1,1:2) ROM4(1,1:2) ROM4(1,1:2) ROM4(1,1:2) ROM4(1,1:2)];
+
+
+% stage 5
+
+C5_UI = [B4_UO  0];
+C5_LI = [ 0 M4 ];
+
+C5_UO = zeros(1,17);
+C5_LO = zeros(1,17);
+
+for cnt = 30:46
+    [ control_stage5(cnt-29),C5_UO(cnt-29), C5_LO(cnt-29)] = commutator5(cnt, C5_UI(cnt-29), C5_LI(cnt-29));
+end
+
+C5_LO = circshift(C5_LO,-1);
+
+
+B5_UI = C5_UO(1,1:16);
+B5_LI = C5_LO(1,1:16);
+
+
+B5_UO = B5_UI + B5_LI;
+B5_LO = B5_UI - B5_LI;
+
 
 %%
-final = [B3_UO(1) B3_UO(3) B3_UO(2) B3_UO(4) B3_LO(1) B3_LO(3) B3_LO(2) B3_LO(4)];
+final = [B5_UO(1) B5_UO(9) B5_UO(5) B5_UO(13) B5_UO(3) B5_UO(11) B5_UO(7) B5_UO(15)
+         B5_UO(2) B5_UO(10) B5_UO(6) B5_UO(14) B5_UO(4) B5_UO(12) B5_UO(8) B5_UO(1)
+         B5_LO(1) B5_LO(1) B5_LO(1) B5_LO(1) B5_LO(1) B5_LO(1) B5_LO(1) B5_LO(1)
+         B5_LO(1) B5_LO(1) B5_LO(1) B5_LO(1) B5_LO(1) B5_LO(1) B5_LO(1) B5_LO(1)];
 
 plot(abs(final-S))
 % set(gca, 'YScale', 'log')

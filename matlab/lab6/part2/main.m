@@ -35,7 +35,7 @@ rand_32 = rand_temp(1,1:32);
 
 rand_32 = mod(rand_32,4)+1;
 
-stem ((1:32),rand_32);
+% stem ((1:32),rand_32);
 
 % S and s_ans part
 
@@ -58,7 +58,7 @@ for j = 1:32
 end
 s_ans = ifft(S); % ans of y0~y7
 
-%% stage part
+% stage part
 % cnt = 0;
 
 % stage1
@@ -180,8 +180,11 @@ B5_UO = B5_UI + B5_LI;
 B5_LO = B5_UI - B5_LI;
 
 
-%%
-final = [B3_UO(1) B3_UO(3) B3_UO(2) B3_UO(4) B3_LO(1) B3_LO(3) B3_LO(2) B3_LO(4)];
+
+final = [B5_UO(1) B5_UO(9) B5_UO(5) B5_UO(13) B5_UO(3) B5_UO(11) B5_UO(7) B5_UO(15) ...
+         B5_UO(2) B5_UO(10) B5_UO(6) B5_UO(14) B5_UO(4) B5_UO(12) B5_UO(8) B5_UO(16) ...
+         B5_LO(1) B5_LO(9) B5_LO(5) B5_LO(13) B5_LO(3) B5_LO(11) B5_LO(7) B5_LO(15) ...
+         B5_LO(2) B5_LO(10) B5_LO(6) B5_LO(14) B5_LO(4) B5_LO(12) B5_LO(8) B5_LO(16)];
 
 plot(abs(final-S))
 % set(gca, 'YScale', 'log')
