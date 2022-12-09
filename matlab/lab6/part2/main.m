@@ -182,7 +182,7 @@ plot(abs(final_floating-S))
 clear
 clc
 %rng('shuffle','simdTwister'); % True-random
-rng(429,"twister"); % Pseudo-random
+rng(611,"twister"); % Pseudo-random
 rand_temp = randperm(256)-129;
 rand_32 = rand_temp(1,1:32);
 
@@ -205,38 +205,34 @@ for j = 1:N
             S(j) = -1+1i;
         case 4
             S(j) = -1-1i;
-        otherwise
-            S(j) = 0;
     end
 
 end
 s_ans = ifft(S); % ans of y0~y7
 
 
-
 for j =0:floor(N/2)-1 % 16 items
-    ROM32(j+1) = truncation(cos(2*j*pi/N),10) -truncation((sin(2*j*pi/N))*1i,10);
+    ROM32(j+1) = truncation(cos(2*j*pi/N),10) -truncation((sin(2*j*pi/N)),10)*1i;
 end
 
 for j= 0:floor(N/(2^2))-1 % 8 items
-    ROM16(j+1) = truncation(cos(2*j*pi/floor(N/2)),10) - truncation((sin(2*j*pi/floor(N/2)))*1i,10);
+    ROM16(j+1) = truncation(cos(2*j*pi/floor(N/2)),10) - truncation((sin(2*j*pi/floor(N/2))),10)*1i;
 end
 
 for j= 0:floor(N/(2^3))-1 % 4 items 
-    ROM8(j+1) = truncation(cos(2*j*pi/floor(N/(2^2))),10) - truncation((sin(2*j*pi/floor(N/(2^2))))*1i,10);
+    ROM8(j+1) = truncation(cos(2*j*pi/floor(N/(2^2))),10) - truncation((sin(2*j*pi/floor(N/(2^2)))),10)*1i;
 end
 
 for j= 0:floor(N/(2^4))-1 % 2 items
-    ROM4(j+1) = truncation(cos(2*j*pi/floor(N/(2^3))),10) - truncation((sin(2*j*pi/floor(N/(2^3))))*1i,10);
+    ROM4(j+1) = truncation(cos(2*j*pi/floor(N/(2^3))),10) - truncation((sin(2*j*pi/floor(N/(2^3)))),10)*1i;
 end
-
 
 % STAGE 1
 
-C1_LI = truncation(s_ans,10);
+C1_LI = truncation(s_ans,9);
 % C1_LI = s_ans;
-for cnt= 0:N-1
-    [control_stage1(cnt+1),C1_UO(cnt+1), C1_LO(cnt+1)] = commutator1(C1_LI(cnt+1), 0 ,cnt);
+for cnt= 1:N
+    [control_stage1(cnt),C1_UO(cnt), C1_LO(cnt)] = commutator1(C1_LI(cnt), 0 ,cnt-1);
 end
 
 
@@ -247,8 +243,8 @@ B1_LO = B1_UI - B1_LI;
 
 
 M1 = B1_LO(1,1:16).*ROM32(1,1:16);
-M1 = truncation(M1,10);
-
+% M1 = truncation(M1,10);
+M1 = truncation(M1,9);
 
 % STAGE 2
 
@@ -270,7 +266,8 @@ B2_LO = B2_UI - B2_LI;
 
 
 M2 = B2_LO(1,1:16).*[ROM16(1,1:8) ROM16(1,1:8)];
-M2 = truncation(M2,10);
+% M2 = truncation(M2,10);
+M2 = truncation(M2,9);
 
 % STAGE3
 
@@ -292,7 +289,8 @@ B3_LO = B3_UI - B3_LI;
 
 
 M3 = B3_LO(1,1:16).*[ROM8(1,1:4) ROM8(1,1:4) ROM8(1,1:4) ROM8(1,1:4)];
-M3 = truncation(M3,10);
+% M3 = truncation(M3,10);
+M3 = truncation(M3,9);
 
 % STAGE 4
 
@@ -315,7 +313,8 @@ B4_LO = B4_UI - B4_LI;
 
 M4 = B4_LO(1,1:16).*[ROM4(1,1:2) ROM4(1,1:2) ROM4(1,1:2) ROM4(1,1:2) ...
                      ROM4(1,1:2) ROM4(1,1:2) ROM4(1,1:2) ROM4(1,1:2)];
-M4 = truncation(M4,10);
+% M4 = truncation(M4,10);
+M4 = truncation(M4,9);
 
 % STAGE 5
 
@@ -325,7 +324,7 @@ C5_UO = zeros(1,17);
 C5_LO = zeros(1,17);
 for cnt = 30:46
     [ control_stage5(cnt-29),C5_UO(cnt-29), C5_LO(cnt-29)] = ...
-    commutator5(cnt, C5_UI(cnt-29), C5_LI(cnt-29));
+      commutator5(cnt, C5_UI(cnt-29), C5_LI(cnt-29));
 end
 C5_LO = circshift(C5_LO,-1);
 
@@ -341,4 +340,6 @@ final = [B5_UO(1) B5_UO(9) B5_UO(5) B5_UO(13) B5_UO(3) B5_UO(11) B5_UO(7) B5_UO(
          B5_LO(2) B5_LO(10) B5_LO(6) B5_LO(14) B5_LO(4) B5_LO(12) B5_LO(8) B5_LO(16)];
 
 plot(abs(final-S))
+
+rms_value = abs(sqrt(sum((final-S).^2)/N))
 % set(gca, 'YScale', 'log')

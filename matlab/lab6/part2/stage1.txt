@@ -1,0 +1,584 @@
+C_LI_real[0] = -96
+C_LI_imag[0] = 0
+
+C_LI_real[1] = 32
+C_LI_imag[1] = -51
+
+C_LI_real[2] = -99
+C_LI_imag[2] = -31
+
+C_LI_real[3] = 23
+C_LI_imag[3] = -11
+
+C_LI_real[4] = 3
+C_LI_imag[4] = 22
+
+C_LI_real[5] = -268
+C_LI_imag[5] = -91
+
+C_LI_real[6] = 96
+C_LI_imag[6] = -156
+
+C_LI_real[7] = 5
+C_LI_imag[7] = -28
+
+C_LI_real[8] = 64
+C_LI_imag[8] = 96
+
+C_LI_real[9] = 10
+C_LI_imag[9] = 26
+
+C_LI_real[10] = -71
+C_LI_imag[10] = 209
+
+C_LI_real[11] = -5
+C_LI_imag[11] = -47
+
+C_LI_real[12] = 41
+C_LI_imag[12] = 41
+
+C_LI_real[13] = 33
+C_LI_imag[13] = 26
+
+C_LI_real[14] = -169
+C_LI_imag[14] = 15
+
+C_LI_real[15] = -18
+C_LI_imag[15] = 125
+
+C_LI_real[16] = 32
+C_LI_imag[16] = -64
+
+C_LI_real[17] = 102
+C_LI_imag[17] = 45
+
+C_LI_real[18] = -75
+C_LI_imag[18] = 49
+
+C_LI_real[19] = 126
+C_LI_imag[19] = -147
+
+C_LI_real[20] = -132
+C_LI_imag[20] = -23
+
+C_LI_real[21] = -50
+C_LI_imag[21] = 2
+
+C_LI_real[22] = -180
+C_LI_imag[22] = -82
+
+C_LI_real[23] = -72
+C_LI_imag[23] = -145
+
+C_LI_real[24] = 0
+C_LI_imag[24] = 96
+
+C_LI_real[25] = 35
+C_LI_imag[25] = -150
+
+C_LI_real[26] = -12
+C_LI_imag[26] = -101
+
+C_LI_real[27] = 35
+C_LI_imag[27] = 76
+
+C_LI_real[28] = 86
+C_LI_imag[28] = 86
+
+C_LI_real[29] = 102
+C_LI_imag[29] = -66
+
+C_LI_real[30] = -6
+C_LI_imag[30] = -163
+
+C_LI_real[31] = -98
+C_LI_imag[31] = -82
+
+
+C_UO_real[0] = -96
+C_UO_imag[0] = 0
+
+C_UO_real[1] = 32
+C_UO_imag[1] = -51
+
+C_UO_real[2] = -99
+C_UO_imag[2] = -31
+
+C_UO_real[3] = 23
+C_UO_imag[3] = -11
+
+C_UO_real[4] = 3
+C_UO_imag[4] = 22
+
+C_UO_real[5] = -268
+C_UO_imag[5] = -91
+
+C_UO_real[6] = 96
+C_UO_imag[6] = -156
+
+C_UO_real[7] = 5
+C_UO_imag[7] = -28
+
+C_UO_real[8] = 64
+C_UO_imag[8] = 96
+
+C_UO_real[9] = 10
+C_UO_imag[9] = 26
+
+C_UO_real[10] = -71
+C_UO_imag[10] = 209
+
+C_UO_real[11] = -5
+C_UO_imag[11] = -47
+
+C_UO_real[12] = 41
+C_UO_imag[12] = 41
+
+C_UO_real[13] = 33
+C_UO_imag[13] = 26
+
+C_UO_real[14] = -169
+C_UO_imag[14] = 15
+
+C_UO_real[15] = -18
+C_UO_imag[15] = 125
+
+C_UO_real[16] = 0
+C_UO_imag[16] = 0
+
+C_UO_real[17] = 0
+C_UO_imag[17] = 0
+
+C_UO_real[18] = 0
+C_UO_imag[18] = 0
+
+C_UO_real[19] = 0
+C_UO_imag[19] = 0
+
+C_UO_real[20] = 0
+C_UO_imag[20] = 0
+
+C_UO_real[21] = 0
+C_UO_imag[21] = 0
+
+C_UO_real[22] = 0
+C_UO_imag[22] = 0
+
+C_UO_real[23] = 0
+C_UO_imag[23] = 0
+
+C_UO_real[24] = 0
+C_UO_imag[24] = 0
+
+C_UO_real[25] = 0
+C_UO_imag[25] = 0
+
+C_UO_real[26] = 0
+C_UO_imag[26] = 0
+
+C_UO_real[27] = 0
+C_UO_imag[27] = 0
+
+C_UO_real[28] = 0
+C_UO_imag[28] = 0
+
+C_UO_real[29] = 0
+C_UO_imag[29] = 0
+
+C_UO_real[30] = 0
+C_UO_imag[30] = 0
+
+C_UO_real[31] = 0
+C_UO_imag[31] = 0
+
+
+C_LO_real[0] = 0
+C_UO_imag[0] = 0
+
+C_LO_real[1] = 0
+C_UO_imag[1] = 0
+
+C_LO_real[2] = 0
+C_UO_imag[2] = 0
+
+C_LO_real[3] = 0
+C_UO_imag[3] = 0
+
+C_LO_real[4] = 0
+C_UO_imag[4] = 0
+
+C_LO_real[5] = 0
+C_UO_imag[5] = 0
+
+C_LO_real[6] = 0
+C_UO_imag[6] = 0
+
+C_LO_real[7] = 0
+C_UO_imag[7] = 0
+
+C_LO_real[8] = 0
+C_UO_imag[8] = 0
+
+C_LO_real[9] = 0
+C_UO_imag[9] = 0
+
+C_LO_real[10] = 0
+C_UO_imag[10] = 0
+
+C_LO_real[11] = 0
+C_UO_imag[11] = 0
+
+C_LO_real[12] = 0
+C_UO_imag[12] = 0
+
+C_LO_real[13] = 0
+C_UO_imag[13] = 0
+
+C_LO_real[14] = 0
+C_UO_imag[14] = 0
+
+C_LO_real[15] = 0
+C_UO_imag[15] = 0
+
+C_LO_real[16] = 32
+C_UO_imag[16] = -64
+
+C_LO_real[17] = 102
+C_UO_imag[17] = 45
+
+C_LO_real[18] = -75
+C_UO_imag[18] = 49
+
+C_LO_real[19] = 126
+C_UO_imag[19] = -147
+
+C_LO_real[20] = -132
+C_UO_imag[20] = -23
+
+C_LO_real[21] = -50
+C_UO_imag[21] = 2
+
+C_LO_real[22] = -180
+C_UO_imag[22] = -82
+
+C_LO_real[23] = -72
+C_UO_imag[23] = -145
+
+C_LO_real[24] = 0
+C_UO_imag[24] = 96
+
+C_LO_real[25] = 35
+C_UO_imag[25] = -150
+
+C_LO_real[26] = -12
+C_UO_imag[26] = -101
+
+C_LO_real[27] = 35
+C_UO_imag[27] = 76
+
+C_LO_real[28] = 86
+C_UO_imag[28] = 86
+
+C_LO_real[29] = 102
+C_UO_imag[29] = -66
+
+C_LO_real[30] = -6
+C_UO_imag[30] = -163
+
+C_LO_real[31] = -98
+C_UO_imag[31] = -82
+
+
+B1_UI_real[0] = -96
+B1_UI_imag[0] = 0
+
+B1_UI_real[1] = 32
+B1_UI_imag[1] = -51
+
+B1_UI_real[2] = -99
+B1_UI_imag[2] = -31
+
+B1_UI_real[3] = 23
+B1_UI_imag[3] = -11
+
+B1_UI_real[4] = 3
+B1_UI_imag[4] = 22
+
+B1_UI_real[5] = -268
+B1_UI_imag[5] = -91
+
+B1_UI_real[6] = 96
+B1_UI_imag[6] = -156
+
+B1_UI_real[7] = 5
+B1_UI_imag[7] = -28
+
+B1_UI_real[8] = 64
+B1_UI_imag[8] = 96
+
+B1_UI_real[9] = 10
+B1_UI_imag[9] = 26
+
+B1_UI_real[10] = -71
+B1_UI_imag[10] = 209
+
+B1_UI_real[11] = -5
+B1_UI_imag[11] = -47
+
+B1_UI_real[12] = 41
+B1_UI_imag[12] = 41
+
+B1_UI_real[13] = 33
+B1_UI_imag[13] = 26
+
+B1_UI_real[14] = -169
+B1_UI_imag[14] = 15
+
+B1_UI_real[15] = -18
+B1_UI_imag[15] = 125
+
+
+B1_LI_real[0] = 32
+B1_LI_imag[0] = -64
+
+B1_LI_real[1] = 102
+B1_LI_imag[1] = 45
+
+B1_LI_real[2] = -75
+B1_LI_imag[2] = 49
+
+B1_LI_real[3] = 126
+B1_LI_imag[3] = -147
+
+B1_LI_real[4] = -132
+B1_LI_imag[4] = -23
+
+B1_LI_real[5] = -50
+B1_LI_imag[5] = 2
+
+B1_LI_real[6] = -180
+B1_LI_imag[6] = -82
+
+B1_LI_real[7] = -72
+B1_LI_imag[7] = -145
+
+B1_LI_real[8] = 0
+B1_LI_imag[8] = 96
+
+B1_LI_real[9] = 35
+B1_LI_imag[9] = -150
+
+B1_LI_real[10] = -12
+B1_LI_imag[10] = -101
+
+B1_LI_real[11] = 35
+B1_LI_imag[11] = 76
+
+B1_LI_real[12] = 86
+B1_LI_imag[12] = 86
+
+B1_LI_real[13] = 102
+B1_LI_imag[13] = -66
+
+B1_LI_real[14] = -6
+B1_LI_imag[14] = -163
+
+B1_LI_real[15] = -98
+B1_LI_imag[15] = -82
+
+
+B1_UO_real[0] = -64
+B1_UO_imag[0] = -64
+
+B1_UO_real[1] = 134
+B1_UO_imag[1] = -6
+
+B1_UO_real[2] = -174
+B1_UO_imag[2] = 18
+
+B1_UO_real[3] = 149
+B1_UO_imag[3] = -158
+
+B1_UO_real[4] = -129
+B1_UO_imag[4] = -1
+
+B1_UO_real[5] = -318
+B1_UO_imag[5] = -89
+
+B1_UO_real[6] = -84
+B1_UO_imag[6] = -238
+
+B1_UO_real[7] = -67
+B1_UO_imag[7] = -173
+
+B1_UO_real[8] = 64
+B1_UO_imag[8] = 192
+
+B1_UO_real[9] = 45
+B1_UO_imag[9] = -124
+
+B1_UO_real[10] = -83
+B1_UO_imag[10] = 108
+
+B1_UO_real[11] = 30
+B1_UO_imag[11] = 29
+
+B1_UO_real[12] = 127
+B1_UO_imag[12] = 127
+
+B1_UO_real[13] = 135
+B1_UO_imag[13] = -40
+
+B1_UO_real[14] = -175
+B1_UO_imag[14] = -148
+
+B1_UO_real[15] = -116
+B1_UO_imag[15] = 43
+
+
+B1_LO_real[0] = -128
+B1_LO_imag[0] = 64
+
+B1_LO_real[1] = -70
+B1_LO_imag[1] = -96
+
+B1_LO_real[2] = -24
+B1_LO_imag[2] = -80
+
+B1_LO_real[3] = -103
+B1_LO_imag[3] = 136
+
+B1_LO_real[4] = 135
+B1_LO_imag[4] = 45
+
+B1_LO_real[5] = -218
+B1_LO_imag[5] = -93
+
+B1_LO_real[6] = 276
+B1_LO_imag[6] = -74
+
+B1_LO_real[7] = 77
+B1_LO_imag[7] = 117
+
+B1_LO_real[8] = 64
+B1_LO_imag[8] = 0
+
+B1_LO_real[9] = -25
+B1_LO_imag[9] = 176
+
+B1_LO_real[10] = -59
+B1_LO_imag[10] = 310
+
+B1_LO_real[11] = -40
+B1_LO_imag[11] = -123
+
+B1_LO_real[12] = -45
+B1_LO_imag[12] = -45
+
+B1_LO_real[13] = -69
+B1_LO_imag[13] = 92
+
+B1_LO_real[14] = -163
+B1_LO_imag[14] = 178
+
+B1_LO_real[15] = 80
+B1_LO_imag[15] = 207
+
+
+M1_in_real[0] = -128
+M1_in_imag[0] = 64
+
+M1_in_real[1] = -70
+M1_in_imag[1] = -96
+
+M1_in_real[2] = -24
+M1_in_imag[2] = -80
+
+M1_in_real[3] = -103
+M1_in_imag[3] = 136
+
+M1_in_real[4] = 135
+M1_in_imag[4] = 45
+
+M1_in_real[5] = -218
+M1_in_imag[5] = -93
+
+M1_in_real[6] = 276
+M1_in_imag[6] = -74
+
+M1_in_real[7] = 77
+M1_in_imag[7] = 117
+
+M1_in_real[8] = 64
+M1_in_imag[8] = 0
+
+M1_in_real[9] = -25
+M1_in_imag[9] = 176
+
+M1_in_real[10] = -59
+M1_in_imag[10] = 310
+
+M1_in_real[11] = -40
+M1_in_imag[11] = -123
+
+M1_in_real[12] = -45
+M1_in_imag[12] = -45
+
+M1_in_real[13] = -69
+M1_in_imag[13] = 92
+
+M1_in_real[14] = -163
+M1_in_imag[14] = 178
+
+M1_in_real[15] = 80
+M1_in_imag[15] = 207
+
+
+M1_out_real[0] = -128
+M1_out_imag[0] = 64
+
+M1_out_real[1] = -88
+M1_out_imag[1] = -81
+
+M1_out_real[2] = -53
+M1_out_imag[2] = -65
+
+M1_out_real[3] = -11
+M1_out_imag[3] = 170
+
+M1_out_real[4] = 127
+M1_out_imag[4] = -64
+
+M1_out_real[5] = -199
+M1_out_imag[5] = 129
+
+M1_out_real[6] = 37
+M1_out_imag[6] = -284
+
+M1_out_real[7] = 129
+M1_out_imag[7] = -53
+
+M1_out_real[8] = 0
+M1_out_imag[8] = -64
+
+M1_out_real[9] = 177
+M1_out_imag[9] = -10
+
+M1_out_real[10] = 308
+M1_out_imag[10] = -65
+
+M1_out_real[11] = -80
+M1_out_imag[11] = 101
+
+M1_out_real[12] = 0
+M1_out_imag[12] = 63
+
+M1_out_real[13] = 108
+M1_out_imag[13] = -39
+
+M1_out_real[14] = 218
+M1_out_imag[14] = -103
+
+M1_out_real[15] = -39
+M1_out_imag[15] = -219
+

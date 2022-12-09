@@ -1,0 +1,453 @@
+C_UI_real[0] = -518
+C_UI_imag[0] = -6
+
+C_UI_real[1] = -8
+C_UI_imag[1] = -518
+
+C_UI_real[2] = 514
+C_UI_imag[2] = 0
+
+C_UI_real[3] = -1
+C_UI_imag[3] = -514
+
+C_UI_real[4] = -513
+C_UI_imag[4] = -1
+
+C_UI_real[5] = -1
+C_UI_imag[5] = 511
+
+C_UI_real[6] = 1
+C_UI_imag[6] = -513
+
+C_UI_real[7] = -514
+C_UI_imag[7] = 1
+
+C_UI_real[8] = 509
+C_UI_imag[8] = -518
+
+C_UI_real[9] = -3
+C_UI_imag[9] = -2
+
+C_UI_real[10] = 2
+C_UI_imag[10] = 1
+
+C_UI_real[11] = 511
+C_UI_imag[11] = -513
+
+C_UI_real[12] = -511
+C_UI_imag[12] = 512
+
+C_UI_real[13] = -2
+C_UI_imag[13] = -2
+
+C_UI_real[14] = -2
+C_UI_imag[14] = 511
+
+C_UI_real[15] = -517
+C_UI_imag[15] = -3
+
+C_UI_real[16] = 0
+C_UI_imag[16] = 0
+
+
+C_LI_real[0] = 0
+C_LI_imag[0] = 0
+
+C_LI_real[1] = 514
+C_LI_imag[1] = 514
+
+C_LI_real[2] = 0
+C_LI_imag[2] = 0
+
+C_LI_real[3] = -510
+C_LI_imag[3] = 4
+
+C_LI_real[4] = 0
+C_LI_imag[4] = -511
+
+C_LI_real[5] = 1
+C_LI_imag[5] = 1
+
+C_LI_real[6] = 513
+C_LI_imag[6] = -511
+
+C_LI_real[7] = -1
+C_LI_imag[7] = -511
+
+C_LI_real[8] = -513
+C_LI_imag[8] = 0
+
+C_LI_real[9] = -511
+C_LI_imag[9] = 516
+
+C_LI_real[10] = 0
+C_LI_imag[10] = 1
+
+C_LI_real[11] = -512
+C_LI_imag[11] = 1
+
+C_LI_real[12] = 1
+C_LI_imag[12] = 513
+
+C_LI_real[13] = 1
+C_LI_imag[13] = -510
+
+C_LI_real[14] = 510
+C_LI_imag[14] = -2
+
+C_LI_real[15] = 0
+C_LI_imag[15] = -1
+
+C_LI_real[16] = 511
+C_LI_imag[16] = 513
+
+
+C_UO_real[0] = -518
+C_UO_imag[0] = -6
+
+C_UO_real[1] = 514
+C_UO_imag[1] = 514
+
+C_UO_real[2] = 514
+C_UO_imag[2] = 0
+
+C_UO_real[3] = -510
+C_UO_imag[3] = 4
+
+C_UO_real[4] = -513
+C_UO_imag[4] = -1
+
+C_UO_real[5] = 1
+C_UO_imag[5] = 1
+
+C_UO_real[6] = 1
+C_UO_imag[6] = -513
+
+C_UO_real[7] = -1
+C_UO_imag[7] = -511
+
+C_UO_real[8] = 509
+C_UO_imag[8] = -518
+
+C_UO_real[9] = -511
+C_UO_imag[9] = 516
+
+C_UO_real[10] = 2
+C_UO_imag[10] = 1
+
+C_UO_real[11] = -512
+C_UO_imag[11] = 1
+
+C_UO_real[12] = -511
+C_UO_imag[12] = 512
+
+C_UO_real[13] = 1
+C_UO_imag[13] = -510
+
+C_UO_real[14] = -2
+C_UO_imag[14] = 511
+
+C_UO_real[15] = 0
+C_UO_imag[15] = -1
+
+C_UO_real[16] = 0
+C_UO_imag[16] = 0
+
+
+C_LO_real[0] = -8
+C_UO_imag[0] = -518
+
+C_LO_real[1] = 0
+C_UO_imag[1] = 0
+
+C_LO_real[2] = -1
+C_UO_imag[2] = -514
+
+C_LO_real[3] = 0
+C_UO_imag[3] = -511
+
+C_LO_real[4] = -1
+C_UO_imag[4] = 511
+
+C_LO_real[5] = 513
+C_UO_imag[5] = -511
+
+C_LO_real[6] = -514
+C_UO_imag[6] = 1
+
+C_LO_real[7] = -513
+C_UO_imag[7] = 0
+
+C_LO_real[8] = -3
+C_UO_imag[8] = -2
+
+C_LO_real[9] = 0
+C_UO_imag[9] = 1
+
+C_LO_real[10] = 511
+C_UO_imag[10] = -513
+
+C_LO_real[11] = 1
+C_UO_imag[11] = 513
+
+C_LO_real[12] = -2
+C_UO_imag[12] = -2
+
+C_LO_real[13] = 510
+C_UO_imag[13] = -2
+
+C_LO_real[14] = -517
+C_UO_imag[14] = -3
+
+C_LO_real[15] = 511
+C_UO_imag[15] = 513
+
+C_LO_real[16] = 0
+C_UO_imag[16] = 0
+
+
+B_UI_real[0] = -518
+B_UI_imag[0] = -6
+
+B_UI_real[1] = 514
+B_UI_imag[1] = 514
+
+B_UI_real[2] = 514
+B_UI_imag[2] = 0
+
+B_UI_real[3] = -510
+B_UI_imag[3] = 4
+
+B_UI_real[4] = -513
+B_UI_imag[4] = -1
+
+B_UI_real[5] = 1
+B_UI_imag[5] = 1
+
+B_UI_real[6] = 1
+B_UI_imag[6] = -513
+
+B_UI_real[7] = -1
+B_UI_imag[7] = -511
+
+B_UI_real[8] = 509
+B_UI_imag[8] = -518
+
+B_UI_real[9] = -511
+B_UI_imag[9] = 516
+
+B_UI_real[10] = 2
+B_UI_imag[10] = 1
+
+B_UI_real[11] = -512
+B_UI_imag[11] = 1
+
+B_UI_real[12] = -511
+B_UI_imag[12] = 512
+
+B_UI_real[13] = 1
+B_UI_imag[13] = -510
+
+B_UI_real[14] = -2
+B_UI_imag[14] = 511
+
+B_UI_real[15] = 0
+B_UI_imag[15] = -1
+
+
+B_LI_real[0] = -8
+B_LI_imag[0] = -518
+
+B_LI_real[1] = 0
+B_LI_imag[1] = 0
+
+B_LI_real[2] = -1
+B_LI_imag[2] = -514
+
+B_LI_real[3] = 0
+B_LI_imag[3] = -511
+
+B_LI_real[4] = -1
+B_LI_imag[4] = 511
+
+B_LI_real[5] = 513
+B_LI_imag[5] = -511
+
+B_LI_real[6] = -514
+B_LI_imag[6] = 1
+
+B_LI_real[7] = -513
+B_LI_imag[7] = 0
+
+B_LI_real[8] = -3
+B_LI_imag[8] = -2
+
+B_LI_real[9] = 0
+B_LI_imag[9] = 1
+
+B_LI_real[10] = 511
+B_LI_imag[10] = -513
+
+B_LI_real[11] = 1
+B_LI_imag[11] = 513
+
+B_LI_real[12] = -2
+B_LI_imag[12] = -2
+
+B_LI_real[13] = 510
+B_LI_imag[13] = -2
+
+B_LI_real[14] = -517
+B_LI_imag[14] = -3
+
+B_LI_real[15] = 511
+B_LI_imag[15] = 513
+
+
+B_UO_real[0] = -526
+B_UO_imag[0] = -524
+
+B_UO_real[1] = 514
+B_UO_imag[1] = 514
+
+B_UO_real[2] = 513
+B_UO_imag[2] = -514
+
+B_UO_real[3] = -510
+B_UO_imag[3] = -507
+
+B_UO_real[4] = -514
+B_UO_imag[4] = 510
+
+B_UO_real[5] = 514
+B_UO_imag[5] = -510
+
+B_UO_real[6] = -513
+B_UO_imag[6] = -512
+
+B_UO_real[7] = -514
+B_UO_imag[7] = -511
+
+B_UO_real[8] = 506
+B_UO_imag[8] = -520
+
+B_UO_real[9] = -511
+B_UO_imag[9] = 517
+
+B_UO_real[10] = 513
+B_UO_imag[10] = -512
+
+B_UO_real[11] = -511
+B_UO_imag[11] = 514
+
+B_UO_real[12] = -513
+B_UO_imag[12] = 510
+
+B_UO_real[13] = 511
+B_UO_imag[13] = -512
+
+B_UO_real[14] = -519
+B_UO_imag[14] = 508
+
+B_UO_real[15] = 511
+B_UO_imag[15] = 512
+
+
+B_LO_real[0] = -510
+B_LO_imag[0] = 512
+
+B_LO_real[1] = 514
+B_LO_imag[1] = 514
+
+B_LO_real[2] = 515
+B_LO_imag[2] = 514
+
+B_LO_real[3] = -510
+B_LO_imag[3] = 515
+
+B_LO_real[4] = -512
+B_LO_imag[4] = -512
+
+B_LO_real[5] = -512
+B_LO_imag[5] = 512
+
+B_LO_real[6] = 515
+B_LO_imag[6] = -514
+
+B_LO_real[7] = 512
+B_LO_imag[7] = -511
+
+B_LO_real[8] = 512
+B_LO_imag[8] = -516
+
+B_LO_real[9] = -511
+B_LO_imag[9] = 515
+
+B_LO_real[10] = -509
+B_LO_imag[10] = 514
+
+B_LO_real[11] = -513
+B_LO_imag[11] = -512
+
+B_LO_real[12] = -509
+B_LO_imag[12] = 514
+
+B_LO_real[13] = -509
+B_LO_imag[13] = -508
+
+B_LO_real[14] = 515
+B_LO_imag[14] = 514
+
+B_LO_real[15] = -511
+B_LO_imag[15] = -514
+
+
+M5_in_real[0] = -510
+M5_in_imag[0] = 512
+
+M5_in_real[1] = 514
+M5_in_imag[1] = 514
+
+M5_in_real[2] = 515
+M5_in_imag[2] = 514
+
+M5_in_real[3] = -510
+M5_in_imag[3] = 515
+
+M5_in_real[4] = -512
+M5_in_imag[4] = -512
+
+M5_in_real[5] = -512
+M5_in_imag[5] = 512
+
+M5_in_real[6] = 515
+M5_in_imag[6] = -514
+
+M5_in_real[7] = 512
+M5_in_imag[7] = -511
+
+M5_in_real[8] = 512
+M5_in_imag[8] = -516
+
+M5_in_real[9] = -511
+M5_in_imag[9] = 515
+
+M5_in_real[10] = -509
+M5_in_imag[10] = 514
+
+M5_in_real[11] = -513
+M5_in_imag[11] = -512
+
+M5_in_real[12] = -509
+M5_in_imag[12] = 514
+
+M5_in_real[13] = -509
+M5_in_imag[13] = -508
+
+M5_in_real[14] = 515
+M5_in_imag[14] = 514
+
+M5_in_real[15] = -511
+M5_in_imag[15] = -514
+
+

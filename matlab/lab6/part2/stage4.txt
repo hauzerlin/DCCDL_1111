@@ -1,0 +1,513 @@
+C_UI_real[0] = -2
+C_UI_imag[0] = 254
+
+C_UI_real[1] = -4
+C_UI_imag[1] = -259
+
+C_UI_real[2] = -516
+C_UI_imag[2] = -260
+
+C_UI_real[3] = -4
+C_UI_imag[3] = -259
+
+C_UI_real[4] = -256
+C_UI_imag[4] = 0
+
+C_UI_real[5] = 255
+C_UI_imag[5] = 512
+
+C_UI_real[6] = -257
+C_UI_imag[6] = -1
+
+C_UI_real[7] = -256
+C_UI_imag[7] = -1
+
+C_UI_real[8] = -1
+C_UI_imag[8] = -1
+
+C_UI_real[9] = -2
+C_UI_imag[9] = -1
+
+C_UI_real[10] = 510
+C_UI_imag[10] = -517
+
+C_UI_real[11] = -1
+C_UI_imag[11] = -1
+
+C_UI_real[12] = -255
+C_UI_imag[12] = 1
+
+C_UI_real[13] = 0
+C_UI_imag[13] = 254
+
+C_UI_real[14] = -256
+C_UI_imag[14] = 511
+
+C_UI_real[15] = -2
+C_UI_imag[15] = -256
+
+C_UI_real[16] = 0
+C_UI_imag[16] = 0
+
+C_UI_real[17] = 0
+C_UI_imag[17] = 0
+
+
+C_LI_real[0] = 0
+C_LI_imag[0] = 0
+
+C_LI_real[1] = 0
+C_LI_imag[1] = 0
+
+C_LI_real[2] = 2
+C_LI_imag[2] = 2
+
+C_LI_real[3] = 255
+C_LI_imag[3] = -257
+
+C_LI_real[4] = 512
+C_LI_imag[4] = -2
+
+C_LI_real[5] = -256
+C_LI_imag[5] = -257
+
+C_LI_real[6] = 0
+C_LI_imag[6] = -512
+
+C_LI_real[7] = -257
+C_LI_imag[7] = -256
+
+C_LI_real[8] = 1
+C_LI_imag[8] = -1
+
+C_LI_real[9] = -257
+C_LI_imag[9] = 257
+
+C_LI_real[10] = -255
+C_LI_imag[10] = 1
+
+C_LI_real[11] = -1
+C_LI_imag[11] = -256
+
+C_LI_real[12] = 257
+C_LI_imag[12] = 0
+
+C_LI_real[13] = 512
+C_LI_imag[13] = -257
+
+C_LI_real[14] = -1
+C_LI_imag[14] = 255
+
+C_LI_real[15] = -515
+C_LI_imag[15] = 254
+
+C_LI_real[16] = -1
+C_LI_imag[16] = 256
+
+C_LI_real[17] = -2
+C_LI_imag[17] = -257
+
+
+C_UO_real[0] = -2
+C_UO_imag[0] = 254
+
+C_UO_real[1] = -4
+C_UO_imag[1] = -259
+
+C_UO_real[2] = 2
+C_UO_imag[2] = 2
+
+C_UO_real[3] = 255
+C_UO_imag[3] = -257
+
+C_UO_real[4] = -256
+C_UO_imag[4] = 0
+
+C_UO_real[5] = 255
+C_UO_imag[5] = 512
+
+C_UO_real[6] = 0
+C_UO_imag[6] = -512
+
+C_UO_real[7] = -257
+C_UO_imag[7] = -256
+
+C_UO_real[8] = -1
+C_UO_imag[8] = -1
+
+C_UO_real[9] = -2
+C_UO_imag[9] = -1
+
+C_UO_real[10] = -255
+C_UO_imag[10] = 1
+
+C_UO_real[11] = -1
+C_UO_imag[11] = -256
+
+C_UO_real[12] = -255
+C_UO_imag[12] = 1
+
+C_UO_real[13] = 0
+C_UO_imag[13] = 254
+
+C_UO_real[14] = -1
+C_UO_imag[14] = 255
+
+C_UO_real[15] = -515
+C_UO_imag[15] = 254
+
+C_UO_real[16] = 0
+C_UO_imag[16] = 0
+
+C_UO_real[17] = 0
+C_UO_imag[17] = 0
+
+
+C_LO_real[0] = -516
+C_UO_imag[0] = -260
+
+C_LO_real[1] = -4
+C_UO_imag[1] = -259
+
+C_LO_real[2] = 512
+C_UO_imag[2] = -2
+
+C_LO_real[3] = -256
+C_UO_imag[3] = -257
+
+C_LO_real[4] = -257
+C_UO_imag[4] = -1
+
+C_LO_real[5] = -256
+C_UO_imag[5] = -1
+
+C_LO_real[6] = 1
+C_UO_imag[6] = -1
+
+C_LO_real[7] = -257
+C_UO_imag[7] = 257
+
+C_LO_real[8] = 510
+C_UO_imag[8] = -517
+
+C_LO_real[9] = -1
+C_UO_imag[9] = -1
+
+C_LO_real[10] = 257
+C_UO_imag[10] = 0
+
+C_LO_real[11] = 512
+C_UO_imag[11] = -257
+
+C_LO_real[12] = -256
+C_UO_imag[12] = 511
+
+C_LO_real[13] = -2
+C_UO_imag[13] = -256
+
+C_LO_real[14] = -1
+C_UO_imag[14] = 256
+
+C_LO_real[15] = -2
+C_UO_imag[15] = -257
+
+C_LO_real[16] = 0
+C_UO_imag[16] = 0
+
+C_LO_real[17] = 0
+C_UO_imag[17] = 0
+
+
+B_UI_real[0] = -2
+B_UI_imag[0] = 254
+
+B_UI_real[1] = -4
+B_UI_imag[1] = -259
+
+B_UI_real[2] = 2
+B_UI_imag[2] = 2
+
+B_UI_real[3] = 255
+B_UI_imag[3] = -257
+
+B_UI_real[4] = -256
+B_UI_imag[4] = 0
+
+B_UI_real[5] = 255
+B_UI_imag[5] = 512
+
+B_UI_real[6] = 0
+B_UI_imag[6] = -512
+
+B_UI_real[7] = -257
+B_UI_imag[7] = -256
+
+B_UI_real[8] = -1
+B_UI_imag[8] = -1
+
+B_UI_real[9] = -2
+B_UI_imag[9] = -1
+
+B_UI_real[10] = -255
+B_UI_imag[10] = 1
+
+B_UI_real[11] = -1
+B_UI_imag[11] = -256
+
+B_UI_real[12] = -255
+B_UI_imag[12] = 1
+
+B_UI_real[13] = 0
+B_UI_imag[13] = 254
+
+B_UI_real[14] = -1
+B_UI_imag[14] = 255
+
+B_UI_real[15] = -515
+B_UI_imag[15] = 254
+
+
+B_LI_real[0] = -516
+B_LI_imag[0] = -260
+
+B_LI_real[1] = -4
+B_LI_imag[1] = -259
+
+B_LI_real[2] = 512
+B_LI_imag[2] = -2
+
+B_LI_real[3] = -256
+B_LI_imag[3] = -257
+
+B_LI_real[4] = -257
+B_LI_imag[4] = -1
+
+B_LI_real[5] = -256
+B_LI_imag[5] = -1
+
+B_LI_real[6] = 1
+B_LI_imag[6] = -1
+
+B_LI_real[7] = -257
+B_LI_imag[7] = 257
+
+B_LI_real[8] = 510
+B_LI_imag[8] = -517
+
+B_LI_real[9] = -1
+B_LI_imag[9] = -1
+
+B_LI_real[10] = 257
+B_LI_imag[10] = 0
+
+B_LI_real[11] = 512
+B_LI_imag[11] = -257
+
+B_LI_real[12] = -256
+B_LI_imag[12] = 511
+
+B_LI_real[13] = -2
+B_LI_imag[13] = -256
+
+B_LI_real[14] = -1
+B_LI_imag[14] = 256
+
+B_LI_real[15] = -2
+B_LI_imag[15] = -257
+
+
+B_UO_real[0] = -518
+B_UO_imag[0] = -6
+
+B_UO_real[1] = -8
+B_UO_imag[1] = -518
+
+B_UO_real[2] = 514
+B_UO_imag[2] = 0
+
+B_UO_real[3] = -1
+B_UO_imag[3] = -514
+
+B_UO_real[4] = -513
+B_UO_imag[4] = -1
+
+B_UO_real[5] = -1
+B_UO_imag[5] = 511
+
+B_UO_real[6] = 1
+B_UO_imag[6] = -513
+
+B_UO_real[7] = -514
+B_UO_imag[7] = 1
+
+B_UO_real[8] = 509
+B_UO_imag[8] = -518
+
+B_UO_real[9] = -3
+B_UO_imag[9] = -2
+
+B_UO_real[10] = 2
+B_UO_imag[10] = 1
+
+B_UO_real[11] = 511
+B_UO_imag[11] = -513
+
+B_UO_real[12] = -511
+B_UO_imag[12] = 512
+
+B_UO_real[13] = -2
+B_UO_imag[13] = -2
+
+B_UO_real[14] = -2
+B_UO_imag[14] = 511
+
+B_UO_real[15] = -517
+B_UO_imag[15] = -3
+
+
+B_LO_real[0] = 514
+B_LO_imag[0] = 514
+
+B_LO_real[1] = 0
+B_LO_imag[1] = 0
+
+B_LO_real[2] = -510
+B_LO_imag[2] = 4
+
+B_LO_real[3] = 511
+B_LO_imag[3] = 0
+
+B_LO_real[4] = 1
+B_LO_imag[4] = 1
+
+B_LO_real[5] = 511
+B_LO_imag[5] = 513
+
+B_LO_real[6] = -1
+B_LO_imag[6] = -511
+
+B_LO_real[7] = 0
+B_LO_imag[7] = -513
+
+B_LO_real[8] = -511
+B_LO_imag[8] = 516
+
+B_LO_real[9] = -1
+B_LO_imag[9] = 0
+
+B_LO_real[10] = -512
+B_LO_imag[10] = 1
+
+B_LO_real[11] = -513
+B_LO_imag[11] = 1
+
+B_LO_real[12] = 1
+B_LO_imag[12] = -510
+
+B_LO_real[13] = 2
+B_LO_imag[13] = 510
+
+B_LO_real[14] = 0
+B_LO_imag[14] = -1
+
+B_LO_real[15] = -513
+B_LO_imag[15] = 511
+
+
+M4_in_real[0] = 514
+M4_in_imag[0] = 514
+
+M4_in_real[1] = 0
+M4_in_imag[1] = 0
+
+M4_in_real[2] = -510
+M4_in_imag[2] = 4
+
+M4_in_real[3] = 511
+M4_in_imag[3] = 0
+
+M4_in_real[4] = 1
+M4_in_imag[4] = 1
+
+M4_in_real[5] = 511
+M4_in_imag[5] = 513
+
+M4_in_real[6] = -1
+M4_in_imag[6] = -511
+
+M4_in_real[7] = 0
+M4_in_imag[7] = -513
+
+M4_in_real[8] = -511
+M4_in_imag[8] = 516
+
+M4_in_real[9] = -1
+M4_in_imag[9] = 0
+
+M4_in_real[10] = -512
+M4_in_imag[10] = 1
+
+M4_in_real[11] = -513
+M4_in_imag[11] = 1
+
+M4_in_real[12] = 1
+M4_in_imag[12] = -510
+
+M4_in_real[13] = 2
+M4_in_imag[13] = 510
+
+M4_in_real[14] = 0
+M4_in_imag[14] = -1
+
+M4_in_real[15] = -513
+M4_in_imag[15] = 511
+
+
+M4_out_real[0] = 514
+M4_out_imag[0] = 514
+
+M4_out_real[1] = 0
+M4_out_imag[1] = 0
+
+M4_out_real[2] = -510
+M4_out_imag[2] = 4
+
+M4_out_real[3] = 0
+M4_out_imag[3] = -511
+
+M4_out_real[4] = 1
+M4_out_imag[4] = 1
+
+M4_out_real[5] = 513
+M4_out_imag[5] = -511
+
+M4_out_real[6] = -1
+M4_out_imag[6] = -511
+
+M4_out_real[7] = -513
+M4_out_imag[7] = 0
+
+M4_out_real[8] = -511
+M4_out_imag[8] = 516
+
+M4_out_real[9] = 0
+M4_out_imag[9] = 1
+
+M4_out_real[10] = -512
+M4_out_imag[10] = 1
+
+M4_out_real[11] = 1
+M4_out_imag[11] = 513
+
+M4_out_real[12] = 1
+M4_out_imag[12] = -510
+
+M4_out_real[13] = 510
+M4_out_imag[13] = -2
+
+M4_out_real[14] = 0
+M4_out_imag[14] = -1
+
+M4_out_real[15] = 511
+M4_out_imag[15] = 513
+

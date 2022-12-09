@@ -4,6 +4,6 @@ $signed(12'd0)
 $signed(12'd-725)
 
 $signed(12'd0)
-$signed(12'd-725)
+$signed(12'd-724)
 $signed(12'd-1024)
-$signed(12'd-725)
+$signed(12'd-724)
