@@ -58,8 +58,8 @@ C2_UO = zeros(1,6);
 C2_LO = zeros(1,6);
 
 for cnt =4:9
-    [ control_stage2(cnt-3),C2_UO(cnt-3), C2_LO(cnt-3)] = commutator2(C2_LI(cnt-3), 0 , cnt, C2_UO(cnt-3), C2_LO(cnt-3));
-    [ control_stage2(cnt-3),C2_UO(cnt-3), C2_LO(cnt-3)] = commutator2(C2_UI(cnt-3), 1 , cnt, C2_UO(cnt-3), C2_LO(cnt-3));
+    [ control_stage2(cnt-3),C2_UO(cnt-3), C2_LO(cnt-3)] = commutator2(cnt, C2_UO(cnt-3), C2_LO(cnt-3));
+%     [ control_stage2(cnt-3),C2_UO(cnt-3), C2_LO(cnt-3)] = commutator2(C2_UI(cnt-3), 1 , cnt, C2_UO(cnt-3), C2_LO(cnt-3));
 end
 
 C2_UO = circshift(C2_UO,2);
@@ -81,8 +81,8 @@ C3_UO = zeros(1,5);
 C3_LO = zeros(1,5);
 
 for cnt = 6:10
-    [ control_stage3(cnt-5),C3_UO(cnt-5), C3_LO(cnt-5)] = commutator3(C3_LI(cnt-5), 0 , cnt, C3_UO(cnt-5), C3_LO(cnt-5));
-    [ control_stage3(cnt-5),C3_UO(cnt-5), C3_LO(cnt-5)] = commutator3(C3_UI(cnt-5), 1 , cnt, C3_UO(cnt-5), C3_LO(cnt-5));
+    [ control_stage3(cnt-5),C3_UO(cnt-5), C3_LO(cnt-5)] = commutator2(cnt, C3_UO(cnt-5), C3_LO(cnt-5));
+%     [ control_stage3(cnt-5),C3_UO(cnt-5), C3_LO(cnt-5)] = commutator3(C3_UI(cnt-5), 1 , cnt, C3_UO(cnt-5), C3_LO(cnt-5));
 end
 
 C3_LO = circshift(C3_LO,-1);
@@ -206,8 +206,8 @@ xlabel('index')
 ylabel('error')
 
 %% procedure 5  (after truncation)
-% clc
-% clear
+clc
+clear
 
 for j =0:3
     ROM8(j+1) = truncation(cos(2*j*pi/8),10) - truncation((sin(2*j*pi/8)),10)*1i;
@@ -256,8 +256,8 @@ C2_UO = zeros(1,6);
 C2_LO = zeros(1,6);
 
 for cnt =4:9
-    [ control_stage2(cnt-3),C2_UO(cnt-3), C2_LO(cnt-3)] = commutator2(C2_LI(cnt-3), 0 , cnt, C2_UO(cnt-3), C2_LO(cnt-3));
-    [ control_stage2(cnt-3),C2_UO(cnt-3), C2_LO(cnt-3)] = commutator2(C2_UI(cnt-3), 1 , cnt, C2_UO(cnt-3), C2_LO(cnt-3));
+    [ control_stage2(cnt-3),C2_UO(cnt-3), C2_LO(cnt-3)] = commutator2(cnt, C2_UI(cnt-3), C2_LI(cnt-3));
+%     [ control_stage2(cnt-3),C2_UO(cnt-3), C2_LO(cnt-3)] = commutator2(C2_UI(cnt-3), 1 , cnt, C2_UO(cnt-3), C2_LO(cnt-3));
 end
 
 C2_UO = circshift(C2_UO,2);
@@ -279,8 +279,8 @@ C3_UO = zeros(1,5);
 C3_LO = zeros(1,5);
 
 for cnt = 6:10
-    [ control_stage3(cnt-5),C3_UO(cnt-5), C3_LO(cnt-5)] = commutator3(C3_LI(cnt-5), 0 , cnt, C3_UO(cnt-5), C3_LO(cnt-5));
-    [ control_stage3(cnt-5),C3_UO(cnt-5), C3_LO(cnt-5)] = commutator3(C3_UI(cnt-5), 1 , cnt, C3_UO(cnt-5), C3_LO(cnt-5));
+    [ control_stage3(cnt-5),C3_UO(cnt-5), C3_LO(cnt-5)] = commutator2( cnt, C3_UI(cnt-5), C3_LI(cnt-5));
+%     [ control_stage3(cnt-5),C3_UO(cnt-5), C3_LO(cnt-5)] = commutator3(C3_UI(cnt-5), 1 , cnt, C3_UO(cnt-5), C3_LO(cnt-5));
 end
 
 C3_LO = circshift(C3_LO,-1);

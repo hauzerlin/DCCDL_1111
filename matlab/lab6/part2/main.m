@@ -182,7 +182,8 @@ plot(abs(final_floating-S))
 clear
 clc
 %rng('shuffle','simdTwister'); % True-random
-rng(611,"twister"); % Pseudo-random
+% rng(611,"twister"); % Pseudo-random
+rng(1026,"twister"); % Pseudo-random
 rand_temp = randperm(256)-129;
 rand_32 = rand_temp(1,1:32);
 
@@ -193,21 +194,25 @@ N = 32;
 
 % S and s_ans part
 
-% S = [ 1+i 1-i -1+i -1-i -1-i -1+i 1-i 1+i]; % Y0~Y7
+S = [ 1+i 1-i -1+i -1-i -1-i -1+i 1-i 1+i ...
+      1+i 1-i -1+i -1-i -1-i -1+i 1-i 1+i ...
+      1+i 1-i -1+i -1-i -1-i -1+i 1-i 1+i ...
+      1+i 1-i -1+i -1-i -1-i -1+i 1-i 1+i]; % Y0~Y31
+% 
+% for j = 1:N
+%     switch(rand_32(j))
+%         case 1
+%             S(j) = 1+1i;
+%         case 2
+%             S(j) = 1-1i;
+%         case 3
+%             S(j) = -1+1i;
+%         case 4
+%             S(j) = -1-1i;
+%     end
+% 
+% end
 
-for j = 1:N
-    switch(rand_32(j))
-        case 1
-            S(j) = 1+1i;
-        case 2
-            S(j) = 1-1i;
-        case 3
-            S(j) = -1+1i;
-        case 4
-            S(j) = -1-1i;
-    end
-
-end
 s_ans = ifft(S); % ans of y0~y7
 
 
@@ -226,6 +231,25 @@ end
 for j= 0:floor(N/(2^4))-1 % 2 items
     ROM4(j+1) = truncation(cos(2*j*pi/floor(N/(2^3))),10) - truncation((sin(2*j*pi/floor(N/(2^3)))),10)*1i;
 end
+
+
+% 
+% for j =0:floor(N/2)-1 % 16 items
+%     ROM32(j+1) = cos(2*j*pi/N) - (sin(2*j*pi/N))*1i;
+% end
+% 
+% for j= 0:floor(N/(2^2))-1 % 8 items
+%     ROM16(j+1) = cos(2*j*pi/floor(N/2)) - (sin(2*j*pi/floor(N/2)))*1i;
+% end
+% 
+% for j= 0:floor(N/(2^3))-1 % 4 items 
+%     ROM8(j+1) = cos(2*j*pi/floor(N/(2^2))) - (sin(2*j*pi/floor(N/(2^2))))*1i;
+% end
+% 
+% for j= 0:floor(N/(2^4))-1 % 2 items
+%     ROM4(j+1) = cos(2*j*pi/floor(N/(2^3))) - (sin(2*j*pi/floor(N/(2^3))))*1i;
+% end
+
 
 % STAGE 1
 
