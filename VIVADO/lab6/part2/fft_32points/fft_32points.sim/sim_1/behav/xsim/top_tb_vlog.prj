@@ -1,5 +1,10 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
+"../../../../fft_32points.srcs/sources_1/new/butterfly_32.v" \
+"../../../../fft_32points.srcs/sources_1/new/commutator_32.v" \
+"../../../../fft_32points.srcs/sources_1/new/fft32_top.v" \
+"../../../../fft_32points.srcs/sources_1/new/mult_32.v" \
+"../../../../fft_32points.srcs/sources_1/new/stage_32.v" \
 "../../../../fft_32points.srcs/sim_1/new/top_tb.v" \
 
 # compile glbl module

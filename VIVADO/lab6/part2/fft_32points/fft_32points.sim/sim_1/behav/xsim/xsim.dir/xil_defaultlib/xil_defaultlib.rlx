@@ -1,6 +1,11 @@
-0.6
-2019.1
-May 24 2019
-15:06:07
-D:/1111/DCCDL/VIVADO/lab6/part2/fft_32points/fft_32points.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
-D:/1111/DCCDL/VIVADO/lab6/part2/fft_32points/fft_32points.srcs/sim_1/new/top_tb.v,1670570425,verilog,,,,top_tb,,,,,,,,
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+E:/1111/DCCDL/VIVADO/lab6/part2/fft_32points/fft_32points.sim/sim_1/behav/xsim/glbl.v,1670598520,verilog,,,,glbl,,,,,,,,
+E:/1111/DCCDL/VIVADO/lab6/part2/fft_32points/fft_32points.srcs/sim_1/new/top_tb.v,1670864216,verilog,,,,top_tb,,,,,,,,
+E:/1111/DCCDL/VIVADO/lab6/part2/fft_32points/fft_32points.srcs/sources_1/new/butterfly_32.v,1670863183,verilog,,E:/1111/DCCDL/VIVADO/lab6/part2/fft_32points/fft_32points.srcs/sources_1/new/commutator_32.v,,butterfly_32,,,,,,,,
+E:/1111/DCCDL/VIVADO/lab6/part2/fft_32points/fft_32points.srcs/sources_1/new/commutator_32.v,1670859363,verilog,,E:/1111/DCCDL/VIVADO/lab6/part2/fft_32points/fft_32points.srcs/sources_1/new/fft32_top.v,,commutator_32,,,,,,,,
+E:/1111/DCCDL/VIVADO/lab6/part2/fft_32points/fft_32points.srcs/sources_1/new/fft32_top.v,1670864787,verilog,,E:/1111/DCCDL/VIVADO/lab6/part2/fft_32points/fft_32points.srcs/sources_1/new/mult_32.v,,fft32_top,,,,,,,,
+E:/1111/DCCDL/VIVADO/lab6/part2/fft_32points/fft_32points.srcs/sources_1/new/mult_32.v,1670855773,verilog,,E:/1111/DCCDL/VIVADO/lab6/part2/fft_32points/fft_32points.srcs/sources_1/new/stage_32.v,,mult_32,,,,,,,,
+E:/1111/DCCDL/VIVADO/lab6/part2/fft_32points/fft_32points.srcs/sources_1/new/stage_32.v,1670864614,verilog,,E:/1111/DCCDL/VIVADO/lab6/part2/fft_32points/fft_32points.srcs/sim_1/new/top_tb.v,,stage_32,,,,,,,,

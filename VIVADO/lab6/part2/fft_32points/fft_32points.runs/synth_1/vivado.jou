@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Dec 13 00:44:29 2022
+# Process ID: 8140
+# Current directory: E:/1111/DCCDL/VIVADO/lab6/part2/fft_32points/fft_32points.runs/synth_1
+# Command line: vivado.exe -log fft32_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fft32_top.tcl
+# Log file: E:/1111/DCCDL/VIVADO/lab6/part2/fft_32points/fft_32points.runs/synth_1/fft32_top.vds
+# Journal file: E:/1111/DCCDL/VIVADO/lab6/part2/fft_32points/fft_32points.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source fft32_top.tcl -notrace
