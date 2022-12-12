@@ -194,26 +194,26 @@ N = 32;
 
 % S and s_ans part
 
-S = [ 1+i 1-i -1+i -1-i -1-i -1+i 1-i 1+i ...
-      1+i 1-i -1+i -1-i -1-i -1+i 1-i 1+i ...
-      1+i 1-i -1+i -1-i -1-i -1+i 1-i 1+i ...
-      1+i 1-i -1+i -1-i -1-i -1+i 1-i 1+i]; % Y0~Y31
-% 
-% for j = 1:N
-%     switch(rand_32(j))
-%         case 1
-%             S(j) = 1+1i;
-%         case 2
-%             S(j) = 1-1i;
-%         case 3
-%             S(j) = -1+1i;
-%         case 4
-%             S(j) = -1-1i;
-%     end
-% 
-% end
+% S = [ 1+i 1-i -1+i -1-i -1-i -1+i 1-i 1+i ...
+%       1+i 1-i -1+i -1-i -1-i -1+i 1-i 1+i ...
+%       1+i 1-i -1+i -1-i -1-i -1+i 1-i 1+i ...
+%       1+i 1-i -1+i -1-i -1-i -1+i 1-i 1+i]; % Y0~Y31
 
-s_ans = ifft(S); % ans of y0~y7
+for j = 1:N
+    switch(rand_32(j))
+        case 1
+            S(j) = 1+1i;
+        case 2
+            S(j) = 1-1i;
+        case 3
+            S(j) = -1+1i;
+        case 4
+            S(j) = -1-1i;
+    end
+
+end
+
+s_ans = conj(S); % ans of y0~y7
 
 
 for j =0:floor(N/2)-1 % 16 items
@@ -266,7 +266,7 @@ B1_UO = B1_UI + B1_LI;
 B1_LO = B1_UI - B1_LI;
 
 
-M1 = B1_LO(1,1:16).*ROM32(1,1:16);
+M1 = B1_LO.*ROM32;
 % M1 = truncation(M1,10);
 M1 = truncation(M1,9);
 
@@ -312,7 +312,7 @@ B3_UO = B3_UI + B3_LI;
 B3_LO = B3_UI - B3_LI;
 
 
-M3 = B3_LO(1,1:16).*[ROM8(1,1:4) ROM8(1,1:4) ROM8(1,1:4) ROM8(1,1:4)];
+M3 = B3_LO.*[ROM8 ROM8 ROM8 ROM8];
 % M3 = truncation(M3,10);
 M3 = truncation(M3,9);
 
@@ -363,7 +363,12 @@ final = [B5_UO(1) B5_UO(9) B5_UO(5) B5_UO(13) B5_UO(3) B5_UO(11) B5_UO(7) B5_UO(
          B5_LO(1) B5_LO(9) B5_LO(5) B5_LO(13) B5_LO(3) B5_LO(11) B5_LO(7) B5_LO(15) ...
          B5_LO(2) B5_LO(10) B5_LO(6) B5_LO(14) B5_LO(4) B5_LO(12) B5_LO(8) B5_LO(16)];
 
-plot(abs(final-S))
+final = conj(final)/32;
 
-rms_value = abs(sqrt(sum((final-S).^2)/N))
+final_ans = fft(final);
+
+
+plot(abs(final_ans-S))
+
+rms_value = abs(sqrt(sum((final_ans-S).^2)/N))
 % set(gca, 'YScale', 'log')
