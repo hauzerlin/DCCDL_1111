@@ -15,6 +15,10 @@ Compiling module xil_defaultlib.commutator_16
 Compiling module xil_defaultlib.butterfly_16
 Compiling module xil_defaultlib.mult_16
 Compiling module xil_defaultlib.stage_16
+Compiling module xil_defaultlib.commutator_8
+Compiling module xil_defaultlib.butterfly_8
+Compiling module xil_defaultlib.mult_8
+Compiling module xil_defaultlib.stage_8
 Compiling module xil_defaultlib.fft32_top
 Compiling module xil_defaultlib.top_tb
 Compiling module xil_defaultlib.glbl

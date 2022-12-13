@@ -1,7 +1,5 @@
 `timescale 1ns / 1ps
-module mult_8(clk, en, control,  LI_real, LI_imag, LO_real, LO_imag);
-input clk;
-input en;   //  rst or regular calculator
+module mult_8(control,  LI_real, LI_imag, LO_real, LO_imag);
 input [1:0]control; // case: 1~4
 input signed [13:0] LI_real, LI_imag;
 output reg signed [13:0] LO_real, LO_imag;
@@ -52,7 +50,6 @@ assign imag_out4 = L_imag_buff4 + L_imag_buff4_2;
 
 always @(*)
 begin
-    if(en == 1'b1)
     begin
         case(control)
         2'd0:
@@ -82,12 +79,6 @@ begin
             end
         endcase
     end
-    else
-        begin
-        LO_real = 14'b0;
-        LO_imag = 14'b0;
-        end
-     
 end
 
 endmodule
