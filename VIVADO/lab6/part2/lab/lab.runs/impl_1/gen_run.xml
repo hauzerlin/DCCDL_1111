@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a200tfbg676-1" LaunchTime="1670919895">
+<GenRun Id="impl_1" LaunchPart="xc7a200tfbg676-1" LaunchTime="1670921092">
   <File Type="BITSTR-BMM" Name="fft32_top_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="fft32_top_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="fft32_top_timing_summary_init.rpt"/>

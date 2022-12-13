@@ -1,12 +1,12 @@
 `timescale 1ns / 1ps
-module stage_16(clk, rst,  LI_real, LI_imag, UI_real, UI_imag, LO_real, LO_imag, UO_real, UO_imag);//,test1, test2,  test3, test4, test5, test6, cnt);
+module stage_16(clk, rst,  LI_real, LI_imag, UI_real, UI_imag, LO_real, LO_imag, UO_real, UO_imag,test1, test2,  test3, test4, test5, test6);//, cnt);
 input clk;
 input rst;
 input signed [11:0] LI_real, LI_imag;
 input signed [11:0] UI_real, UI_imag;
 output signed [12:0] LO_real, LO_imag;
 output signed [12:0] UO_real, UO_imag;
-//output reg signed [12:0]test1, test2,  test3, test4, test5, test6;// test7;//test1, test2, 
+output reg signed [12:0]test1, test2,  test3, test4, test5, test6;// test7;//test1, test2, 
 
 integer i;
 reg [4:0] cnt; // 0~31
@@ -88,7 +88,12 @@ begin
         dff_real[7] <= UO_real_c_b;
         dff_imag[7] <= UO_imag_c_b;
 
-
+        test1 = dff_real[0];
+        test2 = dff_imag[0];
+        test3 = LO_real_c_b;
+        test4 = LO_imag_c_b;
+        test5 = LO_real_b_m;
+        test6 = LO_imag_b_m ;       
         
     end
 

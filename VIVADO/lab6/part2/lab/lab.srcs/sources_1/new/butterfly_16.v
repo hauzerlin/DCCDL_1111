@@ -25,10 +25,10 @@ always @(*)
 begin
     if(rst == 1'b1)
     begin
-        LO_real = 12'b0;
-        LO_imag = 12'b0;
-        UO_real = 12'b0;
-        UO_imag = 12'b0;
+        LO_real = 13'b0;
+        LO_imag = 13'b0;
+        UO_real = 13'b0;
+        UO_imag = 13'b0;
     end
     else 
     begin

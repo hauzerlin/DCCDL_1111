@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="394842000fs"></ZoomStartTime>
-      <ZoomEndTime time="790842001fs"></ZoomEndTime>
-      <Cursor1Time time="543842000fs"></Cursor1Time>
+      <ZoomStartTime time="559920000fs"></ZoomStartTime>
+      <ZoomEndTime time="1000165812fs"></ZoomEndTime>
+      <Cursor1Time time="729713000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="181"></NameColumnWidth>
+      <NameColumnWidth column_width="177"></NameColumnWidth>
       <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="9" />
+   <WVObjectSize size="16" />
    <wvobject fp_name="/top_tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -44,23 +44,58 @@
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/top_tb/UO_real" type="array">
-      <obj_property name="ElementShortName">UO_real[11:0]</obj_property>
-      <obj_property name="ObjectShortName">UO_real[11:0]</obj_property>
+      <obj_property name="ElementShortName">UO_real[12:0]</obj_property>
+      <obj_property name="ObjectShortName">UO_real[12:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/top_tb/UO_imag" type="array">
-      <obj_property name="ElementShortName">UO_imag[11:0]</obj_property>
-      <obj_property name="ObjectShortName">UO_imag[11:0]</obj_property>
+      <obj_property name="ElementShortName">UO_imag[12:0]</obj_property>
+      <obj_property name="ObjectShortName">UO_imag[12:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/top_tb/LO_real" type="array">
-      <obj_property name="ElementShortName">LO_real[11:0]</obj_property>
-      <obj_property name="ObjectShortName">LO_real[11:0]</obj_property>
+      <obj_property name="ElementShortName">LO_real[12:0]</obj_property>
+      <obj_property name="ObjectShortName">LO_real[12:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/top_tb/LO_imag" type="array">
-      <obj_property name="ElementShortName">LO_imag[11:0]</obj_property>
-      <obj_property name="ObjectShortName">LO_imag[11:0]</obj_property>
+      <obj_property name="ElementShortName">LO_imag[12:0]</obj_property>
+      <obj_property name="ObjectShortName">LO_imag[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/test1" type="array">
+      <obj_property name="ElementShortName">test1[12:0]</obj_property>
+      <obj_property name="ObjectShortName">test1[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/test2" type="array">
+      <obj_property name="ElementShortName">test2[12:0]</obj_property>
+      <obj_property name="ObjectShortName">test2[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/test3" type="array">
+      <obj_property name="ElementShortName">test3[12:0]</obj_property>
+      <obj_property name="ObjectShortName">test3[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/test4" type="array">
+      <obj_property name="ElementShortName">test4[12:0]</obj_property>
+      <obj_property name="ObjectShortName">test4[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/test5" type="array">
+      <obj_property name="ElementShortName">test5[12:0]</obj_property>
+      <obj_property name="ObjectShortName">test5[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/test6" type="array">
+      <obj_property name="ElementShortName">test6[12:0]</obj_property>
+      <obj_property name="ObjectShortName">test6[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/test7" type="array">
+      <obj_property name="ElementShortName">test7[4:0]</obj_property>
+      <obj_property name="ObjectShortName">test7[4:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
 </wave_config>

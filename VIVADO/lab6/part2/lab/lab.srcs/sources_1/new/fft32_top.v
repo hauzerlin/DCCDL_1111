@@ -8,8 +8,8 @@ input signed [10:0] UI_real, UI_imag; // top input
 input signed [10:0] LI_real, LI_imag;
 output reg signed [15:0] p_real, p_imag;
 
-output reg signed [11:0] LO_real, LO_imag; // top output
-output reg signed [11:0] UO_real, UO_imag; // top output
+output reg signed [12:0] LO_real, LO_imag; // top output
+output reg signed [12:0] UO_real, UO_imag; // top output
 
 //output reg signed [11:0] LO_real, LO_imag; // top output
 //output reg signed [11:0] UO_real, UO_imag; // top output
@@ -29,11 +29,11 @@ wire signed [12:0] up_real_16_8, up_imag_16_8, low_real_16_8, low_imag_16_8;
 //wire signed [14:0] up_real_4_2, up_imag_4_2, low_real_4_2, low_imag_4_2;
 //wire signed [15:0] up_real_buff, up_imag_buff, low_real_buff, low_imag_buff; // for ping-pong access
 
-output reg signed [11:0] test1, test2, test3, test4, test5, test6;
+output  signed [12:0] test1, test2, test3, test4, test5, test6;
 output reg signed[4:0] test7;//test1, test2, 
 
 stage_32 dft32(clk, rst,  LI_real, LI_imag, low_real_32_16, low_imag_32_16 ,up_real_32_16, up_imag_32_16);//,test1, test2,  test3, test4, test5, test6, test7);
-stage_16 dft16(clk, rst,  real_buff16[0], imag_buff16[0], up_real_32_16, up_imag_32_16 , low_real_16_8, low_imag_16_8 ,up_real_16_8, up_imag_16_8);
+stage_16 dft16(clk, rst,  real_buff16[0], imag_buff16[0], up_real_32_16, up_imag_32_16 , low_real_16_8, low_imag_16_8 ,up_real_16_8, up_imag_16_8, test1, test2,  test3, test4, test5, test6);
 //stage_8 dft1(clk, rst,  LI_real, LI_imag, UI_real, UI_imag, low_real_8_4, low_imag_8_4, up_real_8_4, up_imag_8_4);
 //stage_4 dft2(clk, rst, L_real_dff_4[0], L_imag_dff_4[0],  up_real_8_4, up_imag_8_4, low_real_4_2, low_imag_4_2, up_real_4_2, up_imag_4_2, test_1 , test_2 , test_3 , test_4);
 //stage_2 dft3(clk, rst,  low_real_4_2, low_imag_4_2, up_real_4_2, up_imag_4_2, low_real_buff, low_imag_buff, up_real_buff, up_imag_buff);
@@ -60,12 +60,12 @@ begin
             imag_buff16[i] <= 11'd0;
         end
       
-        test1<= 11'd0;
-        test2<= 11'd0;
-        test3<= 11'd0;
-        test4<= 11'd0;
-        test5<= 11'd0;
-        test6<= 11'd0;
+//        test1<= 11'd0;
+//        test2<= 11'd0;
+//        test3<= 11'd0;
+//        test4<= 11'd0;
+//        test5<= 11'd0;
+//        test6<= 11'd0;
         test7<= 5'd0;
 //        U_real_8_4<= 14'd0; // registers reset
 //        U_imag_8_4<= 14'd0;
