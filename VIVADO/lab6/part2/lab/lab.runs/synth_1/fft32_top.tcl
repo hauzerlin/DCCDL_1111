@@ -31,17 +31,21 @@ set_property target_language Verilog [current_project]
 set_property ip_output_repo d:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
+  D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/imports/part2/butterfly4.v
   D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/new/butterfly_16.v
   D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/new/butterfly_32.v
   D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/imports/part2/butterfly_8.v
   D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/new/commutator_16.v
   D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/new/commutator_32.v
+  D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/imports/part2/commutator_4.v
   D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/imports/part2/commutator_8.v
+  D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/imports/part2/mult4.v
   D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/new/mult_16.v
   D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/new/mult_32.v
   D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/imports/part2/mult_8.v
   D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/new/stage_16.v
   D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/new/stage_32.v
+  D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/imports/part2/stage_4.v
   D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/imports/part2/stage_8.v
   D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/new/fft32_top.v
 }

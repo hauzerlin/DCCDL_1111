@@ -10,19 +10,24 @@ output reg signed [14:0] UO_real, UO_imag;
 wire signed [14:0] L_real_buff, L_imag_buff;
 wire signed [14:0] U_real_buff, U_imag_buff;
 
-assign L_real_buff = UI_real - LI_real;
-assign L_imag_buff = UI_imag - LI_imag;
-assign U_real_buff = UI_real + LI_real;
-assign U_imag_buff = UI_imag + LI_imag;
+//assign L_real_buff = UI_real - LI_real;
+//assign L_imag_buff = UI_imag - LI_imag;
+//assign U_real_buff = UI_real + LI_real;
+//assign U_imag_buff = UI_imag + LI_imag;
+
+assign L_real_buff = {UI_real[13],UI_real} - {LI_real[13],LI_real};
+assign L_imag_buff = {UI_imag[13],UI_imag} - {LI_imag[13],LI_imag};
+assign U_real_buff = {UI_real[13],UI_real} + {LI_real[13],LI_real};
+assign U_imag_buff = {UI_imag[13],UI_imag} + {LI_imag[13],LI_imag};
 
 always @(*)
 begin
-    if(control == 1'b0)
+    if(control == 1'b1)
     begin
-        LO_real = 14'b0;
-        LO_imag = 14'b0;
-        UO_real = 14'b0;
-        UO_imag = 14'b0;
+        LO_real = 15'b0;
+        LO_imag = 15'b0;
+        UO_real = 15'b0;
+        UO_imag = 15'b0;
     end
     else 
     begin

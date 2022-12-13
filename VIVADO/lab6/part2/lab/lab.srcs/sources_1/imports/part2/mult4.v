@@ -55,12 +55,12 @@ begin
     if(en == 1'b0)
     begin
         case(control)
-        2'd1:
+        2'd0:
             begin
             LO_real = real_out1[24:10];
             LO_imag = imag_out1[24:10];
             end
-        2'd0:
+        2'd1:
             begin
             LO_real = real_out3[24:10];
             LO_imag = imag_out3[24:10];

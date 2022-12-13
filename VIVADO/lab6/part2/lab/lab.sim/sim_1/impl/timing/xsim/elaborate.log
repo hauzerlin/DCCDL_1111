@@ -34,6 +34,9 @@ Compiling module xil_defaultlib.stage_16
 Compiling module xil_defaultlib.butterfly_32
 Compiling module xil_defaultlib.mult_32
 Compiling module xil_defaultlib.stage_32
+Compiling module xil_defaultlib.butterfly_4
+Compiling module xil_defaultlib.mult_4
+Compiling module xil_defaultlib.stage_4
 Compiling module xil_defaultlib.butterfly_8
 Compiling module simprims_ver.DSP48E1(ACASCREG=0,ALUMODEREG=0,...
 Compiling module xil_defaultlib.mult_8
