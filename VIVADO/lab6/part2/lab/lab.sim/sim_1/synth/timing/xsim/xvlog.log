@@ -1,0 +1,11 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.sim/sim_1/synth/timing/xsim/top_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_16
+INFO: [VRFC 10-311] analyzing module butterfly_32
+INFO: [VRFC 10-311] analyzing module fft32_top
+INFO: [VRFC 10-311] analyzing module mult_16
+INFO: [VRFC 10-311] analyzing module mult_32
+INFO: [VRFC 10-311] analyzing module stage_16
+INFO: [VRFC 10-311] analyzing module stage_32
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/new/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb
