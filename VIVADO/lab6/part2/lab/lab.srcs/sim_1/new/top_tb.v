@@ -21,7 +21,7 @@ wire signed[4:0] test7;//test1, test2,
 
 //fft_top dft1(clk, rst,  LI_real, LI_imag, UI_real, UI_imag, LO_real, LO_imag, UO_real, UO_imag , p_real, p_imag);
 
-fft32_top dft1(clk, rst,  LI_real, LI_imag, UI_real, UI_imag, LO_real, LO_imag, UO_real, UO_imag , p_real, p_imag,test1, test2,  test3, test4, test5, test6, test7);
+fft32_top dft1(clk, rst,  LI_real, LI_imag, LO_real, LO_imag, UO_real, UO_imag , p_real, p_imag);//,test1, test2,  test3, test4, test5, test6, test7);
 
 
 always #10 clk = ~clk;

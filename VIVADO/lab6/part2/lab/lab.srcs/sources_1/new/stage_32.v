@@ -9,8 +9,8 @@ output signed [11:0] UO_real, UO_imag;
 
 integer i;
 reg [4:0] cnt; // 0~31
-reg signed [11:0] LO_real_out, LO_imag_out;
-reg signed [11:0] UO_real_out, UO_imag_out;
+//reg signed [11:0] LO_real_out, LO_imag_out;
+//reg signed [11:0] UO_real_out, UO_imag_out;
 
 reg signed [10:0] LI_real_in, LI_imag_in;
 reg signed [10:0] UI_real_in, UI_imag_in;
@@ -51,9 +51,7 @@ begin
             dff_real[i] <= 11'd0;
             dff_imag[i] <= 11'd0;
         end
-        
-        LO_real_out<= 11'd0;
-        LO_imag_out<= 11'd0;
+
     end
     else
     begin

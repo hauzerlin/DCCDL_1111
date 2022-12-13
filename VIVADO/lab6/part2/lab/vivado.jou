@@ -166,3 +166,51 @@ source top_tb.tcl
 launch_simulation -mode post-implementation -type timing
 open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
 source top_tb.tcl
+close_sim
+close_sim
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_design
+reset_run impl_1
+close_design
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_simulation -mode post-implementation -type timing
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_sim
+close_design
+launch_simulation -mode post-implementation -type timing
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+launch_simulation
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+close_sim
+close_sim
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_design
+launch_simulation -mode post-implementation -type timing
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+save_wave_config {D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg}
+close_sim

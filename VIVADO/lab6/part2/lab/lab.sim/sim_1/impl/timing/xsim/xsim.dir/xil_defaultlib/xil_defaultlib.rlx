@@ -2,5 +2,5 @@
 2019.1
 May 24 2019
 15:06:07
-D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.sim/sim_1/impl/timing/xsim/top_tb_time_impl.v,1670921380,verilog,,D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/new/top_tb.v,,butterfly_16;butterfly_32;fft32_top;glbl;mult_16;mult_32;stage_16;stage_32,,,,,,,,
+D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.sim/sim_1/impl/timing/xsim/top_tb_time_impl.v,1670927125,verilog,,D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/new/top_tb.v,,butterfly_16;butterfly_32;fft32_top;glbl;mult_16;mult_32;stage_16;stage_32,,,,,,,,
 D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/new/top_tb.v,1670909323,verilog,,,,top_tb,,,,,,,,

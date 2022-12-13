@@ -3,7 +3,7 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="top_tb_behav.wdb" id="1">
+      <db_ref path="top_tb_time_impl.wdb" id="1">
          <top_modules>
             <top_module name="glbl" />
             <top_module name="top_tb" />
@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="559920000fs"></ZoomStartTime>
-      <ZoomEndTime time="1000165812fs"></ZoomEndTime>
-      <Cursor1Time time="729713000fs"></Cursor1Time>
+      <ZoomStartTime time="587990000fs"></ZoomStartTime>
+      <ZoomEndTime time="987990001fs"></ZoomEndTime>
+      <Cursor1Time time="920000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="177"></NameColumnWidth>
+      <NameColumnWidth column_width="173"></NameColumnWidth>
       <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="16" />
+   <WVObjectSize size="9" />
    <wvobject fp_name="/top_tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -61,41 +61,6 @@
    <wvobject fp_name="/top_tb/LO_imag" type="array">
       <obj_property name="ElementShortName">LO_imag[12:0]</obj_property>
       <obj_property name="ObjectShortName">LO_imag[12:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/top_tb/test1" type="array">
-      <obj_property name="ElementShortName">test1[12:0]</obj_property>
-      <obj_property name="ObjectShortName">test1[12:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/top_tb/test2" type="array">
-      <obj_property name="ElementShortName">test2[12:0]</obj_property>
-      <obj_property name="ObjectShortName">test2[12:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/top_tb/test3" type="array">
-      <obj_property name="ElementShortName">test3[12:0]</obj_property>
-      <obj_property name="ObjectShortName">test3[12:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/top_tb/test4" type="array">
-      <obj_property name="ElementShortName">test4[12:0]</obj_property>
-      <obj_property name="ObjectShortName">test4[12:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/top_tb/test5" type="array">
-      <obj_property name="ElementShortName">test5[12:0]</obj_property>
-      <obj_property name="ObjectShortName">test5[12:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/top_tb/test6" type="array">
-      <obj_property name="ElementShortName">test6[12:0]</obj_property>
-      <obj_property name="ObjectShortName">test6[12:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/top_tb/test7" type="array">
-      <obj_property name="ElementShortName">test7[4:0]</obj_property>
-      <obj_property name="ObjectShortName">test7[4:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
 </wave_config>
