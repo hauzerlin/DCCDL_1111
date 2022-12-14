@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+ `timescale 1ns / 1ps
 module commutator_2(rst, control, LI_real, LI_imag, UI_real, UI_imag, LO_real, LO_imag, UO_real, UO_imag);
 //input clk;
 input rst;
@@ -19,10 +19,10 @@ begin
     end
     else
     begin
-        if(control==1'b0) // switch
+        if(control==1) // switch
         begin
-            LO_real = UI_real;
-            LO_imag = UI_imag;
+            LO_real =  UI_real;
+            LO_imag =  UI_imag;
             
             UO_real = LI_real;
             UO_imag = LI_imag;
@@ -32,12 +32,9 @@ begin
             LO_real = LI_real;
             LO_imag = LI_imag;
             
-            UO_real = UI_real;
-            UO_imag = UI_imag;
+            UO_real =  UI_real;
+            UO_imag =  UI_imag;
         end
     end
 end
-
-
- 
 endmodule

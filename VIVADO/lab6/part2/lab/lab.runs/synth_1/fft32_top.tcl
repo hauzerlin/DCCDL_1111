@@ -17,7 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 2
 create_project -in_memory -part xc7a200tfbg676-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -32,9 +31,11 @@ set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
   D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/imports/part2/butterfly4.v
   D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/new/butterfly_16.v
+  D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/imports/part2/butterfly_2.v
   D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/new/butterfly_32.v
   D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/imports/part2/butterfly_8.v
   D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/new/commutator_16.v
+  D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/imports/part2/commutator_2.v
   D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/new/commutator_32.v
   D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/imports/part2/commutator_4.v
   D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/imports/part2/commutator_8.v
@@ -43,6 +44,7 @@ read_verilog -library xil_defaultlib {
   D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/new/mult_32.v
   D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/imports/part2/mult_8.v
   D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/new/stage_16.v
+  D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/imports/part2/stage_2.v
   D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/new/stage_32.v
   D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/imports/part2/stage_4.v
   D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/imports/part2/stage_8.v

@@ -54,7 +54,7 @@ begin
         // output regeseter
 
         
-        for (i = 0; i<7; i= i+1) // dff reset
+        for (i = 0; i<8; i= i+1) // dff reset
         begin
             dff_real[i] <= 12'd0;
             dff_imag[i] <= 12'd0;
