@@ -46,7 +46,7 @@ begin
         LI_real_in = 11'd0;
         LI_imag_in = 11'd0;
         
-        for (i = 0; i<15; i= i+1) // dff reset
+        for (i = 0; i<16; i= i+1) // dff reset
         begin
             dff_real[i] <= 11'd0;
             dff_imag[i] <= 11'd0;

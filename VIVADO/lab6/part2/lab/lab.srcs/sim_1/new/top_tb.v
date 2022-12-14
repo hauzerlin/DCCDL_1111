@@ -13,7 +13,7 @@ reg [4:0] cnt; // 0~31
 
 
 reg signed [10:0] LI_real, LI_imag, UI_real, UI_imag;
-wire signed [13:0]  LO_real, LO_imag, UO_real, UO_imag; // output before ping-pong access
+wire signed [14:0]  LO_real, LO_imag, UO_real, UO_imag; // output before ping-pong access
 wire signed [15:0] p_real, p_imag;  // output after ping-pong access
 wire  signed [12:0] test1, test2, test3, test4, test5, test6;//, test7;//test1, test2, 
 wire signed[4:0] test7;//test1, test2, 

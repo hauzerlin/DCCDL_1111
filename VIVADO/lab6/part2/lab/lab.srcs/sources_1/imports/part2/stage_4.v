@@ -1,11 +1,12 @@
 `timescale 1ns / 1ps
-module stage_4(clk, rst,  LI_real, LI_imag, UI_real, UI_imag, LO_real, LO_imag, UO_real, UO_imag);//, test1 , test2 , test3 , test4);
+module stage_4(clk, rst,  LI_real, LI_imag, UI_real, UI_imag, LO_real, LO_imag, UO_real, UO_imag);//, test1, test2, test3, test4, test5, test6);//, test1 , test2 , test3 , test4);
 input clk;
 input rst;
 input signed [13:0] LI_real, LI_imag;
 input signed [13:0] UI_real, UI_imag;
 output signed [14:0] LO_real, LO_imag;
 output signed [14:0] UO_real, UO_imag;
+//output reg signed [14:0] test1, test2, test3, test4, test5, test6;
 
 reg [4:0] cnt;
 reg signed [13:0] LI_real_in, LI_imag_in;
@@ -14,21 +15,20 @@ reg signed [13:0] UI_real_in, UI_imag_in;
 wire signed [13:0] LO_real_c_b, LO_imag_c_b;
 wire signed [13:0] UO_real_c_b, UO_imag_c_b;
 
-wire signed [14:0] LO_real_b_m, LO_imag_b_m;
-wire signed [14:0] UO_real_b_m, UO_imag_b_m;
-
-
 reg signed [13:0] dff3_imag, dff4_imag;
 reg signed [13:0] dff3_real, dff4_real;
 
-commutator_4 commutator4(.control(cnt[1]),
+wire signed [14:0] LO_real_b_m, LO_imag_b_m;
+wire signed [14:0] UO_real_b_m, UO_imag_b_m;
+
+commutator_4 commutator4(.rst(rst), .control(cnt[1]),
              .LI_real(LI_real_in), .LI_imag(LI_imag_in), .UI_real(UI_real_in), .UI_imag(UI_imag_in), 
              .LO_real(LO_real_c_b), .LO_imag(LO_imag_c_b), .UO_real(UO_real_c_b), .UO_imag(UO_imag_c_b));
              
-butterfly_4 butterfly4( .control(rst),  .LI_real(LO_real_c_b), .LI_imag(LO_imag_c_b), .UI_real(dff3_real), .UI_imag(dff3_imag),
+butterfly_4 butterfly4( .rst(rst),  .LI_real(LO_real_c_b), .LI_imag(LO_imag_c_b), .UI_real(dff3_real), .UI_imag(dff3_imag),
              .LO_real(LO_real_b_m), .LO_imag(LO_imag_b_m), .UO_real(UO_real), .UO_imag(UO_imag));
              
-mult_4 mult4(.clk(clk), .en(rst), .control(cnt[0]),  .LI_real(LO_real_b_m), .LI_imag(LO_imag_b_m),
+mult_4 mult4(.control(cnt[0]),  .LI_real(LO_real_b_m), .LI_imag(LO_imag_b_m),
              .LO_real(LO_real), .LO_imag(LO_imag));
              
 always @(posedge clk or posedge rst)
@@ -47,7 +47,14 @@ begin
 
         dff3_imag <= 14'd0;
         dff4_imag <= 14'd0;
-
+        
+//        test1 <= 15'd0;
+//        test2 <= 15'd0;
+//        test3 <= 15'd0;
+//        test4 <= 15'd0;
+//        test5 <= 15'd0;
+//        test6 <= 15'd0;
+        
     end
     else
     begin
@@ -70,6 +77,13 @@ begin
         
         dff3_imag <= dff4_imag;
         dff4_imag <= UO_imag_c_b;
+        
+//        test1 <= LO_real_c_b;
+//        test2 <= LO_imag_c_b;
+//        test3 <= dff3_real;
+//        test4 <= dff3_imag;
+//        test5 <= LO_real;
+//        test6 <= LO_imag;
     end
 
 end

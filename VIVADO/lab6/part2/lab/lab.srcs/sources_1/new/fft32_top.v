@@ -9,8 +9,8 @@ input rst;
 input signed [10:0] LI_real, LI_imag;
 output reg signed [15:0] p_real, p_imag;
 
-output reg signed [13:0] LO_real, LO_imag; // top output
-output reg signed [13:0] UO_real, UO_imag; // top output
+output reg signed [14:0] LO_real, LO_imag; // top output
+output reg signed [14:0] UO_real, UO_imag; // top output
 
 //output reg signed [11:0] LO_real, LO_imag; // top output
 //output reg signed [11:0] UO_real, UO_imag; // top output
@@ -19,9 +19,9 @@ integer i;
 //reg [4:0] ping_pong_cnt;
 //reg write_en, read_en;
 
-reg [11:0] real_buff16 [7:0], imag_buff16 [7:0];
-reg [12:0] real_buff8[3:0], imag_buff8[3:0];
-reg [13:0] real_buff4[1:0], imag_buff4[1:0];
+reg signed [11:0] real_buff16 [7:0], imag_buff16 [7:0];
+reg signed [12:0] real_buff8[3:0], imag_buff8[3:0];
+reg signed [13:0] real_buff4[1:0], imag_buff4[1:0];
 //reg signed [13:0] U_real_8_4, U_imag_8_4, L_real_8_4, L_imag_8_4;
 //reg signed [13:0] L_real_dff_4[1:0], L_imag_dff_4[1:0];
 
@@ -50,26 +50,26 @@ begin
 //        write_en <= 1'b0;
 //        read_en <= 1'b0;
         
-        LO_real= 13'd0; // output reset
-        LO_imag= 13'd0;
-        UO_real= 13'd0;
-        UO_imag= 13'd0;
+        LO_real= 14'd0; // output reset
+        LO_imag= 14'd0;
+        UO_real= 14'd0;
+        UO_imag= 14'd0;
         p_real<= 15'd0;
         p_imag<= 15'd0;
         
-        for (i = 0; i<7; i= i+1) // dff reset
+        for (i = 0; i<8; i= i+1) // dff reset
         begin
             real_buff16[i] <= 11'd0;
             imag_buff16[i] <= 11'd0;
         end
       
-        for (i = 0; i<3; i= i+1) // dff reset
+        for (i = 0; i<4; i= i+1) // dff reset
         begin
             real_buff8[i] <= 12'd0;
             imag_buff8[i] <= 12'd0;
         end
         
-        for (i = 0; i<1; i= i+1) // dff reset
+        for (i = 0; i<2; i= i+1) // dff reset
         begin
             real_buff4[i] <= 13'd0;
             imag_buff4[i] <= 13'd0;

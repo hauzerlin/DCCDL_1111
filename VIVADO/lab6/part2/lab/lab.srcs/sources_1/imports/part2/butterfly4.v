@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
-module butterfly_4(control,  LI_real, LI_imag, UI_real, UI_imag, LO_real, LO_imag, UO_real, UO_imag);
-input control;
+module butterfly_4(rst,  LI_real, LI_imag, UI_real, UI_imag, LO_real, LO_imag, UO_real, UO_imag);
+input rst;
 //input clk;
 input signed [13:0] LI_real, LI_imag;
 input signed [13:0] UI_real, UI_imag;
@@ -20,9 +20,10 @@ assign L_imag_buff = {UI_imag[13],UI_imag} - {LI_imag[13],LI_imag};
 assign U_real_buff = {UI_real[13],UI_real} + {LI_real[13],LI_real};
 assign U_imag_buff = {UI_imag[13],UI_imag} + {LI_imag[13],LI_imag};
 
+
 always @(*)
 begin
-    if(control == 1'b1)
+    if(rst == 1'b1)
     begin
         LO_real = 15'b0;
         LO_imag = 15'b0;

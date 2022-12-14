@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a200tfbg676-1" LaunchTime="1670938602">
+<GenRun Id="synth_1" LaunchPart="xc7a200tfbg676-1" LaunchTime="1671021147">
   <File Type="PA-TCL" Name="fft32_top.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="fft32_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="fft32_top_reports.tcl"/>

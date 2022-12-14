@@ -372,19 +372,10 @@ void sensitize(char *dp)
 	iki_sensitize(dp, "xsim.dir/top_tb_behav/xsim.reloc");
 }
 
-	// Initialize Verilog nets in mixed simulation, for the cases when the value at time 0 should be propagated from the mixed language Vhdl net
-
-void wrapper_func_0(char *dp)
-
-{
-
-}
-
 void simulate(char *dp)
 {
 		iki_schedule_processes_at_time_zero(dp, "xsim.dir/top_tb_behav/xsim.reloc");
-	wrapper_func_0(dp);
-
+	// Initialize Verilog nets in mixed simulation, for the cases when the value at time 0 should be propagated from the mixed language Vhdl net
 	iki_execute_processes();
 
 	// Schedule resolution functions for the multiply driven Verilog nets that have strength

@@ -1,93 +1,61 @@
 `timescale 1ns / 1ps
-module mult_4(clk, en, control,  LI_real, LI_imag, LO_real, LO_imag);
-input clk;
-input en;   //  rst or regular calculator
-input control; // case: 1~4 [2:0]c
+module mult_4( control,  LI_real, LI_imag, LO_real, LO_imag);
+//input clk;
+input control; // case: 1~2
 input signed [14:0] LI_real, LI_imag;
 output reg signed [14:0] LO_real, LO_imag;
-wire signed [26:0] L_real_buff1, L_real_buff2, L_real_buff3, L_real_buff4;
-wire signed [26:0] L_imag_buff1, L_imag_buff2, L_imag_buff3, L_imag_buff4;
 
-wire signed [26:0] L_real_buff1_2, L_real_buff2_2, L_real_buff3_2, L_real_buff4_2;
-wire signed [26:0] L_imag_buff1_2, L_imag_buff2_2, L_imag_buff3_2, L_imag_buff4_2;
+wire signed [26:0] real_mult_buff1 [1:0];
+wire signed [26:0] real_mult_buff2 [1:0];
+wire signed [26:0] imag_mult_buff1 [1:0];
+wire signed [26:0] imag_mult_buff2 [1:0];
 
-wire signed [26:0] real_out1, imag_out1;
-wire signed [26:0] real_out2, imag_out2;
-wire signed [26:0] real_out3, imag_out3;
-wire signed [26:0] real_out4, imag_out4;
+wire signed [14:0] real_add_buff [1:0];
+wire signed [14:0] imag_add_buff [1:0];
 
 // real to real
-assign L_real_buff1 = LI_real * $signed(12'd1024);
-//assign L_real_buff2 = LI_real * $signed(12'd724);
-assign L_real_buff3 = LI_real * $signed(12'd0);
-//assign L_real_buff4 = LI_real * $signed(-12'd725);
+assign real_mult_buff1[0] = LI_real * $signed(12'd1025);
+assign real_mult_buff1[1] = LI_real * $signed(12'd0);
 
-// imag to imag (-1)
-assign L_real_buff1_2 = LI_imag * $signed(12'd0);
-//assign L_real_buff2_2 = LI_imag * $signed(-12'd724);
-assign L_real_buff3_2 = LI_imag * $signed(-12'd1024);
-//assign L_real_buff4_2 = LI_imag * $signed(-12'd724);
+assign real_mult_buff2[0] = LI_imag * $signed(12'd0);
+assign real_mult_buff2[1] = LI_imag * $signed(-12'd1025);
 
 
-assign L_imag_buff1_2 = LI_real * $signed(12'd0);
-//assign L_imag_buff2_2 = LI_real * $signed(-12'd724);
-assign L_imag_buff3_2 = LI_real * $signed(-12'd1024);
-//assign L_imag_buff4_2 = LI_real * $signed(-12'd724);
+assign imag_mult_buff1[0] = LI_imag * $signed(12'd1025);
+assign imag_mult_buff1[1] = LI_imag * $signed(12'd0);
 
-assign L_imag_buff1 = LI_imag * $signed(12'd1024);
-//assign L_imag_buff2 = LI_imag * $signed(12'd724);
-assign L_imag_buff3 = LI_imag * $signed(12'd0);
-//assign L_imag_buff4 = LI_imag * $signed(-12'd725);
+assign imag_mult_buff2[0] = LI_real * $signed(12'd0);
+assign imag_mult_buff2[1] = LI_real * $signed(-12'd1025);
 
-assign real_out1 =  L_real_buff1 - L_real_buff1_2;
-//assign real_out2 =  L_real_buff2 - L_real_buff2_2;
-assign real_out3 =  L_real_buff3 - L_real_buff3_2;
-//assign real_out4 =  L_real_buff4 - L_real_buff4_2;
+assign real_add_buff[0] = real_mult_buff1[0][24:10] - real_mult_buff2[0][24:10];
+assign real_add_buff[1] = real_mult_buff1[1][24:10] - real_mult_buff2[1][24:10];
 
-assign imag_out1 = L_imag_buff1 + L_imag_buff1_2;
-//assign imag_out2 = L_imag_buff2 + L_imag_buff2_2;
-assign imag_out3 = L_imag_buff3 + L_imag_buff3_2;
-//assign imag_out4 = L_imag_buff4 + L_imag_buff4_2;
+assign imag_add_buff[0] = imag_mult_buff1[0][24:10] + imag_mult_buff2[0][24:10];
+assign imag_add_buff[1] = imag_mult_buff1[1][24:10] + imag_mult_buff2[1][24:10];
 
 
 always @(*)
 begin
-    if(en == 1'b0)
     begin
         case(control)
-        2'd0:
+        1'd0:
             begin
-            LO_real = real_out1[24:10];
-            LO_imag = imag_out1[24:10];
+            LO_real = real_add_buff[0];
+            LO_imag = imag_add_buff[0];
             end
-        2'd1:
+        1'd1:
             begin
-            LO_real = real_out3[24:10];
-            LO_imag = imag_out3[24:10];
+            LO_real = real_add_buff[1];
+            LO_imag = imag_add_buff[1];
             end
-//        2'd2:
-//            begin
-//            LO_real = real_out3[24:10];
-//            LO_imag = imag_out3[24:10];
-//            end
-//        2'd3:
-//            begin
-//            LO_real = real_out4[24:10];
-//            LO_imag = imag_out4[24:10];
-//            end
+
         default:
             begin
-            LO_real = 15'b0;
-            LO_imag = 15'b0;
+            LO_real = 14'b0;
+            LO_imag = 14'b0;
             end
         endcase
     end
-    else
-        begin
-        LO_real = 15'b0;
-        LO_imag = 15'b0;
-        end
-     
 end
 
 endmodule
