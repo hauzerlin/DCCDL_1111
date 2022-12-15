@@ -60,18 +60,22 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 2
-  reset_param project.defaultXPMLibraries 
-  open_checkpoint D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.runs/impl_1/fft32_top.dcp
+  create_project -in_memory -part xc7a200tfbg676-1
+  set_property design_mode GateLvl [current_fileset]
+  set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.cache/wt [current_project]
   set_property parent.project_path D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.xpr [current_project]
   set_property ip_output_repo D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
+  add_files -quiet D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.runs/synth_1/fft32_top.dcp
+  link_design -top fft32_top -part xc7a200tfbg676-1
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {

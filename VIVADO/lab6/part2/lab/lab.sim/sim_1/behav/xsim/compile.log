@@ -18,6 +18,8 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/lab6/part2/lab
 INFO: [VRFC 10-311] analyzing module commutator_4
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/imports/part2/commutator_8.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module commutator_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/new/delay1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay1
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/new/fft32_top.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fft32_top
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/imports/part2/mult4.v" into library xil_defaultlib

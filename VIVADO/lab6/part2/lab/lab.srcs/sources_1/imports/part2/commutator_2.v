@@ -12,28 +12,28 @@ always @(*)
 begin
     if(rst == 1'b1)
     begin
-        LO_real = 15'b0;
-        LO_imag = 15'b0;
-        UO_real = 15'b0;
-        UO_imag = 15'b0;
+        LO_real <= 15'b0;
+        LO_imag <= 15'b0;
+        UO_real <= 15'b0;
+        UO_imag <= 15'b0;
     end
     else
     begin
-        if(control==1) // switch
+        if(control==0) // switch
         begin
-            LO_real =  UI_real;
-            LO_imag =  UI_imag;
+            LO_real <=  UI_real;
+            LO_imag <=  UI_imag;
             
-            UO_real = LI_real;
-            UO_imag = LI_imag;
+            UO_real <= LI_real;
+            UO_imag <= LI_imag;
         end
         else
         begin
-            LO_real = LI_real;
-            LO_imag = LI_imag;
+            LO_real <= LI_real;
+            LO_imag <= LI_imag;
             
-            UO_real =  UI_real;
-            UO_imag =  UI_imag;
+            UO_real <=  UI_real;
+            UO_imag <=  UI_imag;
         end
     end
 end

@@ -20,17 +20,17 @@ always @(*)
 begin
     if(rst == 1'b1)
     begin
-        LO_real = 16'b0;
-        LO_imag = 16'b0;
-        UO_real = 16'b0;
-        UO_imag = 16'b0;
+        LO_real <= 16'b0;
+        LO_imag <= 16'b0;
+        UO_real <= 16'b0;
+        UO_imag <= 16'b0;
     end
     else 
     begin
-        LO_real = L_real_buff;
-        LO_imag = L_imag_buff;
-        UO_real = U_real_buff;
-        UO_imag = U_imag_buff;
+        LO_real <= L_real_buff;
+        LO_imag <= L_imag_buff;
+        UO_real <= U_real_buff;
+        UO_imag <= U_imag_buff;
     end
 end
 

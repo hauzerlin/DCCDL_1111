@@ -32,6 +32,7 @@ wire signed [11:0] up_real_32_16, up_imag_32_16, low_real_32_16, low_imag_32_16;
 wire signed [12:0] up_real_16_8, up_imag_16_8, low_real_16_8, low_imag_16_8;
 wire signed [13:0] up_real_8_4, up_imag_8_4, low_real_8_4, low_imag_8_4;
 wire signed [14:0] up_real_4_2, up_imag_4_2, low_real_4_2, low_imag_4_2;
+//wire signed [14:0] in_real_2, in_imag_2;
 wire signed [15:0] up_real_buff, up_imag_buff, low_real_buff, low_imag_buff; // for ping-pong access
 
 //output  signed [12:0] test1, test2, test3, test4, test5, test6;
@@ -41,6 +42,7 @@ stage_32 dft32(clk, rst,  LI_real, LI_imag, low_real_32_16, low_imag_32_16 ,up_r
 stage_16 dft16(clk, rst,  real_buff16[0], imag_buff16[0], up_real_32_16, up_imag_32_16 , low_real_16_8, low_imag_16_8 ,up_real_16_8, up_imag_16_8);//, test1, test2,  test3, test4, test5, test6);
 stage_8  dft8 (clk, rst,   real_buff8[0],  imag_buff8[0], up_real_16_8, up_imag_16_8, low_real_8_4, low_imag_8_4, up_real_8_4, up_imag_8_4);
 stage_4  dft4 (clk, rst,   real_buff4[0],  imag_buff4[0],  up_real_8_4,  up_imag_8_4, low_real_4_2, low_imag_4_2, up_real_4_2, up_imag_4_2);
+//delay1 delay(clk, rst, low_real_4_2, low_imag_4_2, in_real_2, in_imag_2);
 stage_2 dft3(clk, rst,  low_real_4_2, low_imag_4_2, up_real_4_2, up_imag_4_2, low_real_buff, low_imag_buff, up_real_buff, up_imag_buff);
 //ping_pong_access dft4(clk, rst, read_en, write_en, ping_pong_cnt, low_real_buff, low_imag_buff, up_real_buff, up_imag_buff ,P_real_buff, P_imag_buff);
 always @(posedge clk or posedge rst)
@@ -61,24 +63,24 @@ begin
         
         for (i = 0; i<8; i= i+1) // dff reset
         begin
-            real_buff16[i] <= 11'd0;
-            imag_buff16[i] <= 11'd0;
+            real_buff16[i] <= 12'd0;
+            imag_buff16[i] <= 12'd0;
         end
       
         for (i = 0; i<4; i= i+1) // dff reset
         begin
-            real_buff8[i] <= 12'd0;
-            imag_buff8[i] <= 12'd0;
+            real_buff8[i] <= 13'd0;
+            imag_buff8[i] <= 13'd0;
         end
         
         for (i = 0; i<2; i= i+1) // dff reset
         begin
-            real_buff4[i] <= 13'd0;
-            imag_buff4[i] <= 13'd0;
+            real_buff4[i] <= 14'd0;
+            imag_buff4[i] <= 14'd0;
         end
 
-        real_buff2 <= 15'd0;
-        imag_buff2 <= 15'd0;
+//        real_buff2 <= 15'd0;
+//        imag_buff2 <= 15'd0;
 //        test1<= 12'd0;
 //        test2<= 12'd0;
 //        test3<= 12'd0;
@@ -133,8 +135,8 @@ begin
         real_buff4[1] <=  low_real_8_4;
         imag_buff4[1] <=  low_imag_8_4;
         
-        real_buff2 <= low_real_4_2;
-        imag_buff2 <= low_imag_4_2;
+//        real_buff2 <= low_real_4_2;
+//        imag_buff2 <= low_imag_4_2;
 //        L_real_dff_4[0]<= L_real_dff_4[1];
 //        L_imag_dff_4[0]<= L_imag_dff_4[1];
 
@@ -146,10 +148,10 @@ begin
 //        U_real_8_4<=up_real_8_4;
 //        U_imag_8_4<=up_imag_8_4;
 
-//        LO_real= low_real_buff;
-//        LO_imag= low_imag_buff;
-//        UO_real= up_real_buff;
-//        UO_imag= up_imag_buff;
+        LO_real= low_real_buff;
+        LO_imag= low_imag_buff;
+        UO_real= up_real_buff;
+        UO_imag= up_imag_buff;
 
 //        UO_real= up_real_32_16;
 //        UO_imag= up_imag_32_16;
@@ -166,10 +168,10 @@ begin
 //        LO_real= low_real_8_4;
 //        LO_imag= low_imag_8_4;
         
-        UO_real= up_real_4_2;
-        UO_imag= up_imag_4_2;
-        LO_real= low_real_4_2;
-        LO_imag= low_imag_4_2;
+//        UO_real= up_real_4_2;
+//        UO_imag= up_imag_4_2;
+//        LO_real= low_real_4_2;
+//        LO_imag= low_imag_4_2;
     end
 
 end
