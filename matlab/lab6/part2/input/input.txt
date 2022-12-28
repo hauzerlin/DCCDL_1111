@@ -1,98 +1,98 @@
-input_real[0] = 11'd-96
-input_imag[0] = 11'd0
+input_real[0] = 11'd-512
+input_imag[0] = 11'd-512
 
-input_real[1] = 11'd32
-input_imag[1] = 11'd-51
+input_real[1] = 11'd-512
+input_imag[1] = 11'd512
 
-input_real[2] = 11'd-99
-input_imag[2] = 11'd-31
+input_real[2] = 11'd512
+input_imag[2] = 11'd-512
 
-input_real[3] = 11'd23
-input_imag[3] = 11'd-11
+input_real[3] = 11'd512
+input_imag[3] = 11'd-512
 
-input_real[4] = 11'd3
-input_imag[4] = 11'd22
+input_real[4] = 11'd-512
+input_imag[4] = 11'd-512
 
-input_real[5] = 11'd-268
-input_imag[5] = 11'd-91
+input_real[5] = 11'd512
+input_imag[5] = 11'd-512
 
-input_real[6] = 11'd96
-input_imag[6] = 11'd-156
+input_real[6] = 11'd-512
+input_imag[6] = 11'd512
 
-input_real[7] = 11'd5
-input_imag[7] = 11'd-28
+input_real[7] = 11'd-512
+input_imag[7] = 11'd-512
 
-input_real[8] = 11'd64
-input_imag[8] = 11'd96
+input_real[8] = 11'd-512
+input_imag[8] = 11'd512
 
-input_real[9] = 11'd10
-input_imag[9] = 11'd26
+input_real[9] = 11'd512
+input_imag[9] = 11'd-512
 
-input_real[10] = 11'd-71
-input_imag[10] = 11'd209
+input_real[10] = 11'd512
+input_imag[10] = 11'd512
 
-input_real[11] = 11'd-5
-input_imag[11] = 11'd-47
+input_real[11] = 11'd512
+input_imag[11] = 11'd512
 
-input_real[12] = 11'd41
-input_imag[12] = 11'd41
+input_real[12] = 11'd512
+input_imag[12] = 11'd-512
 
-input_real[13] = 11'd33
-input_imag[13] = 11'd26
+input_real[13] = 11'd-512
+input_imag[13] = 11'd-512
 
-input_real[14] = 11'd-169
-input_imag[14] = 11'd15
+input_real[14] = 11'd-512
+input_imag[14] = 11'd-512
 
-input_real[15] = 11'd-18
-input_imag[15] = 11'd125
+input_real[15] = 11'd-512
+input_imag[15] = 11'd-512
 
-input_real[16] = 11'd32
-input_imag[16] = 11'd-64
+input_real[16] = 11'd512
+input_imag[16] = 11'd-512
 
-input_real[17] = 11'd102
-input_imag[17] = 11'd45
+input_real[17] = 11'd512
+input_imag[17] = 11'd-512
 
-input_real[18] = 11'd-75
-input_imag[18] = 11'd49
+input_real[18] = 11'd-512
+input_imag[18] = 11'd512
 
-input_real[19] = 11'd126
-input_imag[19] = 11'd-147
+input_real[19] = 11'd-512
+input_imag[19] = 11'd-512
 
-input_real[20] = 11'd-132
-input_imag[20] = 11'd-23
+input_real[20] = 11'd-512
+input_imag[20] = 11'd512
 
-input_real[21] = 11'd-50
-input_imag[21] = 11'd2
+input_real[21] = 11'd512
+input_imag[21] = 11'd512
 
-input_real[22] = 11'd-180
-input_imag[22] = 11'd-82
+input_real[22] = 11'd-512
+input_imag[22] = 11'd512
 
-input_real[23] = 11'd-72
-input_imag[23] = 11'd-145
+input_real[23] = 11'd512
+input_imag[23] = 11'd-512
 
-input_real[24] = 11'd0
-input_imag[24] = 11'd96
+input_real[24] = 11'd512
+input_imag[24] = 11'd-512
 
-input_real[25] = 11'd35
-input_imag[25] = 11'd-150
+input_real[25] = 11'd-512
+input_imag[25] = 11'd-512
 
-input_real[26] = 11'd-12
-input_imag[26] = 11'd-101
+input_real[26] = 11'd512
+input_imag[26] = 11'd-512
 
-input_real[27] = 11'd35
-input_imag[27] = 11'd76
+input_real[27] = 11'd512
+input_imag[27] = 11'd512
 
-input_real[28] = 11'd86
-input_imag[28] = 11'd86
+input_real[28] = 11'd512
+input_imag[28] = 11'd512
 
-input_real[29] = 11'd102
-input_imag[29] = 11'd-66
+input_real[29] = 11'd-512
+input_imag[29] = 11'd-512
 
-input_real[30] = 11'd-6
-input_imag[30] = 11'd-163
+input_real[30] = 11'd512
+input_imag[30] = 11'd-512
 
-input_real[31] = 11'd-98
-input_imag[31] = 11'd-82
+input_real[31] = 11'd512
+input_imag[31] = 11'd512
 
 mem_UI_real[0] = 11'd0;
 mem_UI_imag[0] = 11'd0;

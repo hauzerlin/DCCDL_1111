@@ -30,6 +30,8 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/lab6/part2/lab
 INFO: [VRFC 10-311] analyzing module mult_32
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/imports/part2/mult_8.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module mult_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/imports/part2/ping_pong_access2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ping_pong_access2
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/new/stage_16.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module stage_16
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/imports/part2/stage_2.v" into library xil_defaultlib
@@ -40,5 +42,8 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/lab6/part2/lab
 INFO: [VRFC 10-311] analyzing module stage_4
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/imports/part2/stage_8.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module stage_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/new/top_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_top
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/new/top_tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_tb
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/new/top_tb.v:64]

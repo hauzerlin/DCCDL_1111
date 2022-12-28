@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-module fft_top(clk, rst,  LI_real, LI_imag, UI_real, UI_imag, LO_real, LO_imag, UO_real, UO_imag , p_real, p_imag); //, test1 , test2 , test3 , test4
+module fft_top(clk, rst,  LI_real, LI_imag, UI_real, UI_imag, LO_real, LO_imag, UO_real, UO_imag );//, p_real, p_imag); //, test1 , test2 , test3 , test4
 input clk;
 input rst;
 reg [2:0] cnt;
@@ -10,7 +10,7 @@ input signed [12:0] UI_real, UI_imag;
 //output signed [13:0] UO_real, UO_imag;
 output reg signed [14:0] LO_real, LO_imag;
 output reg signed [14:0] UO_real, UO_imag;
-output reg signed [15:0] p_real, p_imag;
+reg signed [15:0] p_real, p_imag;
 reg signed [14:0] test1 , test2 , test3 , test4;
 wire signed [14:0] test_1 , test_2 , test_3 , test_4;
 wire [2:0] mult_control;

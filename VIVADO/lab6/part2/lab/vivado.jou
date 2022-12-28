@@ -129,3 +129,364 @@ open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_
 source top_tb.tcl
 run all
 run all
+close_sim
+close_sim
+close_design
+launch_simulation
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+relaunch_sim
+run all
+relaunch_sim
+run all
+close_sim
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+update_compile_order -fileset sources_1
+relaunch_sim
+relaunch_sim
+run all
+update_compile_order -fileset sources_1
+relaunch_sim
+relaunch_sim
+run all
+relaunch_sim
+run all
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_simulation -mode post-implementation -type timing
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+run all
+close_sim
+close_sim
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_design
+launch_simulation -mode post-implementation -type timing
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+relaunch_sim
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+run all
+close_sim
+close_sim
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_design
+launch_simulation -mode post-implementation -type timing
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_design
+launch_simulation -mode post-implementation -type timing
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+close_sim
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_design
+launch_simulation -mode post-implementation -type timing
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+run all
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+relaunch_sim
+run all
+relaunch_sim
+run all
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_sim
+close_sim
+close_design
+launch_simulation -mode post-implementation -type timing
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+relaunch_sim
+close_sim
+close_design
+close [ open D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/new/top_top.v w ]
+add_files D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/new/top_top.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_simulation -mode post-implementation -type timing
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+launch_simulation
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+relaunch_sim
+run all
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation -mode post-synthesis -type timing
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+run all
+run all
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_simulation -mode post-implementation -type timing
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+save_wave_config {D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg}
+save_wave_config {D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg}
+close_sim
+current_sim simulation_30
+close_sim
+close_sim
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_design
+launch_simulation -mode post-implementation -type timing
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+run all
+relaunch_sim
+relaunch_sim
+launch_simulation
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+run all
+relaunch_sim
+close_sim
+relaunch_sim
+run all
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+current_design synth_1
+close_design
+launch_simulation -mode post-synthesis -type timing
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+run all
+run all
+current_sim simulation_32
+close_sim
+current_design impl_1
+close_design
+launch_simulation -mode post-implementation -type timing
+close_design
+launch_simulation -mode post-implementation -type timing
+close_sim
+launch_simulation -mode post-implementation -type timing
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+run all
+close_sim
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_design
+launch_simulation -mode post-implementation -type timing
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+run all
+export_ip_user_files -of_objects  [get_files D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/imports/part2/fft_top.v] -no_script -reset -force -quiet
+remove_files  D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/imports/part2/fft_top.v
+close_sim
+close_design
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+run all
+save_wave_config {D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+add_files -norecurse D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sources_1/imports/part2/ping_pong_access2.v
+update_compile_order -fileset sources_1
+relaunch_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top_top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+run all
+update_compile_order -fileset sources_1
+relaunch_sim
+run all
+save_wave_config {D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+save_wave_config {D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+run all
+relaunch_sim
+run all
+launch_simulation -mode post-implementation -type timing
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+launch_simulation -mode post-synthesis -type timing
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+run all
+update_compile_order -fileset sources_1
+run all
+save_wave_config {D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg}
+save_wave_config {D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg}
+close_sim
+current_sim simulation_40
+close_sim
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+relaunch_sim
+update_compile_order -fileset sources_1
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+close_sim
+launch_simulation
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+relaunch_sim
+run all
+relaunch_sim
+run all
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+launch_simulation -mode post-synthesis -type timing
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+run all
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+current_design impl_1
+close_design
+launch_simulation -mode post-implementation -type timing
+open_wave_config D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+run all
+relaunch_sim
+run all
+run all
+relaunch_sim
+run all
+relaunch_sim
+relaunch_sim
+run all
+save_wave_config {D:/1111/DCCDL/VIVADO/lab6/part2/lab/lab.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg}
+close_sim
+current_sim simulation_44
+close_sim
+close_sim
+save_project_as top_top_ok D:/1111/DCCDL/VIVADO/lab6/part2/top_top_ok -force
+import_files
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+current_design synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+reset_run synth_1
+create_clock -period 20.000 -name clk -waveform {0.000 10.000} [get_ports clk]
+file mkdir D:/1111/DCCDL/VIVADO/lab6/part2/top_top_ok/top_top_ok.srcs/constrs_1/new
+close [ open D:/1111/DCCDL/VIVADO/lab6/part2/top_top_ok/top_top_ok.srcs/constrs_1/new/top_top_timing_xdc.xdc w ]
+add_files -fileset constrs_1 D:/1111/DCCDL/VIVADO/lab6/part2/top_top_ok/top_top_ok.srcs/constrs_1/new/top_top_timing_xdc.xdc
+set_property target_constrs_file D:/1111/DCCDL/VIVADO/lab6/part2/top_top_ok/top_top_ok.srcs/constrs_1/new/top_top_timing_xdc.xdc [current_fileset -constrset]
+save_constraints -force
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+refresh_design
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+save_project_as top_top F:/lab6_part2/top_top -force
+import_files
+launch_simulation
+open_wave_config F:/lab6_part2/top_top/top_top.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+run all
+relaunch_sim
+run all
+close_design
+launch_simulation -mode post-synthesis -type timing
+open_wave_config F:/lab6_part2/top_top/top_top.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg
+source top_tb.tcl
+run all
+close_sim
+save_wave_config {F:/lab6_part2/top_top/top_top.srcs/sim_1/imports/fft_32points/top_tb_behav.wcfg}
+close_sim

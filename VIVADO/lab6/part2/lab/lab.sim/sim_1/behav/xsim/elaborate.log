@@ -28,6 +28,8 @@ Compiling module xil_defaultlib.commutator_2
 Compiling module xil_defaultlib.butterfly_2
 Compiling module xil_defaultlib.stage_2
 Compiling module xil_defaultlib.fft32_top
+Compiling module xil_defaultlib.ping_pong_access2
+Compiling module xil_defaultlib.top_top
 Compiling module xil_defaultlib.top_tb
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot top_tb_behav

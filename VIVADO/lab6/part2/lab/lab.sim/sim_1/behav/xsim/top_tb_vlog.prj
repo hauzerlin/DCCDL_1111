@@ -16,11 +16,13 @@ verilog xil_defaultlib  \
 "../../../../lab.srcs/sources_1/new/mult_16.v" \
 "../../../../lab.srcs/sources_1/new/mult_32.v" \
 "../../../../lab.srcs/sources_1/imports/part2/mult_8.v" \
+"../../../../lab.srcs/sources_1/imports/part2/ping_pong_access2.v" \
 "../../../../lab.srcs/sources_1/new/stage_16.v" \
 "../../../../lab.srcs/sources_1/imports/part2/stage_2.v" \
 "../../../../lab.srcs/sources_1/new/stage_32.v" \
 "../../../../lab.srcs/sources_1/imports/part2/stage_4.v" \
 "../../../../lab.srcs/sources_1/imports/part2/stage_8.v" \
+"../../../../lab.srcs/sources_1/new/top_top.v" \
 "../../../../lab.srcs/sim_1/new/top_tb.v" \
 
 # compile glbl module

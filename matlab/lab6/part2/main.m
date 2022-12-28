@@ -11,19 +11,21 @@ clear
 N = 32;
 
 % random array product
-clc
-%rng('shuffle','simdTwister'); % True-random
-rng(429,"twister"); % Pseudo-random
+rng(1026,"twister"); % Pseudo-random
 rand_temp = randperm(256)-129;
 rand_32 = rand_temp(1,1:32);
 
 rand_32 = mod(rand_32,4)+1;
+N = 32;
 
 % stem ((1:32),rand_32);
 
 % S and s_ans part
 
-% S = [ 1+i 1-i -1+i -1-i -1-i -1+i 1-i 1+i]; % Y0~Y7
+% S = [ 1+i 1-i -1+i -1-i -1-i -1+i 1-i 1+i ...
+%       1+i 1-i -1+i -1-i -1-i -1+i 1-i 1+i ...
+%       1+i 1-i -1+i -1-i -1-i -1+i 1-i 1+i ...
+%       1+i 1-i -1+i -1-i -1-i -1+i 1-i 1+i]; % Y0~Y31
 
 for j = 1:N
     switch(rand_32(j))
@@ -35,12 +37,15 @@ for j = 1:N
             S(j) = -1+1i;
         case 4
             S(j) = -1-1i;
-        otherwise
-            S(j) = 0;
     end
 
 end
-s_ans = ifft(S); % ans of y0~y7
+
+
+% s = Y0-Y31
+s_ans = conj(S); % ans of y0~y7
+
+% s_ans = ifft(S); % ans of y0~y7
 
 
 
@@ -61,7 +66,7 @@ for j= 0:floor(N/(2^4))-1 % 2 items
 end
 
 
-%% stage part
+% stage part
 
 % STAGE 1
 
@@ -172,8 +177,46 @@ final_floating = [B5_UO(1) B5_UO(9) B5_UO(5) B5_UO(13) B5_UO(3) B5_UO(11) B5_UO(
          B5_LO(1) B5_LO(9) B5_LO(5) B5_LO(13) B5_LO(3) B5_LO(11) B5_LO(7) B5_LO(15) ...
          B5_LO(2) B5_LO(10) B5_LO(6) B5_LO(14) B5_LO(4) B5_LO(12) B5_LO(8) B5_LO(16)];
 
-plot(abs(final_floating-S))
-% set(gca, 'YScale', 'log')
+final_floating = conj(final_floating)/32;
+
+final_ans = fft(final_floating);
+
+% plot(real(final_ans)-real(S))
+% title('The real-part error between 𝑋0~𝑋31 and 𝑌0~𝑌31')
+% xlabel('index')
+% ylabel('error value')
+% grid on
+
+% plot(imag(final_ans)-imag(S))
+% title('The imaginary-part error between 𝑋0~𝑋31 and 𝑌0~𝑌31')
+% xlabel('index')
+% ylabel('error value')
+% grid on
+
+% plot(real(final_floating))
+% title('The real-part between 𝑦0~𝑦31')
+% xlabel('index')
+% ylabel('value')
+% grid on
+
+% plot(imag(final_floating))
+% title('The imaginary-part between 𝑦0~𝑦31')
+% xlabel('index')
+% ylabel('value')
+% grid on
+
+
+% plot(real(final_ans))
+% title('The real-part between 𝑋0~𝑋31')
+% xlabel('index')
+% ylabel('value')
+% grid on
+
+plot(imag(final_ans))
+title('The imaginary-part between 𝑋0~𝑋31')
+xlabel('index')
+ylabel('value')
+grid on
 
 
 %% truncation part
@@ -213,6 +256,7 @@ for j = 1:N
 
 end
 
+% s = Y0-Y31
 s_ans = conj(S); % ans of y0~y7
 
 
