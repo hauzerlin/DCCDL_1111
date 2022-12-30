@@ -1,0 +1,20 @@
+real_in[0] = 13'd0;
+real_in[1] = -13'd1024;
+real_in[2] = 13'd2048;
+real_in[3] = 13'd1024;
+
+
+imag_in[0] = 13'd0;
+imag_in[1] = 13'd1024;
+imag_in[2] = 13'd0;
+imag_in[3] = 13'd1024;
+real_out[0] = 13'd2048;
+real_out[1] = -13'd2048;
+real_out[2] = 13'd2048;
+real_out[3] = 13'd-2048;
+
+
+imag_out[0] = 13'd2048;
+imag_out[1] = 13'd2048;
+imag_out[2] = 13'd-2048;
+imag_out[3] = 13'd-2048;
