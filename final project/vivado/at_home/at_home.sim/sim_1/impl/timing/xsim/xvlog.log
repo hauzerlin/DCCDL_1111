@@ -1,0 +1,11 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/1111/DCCDL/final project/vivado/at_home/at_home.sim/sim_1/impl/timing/xsim/stage1_tb_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module B_r4
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_64pt
+INFO: [VRFC 10-311] analyzing module multiplier_15bits
+INFO: [VRFC 10-311] analyzing module multiplier_15bits_0
+INFO: [VRFC 10-311] analyzing module multiplier_15bits_1
+INFO: [VRFC 10-311] analyzing module multiplier_15bits_2
+INFO: [VRFC 10-311] analyzing module stage1
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/1111/DCCDL/final project/vivado/at_home/at_home.srcs/sim_1/new/stage1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage1_tb

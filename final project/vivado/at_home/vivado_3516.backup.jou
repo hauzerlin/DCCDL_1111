@@ -1,0 +1,65 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Dec 31 14:58:33 2022
+# Process ID: 3516
+# Current directory: E:/1111/DCCDL/final project/vivado/at_home
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3340 E:\1111\DCCDL\final project\vivado\at_home\at_home.xpr
+# Log file: E:/1111/DCCDL/final project/vivado/at_home/vivado.log
+# Journal file: E:/1111/DCCDL/final project/vivado/at_home\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/1111/DCCDL/final project/vivado/at_home/at_home.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {E:/1111/DCCDL/final project/vivado/at_home/at_home.srcs/sim_1/imports/SDF_64points_FFT/butterfly_test_tb_time_synth.wcfg}
+source stage1_tb.tcl
+run 250 ns
+run 250 ns
+relaunch_sim
+run 250 ns
+run 250 ns
+relaunch_sim
+run 250 ns
+run 250 ns
+run 250 ns
+run 250 ns
+relaunch_sim
+run 250 ns
+run 250 ns
+relaunch_sim
+run 250 ns
+relaunch_sim
+run 250 ns
+run 250 ns
+run 250 ns
+run 250 ns
+relaunch_sim
+run 250 ns
+save_wave_config {E:/1111/DCCDL/final project/vivado/at_home/at_home.srcs/sim_1/imports/SDF_64points_FFT/butterfly_test_tb_time_synth.wcfg}
+close_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_simulation
+open_wave_config {E:/1111/DCCDL/final project/vivado/at_home/at_home.srcs/sim_1/imports/SDF_64points_FFT/butterfly_test_tb_time_synth.wcfg}
+source stage1_tb.tcl
+run 250 ns
+run 250 ns
+run 250 ns
+run 250 ns
+run 250 ns
+run 250 ns
+launch_simulation -mode post-synthesis -type timing
+open_wave_config {E:/1111/DCCDL/final project/vivado/at_home/at_home.srcs/sim_1/imports/SDF_64points_FFT/butterfly_test_tb_time_synth.wcfg}
+source stage1_tb.tcl
+relaunch_sim
+run 250 ns
+close_sim
+relaunch_sim
+run 250 ns
+run 250 ns
+relaunch_sim

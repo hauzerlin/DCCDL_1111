@@ -1,0 +1,11 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+E:/1111/DCCDL/final project/vivado/at_home/at_home.sim/sim_1/behav/xsim/glbl.v,1672430154,verilog,,,,glbl,,,,,,,,
+E:/1111/DCCDL/final project/vivado/at_home/at_home.srcs/sim_1/new/stage1_tb.v,1672430154,verilog,,,,stage1_tb,,,,,,,,
+E:/1111/DCCDL/final project/vivado/at_home/at_home.srcs/sources_1/new/B_r4.v,1672430154,verilog,,E:/1111/DCCDL/final project/vivado/at_home/at_home.srcs/sources_1/new/Complex_multiplier_64pt.v,,B_r4,,,,,,,,
+E:/1111/DCCDL/final project/vivado/at_home/at_home.srcs/sources_1/new/Complex_multiplier_64pt.v,1672430154,verilog,,E:/1111/DCCDL/final project/vivado/at_home/at_home.srcs/sources_1/new/ROM_64.v,,Complex_multiplier_64pt,,,,,,,,
+E:/1111/DCCDL/final project/vivado/at_home/at_home.srcs/sources_1/new/ROM_64.v,1672432497,verilog,,E:/1111/DCCDL/final project/vivado/at_home/at_home.srcs/sources_1/new/multiplier_15bits.v,,ROM_64,,,,,,,,
+E:/1111/DCCDL/final project/vivado/at_home/at_home.srcs/sources_1/new/multiplier_15bits.v,1672430154,verilog,,E:/1111/DCCDL/final project/vivado/at_home/at_home.srcs/sources_1/new/stage1.v,,multiplier_15bits,,,,,,,,
+E:/1111/DCCDL/final project/vivado/at_home/at_home.srcs/sources_1/new/stage1.v,1672579854,verilog,,E:/1111/DCCDL/final project/vivado/at_home/at_home.srcs/sim_1/new/stage1_tb.v,,stage1,,,,,,,,

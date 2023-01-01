@@ -1,0 +1,143 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sun Jan  1 22:06:22 2023
+| Host         : DESKTOP-PT5ER2J running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file stage1_control_sets_placed.rpt
+| Design       : stage1
+| Device       : xc7a200t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    65 |
+|    Minimum number of control sets                        |    65 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   294 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    65 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    65 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |             170 |           57 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |            3168 |          980 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+---------------------------+------------------+------------------+----------------+--------------+
+|  Clock Signal  |       Enable Signal       | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+---------------------------+------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | real_reg1[1][12]_i_1_n_0  | rst_IBUF         |                4 |             26 |         6.50 |
+|  clk_IBUF_BUFG | real_reg1[8][12]_i_1_n_0  | rst_IBUF         |                7 |             26 |         3.71 |
+|  clk_IBUF_BUFG | real_reg2[5][12]_i_1_n_0  | rst_IBUF         |                5 |             26 |         5.20 |
+|  clk_IBUF_BUFG | real_reg3[11][12]_i_1_n_0 | rst_IBUF         |                4 |             26 |         6.50 |
+|  clk_IBUF_BUFG | real_reg3[3][12]_i_1_n_0  | rst_IBUF         |                5 |             26 |         5.20 |
+|  clk_IBUF_BUFG | real_reg2[14][12]_i_1_n_0 | rst_IBUF         |               10 |             26 |         2.60 |
+|  clk_IBUF_BUFG | real_reg3[8][12]_i_1_n_0  | rst_IBUF         |                7 |             26 |         3.71 |
+|  clk_IBUF_BUFG | real_reg3[9][12]_i_1_n_0  | rst_IBUF         |               15 |             26 |         1.73 |
+|  clk_IBUF_BUFG | real_reg1[5][12]_i_1_n_0  | rst_IBUF         |                8 |             26 |         3.25 |
+|  clk_IBUF_BUFG | real_reg3[14][12]_i_1_n_0 | rst_IBUF         |               10 |             26 |         2.60 |
+|  clk_IBUF_BUFG | real_reg2[13][12]_i_1_n_0 | rst_IBUF         |                6 |             26 |         4.33 |
+|  clk_IBUF_BUFG | real_reg3[1][12]_i_1_n_0  | rst_IBUF         |                6 |             26 |         4.33 |
+|  clk_IBUF_BUFG | real_reg2[12][12]_i_1_n_0 | rst_IBUF         |                7 |             26 |         3.71 |
+|  clk_IBUF_BUFG | real_reg1[0][12]_i_1_n_0  | rst_IBUF         |                4 |             26 |         6.50 |
+|  clk_IBUF_BUFG | real_reg1[7][12]_i_1_n_0  | rst_IBUF         |               14 |             26 |         1.86 |
+|  clk_IBUF_BUFG | real_reg2[4][12]_i_1_n_0  | rst_IBUF         |                6 |             26 |         4.33 |
+|  clk_IBUF_BUFG | real_reg3[4][12]_i_1_n_0  | rst_IBUF         |                6 |             26 |         4.33 |
+|  clk_IBUF_BUFG | real_reg1[10][12]_i_1_n_0 | rst_IBUF         |                8 |             26 |         3.25 |
+|  clk_IBUF_BUFG | real_reg2[7][12]_i_1_n_0  | rst_IBUF         |               12 |             26 |         2.17 |
+|  clk_IBUF_BUFG | real_reg1[4][12]_i_1_n_0  | rst_IBUF         |                4 |             26 |         6.50 |
+|  clk_IBUF_BUFG | real_reg3[10][12]_i_1_n_0 | rst_IBUF         |                5 |             26 |         5.20 |
+|  clk_IBUF_BUFG | real_reg3[15][12]_i_1_n_0 | rst_IBUF         |                7 |             26 |         3.71 |
+|  clk_IBUF_BUFG | real_reg2[0][12]_i_1_n_0  | rst_IBUF         |                5 |             26 |         5.20 |
+|  clk_IBUF_BUFG | real_reg2[2][12]_i_1_n_0  | rst_IBUF         |                5 |             26 |         5.20 |
+|  clk_IBUF_BUFG | real_reg3[13][12]_i_1_n_0 | rst_IBUF         |                8 |             26 |         3.25 |
+|  clk_IBUF_BUFG | real_reg2[8][12]_i_1_n_0  | rst_IBUF         |                6 |             26 |         4.33 |
+|  clk_IBUF_BUFG | real_reg1[15][12]_i_1_n_0 | rst_IBUF         |                9 |             26 |         2.89 |
+|  clk_IBUF_BUFG | real_reg3[5][12]_i_1_n_0  | rst_IBUF         |                7 |             26 |         3.71 |
+|  clk_IBUF_BUFG | real_reg3[6][12]_i_1_n_0  | rst_IBUF         |                6 |             26 |         4.33 |
+|  clk_IBUF_BUFG | real_reg1[11][12]_i_1_n_0 | rst_IBUF         |                8 |             26 |         3.25 |
+|  clk_IBUF_BUFG | real_reg1[3][12]_i_1_n_0  | rst_IBUF         |                5 |             26 |         5.20 |
+|  clk_IBUF_BUFG | real_reg1[2][12]_i_1_n_0  | rst_IBUF         |                5 |             26 |         5.20 |
+|  clk_IBUF_BUFG | real_reg3[0][12]_i_1_n_0  | rst_IBUF         |                5 |             26 |         5.20 |
+|  clk_IBUF_BUFG | real_reg1[14][12]_i_1_n_0 | rst_IBUF         |                7 |             26 |         3.71 |
+|  clk_IBUF_BUFG | real_reg2[10][12]_i_1_n_0 | rst_IBUF         |                5 |             26 |         5.20 |
+|  clk_IBUF_BUFG | real_reg2[11][12]_i_1_n_0 | rst_IBUF         |                7 |             26 |         3.71 |
+|  clk_IBUF_BUFG | real_reg2[3][12]_i_1_n_0  | rst_IBUF         |                4 |             26 |         6.50 |
+|  clk_IBUF_BUFG | real_reg2[6][12]_i_1_n_0  | rst_IBUF         |                7 |             26 |         3.71 |
+|  clk_IBUF_BUFG | real_reg2[1][12]_i_1_n_0  | rst_IBUF         |                5 |             26 |         5.20 |
+|  clk_IBUF_BUFG | real_reg2[9][12]_i_1_n_0  | rst_IBUF         |               14 |             26 |         1.86 |
+|  clk_IBUF_BUFG | real_reg3[12][12]_i_1_n_0 | rst_IBUF         |                5 |             26 |         5.20 |
+|  clk_IBUF_BUFG | real_reg3[2][12]_i_1_n_0  | rst_IBUF         |                4 |             26 |         6.50 |
+|  clk_IBUF_BUFG | real_reg1[12][12]_i_1_n_0 | rst_IBUF         |                6 |             26 |         4.33 |
+|  clk_IBUF_BUFG | real_reg1[6][12]_i_1_n_0  | rst_IBUF         |                5 |             26 |         5.20 |
+|  clk_IBUF_BUFG | real_reg2[15][12]_i_1_n_0 | rst_IBUF         |                6 |             26 |         4.33 |
+|  clk_IBUF_BUFG | real_reg3[7][12]_i_1_n_0  | rst_IBUF         |               12 |             26 |         2.17 |
+|  clk_IBUF_BUFG | real_reg1[13][12]_i_1_n_0 | rst_IBUF         |                6 |             26 |         4.33 |
+|  clk_IBUF_BUFG | real_reg1[9][12]_i_1_n_0  | rst_IBUF         |               15 |             26 |         1.73 |
+|  clk_IBUF_BUFG | real_B_M4[13][14]_i_1_n_0 | rst_IBUF         |               39 |            120 |         3.08 |
+|  clk_IBUF_BUFG | real_B_M4[12][14]_i_1_n_0 | rst_IBUF         |               32 |            120 |         3.75 |
+|  clk_IBUF_BUFG | real_B_M4[2][14]_i_1_n_0  | rst_IBUF         |               33 |            120 |         3.64 |
+|  clk_IBUF_BUFG | real_B_M4[5][14]_i_1_n_0  | rst_IBUF         |               28 |            120 |         4.29 |
+|  clk_IBUF_BUFG | real_B_M4[8][14]_i_1_n_0  | rst_IBUF         |               27 |            120 |         4.44 |
+|  clk_IBUF_BUFG | real_B_M4[6][14]_i_1_n_0  | rst_IBUF         |               41 |            120 |         2.93 |
+|  clk_IBUF_BUFG | real_B_M4[7][14]_i_1_n_0  | rst_IBUF         |               39 |            120 |         3.08 |
+|  clk_IBUF_BUFG | real_B_M4[0][14]_i_1_n_0  | rst_IBUF         |               32 |            120 |         3.75 |
+|  clk_IBUF_BUFG | real_B_M4[14][14]_i_1_n_0 | rst_IBUF         |               34 |            120 |         3.53 |
+|  clk_IBUF_BUFG | real_B_M4[1][14]_i_1_n_0  | rst_IBUF         |               36 |            120 |         3.33 |
+|  clk_IBUF_BUFG | real_B_M4[15][14]_i_1_n_0 | rst_IBUF         |               32 |            120 |         3.75 |
+|  clk_IBUF_BUFG | real_B_M4[11][14]_i_1_n_0 | rst_IBUF         |               39 |            120 |         3.08 |
+|  clk_IBUF_BUFG | real_B_M4[3][14]_i_1_n_0  | rst_IBUF         |               28 |            120 |         4.29 |
+|  clk_IBUF_BUFG | real_B_M4[4][14]_i_1_n_0  | rst_IBUF         |               40 |            120 |         3.00 |
+|  clk_IBUF_BUFG | real_B_M4[9][14]_i_1_n_0  | rst_IBUF         |              120 |            120 |         1.00 |
+|  clk_IBUF_BUFG | real_B_M4[10][14]_i_1_n_0 | rst_IBUF         |               43 |            120 |         2.79 |
+|  clk_IBUF_BUFG |                           | rst_IBUF         |               57 |            170 |         2.98 |
++----------------+---------------------------+------------------+------------------+----------------+--------------+
+
+

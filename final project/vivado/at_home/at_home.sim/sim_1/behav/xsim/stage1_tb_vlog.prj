@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../at_home.srcs/sources_1/new/B_r4.v" \
+"../../../../at_home.srcs/sources_1/new/Complex_multiplier_64pt.v" \
+"../../../../at_home.srcs/sources_1/new/ROM_64.v" \
+"../../../../at_home.srcs/sources_1/new/multiplier_15bits.v" \
+"../../../../at_home.srcs/sources_1/new/stage1.v" \
+"../../../../at_home.srcs/sim_1/new/stage1_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
