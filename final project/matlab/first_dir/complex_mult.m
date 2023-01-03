@@ -12,8 +12,8 @@ temp3 = real1 .* imag2;
 temp4 = real2 .* imag1;
 
 if(fraction_part~=0)
-    temp_real = truncation((temp1 + temp2),fraction_part);
-    temp_imag = truncation((temp3 + temp4),fraction_part);
+    temp_real = truncation(truncation(temp1,fraction_part) + truncation(temp2,fraction_part),fraction_part); 
+    temp_imag = truncation(truncation(temp3,fraction_part) + truncation(temp4,fraction_part),fraction_part);
 else
     temp_real = (temp1 + temp2);
     temp_imag = (temp3 + temp4);

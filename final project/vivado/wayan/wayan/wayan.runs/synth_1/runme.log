@@ -1,0 +1,577 @@
+
+*** Running vivado
+    with args -log FFT_SDF_Radix4_64point.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FFT_SDF_Radix4_64point.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source FFT_SDF_Radix4_64point.tcl -notrace
+Command: synth_design -top FFT_SDF_Radix4_64point -part xc7a200tfbg676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 23652 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 563.621 ; gain = 184.762
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FFT_SDF_Radix4_64point' [D:/1111/DCCDL/final project/vivado/wayan/FFT_SDF_Radix4_64point.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MUX_2to1_complex_15bits' [D:/1111/DCCDL/final project/vivado/wayan/MUX_2to1_complex_15bits.v:3]
+	Parameter WL bound to: 14 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MUX_2to1_complex_15bits' (1#1) [D:/1111/DCCDL/final project/vivado/wayan/MUX_2to1_complex_15bits.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Shift_Regisiter_16' [D:/1111/DCCDL/final project/vivado/wayan/Shift_Regisiter_16.v:3]
+	Parameter WL bound to: 14 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Shift_Regisiter_16' (2#1) [D:/1111/DCCDL/final project/vivado/wayan/Shift_Regisiter_16.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MUX_4to1_complex_15bits' [D:/1111/DCCDL/final project/vivado/wayan/MUX_4to1_complex_15bits.v:3]
+	Parameter WL bound to: 14 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MUX_4to1_complex_15bits' (3#1) [D:/1111/DCCDL/final project/vivado/wayan/MUX_4to1_complex_15bits.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Butterfly_64pt' [D:/1111/DCCDL/final project/vivado/wayan/Butterfly_64pt.v:3]
+	Parameter WL bound to: 14 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Butterfly_64pt' (4#1) [D:/1111/DCCDL/final project/vivado/wayan/Butterfly_64pt.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ROM_64' [D:/1111/DCCDL/final project/vivado/wayan/ROM_64.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_64' (5#1) [D:/1111/DCCDL/final project/vivado/wayan/ROM_64.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Complex_multiplier_64pt' [D:/1111/DCCDL/final project/vivado/wayan/Complex_multiplier_64pt.v:3]
+	Parameter WL bound to: 14 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multiplier_15bits' [D:/1111/DCCDL/final project/vivado/wayan/multiplier_15bits.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'multiplier_15bits' (6#1) [D:/1111/DCCDL/final project/vivado/wayan/multiplier_15bits.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Complex_multiplier_64pt' (7#1) [D:/1111/DCCDL/final project/vivado/wayan/Complex_multiplier_64pt.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MUX_2to1_complex_17bits' [D:/1111/DCCDL/final project/vivado/wayan/MUX_2to1_complex_17bits.v:3]
+	Parameter WL bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MUX_2to1_complex_17bits' (8#1) [D:/1111/DCCDL/final project/vivado/wayan/MUX_2to1_complex_17bits.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Shift_Regisiter_4' [D:/1111/DCCDL/final project/vivado/wayan/Shift_Regisiter_4.v:3]
+	Parameter WL bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Shift_Regisiter_4' (9#1) [D:/1111/DCCDL/final project/vivado/wayan/Shift_Regisiter_4.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MUX_4to1_complex_17bits' [D:/1111/DCCDL/final project/vivado/wayan/MUX_4to1_complex_17bits.v:3]
+	Parameter WL bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MUX_4to1_complex_17bits' (10#1) [D:/1111/DCCDL/final project/vivado/wayan/MUX_4to1_complex_17bits.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Butterfly_16pt' [D:/1111/DCCDL/final project/vivado/wayan/Butterfly_16pt.v:3]
+	Parameter WL bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Butterfly_16pt' (11#1) [D:/1111/DCCDL/final project/vivado/wayan/Butterfly_16pt.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ROM_16' [D:/1111/DCCDL/final project/vivado/wayan/ROM_16.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_16' (12#1) [D:/1111/DCCDL/final project/vivado/wayan/ROM_16.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Complex_multiplier_16pt' [D:/1111/DCCDL/final project/vivado/wayan/Complex_multiplier_16pt.v:3]
+	Parameter WL bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multiplier_17bits' [D:/1111/DCCDL/final project/vivado/wayan/multiplier_17bits.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'multiplier_17bits' (13#1) [D:/1111/DCCDL/final project/vivado/wayan/multiplier_17bits.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Complex_multiplier_16pt' (14#1) [D:/1111/DCCDL/final project/vivado/wayan/Complex_multiplier_16pt.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MUX_2to1_complex_19bits' [D:/1111/DCCDL/final project/vivado/wayan/MUX_2to1_complex_19bits.v:3]
+	Parameter WL bound to: 18 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MUX_2to1_complex_19bits' (15#1) [D:/1111/DCCDL/final project/vivado/wayan/MUX_2to1_complex_19bits.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Shift_Regisiter_1' [D:/1111/DCCDL/final project/vivado/wayan/Shift_Regisiter_1.v:3]
+	Parameter WL bound to: 18 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Shift_Regisiter_1' (16#1) [D:/1111/DCCDL/final project/vivado/wayan/Shift_Regisiter_1.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MUX_4to1_complex_19bits' [D:/1111/DCCDL/final project/vivado/wayan/MUX_4to1_complex_19bits.v:3]
+	Parameter WL bound to: 18 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MUX_4to1_complex_19bits' (17#1) [D:/1111/DCCDL/final project/vivado/wayan/MUX_4to1_complex_19bits.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Butterfly_4pt' [D:/1111/DCCDL/final project/vivado/wayan/Butterfly_4pt.v:3]
+	Parameter WL bound to: 18 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Butterfly_4pt' (18#1) [D:/1111/DCCDL/final project/vivado/wayan/Butterfly_4pt.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_SDF_Radix4_64point' (19#1) [D:/1111/DCCDL/final project/vivado/wayan/FFT_SDF_Radix4_64point.v:3]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 627.602 ; gain = 248.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 627.602 ; gain = 248.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 627.602 ; gain = 248.742
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tfbg676-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 627.602 ; gain = 248.742
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 2     
+	   3 Input     19 Bit       Adders := 4     
+	   5 Input     19 Bit       Adders := 2     
+	   4 Input     19 Bit       Adders := 4     
+	   2 Input     17 Bit       Adders := 3     
+	   3 Input     17 Bit       Adders := 5     
+	   5 Input     17 Bit       Adders := 2     
+	   4 Input     17 Bit       Adders := 4     
+	   2 Input     15 Bit       Adders := 3     
+	   3 Input     15 Bit       Adders := 5     
+	   5 Input     15 Bit       Adders := 2     
+	   4 Input     15 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               19 Bit    Registers := 14    
+	               17 Bit    Registers := 56    
+	               15 Bit    Registers := 98    
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 12    
+	   4 Input     19 Bit        Muxes := 2     
+	   2 Input     17 Bit        Muxes := 12    
+	   4 Input     17 Bit        Muxes := 2     
+	   2 Input     15 Bit        Muxes := 12    
+	   4 Input     15 Bit        Muxes := 2     
+	  16 Input     12 Bit        Muxes := 1     
+	  16 Input     11 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module FFT_SDF_Radix4_64point 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               19 Bit    Registers := 8     
+	               17 Bit    Registers := 32    
+	               15 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+Module MUX_2to1_complex_15bits 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 2     
+Module Shift_Regisiter_16 
+Detailed RTL Component Info : 
++---Registers : 
+	               15 Bit    Registers := 32    
+Module MUX_4to1_complex_15bits 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     15 Bit        Muxes := 2     
+Module Butterfly_64pt 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     15 Bit       Adders := 2     
+	   3 Input     15 Bit       Adders := 4     
+	   5 Input     15 Bit       Adders := 2     
+	   4 Input     15 Bit       Adders := 4     
+Module Complex_multiplier_64pt 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     15 Bit       Adders := 1     
+	   2 Input     15 Bit       Adders := 1     
+Module MUX_2to1_complex_17bits 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 2     
+Module Shift_Regisiter_4 
+Detailed RTL Component Info : 
++---Registers : 
+	               17 Bit    Registers := 8     
+Module MUX_4to1_complex_17bits 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     17 Bit        Muxes := 2     
+Module Butterfly_16pt 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 2     
+	   3 Input     17 Bit       Adders := 4     
+	   5 Input     17 Bit       Adders := 2     
+	   4 Input     17 Bit       Adders := 4     
+Module ROM_16 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input     12 Bit        Muxes := 1     
+	  16 Input     11 Bit        Muxes := 1     
+Module Complex_multiplier_16pt 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     17 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+Module MUX_2to1_complex_19bits 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 2     
+Module Shift_Regisiter_1 
+Detailed RTL Component Info : 
++---Registers : 
+	               19 Bit    Registers := 2     
+Module MUX_4to1_complex_19bits 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     19 Bit        Muxes := 2     
+Module Butterfly_4pt 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 2     
+	   3 Input     19 Bit       Adders := 4     
+	   5 Input     19 Bit       Adders := 2     
+	   4 Input     19 Bit       Adders := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP M2/Z0, operation Mode is: A*B.
+DSP Report: operator M2/Z0 is absorbed into DSP M2/Z0.
+DSP Report: Generating DSP M1/Z0, operation Mode is: A*B.
+DSP Report: operator M1/Z0 is absorbed into DSP M1/Z0.
+DSP Report: Generating DSP M4/Z0, operation Mode is: A*B.
+DSP Report: operator M4/Z0 is absorbed into DSP M4/Z0.
+DSP Report: Generating DSP M3/Z0, operation Mode is: A*B.
+DSP Report: operator M3/Z0 is absorbed into DSP M3/Z0.
+DSP Report: Generating DSP M2/Z0, operation Mode is: A*B.
+DSP Report: operator M2/Z0 is absorbed into DSP M2/Z0.
+DSP Report: Generating DSP M1/Z0, operation Mode is: A*B.
+DSP Report: operator M1/Z0 is absorbed into DSP M1/Z0.
+DSP Report: Generating DSP M4/Z0, operation Mode is: A*B.
+DSP Report: operator M4/Z0 is absorbed into DSP M4/Z0.
+DSP Report: Generating DSP M3/Z0, operation Mode is: A*B.
+DSP Report: operator M3/Z0 is absorbed into DSP M3/Z0.
+INFO: [Synth 8-3886] merging instance 'X_time_imag_DFF_reg[12]' (FDC) to 'X_time_imag_DFF_reg[14]'
+INFO: [Synth 8-3886] merging instance 'X_time_imag_DFF_reg[13]' (FDC) to 'X_time_imag_DFF_reg[14]'
+INFO: [Synth 8-3886] merging instance 'X_time_real_DFF_reg[12]' (FDC) to 'X_time_real_DFF_reg[14]'
+INFO: [Synth 8-3886] merging instance 'X_time_real_DFF_reg[13]' (FDC) to 'X_time_real_DFF_reg[14]'
+INFO: [Synth 8-3886] merging instance 'multed_64_imag_DFF_reg[1][14]' (FDC) to 'multed_64_imag_DFF_reg[1][15]'
+INFO: [Synth 8-3886] merging instance 'multed_64_imag_DFF_reg[1][15]' (FDC) to 'multed_64_imag_DFF_reg[1][16]'
+INFO: [Synth 8-3886] merging instance 'multed_64_real_DFF_reg[1][14]' (FDC) to 'multed_64_real_DFF_reg[1][15]'
+INFO: [Synth 8-3886] merging instance 'multed_64_real_DFF_reg[1][15]' (FDC) to 'multed_64_real_DFF_reg[1][16]'
+INFO: [Synth 8-3886] merging instance 'multed_64_imag_DFF_reg[2][14]' (FDC) to 'multed_64_imag_DFF_reg[2][15]'
+INFO: [Synth 8-3886] merging instance 'multed_64_imag_DFF_reg[2][15]' (FDC) to 'multed_64_imag_DFF_reg[2][16]'
+INFO: [Synth 8-3886] merging instance 'multed_64_real_DFF_reg[2][14]' (FDC) to 'multed_64_real_DFF_reg[2][15]'
+INFO: [Synth 8-3886] merging instance 'multed_64_real_DFF_reg[2][15]' (FDC) to 'multed_64_real_DFF_reg[2][16]'
+INFO: [Synth 8-3886] merging instance 'multed_64_imag_DFF_reg[3][14]' (FDC) to 'multed_64_imag_DFF_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'multed_64_imag_DFF_reg[3][15]' (FDC) to 'multed_64_imag_DFF_reg[3][16]'
+INFO: [Synth 8-3886] merging instance 'multed_64_real_DFF_reg[3][14]' (FDC) to 'multed_64_real_DFF_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'multed_64_real_DFF_reg[3][15]' (FDC) to 'multed_64_real_DFF_reg[3][16]'
+INFO: [Synth 8-3886] merging instance 'multed_64_imag_DFF_reg[4][14]' (FDC) to 'multed_64_imag_DFF_reg[4][15]'
+INFO: [Synth 8-3886] merging instance 'multed_64_imag_DFF_reg[4][15]' (FDC) to 'multed_64_imag_DFF_reg[4][16]'
+INFO: [Synth 8-3886] merging instance 'multed_64_real_DFF_reg[4][14]' (FDC) to 'multed_64_real_DFF_reg[4][15]'
+INFO: [Synth 8-3886] merging instance 'multed_64_real_DFF_reg[4][15]' (FDC) to 'multed_64_real_DFF_reg[4][16]'
+INFO: [Synth 8-3886] merging instance 'multed_64_imag_DFF_reg[5][14]' (FDC) to 'multed_64_imag_DFF_reg[5][15]'
+INFO: [Synth 8-3886] merging instance 'multed_64_imag_DFF_reg[5][15]' (FDC) to 'multed_64_imag_DFF_reg[5][16]'
+INFO: [Synth 8-3886] merging instance 'multed_64_real_DFF_reg[5][14]' (FDC) to 'multed_64_real_DFF_reg[5][15]'
+INFO: [Synth 8-3886] merging instance 'multed_64_real_DFF_reg[5][15]' (FDC) to 'multed_64_real_DFF_reg[5][16]'
+INFO: [Synth 8-3886] merging instance 'multed_64_imag_DFF_reg[6][14]' (FDC) to 'multed_64_imag_DFF_reg[6][15]'
+INFO: [Synth 8-3886] merging instance 'multed_64_imag_DFF_reg[6][15]' (FDC) to 'multed_64_imag_DFF_reg[6][16]'
+INFO: [Synth 8-3886] merging instance 'multed_64_real_DFF_reg[6][14]' (FDC) to 'multed_64_real_DFF_reg[6][15]'
+INFO: [Synth 8-3886] merging instance 'multed_64_real_DFF_reg[6][15]' (FDC) to 'multed_64_real_DFF_reg[6][16]'
+INFO: [Synth 8-3886] merging instance 'multed_64_imag_DFF_reg[7][14]' (FDC) to 'multed_64_imag_DFF_reg[7][15]'
+INFO: [Synth 8-3886] merging instance 'multed_64_imag_DFF_reg[7][15]' (FDC) to 'multed_64_imag_DFF_reg[7][16]'
+INFO: [Synth 8-3886] merging instance 'multed_64_real_DFF_reg[7][14]' (FDC) to 'multed_64_real_DFF_reg[7][15]'
+INFO: [Synth 8-3886] merging instance 'multed_64_real_DFF_reg[7][15]' (FDC) to 'multed_64_real_DFF_reg[7][16]'
+INFO: [Synth 8-3886] merging instance 'multed_64_imag_DFF_reg[8][14]' (FDC) to 'multed_64_imag_DFF_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'multed_64_imag_DFF_reg[8][15]' (FDC) to 'multed_64_imag_DFF_reg[8][16]'
+INFO: [Synth 8-3886] merging instance 'multed_64_real_DFF_reg[8][14]' (FDC) to 'multed_64_real_DFF_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'multed_64_real_DFF_reg[8][15]' (FDC) to 'multed_64_real_DFF_reg[8][16]'
+INFO: [Synth 8-3886] merging instance 'multed_64_imag_DFF_reg[9][14]' (FDC) to 'multed_64_imag_DFF_reg[9][15]'
+INFO: [Synth 8-3886] merging instance 'multed_64_imag_DFF_reg[9][15]' (FDC) to 'multed_64_imag_DFF_reg[9][16]'
+INFO: [Synth 8-3886] merging instance 'multed_64_real_DFF_reg[9][14]' (FDC) to 'multed_64_real_DFF_reg[9][15]'
+INFO: [Synth 8-3886] merging instance 'multed_64_real_DFF_reg[9][15]' (FDC) to 'multed_64_real_DFF_reg[9][16]'
+INFO: [Synth 8-3886] merging instance 'multed_64_imag_DFF_reg[10][14]' (FDC) to 'multed_64_imag_DFF_reg[10][15]'
+INFO: [Synth 8-3886] merging instance 'multed_64_imag_DFF_reg[10][15]' (FDC) to 'multed_64_imag_DFF_reg[10][16]'
+INFO: [Synth 8-3886] merging instance 'multed_64_real_DFF_reg[10][14]' (FDC) to 'multed_64_real_DFF_reg[10][15]'
+INFO: [Synth 8-3886] merging instance 'multed_64_real_DFF_reg[10][15]' (FDC) to 'multed_64_real_DFF_reg[10][16]'
+INFO: [Synth 8-3886] merging instance 'multed_64_imag_DFF_reg[11][14]' (FDC) to 'multed_64_imag_DFF_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'multed_64_imag_DFF_reg[11][15]' (FDC) to 'multed_64_imag_DFF_reg[11][16]'
+INFO: [Synth 8-3886] merging instance 'multed_64_real_DFF_reg[11][14]' (FDC) to 'multed_64_real_DFF_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'multed_64_real_DFF_reg[11][15]' (FDC) to 'multed_64_real_DFF_reg[11][16]'
+INFO: [Synth 8-3886] merging instance 'multed_64_imag_DFF_reg[12][14]' (FDC) to 'multed_64_imag_DFF_reg[12][15]'
+INFO: [Synth 8-3886] merging instance 'multed_64_imag_DFF_reg[12][15]' (FDC) to 'multed_64_imag_DFF_reg[12][16]'
+INFO: [Synth 8-3886] merging instance 'multed_64_real_DFF_reg[12][14]' (FDC) to 'multed_64_real_DFF_reg[12][15]'
+INFO: [Synth 8-3886] merging instance 'multed_64_real_DFF_reg[12][15]' (FDC) to 'multed_64_real_DFF_reg[12][16]'
+INFO: [Synth 8-3886] merging instance 'multed_64_imag_DFF_reg[13][14]' (FDC) to 'multed_64_imag_DFF_reg[13][15]'
+INFO: [Synth 8-3886] merging instance 'multed_64_imag_DFF_reg[13][15]' (FDC) to 'multed_64_imag_DFF_reg[13][16]'
+INFO: [Synth 8-3886] merging instance 'multed_64_real_DFF_reg[13][14]' (FDC) to 'multed_64_real_DFF_reg[13][15]'
+INFO: [Synth 8-3886] merging instance 'multed_64_real_DFF_reg[13][15]' (FDC) to 'multed_64_real_DFF_reg[13][16]'
+INFO: [Synth 8-3886] merging instance 'multed_64_imag_DFF_reg[14][14]' (FDC) to 'multed_64_imag_DFF_reg[14][15]'
+INFO: [Synth 8-3886] merging instance 'multed_64_imag_DFF_reg[14][15]' (FDC) to 'multed_64_imag_DFF_reg[14][16]'
+INFO: [Synth 8-3886] merging instance 'multed_64_real_DFF_reg[14][14]' (FDC) to 'multed_64_real_DFF_reg[14][15]'
+INFO: [Synth 8-3886] merging instance 'multed_64_real_DFF_reg[14][15]' (FDC) to 'multed_64_real_DFF_reg[14][16]'
+INFO: [Synth 8-3886] merging instance 'multed_64_imag_DFF_reg[15][14]' (FDC) to 'multed_64_imag_DFF_reg[15][15]'
+INFO: [Synth 8-3886] merging instance 'multed_64_imag_DFF_reg[15][15]' (FDC) to 'multed_64_imag_DFF_reg[15][16]'
+INFO: [Synth 8-3886] merging instance 'multed_64_real_DFF_reg[15][14]' (FDC) to 'multed_64_real_DFF_reg[15][15]'
+INFO: [Synth 8-3886] merging instance 'multed_64_real_DFF_reg[15][15]' (FDC) to 'multed_64_real_DFF_reg[15][16]'
+INFO: [Synth 8-3886] merging instance 'multed_64_imag_DFF_reg[16][14]' (FDC) to 'multed_64_imag_DFF_reg[16][15]'
+INFO: [Synth 8-3886] merging instance 'multed_64_imag_DFF_reg[16][15]' (FDC) to 'multed_64_imag_DFF_reg[16][16]'
+INFO: [Synth 8-3886] merging instance 'multed_64_real_DFF_reg[16][14]' (FDC) to 'multed_64_real_DFF_reg[16][15]'
+INFO: [Synth 8-3886] merging instance 'multed_64_real_DFF_reg[16][15]' (FDC) to 'multed_64_real_DFF_reg[16][16]'
+INFO: [Synth 8-3886] merging instance 'multed_16_imag_DFF_reg[1][16]' (FDC) to 'multed_16_imag_DFF_reg[1][17]'
+INFO: [Synth 8-3886] merging instance 'multed_16_imag_DFF_reg[1][17]' (FDC) to 'multed_16_imag_DFF_reg[1][18]'
+INFO: [Synth 8-3886] merging instance 'multed_16_real_DFF_reg[1][16]' (FDC) to 'multed_16_real_DFF_reg[1][17]'
+INFO: [Synth 8-3886] merging instance 'multed_16_real_DFF_reg[1][17]' (FDC) to 'multed_16_real_DFF_reg[1][18]'
+INFO: [Synth 8-3886] merging instance 'multed_16_imag_DFF_reg[2][16]' (FDC) to 'multed_16_imag_DFF_reg[2][17]'
+INFO: [Synth 8-3886] merging instance 'multed_16_imag_DFF_reg[2][17]' (FDC) to 'multed_16_imag_DFF_reg[2][18]'
+INFO: [Synth 8-3886] merging instance 'multed_16_real_DFF_reg[2][16]' (FDC) to 'multed_16_real_DFF_reg[2][17]'
+INFO: [Synth 8-3886] merging instance 'multed_16_real_DFF_reg[2][17]' (FDC) to 'multed_16_real_DFF_reg[2][18]'
+INFO: [Synth 8-3886] merging instance 'multed_16_imag_DFF_reg[3][16]' (FDC) to 'multed_16_imag_DFF_reg[3][17]'
+INFO: [Synth 8-3886] merging instance 'multed_16_imag_DFF_reg[3][17]' (FDC) to 'multed_16_imag_DFF_reg[3][18]'
+INFO: [Synth 8-3886] merging instance 'multed_16_real_DFF_reg[3][16]' (FDC) to 'multed_16_real_DFF_reg[3][17]'
+INFO: [Synth 8-3886] merging instance 'multed_16_real_DFF_reg[3][17]' (FDC) to 'multed_16_real_DFF_reg[3][18]'
+INFO: [Synth 8-3886] merging instance 'multed_16_imag_DFF_reg[4][16]' (FDC) to 'multed_16_imag_DFF_reg[4][17]'
+INFO: [Synth 8-3886] merging instance 'multed_16_imag_DFF_reg[4][17]' (FDC) to 'multed_16_imag_DFF_reg[4][18]'
+INFO: [Synth 8-3886] merging instance 'multed_16_real_DFF_reg[4][16]' (FDC) to 'multed_16_real_DFF_reg[4][17]'
+INFO: [Synth 8-3886] merging instance 'multed_16_real_DFF_reg[4][17]' (FDC) to 'multed_16_real_DFF_reg[4][18]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 852.973 ; gain = 474.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-----------------------+---------------+---------------+----------------+
+|Module Name            | RTL Object    | Depth x Width | Implemented As | 
++-----------------------+---------------+---------------+----------------+
+|ROM_64                 | TF_real       | 64x12         | LUT            | 
+|ROM_64                 | TF_imag       | 64x11         | LUT            | 
+|FFT_SDF_Radix4_64point | ROM64/TF_real | 64x12         | LUT            | 
+|FFT_SDF_Radix4_64point | ROM64/TF_imag | 64x11         | LUT            | 
++-----------------------+---------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name       | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|multiplier_15bits | A*B         | 15     | 12     | -      | -      | 27     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiplier_15bits | A*B         | 15     | 12     | -      | -      | 27     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiplier_15bits | A*B         | 15     | 12     | -      | -      | 27     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiplier_15bits | A*B         | 15     | 12     | -      | -      | 27     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiplier_17bits | A*B         | 17     | 12     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiplier_17bits | A*B         | 17     | 12     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiplier_17bits | A*B         | 17     | 12     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiplier_17bits | A*B         | 17     | 12     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 852.973 ; gain = 474.113
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 897.582 ; gain = 518.723
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 909.902 ; gain = 531.043
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 909.902 ; gain = 531.043
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 909.902 ; gain = 531.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 909.902 ; gain = 531.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 909.902 ; gain = 531.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 909.902 ; gain = 531.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-----------------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name            | RTL Name                                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-----------------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|FFT_SDF_Radix4_64point | multed_16_real_DFF_reg[4][18]           | 4      | 17    | YES          | NO                 | YES               | 17     | 0       | 
+|FFT_SDF_Radix4_64point | multed_16_imag_DFF_reg[4][18]           | 4      | 17    | YES          | NO                 | YES               | 17     | 0       | 
+|FFT_SDF_Radix4_64point | multed_64_real_DFF_reg[16][16]          | 16     | 15    | YES          | NO                 | YES               | 15     | 0       | 
+|FFT_SDF_Radix4_64point | multed_64_imag_DFF_reg[16][16]          | 16     | 15    | YES          | NO                 | YES               | 15     | 0       | 
+|FFT_SDF_Radix4_64point | SR16_1/Shift_Regisiter_real_reg[15][14] | 16     | 15    | YES          | NO                 | YES               | 15     | 0       | 
+|FFT_SDF_Radix4_64point | SR16_1/Shift_Regisiter_imag_reg[15][14] | 16     | 15    | YES          | NO                 | YES               | 15     | 0       | 
+|FFT_SDF_Radix4_64point | SR16_2/Shift_Regisiter_real_reg[15][14] | 16     | 15    | YES          | NO                 | YES               | 15     | 0       | 
+|FFT_SDF_Radix4_64point | SR16_2/Shift_Regisiter_imag_reg[15][14] | 16     | 15    | YES          | NO                 | YES               | 15     | 0       | 
+|FFT_SDF_Radix4_64point | SR16_3/Shift_Regisiter_real_reg[15][14] | 16     | 15    | YES          | NO                 | YES               | 15     | 0       | 
+|FFT_SDF_Radix4_64point | SR16_3/Shift_Regisiter_imag_reg[15][14] | 16     | 15    | YES          | NO                 | YES               | 15     | 0       | 
+|FFT_SDF_Radix4_64point | SR4_1/Shift_Regisiter_real_reg[3][16]   | 4      | 17    | YES          | NO                 | YES               | 17     | 0       | 
+|FFT_SDF_Radix4_64point | SR4_1/Shift_Regisiter_imag_reg[3][16]   | 4      | 17    | YES          | NO                 | YES               | 17     | 0       | 
+|FFT_SDF_Radix4_64point | SR4_2/Shift_Regisiter_real_reg[3][16]   | 4      | 17    | YES          | NO                 | YES               | 17     | 0       | 
+|FFT_SDF_Radix4_64point | SR4_2/Shift_Regisiter_imag_reg[3][16]   | 4      | 17    | YES          | NO                 | YES               | 17     | 0       | 
+|FFT_SDF_Radix4_64point | SR4_3/Shift_Regisiter_real_reg[3][16]   | 4      | 17    | YES          | NO                 | YES               | 17     | 0       | 
+|FFT_SDF_Radix4_64point | SR4_3/Shift_Regisiter_imag_reg[3][16]   | 4      | 17    | YES          | NO                 | YES               | 17     | 0       | 
++-----------------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |   186|
+|3     |DSP48E1 |     8|
+|4     |LUT2    |   550|
+|5     |LUT3    |   517|
+|6     |LUT4    |   541|
+|7     |LUT5    |   411|
+|8     |LUT6    |   127|
+|9     |SRL16E  |   256|
+|10    |FDCE    |   465|
+|11    |FDPE    |     6|
+|12    |FDRE    |   256|
+|13    |IBUF    |    28|
+|14    |OBUF    |    38|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+------------------------+------+
+|      |Instance |Module                  |Cells |
++------+---------+------------------------+------+
+|1     |top      |                        |  3390|
+|2     |  CM16   |Complex_multiplier_16pt |    67|
+|3     |    M1   |multiplier_17bits       |    24|
+|4     |    M2   |multiplier_17bits_9     |     1|
+|5     |    M3   |multiplier_17bits_10    |    11|
+|6     |    M4   |multiplier_17bits_11    |     9|
+|7     |  CM64   |Complex_multiplier_64pt |    65|
+|8     |    M1   |multiplier_15bits       |    20|
+|9     |    M2   |multiplier_15bits_6     |     1|
+|10    |    M3   |multiplier_15bits_7     |    12|
+|11    |    M4   |multiplier_15bits_8     |    13|
+|12    |  SR16_1 |Shift_Regisiter_16      |   140|
+|13    |  SR16_2 |Shift_Regisiter_16_0    |   654|
+|14    |  SR16_3 |Shift_Regisiter_16_1    |   181|
+|15    |  SR1_1  |Shift_Regisiter_1       |    41|
+|16    |  SR1_2  |Shift_Regisiter_1_2     |   701|
+|17    |  SR1_3  |Shift_Regisiter_1_3     |    94|
+|18    |  SR4_1  |Shift_Regisiter_4       |   143|
+|19    |  SR4_2  |Shift_Regisiter_4_4     |   736|
+|20    |  SR4_3  |Shift_Regisiter_4_5     |   191|
++------+---------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 909.902 ; gain = 531.043
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 909.902 ; gain = 531.043
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 909.902 ; gain = 531.043
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 194 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 956.156 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+131 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 956.156 ; gain = 602.145
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 956.156 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/1111/DCCDL/final project/vivado/wayan/wayan/wayan.runs/synth_1/FFT_SDF_Radix4_64point.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file FFT_SDF_Radix4_64point_utilization_synth.rpt -pb FFT_SDF_Radix4_64point_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jan  3 16:39:12 2023...

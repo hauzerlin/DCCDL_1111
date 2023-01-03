@@ -1,0 +1,13 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim/glbl.v,1672633933,verilog,,,,glbl,,,,,,,,
+D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v,1672751991,verilog,,,,stage1_tb,,,,,,,,
+D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/B_r4.v,1672633934,verilog,,D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/Complex_multiplier_64pt.v,,B_r4,,,,,,,,
+D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/Complex_multiplier_64pt.v,1672633934,verilog,,D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/ROM_64.v,,Complex_multiplier_64pt,,,,,,,,
+D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/ROM_64.v,1672733180,verilog,,D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4.v,,ROM_64,,,,,,,,
+D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4.v,1672753502,verilog,,D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/multiplier_15bits.v,,butterfly_radix4,,,,,,,,
+D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/multiplier_15bits.v,1672633934,verilog,,D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_1.v,,multiplier_15bits,,,,,,,,
+D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage1.v,1672732268,verilog,,D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v,,stage1,,,,,,,,
+D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_1.v,1672752319,verilog,,D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v,,stage_1,,,,,,,,

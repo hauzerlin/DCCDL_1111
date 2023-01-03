@@ -1,0 +1,42 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/Butterfly_16pt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Butterfly_16pt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/Butterfly_4pt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Butterfly_4pt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/Butterfly_64pt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Butterfly_64pt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/Complex_multiplier_16pt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_16pt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/Complex_multiplier_64pt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_64pt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/FFT_SDF_Radix4_64point.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FFT_SDF_Radix4_64point
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/MUX_2to1_complex_15bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_2to1_complex_15bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/MUX_2to1_complex_17bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_2to1_complex_17bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/MUX_2to1_complex_19bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_2to1_complex_19bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/MUX_4to1_complex_15bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_4to1_complex_15bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/MUX_4to1_complex_17bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_4to1_complex_17bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/MUX_4to1_complex_19bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_4to1_complex_19bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/ROM_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/ROM_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/Shift_Regisiter_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Shift_Regisiter_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/Shift_Regisiter_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Shift_Regisiter_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/Shift_Regisiter_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Shift_Regisiter_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/multiplier_15bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier_15bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/multiplier_17bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier_17bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/FFT_SDF_Radix4_64point_tb1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FFT_SDF_Radix4_64point_tb1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/wayan/wayan.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

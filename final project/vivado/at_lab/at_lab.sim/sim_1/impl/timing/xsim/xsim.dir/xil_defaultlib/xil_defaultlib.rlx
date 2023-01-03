@@ -1,0 +1,8 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/impl/timing/xsim/stage1_tb_time_impl.v,1672728909,verilog,,D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v,,Complex_multiplier_64pt;glbl;multiplier_15bits;multiplier_15bits_0;multiplier_15bits_1;multiplier_15bits_2;stage1,,,,,,,,
+D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v,1672724758,verilog,,,,stage1_tb,,,,,,,,
+D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/B_r4.v,1672633934,verilog,,D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/Complex_multiplier_64pt.v,,B_r4,,,,,,,,
+D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/ROM_64.v,1672633934,verilog,,D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/multiplier_15bits.v,,ROM_64,,,,,,,,

@@ -1,0 +1,25 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/1111/DCCDL/final project/vivado/wayan/Butterfly_16pt.v,1672574274,verilog,,D:/1111/DCCDL/final project/vivado/wayan/Butterfly_4pt.v,,Butterfly_16pt,,,,,,,,
+D:/1111/DCCDL/final project/vivado/wayan/Butterfly_4pt.v,1672574255,verilog,,D:/1111/DCCDL/final project/vivado/wayan/Butterfly_64pt.v,,Butterfly_4pt,,,,,,,,
+D:/1111/DCCDL/final project/vivado/wayan/Butterfly_64pt.v,1672574073,verilog,,D:/1111/DCCDL/final project/vivado/wayan/Complex_multiplier_16pt.v,,Butterfly_64pt,,,,,,,,
+D:/1111/DCCDL/final project/vivado/wayan/Complex_multiplier_16pt.v,1672319672,verilog,,D:/1111/DCCDL/final project/vivado/wayan/Complex_multiplier_64pt.v,,Complex_multiplier_16pt,,,,,,,,
+D:/1111/DCCDL/final project/vivado/wayan/Complex_multiplier_64pt.v,1672319639,verilog,,D:/1111/DCCDL/final project/vivado/wayan/FFT_SDF_Radix4_64point.v,,Complex_multiplier_64pt,,,,,,,,
+D:/1111/DCCDL/final project/vivado/wayan/FFT_SDF_Radix4_64point.v,1672652006,verilog,,D:/1111/DCCDL/final project/vivado/wayan/MUX_2to1_complex_15bits.v,,FFT_SDF_Radix4_64point,,,,,,,,
+D:/1111/DCCDL/final project/vivado/wayan/FFT_SDF_Radix4_64point_tb1.v,1672660993,verilog,,,,FFT_SDF_Radix4_64point_tb1,,,,,,,,
+D:/1111/DCCDL/final project/vivado/wayan/MUX_2to1_complex_15bits.v,1672639799,verilog,,D:/1111/DCCDL/final project/vivado/wayan/MUX_2to1_complex_17bits.v,,MUX_2to1_complex_15bits,,,,,,,,
+D:/1111/DCCDL/final project/vivado/wayan/MUX_2to1_complex_17bits.v,1672639813,verilog,,D:/1111/DCCDL/final project/vivado/wayan/MUX_2to1_complex_19bits.v,,MUX_2to1_complex_17bits,,,,,,,,
+D:/1111/DCCDL/final project/vivado/wayan/MUX_2to1_complex_19bits.v,1672639818,verilog,,D:/1111/DCCDL/final project/vivado/wayan/MUX_4to1_complex_15bits.v,,MUX_2to1_complex_19bits,,,,,,,,
+D:/1111/DCCDL/final project/vivado/wayan/MUX_4to1_complex_15bits.v,1672639827,verilog,,D:/1111/DCCDL/final project/vivado/wayan/MUX_4to1_complex_17bits.v,,MUX_4to1_complex_15bits,,,,,,,,
+D:/1111/DCCDL/final project/vivado/wayan/MUX_4to1_complex_17bits.v,1672639841,verilog,,D:/1111/DCCDL/final project/vivado/wayan/MUX_4to1_complex_19bits.v,,MUX_4to1_complex_17bits,,,,,,,,
+D:/1111/DCCDL/final project/vivado/wayan/MUX_4to1_complex_19bits.v,1672639849,verilog,,D:/1111/DCCDL/final project/vivado/wayan/ROM_16.v,,MUX_4to1_complex_19bits,,,,,,,,
+D:/1111/DCCDL/final project/vivado/wayan/ROM_16.v,1672372270,verilog,,D:/1111/DCCDL/final project/vivado/wayan/ROM_64.v,,ROM_16,,,,,,,,
+D:/1111/DCCDL/final project/vivado/wayan/ROM_64.v,1672374668,verilog,,D:/1111/DCCDL/final project/vivado/wayan/Shift_Regisiter_1.v,,ROM_64,,,,,,,,
+D:/1111/DCCDL/final project/vivado/wayan/Shift_Regisiter_1.v,1672645969,verilog,,D:/1111/DCCDL/final project/vivado/wayan/Shift_Regisiter_16.v,,Shift_Regisiter_1,,,,,,,,
+D:/1111/DCCDL/final project/vivado/wayan/Shift_Regisiter_16.v,1672645764,verilog,,D:/1111/DCCDL/final project/vivado/wayan/Shift_Regisiter_4.v,,Shift_Regisiter_16,,,,,,,,
+D:/1111/DCCDL/final project/vivado/wayan/Shift_Regisiter_4.v,1672645947,verilog,,D:/1111/DCCDL/final project/vivado/wayan/multiplier_15bits.v,,Shift_Regisiter_4,,,,,,,,
+D:/1111/DCCDL/final project/vivado/wayan/multiplier_15bits.v,1670050201,verilog,,D:/1111/DCCDL/final project/vivado/wayan/multiplier_17bits.v,,multiplier_15bits,,,,,,,,
+D:/1111/DCCDL/final project/vivado/wayan/multiplier_17bits.v,1672319405,verilog,,D:/1111/DCCDL/final project/vivado/wayan/FFT_SDF_Radix4_64point_tb1.v,,multiplier_17bits,,,,,,,,
+D:/1111/DCCDL/final project/vivado/wayan/wayan/wayan.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,

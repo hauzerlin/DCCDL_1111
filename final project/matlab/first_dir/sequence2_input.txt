@@ -1,0 +1,161 @@
+real_mem[0] = 13'd256;
+real_mem[1] = -13'd267;
+real_mem[2] = 13'd291;
+real_mem[3] = -13'd325;
+
+real_mem[4] = -13'd46;
+real_mem[5] = 13'd27;
+real_mem[6] = 13'd149;
+real_mem[7] = -13'd413;
+
+real_mem[8] = 13'd71;
+real_mem[9] = -13'd108;
+real_mem[10] = 13'd367;
+real_mem[11] = -13'd14;
+
+real_mem[12] = 13'd175;
+real_mem[13] = 13'd6;
+real_mem[14] = 13'd216;
+real_mem[15] = 13'd399;
+
+real_mem[16] = 13'd448;
+real_mem[17] = 13'd481;
+real_mem[18] = -13'd332;
+real_mem[19] = -13'd70;
+
+real_mem[20] = -13'd109;
+real_mem[21] = 13'd55;
+real_mem[22] = 13'd10;
+real_mem[23] = 13'd193;
+
+real_mem[24] = -13'd366;
+real_mem[25] = -13'd163;
+real_mem[26] = -13'd130;
+real_mem[27] = -13'd444;
+
+real_mem[28] = -13'd13;
+real_mem[29] = -13'd157;
+real_mem[30] = -13'd47;
+real_mem[31] = -13'd193;
+
+real_mem[32] = -13'd512;
+real_mem[33] = 13'd45;
+real_mem[34] = -13'd241;
+real_mem[35] = -13'd197;
+
+real_mem[36] = 13'd113;
+real_mem[37] = -13'd108;
+real_mem[38] = 13'd97;
+real_mem[39] = -13'd295;
+
+real_mem[40] = -13'd200;
+real_mem[41] = 13'd0;
+real_mem[42] = 13'd143;
+real_mem[43] = -13'd312;
+
+real_mem[44] = 13'd224;
+real_mem[45] = 13'd457;
+real_mem[46] = -13'd40;
+real_mem[47] = -13'd134;
+
+real_mem[48] = 13'd64;
+real_mem[49] = 13'd212;
+real_mem[50] = -13'd188;
+real_mem[51] = -13'd450;
+
+real_mem[52] = -13'd729;
+real_mem[53] = -13'd173;
+real_mem[54] = -13'd1;
+real_mem[55] = 13'd252;
+
+real_mem[56] = -13'd275;
+real_mem[57] = -13'd204;
+real_mem[58] = 13'd599;
+real_mem[59] = -13'd664;
+
+real_mem[60] = -13'd131;
+real_mem[61] = -13'd111;
+real_mem[62] = 13'd125;
+real_mem[63] = 13'd611;
+
+
+imag_mem[0] = 13'd192;
+imag_mem[1] = -13'd244;
+imag_mem[2] = 13'd34;
+imag_mem[3] = -13'd202;
+
+imag_mem[4] = 13'd480;
+imag_mem[5] = 13'd359;
+imag_mem[6] = -13'd25;
+imag_mem[7] = -13'd337;
+
+imag_mem[8] = -13'd19;
+imag_mem[9] = -13'd529;
+imag_mem[10] = 13'd113;
+imag_mem[11] = 13'd248;
+
+imag_mem[12] = -13'd174;
+imag_mem[13] = -13'd373;
+imag_mem[14] = 13'd31;
+imag_mem[15] = 13'd459;
+
+imag_mem[16] = -13'd256;
+imag_mem[17] = 13'd234;
+imag_mem[18] = -13'd113;
+imag_mem[19] = -13'd359;
+
+imag_mem[20] = 13'd312;
+imag_mem[21] = -13'd238;
+imag_mem[22] = 13'd18;
+imag_mem[23] = -13'd145;
+
+imag_mem[24] = 13'd199;
+imag_mem[25] = -13'd37;
+imag_mem[26] = -13'd321;
+imag_mem[27] = 13'd163;
+
+imag_mem[28] = -13'd147;
+imag_mem[29] = -13'd203;
+imag_mem[30] = -13'd3;
+imag_mem[31] = 13'd108;
+
+imag_mem[32] = 13'd64;
+imag_mem[33] = 13'd172;
+imag_mem[34] = 13'd182;
+imag_mem[35] = -13'd73;
+
+imag_mem[36] = -13'd572;
+imag_mem[37] = -13'd11;
+imag_mem[38] = -13'd123;
+imag_mem[39] = 13'd104;
+
+imag_mem[40] = -13'd110;
+imag_mem[41] = -13'd97;
+imag_mem[42] = 13'd73;
+imag_mem[43] = 13'd62;
+
+imag_mem[44] = 13'd83;
+imag_mem[45] = -13'd94;
+imag_mem[46] = 13'd323;
+imag_mem[47] = -13'd268;
+
+imag_mem[48] = 13'd0;
+imag_mem[49] = -13'd224;
+imag_mem[50] = -13'd104;
+imag_mem[51] = -13'd97;
+
+imag_mem[52] = -13'd222;
+imag_mem[53] = 13'd105;
+imag_mem[54] = 13'd128;
+imag_mem[55] = -13'd77;
+
+imag_mem[56] = -13'd72;
+imag_mem[57] = 13'd209;
+imag_mem[58] = 13'd133;
+imag_mem[59] = -13'd258;
+
+imag_mem[60] = 13'd236;
+imag_mem[61] = -13'd61;
+imag_mem[62] = -13'd352;
+imag_mem[63] = -13'd361;
+

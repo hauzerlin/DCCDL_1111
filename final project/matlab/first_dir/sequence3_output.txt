@@ -1,0 +1,208 @@
+	  real	imag
+seq3[ 0]  -2076	-2077
+
+	  real	imag
+seq3[ 1]  2046	-2048
+
+	  real	imag
+seq3[ 2]  -2050	-2054
+
+	  real	imag
+seq3[ 3]  2049	2050
+
+
+	  real	imag
+seq3[ 4]  2047	2056
+
+	  real	imag
+seq3[ 5]  2047	-2055
+
+	  real	imag
+seq3[ 6]  2044	-2051
+
+	  real	imag
+seq3[ 7]  2045	-2057
+
+
+	  real	imag
+seq3[ 8]  2053	2048
+
+	  real	imag
+seq3[ 9]  2050	-2047
+
+	  real	imag
+seq3[10]  -2044	2047
+
+	  real	imag
+seq3[11]  -2048	2050
+
+
+	  real	imag
+seq3[12]  2048	2047
+
+	  real	imag
+seq3[13]  2046	2046
+
+	  real	imag
+seq3[14]  2048	2039
+
+	  real	imag
+seq3[15]  -2051	2049
+
+
+	  real	imag
+seq3[16]  -2047	-2048
+
+	  real	imag
+seq3[17]  2049	2047
+
+	  real	imag
+seq3[18]  -2045	2047
+
+	  real	imag
+seq3[19]  2045	2042
+
+
+	  real	imag
+seq3[20]  2055	-2046
+
+	  real	imag
+seq3[21]  -2042	2046
+
+	  real	imag
+seq3[22]  -2045	2044
+
+	  real	imag
+seq3[23]  2045	2049
+
+
+	  real	imag
+seq3[24]  -2044	2053
+
+	  real	imag
+seq3[25]  -2045	2048
+
+	  real	imag
+seq3[26]  -2052	2049
+
+	  real	imag
+seq3[27]  2045	-2049
+
+
+	  real	imag
+seq3[28]  -2051	-2046
+
+	  real	imag
+seq3[29]  -2046	2050
+
+	  real	imag
+seq3[30]  2046	2049
+
+	  real	imag
+seq3[31]  2051	2047
+
+
+	  real	imag
+seq3[32]  2052	2053
+
+	  real	imag
+seq3[33]  2046	2050
+
+	  real	imag
+seq3[34]  2040	-2046
+
+	  real	imag
+seq3[35]  2049	2046
+
+
+	  real	imag
+seq3[36]  -2047	2050
+
+	  real	imag
+seq3[37]  -2051	-2039
+
+	  real	imag
+seq3[38]  -2046	2053
+
+	  real	imag
+seq3[39]  2049	-2045
+
+
+	  real	imag
+seq3[40]  -2049	-2044
+
+	  real	imag
+seq3[41]  2044	-2047
+
+	  real	imag
+seq3[42]  2046	-2043
+
+	  real	imag
+seq3[43]  2048	-2048
+
+
+	  real	imag
+seq3[44]  2056	-2051
+
+	  real	imag
+seq3[45]  -2050	2038
+
+	  real	imag
+seq3[46]  -2046	2049
+
+	  real	imag
+seq3[47]  -2047	2049
+
+
+	  real	imag
+seq3[48]  -2049	2048
+
+	  real	imag
+seq3[49]  -2049	-2045
+
+	  real	imag
+seq3[50]  -2045	-2051
+
+	  real	imag
+seq3[51]  2049	2050
+
+
+	  real	imag
+seq3[52]  2049	2052
+
+	  real	imag
+seq3[53]  2046	-2052
+
+	  real	imag
+seq3[54]  -2053	-2042
+
+	  real	imag
+seq3[55]  2045	-2043
+
+
+	  real	imag
+seq3[56]  2048	-2049
+
+	  real	imag
+seq3[57]  2043	-2046
+
+	  real	imag
+seq3[58]  -2046	2047
+
+	  real	imag
+seq3[59]  -2049	-2045
+
+
+	  real	imag
+seq3[60]  2051	-2046
+
+	  real	imag
+seq3[61]  2050	-2050
+
+	  real	imag
+seq3[62]  -2048	2047
+
+	  real	imag
+seq3[63]  2051	2043
+
+

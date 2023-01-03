@@ -1,0 +1,192 @@
+		real	imag
+m1_out[0]	256	0
+
+		real	imag
+m1_out[1]	471	-62
+
+		real	imag
+m1_out[2]	-470	-1
+
+		real	imag
+m1_out[3]	-1042	-731
+
+		real	imag
+m1_out[4]	-771	-2
+
+		real	imag
+m1_out[5]	-199	215
+
+		real	imag
+m1_out[6]	255	-2
+
+		real	imag
+m1_out[7]	-263	-455
+
+		real	imag
+m1_out[8]	-770	-2
+
+		real	imag
+m1_out[9]	-475	-454
+
+		real	imag
+m1_out[10]	979	-2
+
+		real	imag
+m1_out[11]	-1434	215
+
+		real	imag
+m1_out[12]	255	-2
+
+		real	imag
+m1_out[13]	195	-731
+
+		real	imag
+m1_out[14]	254	-1
+
+		real	imag
+m1_out[15]	683	-62
+
+		real	imag
+m1_out[16]	512	-256
+
+		real	imag
+m1_out[17]	78	-696
+
+		real	imag
+m1_out[18]	512	-106
+
+		real	imag
+m1_out[19]	-521	-374
+
+		real	imag
+m1_out[20]	511	255
+
+		real	imag
+m1_out[21]	-117	223
+
+		real	imag
+m1_out[22]	0	104
+
+		real	imag
+m1_out[23]	-386	-178
+
+		real	imag
+m1_out[24]	511	-255
+
+		real	imag
+m1_out[25]	-590	-27
+
+		real	imag
+m1_out[26]	511	617
+
+		real	imag
+m1_out[27]	308	-651
+
+		real	imag
+m1_out[28]	-512	255
+
+		real	imag
+m1_out[29]	-395	499
+
+		real	imag
+m1_out[30]	-1	-617
+
+		real	imag
+m1_out[31]	1621	-848
+
+		real	imag
+m1_out[32]	-768	512
+
+		real	imag
+m1_out[33]	-914	97
+
+		real	imag
+m1_out[34]	691	182
+
+		real	imag
+m1_out[35]	98	151
+
+		real	imag
+m1_out[36]	511	-769
+
+		real	imag
+m1_out[37]	420	236
+
+		real	imag
+m1_out[38]	-182	-332
+
+		real	imag
+m1_out[39]	-235	1128
+
+		real	imag
+m1_out[40]	-256	-512
+
+		real	imag
+m1_out[41]	-833	-99
+
+		real	imag
+m1_out[42]	329	-182
+
+		real	imag
+m1_out[43]	-98	-875
+
+		real	imag
+m1_out[44]	-512	-257
+
+		real	imag
+m1_out[45]	-721	-237
+
+		real	imag
+m1_out[46]	180	-694
+
+		real	imag
+m1_out[47]	236	-407
+
+		real	imag
+m1_out[48]	1024	512
+
+		real	imag
+m1_out[49]	-779	82
+
+		real	imag
+m1_out[50]	287	-543
+
+		real	imag
+m1_out[51]	278	55
+
+		real	imag
+m1_out[52]	1280	1278
+
+		real	imag
+m1_out[53]	641	-418
+
+		real	imag
+m1_out[54]	75	-181
+
+		real	imag
+m1_out[55]	-418	279
+
+		real	imag
+m1_out[56]	0	0
+
+		real	imag
+m1_out[57]	-306	280
+
+		real	imag
+m1_out[58]	-800	544
+
+		real	imag
+m1_out[59]	82	-417
+
+		real	imag
+m1_out[60]	-256	256
+
+		real	imag
+m1_out[61]	445	55
+
+		real	imag
+m1_out[62]	437	180
+
+		real	imag
+m1_out[63]	55	83
+

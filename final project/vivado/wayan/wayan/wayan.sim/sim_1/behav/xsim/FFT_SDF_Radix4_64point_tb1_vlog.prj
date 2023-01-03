@@ -1,0 +1,28 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../Butterfly_16pt.v" \
+"../../../../../Butterfly_4pt.v" \
+"../../../../../Butterfly_64pt.v" \
+"../../../../../Complex_multiplier_16pt.v" \
+"../../../../../Complex_multiplier_64pt.v" \
+"../../../../../FFT_SDF_Radix4_64point.v" \
+"../../../../../MUX_2to1_complex_15bits.v" \
+"../../../../../MUX_2to1_complex_17bits.v" \
+"../../../../../MUX_2to1_complex_19bits.v" \
+"../../../../../MUX_4to1_complex_15bits.v" \
+"../../../../../MUX_4to1_complex_17bits.v" \
+"../../../../../MUX_4to1_complex_19bits.v" \
+"../../../../../ROM_16.v" \
+"../../../../../ROM_64.v" \
+"../../../../../Shift_Regisiter_1.v" \
+"../../../../../Shift_Regisiter_16.v" \
+"../../../../../Shift_Regisiter_4.v" \
+"../../../../../multiplier_15bits.v" \
+"../../../../../multiplier_17bits.v" \
+"../../../../../FFT_SDF_Radix4_64point_tb1.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

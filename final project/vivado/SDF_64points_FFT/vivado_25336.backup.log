@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Jan  2 12:33:04 2023
+# Process ID: 25336
+# Current directory: D:/1111/DCCDL/final project/vivado/SDF_64points_FFT
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25288 D:\1111\DCCDL\final project\vivado\SDF_64points_FFT\SDF_64points_FFT.xpr
+# Log file: D:/1111/DCCDL/final project/vivado/SDF_64points_FFT/vivado.log
+# Journal file: D:/1111/DCCDL/final project/vivado/SDF_64points_FFT\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/1111/DCCDL/final project/vivado/SDF_64points_FFT/SDF_64points_FFT.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 800.738 ; gain = 163.477
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jan  2 15:04:38 2023...

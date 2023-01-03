@@ -1,0 +1,192 @@
+		real	imag
+m2_out[0]	-1030	-6
+
+		real	imag
+m2_out[1]	-8	-1032
+
+		real	imag
+m2_out[2]	1018	-6
+
+		real	imag
+m2_out[3]	-2056	-1033
+
+		real	imag
+m2_out[4]	1026	1028
+
+		real	imag
+m2_out[5]	2048	3
+
+		real	imag
+m2_out[6]	-1026	1025
+
+		real	imag
+m2_out[7]	-1	0
+
+		real	imag
+m2_out[8]	2	2
+
+		real	imag
+m2_out[9]	0	0
+
+		real	imag
+m2_out[10]	0	0
+
+		real	imag
+m2_out[11]	2051	2046
+
+		real	imag
+m2_out[12]	1026	-1024
+
+		real	imag
+m2_out[13]	-2	-1
+
+		real	imag
+m2_out[14]	1026	1022
+
+		real	imag
+m2_out[15]	-2	2050
+
+		real	imag
+m2_out[16]	1023	1
+
+		real	imag
+m2_out[17]	-1023	0
+
+		real	imag
+m2_out[18]	1023	0
+
+		real	imag
+m2_out[19]	1023	-2049
+
+		real	imag
+m2_out[20]	0	-1025
+
+		real	imag
+m2_out[21]	0	-1026
+
+		real	imag
+m2_out[22]	-2	-1022
+
+		real	imag
+m2_out[23]	2049	1018
+
+		real	imag
+m2_out[24]	1023	-1023
+
+		real	imag
+m2_out[25]	-1022	-1022
+
+		real	imag
+m2_out[26]	1024	-1024
+
+		real	imag
+m2_out[27]	1025	1022
+
+		real	imag
+m2_out[28]	0	1021
+
+		real	imag
+m2_out[29]	-1	-1022
+
+		real	imag
+m2_out[30]	-2	1021
+
+		real	imag
+m2_out[31]	2049	1026
+
+		real	imag
+m2_out[32]	-1025	-1026
+
+		real	imag
+m2_out[33]	-2047	-2
+
+		real	imag
+m2_out[34]	1020	-1024
+
+		real	imag
+m2_out[35]	2	-2
+
+		real	imag
+m2_out[36]	-1025	1
+
+		real	imag
+m2_out[37]	1	-1024
+
+		real	imag
+m2_out[38]	1024	0
+
+		real	imag
+m2_out[39]	2044	-1028
+
+		real	imag
+m2_out[40]	-1024	1025
+
+		real	imag
+m2_out[41]	-1023	1021
+
+		real	imag
+m2_out[42]	1025	-1023
+
+		real	imag
+m2_out[43]	-1022	1024
+
+		real	imag
+m2_out[44]	0	2046
+
+		real	imag
+m2_out[45]	1023	1021
+
+		real	imag
+m2_out[46]	1	-2
+
+		real	imag
+m2_out[47]	1024	-1026
+
+		real	imag
+m2_out[48]	2048	2047
+
+		real	imag
+m2_out[49]	2	0
+
+		real	imag
+m2_out[50]	1	1
+
+		real	imag
+m2_out[51]	-2	2
+
+		real	imag
+m2_out[52]	2046	-1024
+
+		real	imag
+m2_out[53]	-1024	-3
+
+		real	imag
+m2_out[54]	1	-1027
+
+		real	imag
+m2_out[55]	1022	-3
+
+		real	imag
+m2_out[56]	-1	-1023
+
+		real	imag
+m2_out[57]	-1023	2048
+
+		real	imag
+m2_out[58]	1	1024
+
+		real	imag
+m2_out[59]	-1025	1
+
+		real	imag
+m2_out[60]	1	2047
+
+		real	imag
+m2_out[61]	-2	0
+
+		real	imag
+m2_out[62]	-2050	2
+
+		real	imag
+m2_out[63]	0	0
+

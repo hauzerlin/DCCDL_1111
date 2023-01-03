@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a200tfbg676-1" LaunchTime="1672755445">
+  <File Type="PA-TCL" Name="stage_1.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="stage_1_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="stage_1_reports.tcl"/>
+  <File Type="RDS-RDS" Name="stage_1.vds"/>
+  <File Type="RDS-UTIL" Name="stage_1_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="stage_1_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="stage_1.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="stage_1_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="stage_1_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Complex_multiplier_64pt.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SDF_64points_FFT/SDF_64points_FFT.srcs/sources_1/new/Complex_multiplier_64pt.v"/>
+        <Attr Name="ImportTime" Val="1672430154"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ROM_64.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SDF_64points_FFT/SDF_64points_FFT.srcs/sources_1/new/ROM_64.v"/>
+        <Attr Name="ImportTime" Val="1672430154"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/butterfly_radix4.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SDF_64points_FFT/SDF_64points_FFT.srcs/sources_1/new/butterfly_radix4.v"/>
+        <Attr Name="ImportTime" Val="1672430154"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/multiplier_15bits.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SDF_64points_FFT/SDF_64points_FFT.srcs/sources_1/new/multiplier_15bits.v"/>
+        <Attr Name="ImportTime" Val="1672430154"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/stage_1.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../at_home/at_home.srcs/sources_1/new/stage_1.v"/>
+        <Attr Name="ImportTime" Val="1672633934"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/B_r4.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SDF_64points_FFT/SDF_64points_FFT.srcs/sources_1/new/B_r4.v"/>
+        <Attr Name="ImportTime" Val="1672430154"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ROM_16.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SDF_64points_FFT/SDF_64points_FFT.srcs/sources_1/new/ROM_16.v"/>
+        <Attr Name="ImportTime" Val="1672430154"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/butterfly_mux.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/in_butterfly_mem.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../at_home/at_home.srcs/sources_1/new/in_butterfly_mem.v"/>
+        <Attr Name="ImportTime" Val="1672633934"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/multiplier_17bits.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SDF_64points_FFT/SDF_64points_FFT.srcs/sources_1/new/multiplier_17bits.v"/>
+        <Attr Name="ImportTime" Val="1672430154"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/stage1.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SDF_64points_FFT/SDF_64points_FFT.srcs/sources_1/new/stage1.v"/>
+        <Attr Name="ImportTime" Val="1672430154"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/complex_mult.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SDF_64points_FFT/SDF_64points_FFT.srcs/sources_1/new/complex_mult.v"/>
+        <Attr Name="ImportTime" Val="1672430154"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="stage_1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

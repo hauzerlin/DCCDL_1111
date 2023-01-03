@@ -444,6 +444,7 @@ yline(45,'b','45dB');
 
 
 %% trauncation 64 points SDF  (ROM: 11 bits) (input: 15 bits)
+% sequence1
 
 clc
 clear
@@ -579,15 +580,3 @@ M2(61:64) =complex_mult(B2_out4(13:16), [ROM64(1) ROM64(13) ROM64(25) ROM64(37)]
     mag_value = sum(real(bit_rev_stage1).^2+ imag(bit_rev_stage1).^2);
 
     SQNR = 10*log10((mag_value/mag_error))
-
-%     truncation_error(k) = SQNR;
-
-% subplot(211)
-% plot(1:64, real(bit_rev_stage1)-real(S))
-% 
-% subplot(212)
-% plot(1:64, imag(bit_rev_stage1)-imag(S))
-% 
-% plot(1:40,truncation_error)
-% hold on
-% yline(45,'b','45dB');

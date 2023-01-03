@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Jan  1 16:57:28 2023
+# Process ID: 7488
+# Current directory: E:/1111/DCCDL/final project/vivado/at_home
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20196 E:\1111\DCCDL\final project\vivado\at_home\at_home.xpr
+# Log file: E:/1111/DCCDL/final project/vivado/at_home/vivado.log
+# Journal file: E:/1111/DCCDL/final project/vivado/at_home\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/1111/DCCDL/final project/vivado/at_home/at_home.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {E:/1111/DCCDL/final project/vivado/at_home/at_home.srcs/sim_1/imports/SDF_64points_FFT/butterfly_test_tb_time_synth.wcfg}
+source stage1_tb.tcl
+run 500 ns
+run 500 ns
+relaunch_sim
+relaunch_sim
+run 500 ns
+relaunch_sim
+run 500 ns
+relaunch_sim
+run 500 ns
+relaunch_sim
+run 500 ns
+run 500 ns
+run all
+relaunch_sim

@@ -173,26 +173,173 @@ end
 
 ST = fclose('all');
 
- 
+ %% verilog output
+
+file_output = fopen('./output.txt','w');
+
+for k =1:64 
+    fprintf(file_output,'\t  real\timag\n');
+    fprintf(file_output,'seq1[%2d]  %d\t', k-1, (2^11)*truncation(real(bit_rev_stage1(k)),11));
+    fprintf(file_output,'%d\n\n', (2^11)*truncation(imag(bit_rev_stage1(k)),11));
+    if(mod(k,4)==0 )
+    fprintf(file_output,'\n');
+    end
+end
+    fprintf(file_output,'\n');
 
 %% verilog output
 
-file_output = fopen('./output/output.txt','w');
-file_floating_output = fopen('./output/floating_output.txt','w');
-for k =1:32
-    fprintf(file_output,'%d\n', ...
-    (2^9)*truncation(real(final(k)*32),9));
-    fprintf(file_output,'%d\n', ...
-    (2^9)*truncation(imag(final(k)*32),9));
-    fprintf(file_output,'\n');
+file_output1 = fopen('./sequence1_output.txt','w');
+file_output2 = fopen('./sequence2_output.txt','w');
+file_output3 = fopen('./sequence3_output.txt','w');
+file_all_output = fopen('./all_output.txt','w');
+
+for k =1:64 
+    fprintf(file_all_output,'\t  real\timag\n');
+    fprintf(file_all_output,'seq1[%2d]  %d\t', k-1, (2^11)*truncation(real(bit_rev_sequence1(k)),11));
+    fprintf(file_all_output,'%d\n\n', (2^11)*truncation(imag(bit_rev_sequence1(k)),11));
+    if(mod(k,4)==0 )
+    fprintf(file_all_output,'\n');
+    end
+end
+    fprintf(file_all_output,'\n');
+
+for k =1:64 
+    fprintf(file_all_output,'\t  real\timag\n');
+    fprintf(file_all_output,'seq2[%2d]  %d\t', k-1, (2^11)*truncation(real(bit_rev_sequence2(k)),11));
+    fprintf(file_all_output,'%d\n\n', (2^11)*truncation(imag(bit_rev_sequence2(k)),11));
+    if(mod(k,4)==0 )
+    fprintf(file_all_output,'\n');
+    end
+end
+    fprintf(file_all_output,'\n');
+
+for k =1:64 
+    fprintf(file_all_output,'\t  real\timag\n');
+    fprintf(file_all_output,'seq3[%2d]  %d\t', k-1, (2^11)*truncation(real(bit_rev_sequence3(k)),11));
+    fprintf(file_all_output,'%d\n\n', (2^11)*truncation(imag(bit_rev_sequence3(k)),11));
+    if(mod(k,4)==0 )
+    fprintf(file_all_output,'\n');
+    end
+end
+    fprintf(file_all_output,'\n');
+
+for k =1:64 
+    fprintf(file_output1,'\t  real\timag\n');
+    fprintf(file_output1,'seq1[%2d]  %d\t', k-1, (2^11)*truncation(real(bit_rev_sequence1(k)),11));
+    fprintf(file_output1,'%d\n\n', (2^11)*truncation(imag(bit_rev_sequence1(k)),11));
+    if(mod(k,4)==0 )
+    fprintf(file_output1,'\n');
+    end
 end
 
-for k =1:32
-    fprintf(file_floating_output,'%d\n', ...
-    (2^9)*truncation(real(S(k)*32),9));
-    fprintf(file_floating_output,'%d\n', ...
-    (2^9)*truncation(imag(S(k)*32),9));
-    fprintf(file_floating_output,'\n');
+for k =1:64 
+    fprintf(file_output2,'\t  real\timag\n');
+    fprintf(file_output2,'seq2[%2d]  %d\t', k-1, (2^11)*truncation(real(bit_rev_sequence2(k)),11));
+    fprintf(file_output2,'%d\n\n', (2^11)*truncation(imag(bit_rev_sequence2(k)),11));
+    if(mod(k,4)==0 )
+    fprintf(file_output2,'\n');
+    end
+end
+
+for k =1:64 
+    fprintf(file_output3,'\t  real\timag\n');
+    fprintf(file_output3,'seq3[%2d]  %d\t', k-1, (2^11)*truncation(real(bit_rev_sequence3(k)),11));
+    fprintf(file_output3,'%d\n\n', (2^11)*truncation(imag(bit_rev_sequence3(k)),11));
+    if(mod(k,4)==0 )
+    fprintf(file_output3,'\n');
+    end
+end
+% for k =1:64
+%     if(real(bit_rev_sequence1(k))>=0)
+%     fprintf(file_output1,'real_mem[%d] = 13''d%d;\n', ...
+%     k-1,(2^11)*truncation(real(bit_rev_sequence1(k)),11));
+%     else
+%     fprintf(file_output1,'real_mem[%d] = -13''d%d;\n', ...
+%     k-1,-(2^11)*truncation(real(bit_rev_sequence1(k)),11));
+%     end
+%     if(mod(k,4)==0 )
+%     fprintf(file_output1,'\n');
+%     end
+% end
+% for k =1:64
+%     if(real(bit_rev_sequence1(k))>=0)
+%     fprintf(file_output1,'real_mem[%d] = 13''d%d;\n', ...
+%     k-1,(2^11)*truncation(real(bit_rev_sequence1(k)),11));
+%     else
+%     fprintf(file_output1,'real_mem[%d] = -13''d%d;\n', ...
+%     k-1,-(2^11)*truncation(real(bit_rev_sequence1(k)),11));
+%     end
+%     if(mod(k,4)==0 )
+%     fprintf(file_output1,'\n');
+%     end
+% end
+
+ST = fclose('all');
+
+
+%% verilog output
+
+file_output1 = fopen('./before_bit_rev/sequence1_output.txt','w');
+file_output2 = fopen('./before_bit_rev/sequence2_output.txt','w');
+file_output3 = fopen('./before_bit_rev/sequence3_output.txt','w');
+file_all_output = fopen('./before_bit_rev/all_output.txt','w');
+
+for k =1:64 
+    fprintf(file_all_output,'\t  real\timag\n');
+    fprintf(file_all_output,'seq1[%2d]  %d\t', k-1, (2^11)*truncation(real(sequence1(k)),11));
+    fprintf(file_all_output,'%d\n\n', (2^11)*truncation(imag(sequence1(k)),11));
+%     if(mod(k,4)==0 )
+%     fprintf(file_all_output,'\n');
+%     end
+end
+    fprintf(file_all_output,'\n');
+
+for k =1:64 
+    fprintf(file_all_output,'\t  real\timag\n');
+    fprintf(file_all_output,'seq2[%2d]  %d\t', k-1, (2^11)*truncation(real(sequence2(k)),11));
+    fprintf(file_all_output,'%d\n\n', (2^11)*truncation(imag(sequence2(k)),11));
+%     if(mod(k,4)==0 )
+%     fprintf(file_all_output,'\n');
+%     end
+end
+    fprintf(file_all_output,'\n');
+
+for k =1:64 
+    fprintf(file_all_output,'\t  real\timag\n');
+    fprintf(file_all_output,'seq3[%2d]  %d\t', k-1, (2^11)*truncation(real(sequence3(k)),11));
+    fprintf(file_all_output,'%d\n\n', (2^11)*truncation(imag(sequence3(k)),11));
+%     if(mod(k,4)==0 )
+%     fprintf(file_all_output,'\n');
+%     end
+end
+    fprintf(file_all_output,'\n');
+
+for k =1:64 
+    fprintf(file_output1,'\t  real\timag\n');
+    fprintf(file_output1,'seq1[%2d]  %d\t', k-1, (2^11)*truncation(real(sequence1(k)),11));
+    fprintf(file_output1,'%d\n\n', (2^11)*truncation(imag(sequence1(k)),11));
+%     if(mod(k,4)==0 )
+%     fprintf(file_output1,'\n');
+%     end
+end
+
+for k =1:64 
+    fprintf(file_output2,'\t  real\timag\n');
+    fprintf(file_output2,'seq2[%2d]  %d\t', k-1, (2^11)*truncation(real(sequence2(k)),11));
+    fprintf(file_output2,'%d\n\n', (2^11)*truncation(imag(sequence2(k)),11));
+%     if(mod(k,4)==0 )
+%     fprintf(file_output2,'\n');
+%     end
+end
+
+for k =1:64 
+    fprintf(file_output3,'\t  real\timag\n');
+    fprintf(file_output3,'seq3[%2d]  %d\t', k-1, (2^11)*truncation(real(sequence3(k)),11));
+    fprintf(file_output3,'%d\n\n', (2^11)*truncation(imag(sequence3(k)),11));
+%     if(mod(k,4)==0 )
+%     fprintf(file_output3,'\n');
+%     end
 end
 
 
@@ -202,8 +349,6 @@ ST = fclose('all');
 
 
 file_input = fopen('./input.txt','w');
-% file_in_real = fopen('./input/input_real.txt','w');
-% file_in_imag = fopen('./input/input_imag.txt','w');
 for k =1:64
     if(real(s_in(k))>=0)
     fprintf(file_input,'real_mem[%d] = 13''d%d;\n', ...
@@ -229,31 +374,171 @@ for k =1:64
     fprintf(file_input,'\n');
     end
 end
-    
-
-% 
-% for k =1:32
-%     fprintf(file_in_real,'%d\n', ...
-%     (2^9)*truncation(real(s_ans(k)),9));
-% end
-% 
-% for k =1:32
-%     fprintf(file_in_imag,'%d\n', ...
-%     (2^9)*truncation(imag(s_ans(k)),9));
-% end
-% 
-% for k =1:32
-%     fprintf(file_input,'mem_UI_real[%d] = 11''d%d;\n', ...
-%     k-1,0);
-%     fprintf(file_input,'mem_UI_imag[%d] = 11''d%d;\n', ...
-%     k-1,0);
-%     fprintf(file_input,'\n');
-% end
-% 
-
 ST = fclose('all');
 
 
+%% verilog input    (3sequence)
+
+
+file_input = fopen('./input_3_sequences.txt','w');
+file_in_real = fopen('./input/input_real.txt','w');
+file_in_imag = fopen('./input/input_imag.txt','w');
+for k =1:64
+    if(real(s_in(k))>=0)
+    fprintf(file_input,'X_time_real_all[%d] = 13''d%d;\n', ...
+    k-1,(2^input_length)*truncation(real(s_in(k)),input_length));
+    else
+    fprintf(file_input,'X_time_real_all[%d] = -13''d%d;\n', ...
+    k-1,-(2^input_length)*truncation(real(s_in(k)),input_length));
+    end
+    if(mod(k,4)==0 )
+    fprintf(file_input,'\n');
+    end
+end
+ fprintf(file_input,'\n');
+for k =1:64
+    if(imag(s_in(k))>=0)
+    fprintf(file_input,'X_time_imag_all[%d] = 13''d%d;\n', ...
+    k-1,(2^input_length)*truncation(imag(s_in(k)),input_length));
+    else
+    fprintf(file_input,'X_time_imag_all[%d] = -13''d%d;\n', ...
+    k-1,-(2^input_length)*truncation(imag(s_in(k)),input_length));
+    end
+    if(mod(k,4)==0 )
+    fprintf(file_input,'\n');
+    end
+end
+    fprintf(file_input,'\n\n');
+
+for k =1:64
+    if(real(s_in2(k))>=0)
+    fprintf(file_input,'X_time_real_all[%d] = 13''d%d;\n', ...
+    k-1+64,(2^input_length)*truncation(real(s_in2(k)),input_length));
+    else
+    fprintf(file_input,'X_time_real_all[%d] = -13''d%d;\n', ...
+    k-1+64,-(2^input_length)*truncation(real(s_in2(k)),input_length));
+    end
+    if(mod(k,4)==0 )
+    fprintf(file_input,'\n');
+    end
+end
+ fprintf(file_input,'\n');
+for k =1:64
+    if(imag(s_in2(k))>=0)
+    fprintf(file_input,'X_time_imag_all[%d] = 13''d%d;\n', ...
+    k-1+64,(2^input_length)*truncation(imag(s_in2(k)),input_length));
+    else
+    fprintf(file_input,'X_time_imag_all[%d] = -13''d%d;\n', ...
+    k-1+64,-(2^input_length)*truncation(imag(s_in2(k)),input_length));
+    end
+    if(mod(k,4)==0 )
+    fprintf(file_input,'\n');
+    end
+end
+
+for k =1:64
+    if(real(s_in3(k))>=0)
+    fprintf(file_input,'X_time_real_all[%d] = 13''d%d;\n', ...
+    k-1+64*2,(2^input_length)*truncation(real(s_in3(k)),input_length));
+    else
+    fprintf(file_input,'X_time_real_all[%d] = -13''d%d;\n', ...
+    k-1+64*2,-(2^input_length)*truncation(real(s_in3(k)),input_length));
+    end
+    if(mod(k,4)==0 )
+    fprintf(file_input,'\n');
+    end
+end
+ fprintf(file_input,'\n');
+for k =1:64
+    if(imag(s_in3(k))>=0)
+    fprintf(file_input,'X_time_imag_all[%d] = 13''d%d;\n', ...
+    k-1+64*2,(2^input_length)*truncation(imag(s_in3(k)),input_length));
+    else
+    fprintf(file_input,'X_time_imag_all[%d] = -13''d%d;\n', ...
+    k-1+64*2,-(2^input_length)*truncation(imag(s_in3(k)),input_length));
+    end
+    if(mod(k,4)==0 )
+    fprintf(file_input,'\n');
+    end
+end
+% for k =1:64
+%     if(real(s_in(k))>=0)
+%     fprintf(file_input,'real_mem[%d] = 13''d%d;\n', ...
+%     k-1,(2^input_length)*truncation(real(s_in(k)),input_length));
+%     else
+%     fprintf(file_input,'real_mem[%d] = -13''d%d;\n', ...
+%     k-1,-(2^input_length)*truncation(real(s_in(k)),input_length));
+%     end
+%     if(mod(k,4)==0 )
+%     fprintf(file_input,'\n');
+%     end
+% end
+%  fprintf(file_input,'\n');
+% for k =1:64
+%     if(imag(s_in(k))>=0)
+%     fprintf(file_input,'imag_mem[%d] = 13''d%d;\n', ...
+%     k-1,(2^input_length)*truncation(imag(s_in(k)),input_length));
+%     else
+%     fprintf(file_input,'imag_mem[%d] = -13''d%d;\n', ...
+%     k-1,-(2^input_length)*truncation(imag(s_in(k)),input_length));
+%     end
+%     if(mod(k,4)==0 )
+%     fprintf(file_input,'\n');
+%     end
+% end
+%     fprintf(file_input,'\n\n');
+% 
+% for k =1:64
+%     if(real(s_in2(k))>=0)
+%     fprintf(file_input,'real_mem[%d] = 13''d%d;\n', ...
+%     k-1+64,(2^input_length)*truncation(real(s_in2(k)),input_length));
+%     else
+%     fprintf(file_input,'real_mem[%d] = -13''d%d;\n', ...
+%     k-1+64,-(2^input_length)*truncation(real(s_in2(k)),input_length));
+%     end
+%     if(mod(k,4)==0 )
+%     fprintf(file_input,'\n');
+%     end
+% end
+%  fprintf(file_input,'\n');
+% for k =1:64
+%     if(imag(s_in2(k))>=0)
+%     fprintf(file_input,'imag_mem[%d] = 13''d%d;\n', ...
+%     k-1+64,(2^input_length)*truncation(imag(s_in2(k)),input_length));
+%     else
+%     fprintf(file_input,'imag_mem[%d] = -13''d%d;\n', ...
+%     k-1+64,-(2^input_length)*truncation(imag(s_in2(k)),input_length));
+%     end
+%     if(mod(k,4)==0 )
+%     fprintf(file_input,'\n');
+%     end
+% end
+% 
+% for k =1:64
+%     if(real(s_in3(k))>=0)
+%     fprintf(file_input,'real_mem[%d] = 13''d%d;\n', ...
+%     k-1+64*2,(2^input_length)*truncation(real(s_in3(k)),input_length));
+%     else
+%     fprintf(file_input,'real_mem[%d] = -13''d%d;\n', ...
+%     k-1+64*2,-(2^input_length)*truncation(real(s_in3(k)),input_length));
+%     end
+%     if(mod(k,4)==0 )
+%     fprintf(file_input,'\n');
+%     end
+% end
+%  fprintf(file_input,'\n');
+% for k =1:64
+%     if(imag(s_in3(k))>=0)
+%     fprintf(file_input,'imag_mem[%d] = 13''d%d;\n', ...
+%     k-1+64*2,(2^input_length)*truncation(imag(s_in3(k)),input_length));
+%     else
+%     fprintf(file_input,'imag_mem[%d] = -13''d%d;\n', ...
+%     k-1+64*2,-(2^input_length)*truncation(imag(s_in3(k)),input_length));
+%     end
+%     if(mod(k,4)==0 )
+%     fprintf(file_input,'\n');
+%     end
+% end
 %% stage1
 clc
 
@@ -414,14 +699,14 @@ end
 
 for k = 0:15
     fprintf(file_butterfly_out,'\t\treal\timag\n');
-    fprintf(file_butterfly_out,'b3_out1[%d]\t%d\t', k, (2^11)*truncation(real(stage1(4*k+1)),11));
-    fprintf(file_butterfly_out,'%d\n', (2^11)*truncation(imag(stage1(4*k+1)),11));
-    fprintf(file_butterfly_out,'b3_out2[%d]\t%d\t', k, (2^11)*truncation(real(stage1(4*k+2)),11));
-    fprintf(file_butterfly_out,'%d\n', (2^11)*truncation(imag(stage1(4*k+2)),11));
-    fprintf(file_butterfly_out,'b3_out3[%d]\t%d\t', k, (2^11)*truncation(real(stage1(4*k+3)),11));
-    fprintf(file_butterfly_out,'%d\n', (2^11)*truncation(imag(stage1(4*k+3)),11));
-    fprintf(file_butterfly_out,'b3_out4[%d]\t%d\t', k, (2^11)*truncation(real(stage1(4*k+4)),11));
-    fprintf(file_butterfly_out,'%d\n\n', (2^11)*truncation(imag(stage1(4*k+4)),11));
+    fprintf(file_butterfly_out,'b3_out1[%d]\t%d\t', k, (2^11)*truncation(real(sequence2(4*k+1)),11));
+    fprintf(file_butterfly_out,'%d\n', (2^11)*truncation(imag(sequence2(4*k+1)),11));
+    fprintf(file_butterfly_out,'b3_out2[%d]\t%d\t', k, (2^11)*truncation(real(sequence2(4*k+2)),11));
+    fprintf(file_butterfly_out,'%d\n', (2^11)*truncation(imag(sequence2(4*k+2)),11));
+    fprintf(file_butterfly_out,'b3_out3[%d]\t%d\t', k, (2^11)*truncation(real(sequence2(4*k+3)),11));
+    fprintf(file_butterfly_out,'%d\n', (2^11)*truncation(imag(sequence2(4*k+3)),11));
+    fprintf(file_butterfly_out,'b3_out4[%d]\t%d\t', k, (2^11)*truncation(real(sequence2(4*k+4)),11));
+    fprintf(file_butterfly_out,'%d\n\n', (2^11)*truncation(imag(sequence2(4*k+4)),11));
     if(mod(k,4)==0 )
     fprintf(file_butterfly_out,'\n');
     end
@@ -429,8 +714,8 @@ end
 
 for k =1:64 
     fprintf(file_bit_rev,'\t  real\timag\n');
-    fprintf(file_bit_rev,'real[%2d]  %d\t', k-1, (2^11)*truncation(real(bit_rev_stage1(k)),11));
-    fprintf(file_bit_rev,'%d\n\n', (2^11)*truncation(imag(bit_rev_stage1(k)),11));
+    fprintf(file_bit_rev,'real[%2d]  %d\t', k-1, (2^11)*truncation(real(bit_rev_sequence2(k)),11));
+    fprintf(file_bit_rev,'%d\n\n', (2^11)*truncation(imag(bit_rev_sequence2(k)),11));
 
 end
 
