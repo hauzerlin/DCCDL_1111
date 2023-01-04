@@ -3,11 +3,13 @@ Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
 Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:25]
-WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:26]
-WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:27]
-WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:28]
-WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'Address' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v:46]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:26]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:27]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:28]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:29]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'Address' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v:45]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 19 for port 'in_real_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:32]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 19 for port 'in_imag_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:34]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -22,7 +24,10 @@ Compiling module xil_defaultlib.ROM_16
 Compiling module xil_defaultlib.multiplier_17bits
 Compiling module xil_defaultlib.Complex_multiplier_16pt
 Compiling module xil_defaultlib.stage_2
-Compiling module xil_defaultlib.fft_top
+Compiling module xil_defaultlib.fft_two_stage_top
+Compiling module xil_defaultlib.butterfly_radix4_3
+Compiling module xil_defaultlib.stage_3
+Compiling module xil_defaultlib.three_stage_top
 Compiling module xil_defaultlib.stage1_tb
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot stage1_tb_behav

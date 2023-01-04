@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../SDF_64points_FFT.srcs/sources_1/new/B_r4.v" \
+"../../../../SDF_64points_FFT.srcs/sim_1/new/butterfly_test_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

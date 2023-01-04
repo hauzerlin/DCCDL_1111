@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"butterfly_test_tb_time_synth.v" \
+"../../../../../SDF_64points_FFT.srcs/sim_1/new/butterfly_test_tb.v" \
+
+# Do not sort compile order
+nosort

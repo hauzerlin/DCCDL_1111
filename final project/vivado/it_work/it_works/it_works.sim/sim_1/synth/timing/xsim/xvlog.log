@@ -1,0 +1,33 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/it_work/it_works/it_works.sim/sim_1/synth/timing/xsim/stage1_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_16pt
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_64pt
+INFO: [VRFC 10-311] analyzing module ROM_16
+INFO: [VRFC 10-311] analyzing module Shift_Regisiter_1
+INFO: [VRFC 10-311] analyzing module Shift_Regisiter_1_0
+INFO: [VRFC 10-311] analyzing module Shift_Regisiter_1_1
+INFO: [VRFC 10-311] analyzing module butterfly_radix4
+INFO: [VRFC 10-311] analyzing module butterfly_radix4_2
+INFO: [VRFC 10-311] analyzing module fft_top
+INFO: [VRFC 10-311] analyzing module multiplier_15bits
+INFO: [VRFC 10-311] analyzing module multiplier_15bits_5
+INFO: [VRFC 10-311] analyzing module multiplier_15bits_6
+INFO: [VRFC 10-311] analyzing module multiplier_15bits_7
+INFO: [VRFC 10-311] analyzing module multiplier_17bits
+INFO: [VRFC 10-311] analyzing module multiplier_17bits_2
+INFO: [VRFC 10-311] analyzing module multiplier_17bits_3
+INFO: [VRFC 10-311] analyzing module multiplier_17bits_4
+INFO: [VRFC 10-311] analyzing module stage_1
+INFO: [VRFC 10-311] analyzing module stage_2
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/it_work/it_works/it_works.srcs/sim_1/new/stage1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage1_tb
+INFO: [VRFC 10-2458] undeclared symbol butterfly_real1, assumed default net type wire [D:/1111/DCCDL/final project/vivado/it_work/it_works/it_works.srcs/sim_1/new/stage1_tb.v:18]
+INFO: [VRFC 10-2458] undeclared symbol butterfly_real2, assumed default net type wire [D:/1111/DCCDL/final project/vivado/it_work/it_works/it_works.srcs/sim_1/new/stage1_tb.v:18]
+INFO: [VRFC 10-2458] undeclared symbol butterfly_real3, assumed default net type wire [D:/1111/DCCDL/final project/vivado/it_work/it_works/it_works.srcs/sim_1/new/stage1_tb.v:18]
+INFO: [VRFC 10-2458] undeclared symbol butterfly_real4, assumed default net type wire [D:/1111/DCCDL/final project/vivado/it_work/it_works/it_works.srcs/sim_1/new/stage1_tb.v:18]
+INFO: [VRFC 10-2458] undeclared symbol butterfly_imag1, assumed default net type wire [D:/1111/DCCDL/final project/vivado/it_work/it_works/it_works.srcs/sim_1/new/stage1_tb.v:18]
+INFO: [VRFC 10-2458] undeclared symbol butterfly_imag2, assumed default net type wire [D:/1111/DCCDL/final project/vivado/it_work/it_works/it_works.srcs/sim_1/new/stage1_tb.v:18]
+INFO: [VRFC 10-2458] undeclared symbol butterfly_imag3, assumed default net type wire [D:/1111/DCCDL/final project/vivado/it_work/it_works/it_works.srcs/sim_1/new/stage1_tb.v:18]
+INFO: [VRFC 10-2458] undeclared symbol butterfly_imag4, assumed default net type wire [D:/1111/DCCDL/final project/vivado/it_work/it_works/it_works.srcs/sim_1/new/stage1_tb.v:18]
+WARNING: [VRFC 10-2938] 'butterfly_real1' is already implicitly declared on line 18 [D:/1111/DCCDL/final project/vivado/it_work/it_works/it_works.srcs/sim_1/new/stage1_tb.v:22]
+WARNING: [VRFC 10-2938] 'butterfly_imag1' is already implicitly declared on line 18 [D:/1111/DCCDL/final project/vivado/it_work/it_works/it_works.srcs/sim_1/new/stage1_tb.v:23]

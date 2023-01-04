@@ -18,3 +18,1449 @@ INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
 open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 1009.684 ; gain = 124.418
 update_compile_order -fileset sources_1
+close_project
+open_project {D:/1111/DCCDL/final project/vivado/at_lab/at_lab.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property top fft_two_stage_top [current_fileset]
+update_compile_order -fileset sources_1
+update_files -from_files {{D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v}} -to_files {{D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v}} -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v' with file 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v'.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Jan  4 17:32:56 2023] Launched synth_1...
+Run output will be captured here: D:/1111/DCCDL/final project/vivado/at_lab/at_lab.runs/synth_1/runme.log
+launch_simulation -mode post-synthesis -type timing
+INFO: [Vivado 12-5682] Launching post-synthesis timing simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/synth/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tfbg676-1
+INFO: [Device 21-403] Loading part xc7a200tfbg676-1
+INFO: [Netlist 29-17] Analyzing 134 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1217.926 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:21 ; elapsed = 00:00:14 . Memory (MB): peak = 1367.965 ; gain = 358.281
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/synth/timing/xsim/stage1_tb_time_synth.v"
+write_verilog: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1423.469 ; gain = 38.266
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/synth/timing/xsim/stage1_tb_time_synth.sdf"
+write_sdf: Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1814.559 ; gain = 391.090
+INFO: [SIM-utils-36] Netlist generated:D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/synth/timing/xsim/stage1_tb_time_synth.v
+INFO: [SIM-utils-37] SDF generated:D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/synth/timing/xsim/stage1_tb_time_synth.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'stage1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/synth/timing/xsim'
+"xvlog --incr --relax -prj stage1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/synth/timing/xsim/stage1_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_16pt
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_64pt
+INFO: [VRFC 10-311] analyzing module ROM_16
+INFO: [VRFC 10-311] analyzing module butterfly_radix4
+INFO: [VRFC 10-311] analyzing module butterfly_radix4_2
+INFO: [VRFC 10-311] analyzing module fft_two_stage_top
+INFO: [VRFC 10-311] analyzing module multiplier_15bits
+INFO: [VRFC 10-311] analyzing module multiplier_15bits_3
+INFO: [VRFC 10-311] analyzing module multiplier_15bits_4
+INFO: [VRFC 10-311] analyzing module multiplier_15bits_5
+INFO: [VRFC 10-311] analyzing module multiplier_17bits
+INFO: [VRFC 10-311] analyzing module multiplier_17bits_0
+INFO: [VRFC 10-311] analyzing module multiplier_17bits_1
+INFO: [VRFC 10-311] analyzing module multiplier_17bits_2
+INFO: [VRFC 10-311] analyzing module stage_1
+INFO: [VRFC 10-311] analyzing module stage_2
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage1_tb
+INFO: [VRFC 10-2458] undeclared symbol butterfly_real1, assumed default net type wire [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v:14]
+INFO: [VRFC 10-2458] undeclared symbol butterfly_real2, assumed default net type wire [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v:14]
+INFO: [VRFC 10-2458] undeclared symbol butterfly_real3, assumed default net type wire [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v:14]
+INFO: [VRFC 10-2458] undeclared symbol butterfly_real4, assumed default net type wire [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v:14]
+INFO: [VRFC 10-2458] undeclared symbol butterfly_imag1, assumed default net type wire [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v:14]
+INFO: [VRFC 10-2458] undeclared symbol butterfly_imag2, assumed default net type wire [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v:14]
+INFO: [VRFC 10-2458] undeclared symbol butterfly_imag3, assumed default net type wire [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v:14]
+INFO: [VRFC 10-2458] undeclared symbol butterfly_imag4, assumed default net type wire [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v:14]
+WARNING: [VRFC 10-2938] 'butterfly_real1' is already implicitly declared on line 14 [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v:18]
+WARNING: [VRFC 10-2938] 'butterfly_imag1' is already implicitly declared on line 14 [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v:19]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/synth/timing/xsim'
+"xelab -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot stage1_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot stage1_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "stage1_tb_time_synth.sdf", for root module "stage1_tb/dft".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "stage1_tb_time_synth.sdf", for root module "stage1_tb/dft".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.SRL16E_default
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.FDCE_default
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.LUT6
+Compiling module xil_defaultlib.butterfly_radix4
+Compiling module simprims_ver.DSP48E1(ACASCREG=0,ALUMODEREG=0,...
+Compiling module xil_defaultlib.multiplier_15bits
+Compiling module xil_defaultlib.multiplier_15bits_3
+Compiling module xil_defaultlib.multiplier_15bits_4
+Compiling module xil_defaultlib.multiplier_15bits_5
+Compiling module xil_defaultlib.Complex_multiplier_64pt
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module xil_defaultlib.stage_1
+Compiling module xil_defaultlib.butterfly_radix4_2
+Compiling module xil_defaultlib.multiplier_17bits
+Compiling module xil_defaultlib.multiplier_17bits_0
+Compiling module xil_defaultlib.multiplier_17bits_1
+Compiling module xil_defaultlib.multiplier_17bits_2
+Compiling module xil_defaultlib.Complex_multiplier_16pt
+Compiling module xil_defaultlib.ROM_16
+Compiling module xil_defaultlib.stage_2
+Compiling module xil_defaultlib.fft_two_stage_top
+Compiling module xil_defaultlib.stage1_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot stage1_tb_time_synth
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 1814.559 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '24' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/synth/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "stage1_tb_time_synth -key {Post-Synthesis:sim_1:Timing:stage1_tb} -tclbatch {stage1_tb.tcl} -view {{D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/imports/SDF_64points_FFT/butterfly_test_tb_time_synth.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config {D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/imports/SDF_64points_FFT/butterfly_test_tb_time_synth.wcfg}
+source stage1_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'stage1_tb_time_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:01:16 ; elapsed = 00:01:24 . Memory (MB): peak = 1867.188 ; gain = 857.504
+run 1000 ns
+run 1000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close [ open {D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/three_stage_top.v} w ]
+add_files {{D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/three_stage_top.v}}
+update_compile_order -fileset sources_1
+close [ open {D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v} w ]
+add_files {{D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v}}
+update_compile_order -fileset sources_1
+launch_simulation -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/synth/func/xsim/stage1_tb_func_synth.v"
+INFO: [SIM-utils-36] Netlist generated:D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/synth/func/xsim/stage1_tb_func_synth.v
+INFO: [SIM-utils-54] Inspecting design source files for 'stage1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/synth/func/xsim'
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+"xvlog --incr --relax -prj stage1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/synth/func/xsim/stage1_tb_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_16pt
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_64pt
+INFO: [VRFC 10-311] analyzing module ROM_16
+INFO: [VRFC 10-311] analyzing module butterfly_radix4
+INFO: [VRFC 10-311] analyzing module butterfly_radix4_2
+INFO: [VRFC 10-311] analyzing module fft_two_stage_top
+INFO: [VRFC 10-311] analyzing module multiplier_15bits
+INFO: [VRFC 10-311] analyzing module multiplier_15bits_3
+INFO: [VRFC 10-311] analyzing module multiplier_15bits_4
+INFO: [VRFC 10-311] analyzing module multiplier_15bits_5
+INFO: [VRFC 10-311] analyzing module multiplier_17bits
+INFO: [VRFC 10-311] analyzing module multiplier_17bits_0
+INFO: [VRFC 10-311] analyzing module multiplier_17bits_1
+INFO: [VRFC 10-311] analyzing module multiplier_17bits_2
+INFO: [VRFC 10-311] analyzing module stage_1
+INFO: [VRFC 10-311] analyzing module stage_2
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage1_tb
+INFO: [VRFC 10-2458] undeclared symbol butterfly_real1, assumed default net type wire [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v:14]
+INFO: [VRFC 10-2458] undeclared symbol butterfly_real2, assumed default net type wire [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v:14]
+INFO: [VRFC 10-2458] undeclared symbol butterfly_real3, assumed default net type wire [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v:14]
+INFO: [VRFC 10-2458] undeclared symbol butterfly_real4, assumed default net type wire [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v:14]
+INFO: [VRFC 10-2458] undeclared symbol butterfly_imag1, assumed default net type wire [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v:14]
+INFO: [VRFC 10-2458] undeclared symbol butterfly_imag2, assumed default net type wire [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v:14]
+INFO: [VRFC 10-2458] undeclared symbol butterfly_imag3, assumed default net type wire [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v:14]
+INFO: [VRFC 10-2458] undeclared symbol butterfly_imag4, assumed default net type wire [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v:14]
+WARNING: [VRFC 10-2938] 'butterfly_real1' is already implicitly declared on line 14 [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v:18]
+WARNING: [VRFC 10-2938] 'butterfly_imag1' is already implicitly declared on line 14 [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v:19]
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'stage1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj stage1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/Complex_multiplier_16pt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_16pt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/Complex_multiplier_64pt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_64pt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/ROM_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/ROM_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_two_stage_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/multiplier_15bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier_15bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/multiplier_17bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier_17bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage1_tb
+INFO: [VRFC 10-2458] undeclared symbol butterfly_real1, assumed default net type wire [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v:14]
+INFO: [VRFC 10-2458] undeclared symbol butterfly_real2, assumed default net type wire [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v:14]
+INFO: [VRFC 10-2458] undeclared symbol butterfly_real3, assumed default net type wire [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v:14]
+INFO: [VRFC 10-2458] undeclared symbol butterfly_real4, assumed default net type wire [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v:14]
+INFO: [VRFC 10-2458] undeclared symbol butterfly_imag1, assumed default net type wire [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v:14]
+INFO: [VRFC 10-2458] undeclared symbol butterfly_imag2, assumed default net type wire [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v:14]
+INFO: [VRFC 10-2458] undeclared symbol butterfly_imag3, assumed default net type wire [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v:14]
+INFO: [VRFC 10-2458] undeclared symbol butterfly_imag4, assumed default net type wire [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v:14]
+WARNING: [VRFC 10-2938] 'butterfly_real1' is already implicitly declared on line 14 [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v:18]
+WARNING: [VRFC 10-2938] 'butterfly_imag1' is already implicitly declared on line 14 [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v:19]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xelab -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log"
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:26]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:27]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:28]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:29]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'Address' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v:45]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.butterfly_radix4
+Compiling module xil_defaultlib.ROM_64
+Compiling module xil_defaultlib.multiplier_15bits
+Compiling module xil_defaultlib.Complex_multiplier_64pt
+Compiling module xil_defaultlib.stage_1
+Compiling module xil_defaultlib.butterfly_radix4_2
+Compiling module xil_defaultlib.ROM_16
+Compiling module xil_defaultlib.multiplier_17bits
+Compiling module xil_defaultlib.Complex_multiplier_16pt
+Compiling module xil_defaultlib.stage_2
+Compiling module xil_defaultlib.fft_two_stage_top
+Compiling module xil_defaultlib.stage1_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot stage1_tb_behav
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'elaborate' step aborted
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1878.000 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'stage1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj stage1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/Complex_multiplier_16pt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_16pt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/Complex_multiplier_64pt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_64pt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/ROM_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/ROM_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_two_stage_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/multiplier_15bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier_15bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/multiplier_17bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier_17bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/three_stage_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module three_stage_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage1_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xelab -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:26]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:27]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:28]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:29]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'Address' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v:45]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 17 for port 'out_real_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:41]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 17 for port 'out_imag_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:43]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 17 for port 'multed_real' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:49]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'Address' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:45]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.butterfly_radix4
+Compiling module xil_defaultlib.ROM_64
+Compiling module xil_defaultlib.multiplier_15bits
+Compiling module xil_defaultlib.Complex_multiplier_64pt
+Compiling module xil_defaultlib.stage_1
+Compiling module xil_defaultlib.butterfly_radix4_2
+Compiling module xil_defaultlib.ROM_16
+Compiling module xil_defaultlib.multiplier_17bits
+Compiling module xil_defaultlib.Complex_multiplier_16pt
+Compiling module xil_defaultlib.stage_2
+Compiling module xil_defaultlib.fft_two_stage_top
+Compiling module xil_defaultlib.stage_3
+Compiling module xil_defaultlib.three_stage_top
+Compiling module xil_defaultlib.stage1_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot stage1_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "stage1_tb_behav -key {Behavioral:sim_1:Functional:stage1_tb} -tclbatch {stage1_tb.tcl} -view {{D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/imports/SDF_64points_FFT/butterfly_test_tb_time_synth.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config {D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/imports/SDF_64points_FFT/butterfly_test_tb_time_synth.wcfg}
+source stage1_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'stage1_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1920.254 ; gain = 41.426
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'stage1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj stage1_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xelab -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:26]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:27]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:28]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:29]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'Address' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v:45]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 17 for port 'out_real_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:41]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 17 for port 'out_imag_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:43]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 17 for port 'multed_real' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:49]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'Address' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:45]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1978.609 ; gain = 0.000
+run 1000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'stage1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj stage1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/Complex_multiplier_16pt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_16pt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/Complex_multiplier_64pt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_64pt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/ROM_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/ROM_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_two_stage_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/multiplier_15bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier_15bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/multiplier_17bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier_17bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/three_stage_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module three_stage_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage1_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xelab -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:26]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:27]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:28]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:29]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'Address' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v:45]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 17 for port 'out_real_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:41]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 17 for port 'out_imag_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:43]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.butterfly_radix4
+Compiling module xil_defaultlib.ROM_64
+Compiling module xil_defaultlib.multiplier_15bits
+Compiling module xil_defaultlib.Complex_multiplier_64pt
+Compiling module xil_defaultlib.stage_1
+Compiling module xil_defaultlib.butterfly_radix4_2
+Compiling module xil_defaultlib.ROM_16
+Compiling module xil_defaultlib.multiplier_17bits
+Compiling module xil_defaultlib.Complex_multiplier_16pt
+Compiling module xil_defaultlib.stage_2
+Compiling module xil_defaultlib.fft_two_stage_top
+Compiling module xil_defaultlib.stage_3
+Compiling module xil_defaultlib.three_stage_top
+Compiling module xil_defaultlib.stage1_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot stage1_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "stage1_tb_behav -key {Behavioral:sim_1:Functional:stage1_tb} -tclbatch {stage1_tb.tcl} -view {{D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/imports/SDF_64points_FFT/butterfly_test_tb_time_synth.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config {D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/imports/SDF_64points_FFT/butterfly_test_tb_time_synth.wcfg}
+source stage1_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'stage1_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2033.574 ; gain = 3.977
+close [ open {D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4_3.v} w ]
+add_files {{D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4_3.v}}
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'stage1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj stage1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/Complex_multiplier_16pt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_16pt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/Complex_multiplier_64pt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_64pt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/ROM_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/ROM_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_two_stage_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/multiplier_15bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier_15bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/multiplier_17bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier_17bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/three_stage_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module three_stage_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage1_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xelab -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:26]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:27]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:28]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:29]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'Address' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v:45]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 19 for port 'in_real_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:40]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 19 for port 'in_imag_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:42]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.butterfly_radix4
+Compiling module xil_defaultlib.ROM_64
+Compiling module xil_defaultlib.multiplier_15bits
+Compiling module xil_defaultlib.Complex_multiplier_64pt
+Compiling module xil_defaultlib.stage_1
+Compiling module xil_defaultlib.butterfly_radix4_2
+Compiling module xil_defaultlib.ROM_16
+Compiling module xil_defaultlib.multiplier_17bits
+Compiling module xil_defaultlib.Complex_multiplier_16pt
+Compiling module xil_defaultlib.stage_2
+Compiling module xil_defaultlib.fft_two_stage_top
+Compiling module xil_defaultlib.butterfly_radix4_3
+Compiling module xil_defaultlib.stage_3
+Compiling module xil_defaultlib.three_stage_top
+Compiling module xil_defaultlib.stage1_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot stage1_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "stage1_tb_behav -key {Behavioral:sim_1:Functional:stage1_tb} -tclbatch {stage1_tb.tcl} -view {{D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/imports/SDF_64points_FFT/butterfly_test_tb_time_synth.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config {D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/imports/SDF_64points_FFT/butterfly_test_tb_time_synth.wcfg}
+source stage1_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'stage1_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2037.098 ; gain = 0.000
+run 1000 ns
+run 1000 ns
+run 1000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'stage1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj stage1_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xelab -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:26]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:27]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:28]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:29]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'Address' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v:45]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 19 for port 'in_real_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:40]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 19 for port 'in_imag_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:42]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2037.098 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'stage1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj stage1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/Complex_multiplier_16pt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_16pt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/Complex_multiplier_64pt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_64pt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/ROM_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/ROM_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_two_stage_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/multiplier_15bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier_15bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/multiplier_17bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier_17bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/three_stage_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module three_stage_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage1_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xelab -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:26]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:27]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:28]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:29]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'Address' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v:45]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 19 for port 'in_real_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:40]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 19 for port 'in_imag_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:42]
+WARNING: [VRFC 10-3705] select index 3 into 'real_reg1' is out of bounds [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:197]
+WARNING: [VRFC 10-3705] select index 3 into 'imag_reg1' is out of bounds [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:198]
+WARNING: [VRFC 10-3705] select index 3 into 'real_reg2' is out of bounds [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:199]
+WARNING: [VRFC 10-3705] select index 3 into 'imag_reg2' is out of bounds [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:200]
+WARNING: [VRFC 10-3705] select index 3 into 'real_reg3' is out of bounds [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:201]
+WARNING: [VRFC 10-3705] select index 3 into 'imag_reg3' is out of bounds [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:202]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.butterfly_radix4
+Compiling module xil_defaultlib.ROM_64
+Compiling module xil_defaultlib.multiplier_15bits
+Compiling module xil_defaultlib.Complex_multiplier_64pt
+Compiling module xil_defaultlib.stage_1
+Compiling module xil_defaultlib.butterfly_radix4_2
+Compiling module xil_defaultlib.ROM_16
+Compiling module xil_defaultlib.multiplier_17bits
+Compiling module xil_defaultlib.Complex_multiplier_16pt
+Compiling module xil_defaultlib.stage_2
+Compiling module xil_defaultlib.fft_two_stage_top
+Compiling module xil_defaultlib.butterfly_radix4_3
+Compiling module xil_defaultlib.stage_3
+Compiling module xil_defaultlib.three_stage_top
+Compiling module xil_defaultlib.stage1_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot stage1_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2038.789 ; gain = 0.000
+run 1000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'stage1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj stage1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/Complex_multiplier_16pt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_16pt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/Complex_multiplier_64pt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_64pt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/ROM_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/ROM_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_two_stage_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/multiplier_15bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier_15bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/multiplier_17bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier_17bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/three_stage_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module three_stage_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage1_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xelab -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:26]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:27]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:28]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:29]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'Address' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v:45]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 19 for port 'in_real_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:40]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 19 for port 'in_imag_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:42]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.butterfly_radix4
+Compiling module xil_defaultlib.ROM_64
+Compiling module xil_defaultlib.multiplier_15bits
+Compiling module xil_defaultlib.Complex_multiplier_64pt
+Compiling module xil_defaultlib.stage_1
+Compiling module xil_defaultlib.butterfly_radix4_2
+Compiling module xil_defaultlib.ROM_16
+Compiling module xil_defaultlib.multiplier_17bits
+Compiling module xil_defaultlib.Complex_multiplier_16pt
+Compiling module xil_defaultlib.stage_2
+Compiling module xil_defaultlib.fft_two_stage_top
+Compiling module xil_defaultlib.butterfly_radix4_3
+Compiling module xil_defaultlib.stage_3
+Compiling module xil_defaultlib.three_stage_top
+Compiling module xil_defaultlib.stage1_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot stage1_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "stage1_tb_behav -key {Behavioral:sim_1:Functional:stage1_tb} -tclbatch {stage1_tb.tcl} -view {{D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/imports/SDF_64points_FFT/butterfly_test_tb_time_synth.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config {D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/imports/SDF_64points_FFT/butterfly_test_tb_time_synth.wcfg}
+source stage1_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'stage1_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2038.789 ; gain = 0.000
+run 1000 ns
+run 1000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'stage1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj stage1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/Complex_multiplier_16pt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_16pt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/Complex_multiplier_64pt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_64pt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/ROM_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/ROM_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_two_stage_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/multiplier_15bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier_15bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/multiplier_17bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier_17bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/three_stage_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module three_stage_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage1_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xelab -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:26]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:27]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:28]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:29]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'Address' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v:45]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 19 for port 'in_real_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:32]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 19 for port 'in_imag_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.butterfly_radix4
+Compiling module xil_defaultlib.ROM_64
+Compiling module xil_defaultlib.multiplier_15bits
+Compiling module xil_defaultlib.Complex_multiplier_64pt
+Compiling module xil_defaultlib.stage_1
+Compiling module xil_defaultlib.butterfly_radix4_2
+Compiling module xil_defaultlib.ROM_16
+Compiling module xil_defaultlib.multiplier_17bits
+Compiling module xil_defaultlib.Complex_multiplier_16pt
+Compiling module xil_defaultlib.stage_2
+Compiling module xil_defaultlib.fft_two_stage_top
+Compiling module xil_defaultlib.butterfly_radix4_3
+Compiling module xil_defaultlib.stage_3
+Compiling module xil_defaultlib.three_stage_top
+Compiling module xil_defaultlib.stage1_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot stage1_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 2042.586 ; gain = 0.000
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'stage1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj stage1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/Complex_multiplier_16pt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_16pt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/Complex_multiplier_64pt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_64pt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/ROM_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/ROM_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_two_stage_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/multiplier_15bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier_15bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/multiplier_17bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier_17bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/three_stage_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module three_stage_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage1_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xelab -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:26]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:27]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:28]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:29]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'Address' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v:45]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 19 for port 'in_real_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:32]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 19 for port 'in_imag_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.butterfly_radix4
+Compiling module xil_defaultlib.ROM_64
+Compiling module xil_defaultlib.multiplier_15bits
+Compiling module xil_defaultlib.Complex_multiplier_64pt
+Compiling module xil_defaultlib.stage_1
+Compiling module xil_defaultlib.butterfly_radix4_2
+Compiling module xil_defaultlib.ROM_16
+Compiling module xil_defaultlib.multiplier_17bits
+Compiling module xil_defaultlib.Complex_multiplier_16pt
+Compiling module xil_defaultlib.stage_2
+Compiling module xil_defaultlib.fft_two_stage_top
+Compiling module xil_defaultlib.butterfly_radix4_3
+Compiling module xil_defaultlib.stage_3
+Compiling module xil_defaultlib.three_stage_top
+Compiling module xil_defaultlib.stage1_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot stage1_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 2044.180 ; gain = 0.000
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'stage1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj stage1_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xelab -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:26]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:27]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:28]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:29]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'Address' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v:45]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 19 for port 'in_real_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:32]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 19 for port 'in_imag_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:34]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 2044.180 ; gain = 0.000
+run 1000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'stage1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj stage1_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xelab -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:26]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:27]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:28]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:29]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'Address' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v:45]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 19 for port 'in_real_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:32]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 19 for port 'in_imag_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:34]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2044.180 ; gain = 0.000
+run 1000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'stage1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj stage1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/Complex_multiplier_16pt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_16pt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/Complex_multiplier_64pt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_64pt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/ROM_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/ROM_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_two_stage_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/multiplier_15bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier_15bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/multiplier_17bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier_17bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/three_stage_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module three_stage_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage1_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xelab -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:26]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:27]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:28]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:29]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'Address' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v:45]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 19 for port 'in_real_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:32]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 19 for port 'in_imag_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.butterfly_radix4
+Compiling module xil_defaultlib.ROM_64
+Compiling module xil_defaultlib.multiplier_15bits
+Compiling module xil_defaultlib.Complex_multiplier_64pt
+Compiling module xil_defaultlib.stage_1
+Compiling module xil_defaultlib.butterfly_radix4_2
+Compiling module xil_defaultlib.ROM_16
+Compiling module xil_defaultlib.multiplier_17bits
+Compiling module xil_defaultlib.Complex_multiplier_16pt
+Compiling module xil_defaultlib.stage_2
+Compiling module xil_defaultlib.fft_two_stage_top
+Compiling module xil_defaultlib.butterfly_radix4_3
+Compiling module xil_defaultlib.stage_3
+Compiling module xil_defaultlib.three_stage_top
+Compiling module xil_defaultlib.stage1_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot stage1_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 2044.180 ; gain = 0.000
+run 1000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'stage1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj stage1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/Complex_multiplier_16pt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_16pt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/Complex_multiplier_64pt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_64pt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/ROM_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/ROM_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_two_stage_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/multiplier_15bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier_15bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/multiplier_17bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier_17bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/three_stage_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module three_stage_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage1_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xelab -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:26]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:27]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:28]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:29]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'Address' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v:45]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 19 for port 'in_real_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:32]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 19 for port 'in_imag_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.butterfly_radix4
+Compiling module xil_defaultlib.ROM_64
+Compiling module xil_defaultlib.multiplier_15bits
+Compiling module xil_defaultlib.Complex_multiplier_64pt
+Compiling module xil_defaultlib.stage_1
+Compiling module xil_defaultlib.butterfly_radix4_2
+Compiling module xil_defaultlib.ROM_16
+Compiling module xil_defaultlib.multiplier_17bits
+Compiling module xil_defaultlib.Complex_multiplier_16pt
+Compiling module xil_defaultlib.stage_2
+Compiling module xil_defaultlib.fft_two_stage_top
+Compiling module xil_defaultlib.butterfly_radix4_3
+Compiling module xil_defaultlib.stage_3
+Compiling module xil_defaultlib.three_stage_top
+Compiling module xil_defaultlib.stage1_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot stage1_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 2103.020 ; gain = 0.148
+run 1000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'stage1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj stage1_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xelab -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:26]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:27]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:28]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:29]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'Address' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v:45]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 19 for port 'in_real_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:32]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 19 for port 'in_imag_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:34]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 2103.145 ; gain = 0.004
+run 1000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'stage1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj stage1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/Complex_multiplier_16pt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_16pt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/Complex_multiplier_64pt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_64pt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/ROM_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/ROM_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_two_stage_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/multiplier_15bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier_15bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/multiplier_17bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier_17bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/three_stage_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module three_stage_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage1_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xelab -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:26]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:27]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:28]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:29]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'Address' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v:45]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 19 for port 'in_real_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:32]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 19 for port 'in_imag_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.butterfly_radix4
+Compiling module xil_defaultlib.ROM_64
+Compiling module xil_defaultlib.multiplier_15bits
+Compiling module xil_defaultlib.Complex_multiplier_64pt
+Compiling module xil_defaultlib.stage_1
+Compiling module xil_defaultlib.butterfly_radix4_2
+Compiling module xil_defaultlib.ROM_16
+Compiling module xil_defaultlib.multiplier_17bits
+Compiling module xil_defaultlib.Complex_multiplier_16pt
+Compiling module xil_defaultlib.stage_2
+Compiling module xil_defaultlib.fft_two_stage_top
+Compiling module xil_defaultlib.butterfly_radix4_3
+Compiling module xil_defaultlib.stage_3
+Compiling module xil_defaultlib.three_stage_top
+Compiling module xil_defaultlib.stage1_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot stage1_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 2103.426 ; gain = 0.148
+run 1000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'stage1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj stage1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/wayan/Complex_multiplier_16pt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_16pt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/Complex_multiplier_64pt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Complex_multiplier_64pt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/ROM_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/ROM_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_radix4_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_two_stage_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/multiplier_15bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier_15bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/multiplier_17bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier_17bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/three_stage_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module three_stage_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage1_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim'
+"xelab -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:26]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'bin_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:27]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_real1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:28]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 17 for port 'b_imag1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_two_stage_top.v:29]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'Address' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v:45]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 19 for port 'in_real_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:32]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 19 for port 'in_imag_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_3.v:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.butterfly_radix4
+Compiling module xil_defaultlib.ROM_64
+Compiling module xil_defaultlib.multiplier_15bits
+Compiling module xil_defaultlib.Complex_multiplier_64pt
+Compiling module xil_defaultlib.stage_1
+Compiling module xil_defaultlib.butterfly_radix4_2
+Compiling module xil_defaultlib.ROM_16
+Compiling module xil_defaultlib.multiplier_17bits
+Compiling module xil_defaultlib.Complex_multiplier_16pt
+Compiling module xil_defaultlib.stage_2
+Compiling module xil_defaultlib.fft_two_stage_top
+Compiling module xil_defaultlib.butterfly_radix4_3
+Compiling module xil_defaultlib.stage_3
+Compiling module xil_defaultlib.three_stage_top
+Compiling module xil_defaultlib.stage1_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot stage1_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 2106.645 ; gain = 0.000
+run 1000 ns

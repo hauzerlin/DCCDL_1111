@@ -490,7 +490,7 @@ M2(61:64) =complex_mult(B2_out4(13:16), [ROM64(1) ROM64(13) ROM64(25) ROM64(37)]
 input_length = 11;
 ROM_length = 10;
 
-rng(6666,"twister"); % Pseudo-random
+rng(726,"twister"); % Pseudo-random
 rand_temp = randperm(256)-129;
 rand_64 = rand_temp(1,1:64);
 

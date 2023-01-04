@@ -1,0 +1,21 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/DCCL/Final Project/Verilog/at_lab/at_lab.sim/sim_1/behav/xsim/glbl.v,1672633933,verilog,,,,glbl,,,,,,,,
+D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v,1672827011,verilog,,,,stage1_tb,,,,,,,,
+D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sources_1/new/Butterfly_4pt.v,1672822067,verilog,,D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sources_1/new/Complex_multiplier_16pt.v,,Butterfly_4pt,,,,,,,,
+D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sources_1/new/Complex_multiplier_16pt.v,1672319672,verilog,,D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sources_1/new/Complex_multiplier_64pt.v,,Complex_multiplier_16pt,,,,,,,,
+D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sources_1/new/Complex_multiplier_64pt.v,1672633934,verilog,,D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sources_1/new/MUX_2to1_complex_19bits.v,,Complex_multiplier_64pt,,,,,,,,
+D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sources_1/new/MUX_2to1_complex_19bits.v,1672639818,verilog,,D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sources_1/new/MUX_4to1_complex_19bits.v,,MUX_2to1_complex_19bits,,,,,,,,
+D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sources_1/new/MUX_4to1_complex_19bits.v,1672639849,verilog,,D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sources_1/new/ROM_16.v,,MUX_4to1_complex_19bits,,,,,,,,
+D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sources_1/new/ROM_16.v,1672633934,verilog,,D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sources_1/new/ROM_64.v,,ROM_16,,,,,,,,
+D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sources_1/new/ROM_64.v,1672733180,verilog,,D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sources_1/new/Shift_Regisiter_1.v,,ROM_64,,,,,,,,
+D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sources_1/new/Shift_Regisiter_1.v,1672722209,verilog,,D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4.v,,Shift_Regisiter_1,,,,,,,,
+D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4.v,1672753502,verilog,,D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4_2.v,,butterfly_radix4,,,,,,,,
+D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4_2.v,1672805131,verilog,,D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sources_1/new/fft_top.v,,butterfly_radix4_2,,,,,,,,
+D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sources_1/new/fft_top.v,1672826075,verilog,,D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sources_1/new/multiplier_15bits.v,,fft_top,,,,,,,,
+D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sources_1/new/multiplier_15bits.v,1672633934,verilog,,D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sources_1/new/multiplier_17bits.v,,multiplier_15bits,,,,,,,,
+D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sources_1/new/multiplier_17bits.v,1672633934,verilog,,D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sources_1/new/stage_1.v,,multiplier_17bits,,,,,,,,
+D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sources_1/new/stage_1.v,1672755427,verilog,,D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sources_1/new/stage_2.v,,stage_1,,,,,,,,
+D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sources_1/new/stage_2.v,1672826562,verilog,,D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v,,stage_2,,,,,,,,

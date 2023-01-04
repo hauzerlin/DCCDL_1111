@@ -1,5 +1,4 @@
 `timescale 1ns / 1ps
-`timescale 1ns / 1ps
 module stage_2(clk, rst, in_real, out_real, in_imag, out_imag, bin_real1, bin_real2, bin_real3, bin_real4, bin_imag1, bin_imag2, bin_imag3, bin_imag4, b_real1, b_real2, b_real3, b_real4, b_imag1, b_imag2, b_imag3, b_imag4);
 input clk;
 input rst;

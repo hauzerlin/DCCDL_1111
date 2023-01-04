@@ -1,0 +1,6 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/DCCL/Final Project/Verilog/at_lab/at_lab.sim/sim_1/synth/timing/xsim/stage1_tb_time_synth.v,1672833917,verilog,,D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v,,Complex_multiplier_16pt;Complex_multiplier_64pt;ROM_16;Shift_Regisiter_1;Shift_Regisiter_1_0;Shift_Regisiter_1_1;butterfly_radix4;butterfly_radix4_2;fft_top;glbl;multiplier_15bits;multiplier_15bits_5;multiplier_15bits_6;multiplier_15bits_7;multiplier_17bits;multiplier_17bits_2;multiplier_17bits_3;multiplier_17bits_4;stage_1;stage_2,,,,,,,,
+D:/DCCL/Final Project/Verilog/at_lab/at_lab.srcs/sim_1/new/stage1_tb.v,1672827011,verilog,,,,stage1_tb,,,,,,,,

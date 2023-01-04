@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jan  4 20:13:05 2023
+# Process ID: 4260
+# Current directory: D:/1111/DCCDL/final project/vivado/it_work/at_lab
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22380 D:\1111\DCCDL\final project\vivado\it_work\at_lab\at_lab.xpr
+# Log file: D:/1111/DCCDL/final project/vivado/it_work/at_lab/vivado.log
+# Journal file: D:/1111/DCCDL/final project/vivado/it_work/at_lab\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/1111/DCCDL/final project/vivado/it_work/at_lab/at_lab.xpr}
+update_compile_order -fileset sources_1
+save_project_as it_works {D:/1111/DCCDL/final project/vivado/it_work/it_works} -force
+import_files
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation -mode post-synthesis -type timing
+open_wave_config {D:/1111/DCCDL/final project/vivado/it_work/it_works/it_works.srcs/sim_1/imports/SDF_64points_FFT/butterfly_test_tb_time_synth.wcfg}
+source stage1_tb.tcl
+run 1000 ns
+close_sim

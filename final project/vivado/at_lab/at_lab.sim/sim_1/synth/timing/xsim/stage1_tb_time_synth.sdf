@@ -1,7 +1,7 @@
 (DELAYFILE 
 (SDFVERSION "3.0" )
-(DESIGN "fft_top")
-(DATE "Wed Jan  4 17:20:53 2023")
+(DESIGN "fft_two_stage_top")
+(DATE "Wed Jan  4 17:34:02 2023")
 (VENDOR "XILINX")
 (PROGRAM "Vivado")
 (VERSION "2019.1")
@@ -42991,7 +42991,7 @@
   )
 )
 (CELL 
-    (CELLTYPE "fft_top")
+    (CELLTYPE "fft_two_stage_top")
     (INSTANCE )
     (DELAY
       (ABSOLUTE

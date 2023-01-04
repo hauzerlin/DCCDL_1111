@@ -4,7 +4,7 @@ INFO: [VRFC 10-311] analyzing module Complex_multiplier_64pt
 INFO: [VRFC 10-311] analyzing module ROM_16
 INFO: [VRFC 10-311] analyzing module butterfly_radix4
 INFO: [VRFC 10-311] analyzing module butterfly_radix4_2
-INFO: [VRFC 10-311] analyzing module fft_top
+INFO: [VRFC 10-311] analyzing module fft_two_stage_top
 INFO: [VRFC 10-311] analyzing module multiplier_15bits
 INFO: [VRFC 10-311] analyzing module multiplier_15bits_3
 INFO: [VRFC 10-311] analyzing module multiplier_15bits_4

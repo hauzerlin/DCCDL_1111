@@ -383,90 +383,12 @@ ST = fclose('all');
 file_input = fopen('./input_3_sequences.txt','w');
 file_in_real = fopen('./input/input_real.txt','w');
 file_in_imag = fopen('./input/input_imag.txt','w');
-for k =1:64
-    if(real(s_in(k))>=0)
-    fprintf(file_input,'X_time_real_all[%d] = 13''d%d;\n', ...
-    k-1,(2^input_length)*truncation(real(s_in(k)),input_length));
-    else
-    fprintf(file_input,'X_time_real_all[%d] = -13''d%d;\n', ...
-    k-1,-(2^input_length)*truncation(real(s_in(k)),input_length));
-    end
-    if(mod(k,4)==0 )
-    fprintf(file_input,'\n');
-    end
-end
- fprintf(file_input,'\n');
-for k =1:64
-    if(imag(s_in(k))>=0)
-    fprintf(file_input,'X_time_imag_all[%d] = 13''d%d;\n', ...
-    k-1,(2^input_length)*truncation(imag(s_in(k)),input_length));
-    else
-    fprintf(file_input,'X_time_imag_all[%d] = -13''d%d;\n', ...
-    k-1,-(2^input_length)*truncation(imag(s_in(k)),input_length));
-    end
-    if(mod(k,4)==0 )
-    fprintf(file_input,'\n');
-    end
-end
-    fprintf(file_input,'\n\n');
-
-for k =1:64
-    if(real(s_in2(k))>=0)
-    fprintf(file_input,'X_time_real_all[%d] = 13''d%d;\n', ...
-    k-1+64,(2^input_length)*truncation(real(s_in2(k)),input_length));
-    else
-    fprintf(file_input,'X_time_real_all[%d] = -13''d%d;\n', ...
-    k-1+64,-(2^input_length)*truncation(real(s_in2(k)),input_length));
-    end
-    if(mod(k,4)==0 )
-    fprintf(file_input,'\n');
-    end
-end
- fprintf(file_input,'\n');
-for k =1:64
-    if(imag(s_in2(k))>=0)
-    fprintf(file_input,'X_time_imag_all[%d] = 13''d%d;\n', ...
-    k-1+64,(2^input_length)*truncation(imag(s_in2(k)),input_length));
-    else
-    fprintf(file_input,'X_time_imag_all[%d] = -13''d%d;\n', ...
-    k-1+64,-(2^input_length)*truncation(imag(s_in2(k)),input_length));
-    end
-    if(mod(k,4)==0 )
-    fprintf(file_input,'\n');
-    end
-end
-
-for k =1:64
-    if(real(s_in3(k))>=0)
-    fprintf(file_input,'X_time_real_all[%d] = 13''d%d;\n', ...
-    k-1+64*2,(2^input_length)*truncation(real(s_in3(k)),input_length));
-    else
-    fprintf(file_input,'X_time_real_all[%d] = -13''d%d;\n', ...
-    k-1+64*2,-(2^input_length)*truncation(real(s_in3(k)),input_length));
-    end
-    if(mod(k,4)==0 )
-    fprintf(file_input,'\n');
-    end
-end
- fprintf(file_input,'\n');
-for k =1:64
-    if(imag(s_in3(k))>=0)
-    fprintf(file_input,'X_time_imag_all[%d] = 13''d%d;\n', ...
-    k-1+64*2,(2^input_length)*truncation(imag(s_in3(k)),input_length));
-    else
-    fprintf(file_input,'X_time_imag_all[%d] = -13''d%d;\n', ...
-    k-1+64*2,-(2^input_length)*truncation(imag(s_in3(k)),input_length));
-    end
-    if(mod(k,4)==0 )
-    fprintf(file_input,'\n');
-    end
-end
 % for k =1:64
 %     if(real(s_in(k))>=0)
-%     fprintf(file_input,'real_mem[%d] = 13''d%d;\n', ...
+%     fprintf(file_input,'X_time_real_all[%d] = 13''d%d;\n', ...
 %     k-1,(2^input_length)*truncation(real(s_in(k)),input_length));
 %     else
-%     fprintf(file_input,'real_mem[%d] = -13''d%d;\n', ...
+%     fprintf(file_input,'X_time_real_all[%d] = -13''d%d;\n', ...
 %     k-1,-(2^input_length)*truncation(real(s_in(k)),input_length));
 %     end
 %     if(mod(k,4)==0 )
@@ -476,10 +398,10 @@ end
 %  fprintf(file_input,'\n');
 % for k =1:64
 %     if(imag(s_in(k))>=0)
-%     fprintf(file_input,'imag_mem[%d] = 13''d%d;\n', ...
+%     fprintf(file_input,'X_time_imag_all[%d] = 13''d%d;\n', ...
 %     k-1,(2^input_length)*truncation(imag(s_in(k)),input_length));
 %     else
-%     fprintf(file_input,'imag_mem[%d] = -13''d%d;\n', ...
+%     fprintf(file_input,'X_time_imag_all[%d] = -13''d%d;\n', ...
 %     k-1,-(2^input_length)*truncation(imag(s_in(k)),input_length));
 %     end
 %     if(mod(k,4)==0 )
@@ -490,10 +412,10 @@ end
 % 
 % for k =1:64
 %     if(real(s_in2(k))>=0)
-%     fprintf(file_input,'real_mem[%d] = 13''d%d;\n', ...
+%     fprintf(file_input,'X_time_real_all[%d] = 13''d%d;\n', ...
 %     k-1+64,(2^input_length)*truncation(real(s_in2(k)),input_length));
 %     else
-%     fprintf(file_input,'real_mem[%d] = -13''d%d;\n', ...
+%     fprintf(file_input,'X_time_real_all[%d] = -13''d%d;\n', ...
 %     k-1+64,-(2^input_length)*truncation(real(s_in2(k)),input_length));
 %     end
 %     if(mod(k,4)==0 )
@@ -503,10 +425,10 @@ end
 %  fprintf(file_input,'\n');
 % for k =1:64
 %     if(imag(s_in2(k))>=0)
-%     fprintf(file_input,'imag_mem[%d] = 13''d%d;\n', ...
+%     fprintf(file_input,'X_time_imag_all[%d] = 13''d%d;\n', ...
 %     k-1+64,(2^input_length)*truncation(imag(s_in2(k)),input_length));
 %     else
-%     fprintf(file_input,'imag_mem[%d] = -13''d%d;\n', ...
+%     fprintf(file_input,'X_time_imag_all[%d] = -13''d%d;\n', ...
 %     k-1+64,-(2^input_length)*truncation(imag(s_in2(k)),input_length));
 %     end
 %     if(mod(k,4)==0 )
@@ -516,10 +438,10 @@ end
 % 
 % for k =1:64
 %     if(real(s_in3(k))>=0)
-%     fprintf(file_input,'real_mem[%d] = 13''d%d;\n', ...
+%     fprintf(file_input,'X_time_real_all[%d] = 13''d%d;\n', ...
 %     k-1+64*2,(2^input_length)*truncation(real(s_in3(k)),input_length));
 %     else
-%     fprintf(file_input,'real_mem[%d] = -13''d%d;\n', ...
+%     fprintf(file_input,'X_time_real_all[%d] = -13''d%d;\n', ...
 %     k-1+64*2,-(2^input_length)*truncation(real(s_in3(k)),input_length));
 %     end
 %     if(mod(k,4)==0 )
@@ -529,16 +451,94 @@ end
 %  fprintf(file_input,'\n');
 % for k =1:64
 %     if(imag(s_in3(k))>=0)
-%     fprintf(file_input,'imag_mem[%d] = 13''d%d;\n', ...
+%     fprintf(file_input,'X_time_imag_all[%d] = 13''d%d;\n', ...
 %     k-1+64*2,(2^input_length)*truncation(imag(s_in3(k)),input_length));
 %     else
-%     fprintf(file_input,'imag_mem[%d] = -13''d%d;\n', ...
+%     fprintf(file_input,'X_time_imag_all[%d] = -13''d%d;\n', ...
 %     k-1+64*2,-(2^input_length)*truncation(imag(s_in3(k)),input_length));
 %     end
 %     if(mod(k,4)==0 )
 %     fprintf(file_input,'\n');
 %     end
 % end
+for k =1:64
+    if(real(s_in(k))>=0)
+    fprintf(file_input,'real_mem[%d] = 13''d%d;\n', ...
+    k-1,(2^input_length)*truncation(real(s_in(k)),input_length));
+    else
+    fprintf(file_input,'real_mem[%d] = -13''d%d;\n', ...
+    k-1,-(2^input_length)*truncation(real(s_in(k)),input_length));
+    end
+    if(mod(k,4)==0 )
+    fprintf(file_input,'\n');
+    end
+end
+ fprintf(file_input,'\n');
+for k =1:64
+    if(imag(s_in(k))>=0)
+    fprintf(file_input,'imag_mem[%d] = 13''d%d;\n', ...
+    k-1,(2^input_length)*truncation(imag(s_in(k)),input_length));
+    else
+    fprintf(file_input,'imag_mem[%d] = -13''d%d;\n', ...
+    k-1,-(2^input_length)*truncation(imag(s_in(k)),input_length));
+    end
+    if(mod(k,4)==0 )
+    fprintf(file_input,'\n');
+    end
+end
+    fprintf(file_input,'\n\n');
+
+for k =1:64
+    if(real(s_in2(k))>=0)
+    fprintf(file_input,'real_mem[%d] = 13''d%d;\n', ...
+    k-1+64,(2^input_length)*truncation(real(s_in2(k)),input_length));
+    else
+    fprintf(file_input,'real_mem[%d] = -13''d%d;\n', ...
+    k-1+64,-(2^input_length)*truncation(real(s_in2(k)),input_length));
+    end
+    if(mod(k,4)==0 )
+    fprintf(file_input,'\n');
+    end
+end
+ fprintf(file_input,'\n');
+for k =1:64
+    if(imag(s_in2(k))>=0)
+    fprintf(file_input,'imag_mem[%d] = 13''d%d;\n', ...
+    k-1+64,(2^input_length)*truncation(imag(s_in2(k)),input_length));
+    else
+    fprintf(file_input,'imag_mem[%d] = -13''d%d;\n', ...
+    k-1+64,-(2^input_length)*truncation(imag(s_in2(k)),input_length));
+    end
+    if(mod(k,4)==0 )
+    fprintf(file_input,'\n');
+    end
+end
+
+for k =1:64
+    if(real(s_in3(k))>=0)
+    fprintf(file_input,'real_mem[%d] = 13''d%d;\n', ...
+    k-1+64*2,(2^input_length)*truncation(real(s_in3(k)),input_length));
+    else
+    fprintf(file_input,'real_mem[%d] = -13''d%d;\n', ...
+    k-1+64*2,-(2^input_length)*truncation(real(s_in3(k)),input_length));
+    end
+    if(mod(k,4)==0 )
+    fprintf(file_input,'\n');
+    end
+end
+ fprintf(file_input,'\n');
+for k =1:64
+    if(imag(s_in3(k))>=0)
+    fprintf(file_input,'imag_mem[%d] = 13''d%d;\n', ...
+    k-1+64*2,(2^input_length)*truncation(imag(s_in3(k)),input_length));
+    else
+    fprintf(file_input,'imag_mem[%d] = -13''d%d;\n', ...
+    k-1+64*2,-(2^input_length)*truncation(imag(s_in3(k)),input_length));
+    end
+    if(mod(k,4)==0 )
+    fprintf(file_input,'\n');
+    end
+end
 %% stage1
 clc
 

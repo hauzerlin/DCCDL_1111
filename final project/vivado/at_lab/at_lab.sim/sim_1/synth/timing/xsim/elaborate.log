@@ -41,7 +41,7 @@ Compiling module xil_defaultlib.multiplier_17bits_2
 Compiling module xil_defaultlib.Complex_multiplier_16pt
 Compiling module xil_defaultlib.ROM_16
 Compiling module xil_defaultlib.stage_2
-Compiling module xil_defaultlib.fft_top
+Compiling module xil_defaultlib.fft_two_stage_top
 Compiling module xil_defaultlib.stage1_tb
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot stage1_tb_time_synth

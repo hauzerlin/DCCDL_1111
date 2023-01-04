@@ -1,11 +1,11 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-// Date        : Wed Jan  4 17:20:53 2023
+// Date        : Wed Jan  4 17:33:55 2023
 // Host        : DESKTOP-J7D9945 running 64-bit major release  (build 9200)
 // Command     : write_verilog -mode timesim -nolib -sdf_anno true -force -file {D:/1111/DCCDL/final
 //               project/vivado/at_lab/at_lab.sim/sim_1/synth/timing/xsim/stage1_tb_time_synth.v}
-// Design      : fft_top
+// Design      : fft_two_stage_top
 // Purpose     : This verilog netlist is a timing simulation representation of the design and should not be modified or
 //               synthesized. Please ensure that this netlist is used with the corresponding SDF file.
 // Device      : xc7a200tfbg676-1
@@ -13544,7 +13544,7 @@ module butterfly_radix4_2
 endmodule
 
 (* NotValidForBitStream *)
-module fft_top
+module fft_two_stage_top
    (clk,
     rst,
     in_real,
