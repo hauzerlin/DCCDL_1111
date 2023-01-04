@@ -1,10 +1,16 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
+"../../../../../wayan/Complex_multiplier_16pt.v" \
 "../../../../at_lab.srcs/sources_1/new/Complex_multiplier_64pt.v" \
+"../../../../at_lab.srcs/sources_1/new/ROM_16.v" \
 "../../../../at_lab.srcs/sources_1/new/ROM_64.v" \
 "../../../../at_lab.srcs/sources_1/new/butterfly_radix4.v" \
+"../../../../at_lab.srcs/sources_1/new/butterfly_radix4_2.v" \
+"../../../../at_lab.srcs/sources_1/new/fft_top.v" \
 "../../../../at_lab.srcs/sources_1/new/multiplier_15bits.v" \
+"../../../../at_lab.srcs/sources_1/new/multiplier_17bits.v" \
 "../../../../at_lab.srcs/sources_1/new/stage_1.v" \
+"../../../../at_lab.srcs/sources_1/new/stage_2.v" \
 "../../../../at_lab.srcs/sim_1/new/stage1_tb.v" \
 
 # compile glbl module

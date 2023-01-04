@@ -2008,3 +2008,779 @@ dismissDialog("Confirm Close"); // A (cl)
 // Tcl Message: close_design 
 // TclEventType: DESIGN_CLOSE
 dismissDialog("Close"); // by (cl)
+// Elapsed time: 71 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "stage_2"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 9 seconds
+dismissDialog("Add Sources"); // c (cl)
+// Tcl Message: close [ open {D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v}} 
+// I (cl): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton (A, H)
+dismissDialog("Define Module"); // I (cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "stage_1.v", 2); // k (j, cl)
+selectCodeEditor("stage_1.v", 290, 362); // cl (w, cl)
+selectCodeEditor("stage_1.v", 290, 362); // cl (w, cl)
+selectCodeEditor("stage_1.v", 290, 362); // cl (w, cl)
+selectCodeEditor("stage_1.v", 290, 362, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("stage_1.v", 290, 362); // cl (w, cl)
+selectCodeEditor("stage_1.v", 290, 362); // cl (w, cl)
+selectCodeEditor("stage_1.v", 290, 362); // cl (w, cl)
+selectCodeEditor("stage_1.v", 290, 362, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("stage_1.v", 290, 362); // cl (w, cl)
+selectCodeEditor("stage_1.v", 279, 395); // cl (w, cl)
+selectCodeEditor("stage_1.v", 492, 442); // cl (w, cl)
+typeControlKey((HResource) null, "stage_1.v", 'c'); // cl (w, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, stage_2 (stage_2.v)]", 22, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, stage_2 (stage_2.v)]", 22, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, stage_2 (stage_2.v)]", 22, false); // B (F, cl)
+selectCodeEditor("stage_2.v", 135, 420); // cl (w, cl)
+typeControlKey((HResource) null, "stage_2.v", 'v'); // cl (w, cl)
+selectCodeEditor("stage_2.v", 78, 354); // cl (w, cl)
+selectCodeEditor("stage_2.v", 79, 353, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("stage_2.v", 89, 344); // cl (w, cl)
+selectCodeEditor("stage_2.v", 89, 344, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "stage_2.v", 'c'); // cl (w, cl)
+selectCodeEditor("stage_2.v", 113, 419); // cl (w, cl)
+selectCodeEditor("stage_2.v", 93, 70); // cl (w, cl)
+selectCodeEditor("stage_2.v", 93, 70, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "stage_2.v", 'v'); // cl (w, cl)
+selectCodeEditor("stage_2.v", 134, 153); // cl (w, cl)
+selectCodeEditor("stage_2.v", 188, 195); // cl (w, cl)
+selectCodeEditor("stage_2.v", 188, 211); // cl (w, cl)
+selectCodeEditor("stage_2.v", 187, 211, false, false, true, false, false); // cl (w, cl) - Alt Key
+selectCodeEditor("stage_2.v", 228, 262); // cl (w, cl)
+selectCodeEditor("stage_2.v", 233, 262); // cl (w, cl)
+selectCodeEditor("stage_2.v", 240, 298); // cl (w, cl)
+selectCodeEditor("stage_2.v", 116, 296); // cl (w, cl)
+selectCodeEditor("stage_2.v", 119, 296); // cl (w, cl)
+selectCodeEditor("stage_2.v", 114, 296); // cl (w, cl)
+selectCodeEditor("stage_2.v", 123, 359); // cl (w, cl)
+selectCodeEditor("stage_2.v", 125, 344, false, false, true, false, false); // cl (w, cl) - Alt Key
+selectCodeEditor("stage_2.v", 117, 162); // cl (w, cl)
+selectCodeEditor("stage_2.v", 113, 144, false, false, true, false, false); // cl (w, cl) - Alt Key
+selectCodeEditor("stage_2.v", 109, 173); // cl (w, cl)
+selectCodeEditor("stage_2.v", 110, 181); // cl (w, cl)
+selectCodeEditor("stage_2.v", 113, 182); // cl (w, cl)
+selectCodeEditor("stage_2.v", 113, 182, false, false, true, false, false); // cl (w, cl) - Alt Key
+selectCodeEditor("stage_2.v", 109, 320); // cl (w, cl)
+selectCodeEditor("stage_2.v", 117, 318); // cl (w, cl)
+selectCodeEditor("stage_2.v", 117, 319, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("stage_2.v", 119, 319); // cl (w, cl)
+selectCodeEditor("stage_2.v", 125, 242); // cl (w, cl)
+selectCodeEditor("stage_2.v", 128, 267); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("stage_2.v", 611, 179); // cl (w, cl)
+selectCodeEditor("stage_2.v", 611, 179, false, false, true, false, false); // cl (w, cl) - Alt Key
+selectCodeEditor("stage_2.v", 643, 279); // cl (w, cl)
+selectCodeEditor("stage_2.v", 165, 206); // cl (w, cl)
+selectCodeEditor("stage_2.v", 165, 206, false, false, true, false, false); // cl (w, cl) - Alt Key
+selectCodeEditor("stage_2.v", 270, 95); // cl (w, cl)
+selectCodeEditor("stage_2.v", 270, 95, false, false, true, false, true); // cl (w, cl) - Alt Key - Double Click
+selectCodeEditor("stage_2.v", 277, 180); // cl (w, cl)
+selectCodeEditor("stage_2.v", 269, 240); // cl (w, cl)
+selectCodeEditor("stage_2.v", 269, 240, false, false, true, false, true); // cl (w, cl) - Alt Key - Double Click
+selectCodeEditor("stage_2.v", 314, 317); // cl (w, cl)
+selectCodeEditor("stage_2.v", 340, 261); // cl (w, cl)
+selectCodeEditor("stage_2.v", 340, 261, false, false, true, false, false); // cl (w, cl) - Alt Key
+selectCodeEditor("stage_2.v", 32, 430); // cl (w, cl)
+selectCodeEditor("stage_2.v", 32, 430, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("stage_2.v", 32, 430); // cl (w, cl)
+selectCodeEditor("stage_2.v", 32, 430); // cl (w, cl)
+selectCodeEditor("stage_2.v", 32, 430); // cl (w, cl)
+selectCodeEditor("stage_2.v", 33, 431); // cl (w, cl)
+selectCodeEditor("stage_2.v", 35, 430); // cl (w, cl)
+selectCodeEditor("stage_2.v", 35, 430, false, false, false, false, true); // cl (w, cl) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+selectButton("CANCEL", "Cancel"); // JButton (j, c)
+dismissDialog("Add Sources"); // c (cl)
+selectCodeEditor("stage_2.v", 96, 381); // cl (w, cl)
+selectCodeEditor("stage_2.v", 96, 381, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "stage_2.v", 'c'); // cl (w, cl)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "butterfly_radix4_2"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 7 seconds
+dismissDialog("Add Sources"); // c (cl)
+// Tcl Message: close [ open {D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4_2.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4_2.v}} 
+// I (cl): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton (A, H)
+dismissDialog("Define Module"); // I (cl)
+selectCodeEditor("stage_2.v", 136, 379); // cl (w, cl)
+selectCodeEditor("stage_2.v", 142, 378); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, butterfly_radix4_2 (butterfly_radix4_2.v)]", 9, false); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stage_2 (stage_2.v)]", 5); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_top (fft_top.v), stage_1 : stage_1 (stage_1.v)]", 3); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_top (fft_top.v), stage_1 : stage_1 (stage_1.v), B1 : butterfly_radix4 (butterfly_radix4.v)]", 4, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_top (fft_top.v), stage_1 : stage_1 (stage_1.v), B1 : butterfly_radix4 (butterfly_radix4.v)]", 4, false, false, false, false, false, true); // B (F, cl) - Double Click
+typeControlKey((HResource) null, "butterfly_radix4.v", 'c'); // cl (w, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stage_2 (stage_2.v), B1 : butterfly_radix4_2 (butterfly_radix4_2.v)]", 9, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stage_2 (stage_2.v), B1 : butterfly_radix4_2 (butterfly_radix4_2.v)]", 9, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("butterfly_radix4_2.v", 466, 390); // cl (w, cl)
+typeControlKey((HResource) null, "butterfly_radix4_2.v", 'v'); // cl (w, cl)
+selectCodeEditor("butterfly_radix4_2.v", 200, 21); // cl (w, cl)
+selectCodeEditor("butterfly_radix4_2.v", 200, 20, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("butterfly_radix4_2.v", 200, 20); // cl (w, cl)
+selectCodeEditor("butterfly_radix4_2.v", 207, 40); // cl (w, cl)
+selectCodeEditor("butterfly_radix4_2.v", 182, 469); // cl (w, cl)
+selectCodeEditor("butterfly_radix4_2.v", 243, 132); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stage_2 (stage_2.v), rom : ROM_64 (ROM_64.v)]", 10, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ROM_16 (ROM_16.v)]", 13, false); // B (F, cl)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectCodeEditor("stage_2.v", 39, 184); // cl (w, cl)
+selectCodeEditor("stage_2.v", 49, 182); // cl (w, cl)
+selectCodeEditor("stage_2.v", 40, 182); // cl (w, cl)
+selectCodeEditor("stage_2.v", 413, 152); // cl (w, cl)
+selectCodeEditor("stage_2.v", 404, 241); // cl (w, cl)
+selectCodeEditor("stage_2.v", 404, 241, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("stage_2.v", 118, 349); // cl (w, cl)
+selectCodeEditor("stage_2.v", 118, 349, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("stage_2.v", 237, 356); // cl (w, cl)
+selectCodeEditor("stage_2.v", 312, 347); // cl (w, cl)
+selectCodeEditor("stage_2.v", 233, 378); // cl (w, cl)
+selectCodeEditor("stage_2.v", 206, 404); // cl (w, cl)
+selectCodeEditor("stage_2.v", 280, 406); // cl (w, cl)
+selectCodeEditor("stage_2.v", 213, 432); // cl (w, cl)
+selectCodeEditor("stage_2.v", 207, 462); // cl (w, cl)
+selectCodeEditor("stage_2.v", 368, 424); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("stage_2.v", 392, 223); // cl (w, cl)
+selectCodeEditor("stage_2.v", 392, 223, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("stage_2.v", 534, 384); // cl (w, cl)
+selectCodeEditor("stage_2.v", 535, 381, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("stage_2.v", 559, 374); // cl (w, cl)
+selectCodeEditor("stage_2.v", 559, 374, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("stage_2.v", 155, 258); // cl (w, cl)
+selectCodeEditor("stage_2.v", 155, 258, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 18 seconds
+selectCodeEditor("stage_2.v", 118, 135); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_top (fft_top.v)]", 2, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_top (fft_top.v)]", 2, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectCodeEditor("fft_top.v", 3, 205); // cl (w, cl)
+selectCodeEditor("fft_top.v", 576, 316); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'c'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 37, 364); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 62, 361); // cl (w, cl)
+selectCodeEditor("fft_top.v", 60, 361, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("fft_top.v", 203, 345); // cl (w, cl)
+selectCodeEditor("fft_top.v", 203, 345, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("fft_top.v", 287, 379); // cl (w, cl)
+selectCodeEditor("fft_top.v", 287, 379, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("fft_top.v", 131, 298); // cl (w, cl)
+selectCodeEditor("fft_top.v", 131, 298, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("fft_top.v", 121, 298); // cl (w, cl)
+selectCodeEditor("fft_top.v", 106, 299, false, false, true, false, false); // cl (w, cl) - Alt Key
+selectCodeEditor("fft_top.v", 102, 380); // cl (w, cl)
+selectCodeEditor("fft_top.v", 69, 378, false, false, true, false, false); // cl (w, cl) - Alt Key
+selectCodeEditor("fft_top.v", 305, 382); // cl (w, cl)
+typeControlKey(null, null, 'z');
+selectCodeEditor("fft_top.v", 157, 378); // cl (w, cl)
+selectCodeEditor("fft_top.v", 157, 378, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "fft_top.v", 'c'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 200, 265); // cl (w, cl)
+selectCodeEditor("fft_top.v", 200, 265, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 379, 264); // cl (w, cl)
+selectCodeEditor("fft_top.v", 379, 264, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("fft_top.v", 505, 264); // cl (w, cl)
+selectCodeEditor("fft_top.v", 504, 264, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 524, 267); // cl (w, cl)
+selectCodeEditor("fft_top.v", 271, 43); // cl (w, cl)
+selectCodeEditor("fft_top.v", 271, 42, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("fft_top.v", 271, 42); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'c'); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 125, 74); // cl (w, cl)
+selectCodeEditor("fft_top.v", 181, 64); // cl (w, cl)
+selectCodeEditor("fft_top.v", 181, 64, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("fft_top.v", 169, 70); // cl (w, cl)
+selectCodeEditor("fft_top.v", 169, 70, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("fft_top.v", 190, 68); // cl (w, cl)
+selectCodeEditor("fft_top.v", 199, 68); // cl (w, cl)
+selectCodeEditor("fft_top.v", 172, 66); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'c'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 295, 74); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 233, 74); // cl (w, cl)
+selectCodeEditor("fft_top.v", 233, 74, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "fft_top.v", 'c'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 417, 294); // cl (w, cl)
+selectCodeEditor("fft_top.v", 417, 294, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 661, 301); // cl (w, cl)
+selectCodeEditor("fft_top.v", 661, 301, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 118, 162); // cl (w, cl)
+selectCodeEditor("fft_top.v", 118, 162, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("fft_top.v", 148, 168); // cl (w, cl)
+selectCodeEditor("fft_top.v", 148, 168, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("fft_top.v", 151, 150); // cl (w, cl)
+selectCodeEditor("fft_top.v", 151, 150, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("fft_top.v", 408, 237); // cl (w, cl)
+selectCodeEditor("fft_top.v", 408, 237, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("fft_top.v", 408, 237); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'c'); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 179, 264); // cl (w, cl)
+selectCodeEditor("fft_top.v", 170, 353); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'c'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 177, 269); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 309, 267); // cl (w, cl)
+selectCodeEditor("fft_top.v", 319, 264); // cl (w, cl)
+selectCodeEditor("fft_top.v", 316, 262); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 445, 266); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 582, 271); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 711, 269); // cl (w, cl)
+selectCodeEditor("fft_top.v", 191, 291); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 191, 290); // cl (w, cl)
+selectCodeEditor("fft_top.v", 316, 298); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 453, 292); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 588, 293); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 79, 246); // cl (w, cl)
+selectCodeEditor("fft_top.v", 82, 213); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 196, 269); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("fft_top.v", 213, 211); // cl (w, cl)
+selectCodeEditor("fft_top.v", 213, 211, false, false, true, false, false); // cl (w, cl) - Alt Key
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 348, 209); // cl (w, cl)
+selectCodeEditor("fft_top.v", 327, 279); // cl (w, cl)
+selectCodeEditor("fft_top.v", 348, 206); // cl (w, cl)
+selectCodeEditor("fft_top.v", 350, 207, false, false, true, false, false); // cl (w, cl) - Alt Key
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 469, 266); // cl (w, cl)
+selectCodeEditor("fft_top.v", 485, 208); // cl (w, cl)
+selectCodeEditor("fft_top.v", 485, 210, false, false, true, false, false); // cl (w, cl) - Alt Key
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 598, 266); // cl (w, cl)
+selectCodeEditor("fft_top.v", 607, 274); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("fft_top.v", 82, 292); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 224, 291); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 229, 294); // cl (w, cl)
+selectCodeEditor("fft_top.v", 332, 295); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 332, 300); // cl (w, cl)
+selectCodeEditor("fft_top.v", 465, 297); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 468, 292); // cl (w, cl)
+selectCodeEditor("fft_top.v", 512, 299); // cl (w, cl)
+selectCodeEditor("fft_top.v", 512, 298, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("fft_top.v", 469, 385); // cl (w, cl)
+selectCodeEditor("fft_top.v", 469, 385, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("fft_top.v", 781, 31); // cl (w, cl)
+selectCodeEditor("fft_top.v", 781, 31, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("fft_top.v", 781, 35); // cl (w, cl)
+selectCodeEditor("fft_top.v", 781, 35); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'c'); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 217, 128); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'c'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 178, 71); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 298, 71); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 411, 70); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 531, 77); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 645, 66); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 763, 68); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 879, 68); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 998, 68); // cl (w, cl)
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 12 seconds
+selectCodeEditor("fft_top.v", 338, 38); // cl (w, cl)
+selectCodeEditor("fft_top.v", 339, 33); // cl (w, cl)
+selectCodeEditor("fft_top.v", 347, 33); // cl (w, cl)
+selectCodeEditor("fft_top.v", 347, 33, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "fft_top.v", 'c'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 380, 233); // cl (w, cl)
+selectCodeEditor("fft_top.v", 380, 233, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 611, 244); // cl (w, cl)
+selectCodeEditor("fft_top.v", 611, 244, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("fft_top.v", 648, 228); // cl (w, cl)
+selectCodeEditor("fft_top.v", 648, 228, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "fft_top.v", 'v'); // cl (w, cl)
+selectCodeEditor("fft_top.v", 614, 241); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("fft_top.v", 143, 154); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "stage1_tb.v", 3); // k (j, cl)
+selectCodeEditor("stage1_tb.v", 483, 183); // cl (w, cl)
+selectCodeEditor("stage1_tb.v", 483, 182, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("stage1_tb.v", 125, 46); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e (cl):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'stage1_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj stage1_tb_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log" 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-99] Step results log file:'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 7 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// a (cl): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fft_top.v", 1); // k (j, cl)
+selectCodeEditor("fft_top.v", 30, 239); // cl (w, cl)
+selectCodeEditor("fft_top.v", 30, 239, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("fft_top.v", 319, 242); // cl (w, cl)
+selectCodeEditor("fft_top.v", 319, 242, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("fft_top.v", 402, 243); // cl (w, cl)
+selectCodeEditor("fft_top.v", 402, 243, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("fft_top.v", 281, 247); // cl (w, cl)
+selectCodeEditor("fft_top.v", 281, 247, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("fft_top.v", 398, 242); // cl (w, cl)
+selectCodeEditor("fft_top.v", 402, 241, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("fft_top.v", 283, 228); // cl (w, cl)
+selectCodeEditor("fft_top.v", 282, 228, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 314, 23); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 314, 23, false, false, false, false, true); // dt (af, cl) - Double Click
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 369, 37); // dt (af, cl)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 371, 37, false, false, false, false, true); // dt (af, cl) - Double Click
+selectCodeEditor("fft_top.v", 67, 238); // cl (w, cl)
+selectCodeEditor("fft_top.v", 63, 412); // cl (w, cl)
+selectCodeEditor("fft_top.v", 80, 262); // cl (w, cl)
+selectCodeEditor("fft_top.v", 125, 240); // cl (w, cl)
+selectCodeEditor("fft_top.v", 78, 98); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cl):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'stage1_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj stage1_tb_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log" 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "stage1_tb_behav -key {Behavioral:sim_1:Functional:stage1_tb} -tclbatch {stage1_tb.tcl} -view {{D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/imports/SDF_64points_FFT/butterfly_test_tb_time_synth.wcfg}} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2019.1 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// WARNING: HEventQueue.dispatchEvent() is taking  1028 ms.
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Tcl Message: open_wave_config {D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/imports/SDF_64points_FFT/butterfly_test_tb_time_synth.wcfg} 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,958 MB. GUI used memory: 92 MB. Current time: 1/4/23, 12:12:41 PM CST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source stage1_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'stage1_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2246.984 ; gain = 0.000 
+// 'd' command handler elapsed time: 10 seconds
+dismissDialog("Run Simulation"); // e (cl)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, out_real[16:0]]", 5, true); // a (r, cl) - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, out_imag[16:0]]", 6, true); // a (r, cl) - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,958 MB. GUI used memory: 92 MB. Current time: 1/4/23, 12:12:50 PM CST
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "dft ; fft_top ; Verilog Module", 1, "dft", 0, true); // c (c, cl) - Node
+// TclEventType: SIMULATION_REQUEST_SELECT_SCOPES
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "glbl ; glbl ; Verilog Module", 4, "glbl", 1, false); // c (c, cl)
+// TclEventType: SIMULATION_REQUEST_SELECT_SCOPES
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "stage2 ; stage_2 ; Verilog Module", 3, "stage_2", 1, true); // c (c, cl) - Node
+// TclEventType: SIMULATION_REQUEST_SELECT_SCOPES
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_REQUEST_SELECT_SCOPES
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "clk ; 1 ; Logic", 0, "clk", 0, false); // c (c, cl)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "out_imag[15:0] ; Z000 ; Array", 5, "out_imag[15:0]", 0, true); // c (c, cl) - Node
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "out_imag[15:0] ; Z000 ; Array", 5, "out_imag[15:0]", 0, true); // c (c, cl) - Node
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "clk ; 1 ; Logic", 0, "clk", 0, false, true, false, false, false, false); // c (c, cl) - Shift Key
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, b_imag1[14:0]]", 8, true); // a (r, cl) - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, b_real1[14:0]]", 7, true); // a (r, cl) - Node
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,958 MB. GUI used memory: 92 MB. Current time: 1/4/23, 12:13:08 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, bin_imag4[14:0]]", 18, true, true, false, false, false, false); // a (r, cl) - Shift Key - Node
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,958 MB. GUI used memory: 92 MB. Current time: 1/4/23, 12:13:10 PM CST
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "in_imag[14:0] ; 0000 ; Array", 3, "in_imag[14:0]", 0, true); // c (c, cl) - Node
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, out_real[16:0]]", 5); // a (r, cl)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,958 MB. GUI used memory: 92 MB. Current time: 1/4/23, 12:13:14 PM CST
+collapseTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, out_real[16:0]]", 5); // a (r, cl)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, "simulation_live_run_for_time"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run 1000 ns 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, out_real[15:0]]", 11); // a (r, cl)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,958 MB. GUI used memory: 99 MB. Current time: 1/4/23, 12:13:25 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+collapseTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, out_real[15:0]]", 11); // a (r, cl)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "stage_2.v", 3); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fft_top.v", 0); // k (j, cl)
+selectCodeEditor("fft_top.v", 258, 74); // cl (w, cl)
+selectCodeEditor("fft_top.v", 258, 74, false, false, false, false, true); // cl (w, cl) - Double Click
+selectTab((HResource) null, (HResource) null, "Sources", 1); // aK (aH, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, in_butterfly_mem (in_butterfly_mem.v)]", 6, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, multiplier_17bits (multiplier_17bits.v)]", 7, false); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_top (fft_top.v)]", 2); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_top (fft_top.v), stage1 : stage_1 (stage_1.v)]", 3); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_top (fft_top.v), stage2 : stage_2 (stage_2.v)]", 7); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_top (fft_top.v), stage2 : stage_2 (stage_2.v), M1 : Complex_multiplier_64pt (Complex_multiplier_64pt.v)]", 10, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_top (fft_top.v), stage2 : stage_2 (stage_2.v)]", 7, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_top (fft_top.v), stage2 : stage_2 (stage_2.v)]", 7, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectCodeEditor("stage_2.v", 171, 294); // cl (w, cl)
+// Elapsed time: 27 seconds
+selectCodeEditor("stage_2.v", 172, 297); // cl (w, cl)
+selectCodeEditor("stage_2.v", 173, 294); // cl (w, cl)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+// Elapsed time: 28 seconds
+selectButton("CANCEL", "Cancel"); // JButton (j, c)
+// 'h' command handler elapsed time: 30 seconds
+dismissDialog("Add Sources"); // c (cl)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cl)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - stage1_tb", "DesignTask.SIMULATION");
+// A (cl): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+dismissDialog("Confirm Close"); // A (cl)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// c (cl): Save Simulation Sources: addNotify
+selectButton("OptionPane.button", "Discard"); // JButton (A, G)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (c)
+// TclEventType: DG_GRAPH_STALE
+// by (cl):  Close : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Simulation Sources"); // c (cl)
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// WARNING: HEventQueue.dispatchEvent() is taking  1622 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: close_sim 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Close"); // by (cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_top (fft_top.v), stage2 : stage_2 (stage_2.v)]", 7); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_top (fft_top.v), stage2 : stage_2 (stage_2.v), M1 : Complex_multiplier_64pt (Complex_multiplier_64pt.v)]", 10, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_top (fft_top.v), stage2 : stage_2 (stage_2.v), M1 : xil_defaultlib.Complex_multiplier_16pt]", 10, false); // B (F, cl)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+setFileChooser("D:/1111/DCCDL/final project/vivado/wayan/Complex_multiplier_16pt.v");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 8 seconds
+dismissDialog("Add Sources"); // c (cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {{D:/1111/DCCDL/final project/vivado/wayan/Complex_multiplier_16pt.v}} 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_top (fft_top.v), stage2 : stage_2 (stage_2.v), M1 : Complex_multiplier_16pt (Complex_multiplier_16pt.v)]", 10); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_top (fft_top.v), stage1 : stage_1 (stage_1.v), M1 : Complex_multiplier_64pt (Complex_multiplier_64pt.v)]", 6); // B (F, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_top (fft_top.v), stage1 : stage_1 (stage_1.v), M1 : Complex_multiplier_64pt (Complex_multiplier_64pt.v)]", 6); // B (F, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_top (fft_top.v), stage2 : stage_2 (stage_2.v), M1 : Complex_multiplier_16pt (Complex_multiplier_16pt.v)]", 10); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_top (fft_top.v), stage2 : stage_2 (stage_2.v), rom : ROM_16 (ROM_16.v)]", 9, false); // B (F, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cl):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'stage1_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj stage1_tb_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto c3686c0809ac4e8db67655cd317696fb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stage1_tb_behav xil_defaultlib.stage1_tb xil_defaultlib.glbl -log elaborate.log" 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "stage1_tb_behav -key {Behavioral:sim_1:Functional:stage1_tb} -tclbatch {stage1_tb.tcl} -view {{D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/imports/SDF_64points_FFT/butterfly_test_tb_time_synth.wcfg}} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2019.1 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// WARNING: HEventQueue.dispatchEvent() is taking  1045 ms.
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Tcl Message: open_wave_config {D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sim_1/imports/SDF_64points_FFT/butterfly_test_tb_time_synth.wcfg} 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,958 MB. GUI used memory: 98 MB. Current time: 1/4/23, 12:16:01 PM CST
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source stage1_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'stage1_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2246.984 ; gain = 0.000 
+// 'd' command handler elapsed time: 10 seconds
+dismissDialog("Run Simulation"); // e (cl)
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, out_real[16:0]]", 5, true); // a (r, cl) - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,958 MB. GUI used memory: 98 MB. Current time: 1/4/23, 12:16:03 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, b_real1[14:0]]", 3, true); // a (r, cl) - Node
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, bin_imag4[14:0]]", 18, true); // a (r, cl) - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,958 MB. GUI used memory: 126 MB. Current time: 1/4/23, 12:16:06 PM CST

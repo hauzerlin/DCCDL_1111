@@ -17,7 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a200tfbg676-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -30,11 +29,16 @@ set_property target_language Verilog [current_project]
 set_property ip_output_repo {d:/1111/DCCDL/final project/vivado/at_lab/at_lab.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
+  {D:/1111/DCCDL/final project/vivado/wayan/Complex_multiplier_16pt.v}
   {D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/Complex_multiplier_64pt.v}
+  {D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/ROM_16.v}
   {D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/ROM_64.v}
   {D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4.v}
+  {D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4_2.v}
   {D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/multiplier_15bits.v}
+  {D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/multiplier_17bits.v}
   {D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_1.v}
+  {D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v}
   {D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v}
 }
 # Mark all dcp files as not used in implementation to prevent them from being

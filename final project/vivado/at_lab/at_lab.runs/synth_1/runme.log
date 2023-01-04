@@ -14,25 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 12568 
-WARNING: [Synth 8-992] b_real1 is already implicitly declared earlier [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:13]
-WARNING: [Synth 8-992] b_real2 is already implicitly declared earlier [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:13]
-WARNING: [Synth 8-992] b_real3 is already implicitly declared earlier [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:13]
-WARNING: [Synth 8-992] b_real4 is already implicitly declared earlier [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:13]
-WARNING: [Synth 8-992] b_imag1 is already implicitly declared earlier [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:13]
-WARNING: [Synth 8-992] b_imag2 is already implicitly declared earlier [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:13]
-WARNING: [Synth 8-992] b_imag3 is already implicitly declared earlier [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:13]
-WARNING: [Synth 8-992] b_imag4 is already implicitly declared earlier [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:13]
-WARNING: [Synth 8-992] bin_real1 is already implicitly declared earlier [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:14]
-WARNING: [Synth 8-992] bin_real2 is already implicitly declared earlier [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:14]
-WARNING: [Synth 8-992] bin_real3 is already implicitly declared earlier [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:14]
-WARNING: [Synth 8-992] bin_real4 is already implicitly declared earlier [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:14]
-WARNING: [Synth 8-992] bin_imag1 is already implicitly declared earlier [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:14]
-WARNING: [Synth 8-992] bin_imag2 is already implicitly declared earlier [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:14]
-WARNING: [Synth 8-992] bin_imag3 is already implicitly declared earlier [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:14]
-WARNING: [Synth 8-992] bin_imag4 is already implicitly declared earlier [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:14]
+INFO: Helper process launched with PID 18864 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 567.766 ; gain = 189.348
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 562.996 ; gain = 183.816
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'fft_top' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:2]
 INFO: [Synth 8-6157] synthesizing module 'stage_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_1.v:2]
@@ -51,23 +35,56 @@ INFO: [Synth 8-6155] done synthesizing module 'Complex_multiplier_64pt' (4#1) [D
 WARNING: [Synth 8-6014] Unused sequential element cnt4_reg was removed.  [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_1.v:102]
 WARNING: [Synth 8-6014] Unused sequential element cnt3_reg was removed.  [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_1.v:103]
 INFO: [Synth 8-6155] done synthesizing module 'stage_1' (5#1) [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_1.v:2]
-INFO: [Synth 8-6155] done synthesizing module 'fft_top' (6#1) [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:2]
+INFO: [Synth 8-6157] synthesizing module 'stage_2' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v:3]
+	Parameter input_length bound to: 15 - type: integer 
+	Parameter output_length bound to: 17 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'butterfly_radix4_2' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4_2.v:2]
+	Parameter output_length bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'butterfly_radix4_2' (6#1) [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/butterfly_radix4_2.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ROM_16' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/ROM_16.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_16' (7#1) [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/ROM_16.v:3]
+WARNING: [Synth 8-689] width (6) of port connection 'Address' does not match port width (4) of module 'ROM_16' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v:46]
+INFO: [Synth 8-6157] synthesizing module 'Complex_multiplier_16pt' [D:/1111/DCCDL/final project/vivado/wayan/Complex_multiplier_16pt.v:3]
+	Parameter WL bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multiplier_17bits' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/multiplier_17bits.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'multiplier_17bits' (8#1) [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/multiplier_17bits.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Complex_multiplier_16pt' (9#1) [D:/1111/DCCDL/final project/vivado/wayan/Complex_multiplier_16pt.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'stage_2' (10#1) [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v:3]
+WARNING: [Synth 8-689] width (15) of port connection 'bin_real1' does not match port width (17) of module 'stage_2' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:27]
+WARNING: [Synth 8-689] width (15) of port connection 'bin_real2' does not match port width (17) of module 'stage_2' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:27]
+WARNING: [Synth 8-689] width (15) of port connection 'bin_real3' does not match port width (17) of module 'stage_2' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:27]
+WARNING: [Synth 8-689] width (15) of port connection 'bin_real4' does not match port width (17) of module 'stage_2' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:27]
+WARNING: [Synth 8-689] width (15) of port connection 'bin_imag1' does not match port width (17) of module 'stage_2' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:28]
+WARNING: [Synth 8-689] width (15) of port connection 'bin_imag2' does not match port width (17) of module 'stage_2' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:28]
+WARNING: [Synth 8-689] width (15) of port connection 'bin_imag3' does not match port width (17) of module 'stage_2' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:28]
+WARNING: [Synth 8-689] width (15) of port connection 'bin_imag4' does not match port width (17) of module 'stage_2' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:28]
+WARNING: [Synth 8-689] width (15) of port connection 'b_real1' does not match port width (17) of module 'stage_2' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:29]
+WARNING: [Synth 8-689] width (15) of port connection 'b_real2' does not match port width (17) of module 'stage_2' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:29]
+WARNING: [Synth 8-689] width (15) of port connection 'b_real3' does not match port width (17) of module 'stage_2' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:29]
+WARNING: [Synth 8-689] width (15) of port connection 'b_real4' does not match port width (17) of module 'stage_2' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:29]
+WARNING: [Synth 8-689] width (15) of port connection 'b_imag1' does not match port width (17) of module 'stage_2' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:30]
+WARNING: [Synth 8-689] width (15) of port connection 'b_imag2' does not match port width (17) of module 'stage_2' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:30]
+WARNING: [Synth 8-689] width (15) of port connection 'b_imag3' does not match port width (17) of module 'stage_2' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:30]
+WARNING: [Synth 8-689] width (15) of port connection 'b_imag4' does not match port width (17) of module 'stage_2' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:30]
+WARNING: [Synth 8-6014] Unused sequential element one_two_real_reg[15] was removed.  [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:26]
+WARNING: [Synth 8-6014] Unused sequential element one_two_imag_reg[15] was removed.  [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'fft_top' (11#1) [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:2]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 610.156 ; gain = 231.738
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 626.625 ; gain = 247.445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 610.156 ; gain = 231.738
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 626.625 ; gain = 247.445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tfbg676-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 610.156 ; gain = 231.738
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 626.625 ; gain = 247.445
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a200tfbg676-1
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 610.156 ; gain = 231.738
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 626.625 ; gain = 247.445
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -81,20 +98,29 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input     17 Bit       Adders := 3     
+	   3 Input     17 Bit       Adders := 5     
+	   5 Input     17 Bit       Adders := 2     
+	   4 Input     17 Bit       Adders := 4     
 	   2 Input     15 Bit       Adders := 3     
 	   3 Input     15 Bit       Adders := 5     
 	   5 Input     15 Bit       Adders := 2     
 	   4 Input     15 Bit       Adders := 4     
-	   2 Input      7 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
 +---XORs : 
-	   2 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 2     
 +---Registers : 
-	               15 Bit    Registers := 98    
-	                7 Bit    Registers := 2     
+	               17 Bit    Registers := 26    
+	               15 Bit    Registers := 128   
+	                7 Bit    Registers := 4     
 +---Muxes : 
+	   2 Input     17 Bit        Muxes := 8     
+	   4 Input     17 Bit        Muxes := 2     
 	   2 Input     15 Bit        Muxes := 8     
 	   4 Input     15 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 2     
+	  16 Input     12 Bit        Muxes := 1     
+	  16 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -102,6 +128,10 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
+Module fft_top 
+Detailed RTL Component Info : 
++---Registers : 
+	               15 Bit    Registers := 30    
 Module butterfly_radix4 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -127,6 +157,36 @@ Detailed RTL Component Info :
 	   2 Input     15 Bit        Muxes := 8     
 	   4 Input     15 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 2     
+Module butterfly_radix4_2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 2     
+	   3 Input     17 Bit       Adders := 4     
+	   5 Input     17 Bit       Adders := 2     
+	   4 Input     17 Bit       Adders := 4     
+Module ROM_16 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input     12 Bit        Muxes := 1     
+	  16 Input     11 Bit        Muxes := 1     
+Module Complex_multiplier_16pt 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     17 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+Module stage_2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               17 Bit    Registers := 26    
+	                7 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 8     
+	   4 Input     17 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -144,30 +204,38 @@ No constraint files found.
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-DSP Report: Generating DSP nolabel_line8/M1/M2/Z0, operation Mode is: A*B.
-DSP Report: operator nolabel_line8/M1/M2/Z0 is absorbed into DSP nolabel_line8/M1/M2/Z0.
-DSP Report: Generating DSP nolabel_line8/M1/M1/Z0, operation Mode is: A*B.
-DSP Report: operator nolabel_line8/M1/M1/Z0 is absorbed into DSP nolabel_line8/M1/M1/Z0.
-DSP Report: Generating DSP nolabel_line8/M1/M4/Z0, operation Mode is: A*B.
-DSP Report: operator nolabel_line8/M1/M4/Z0 is absorbed into DSP nolabel_line8/M1/M4/Z0.
-DSP Report: Generating DSP nolabel_line8/M1/M3/Z0, operation Mode is: A*B.
-DSP Report: operator nolabel_line8/M1/M3/Z0 is absorbed into DSP nolabel_line8/M1/M3/Z0.
+DSP Report: Generating DSP M1/M2/Z0, operation Mode is: A*B.
+DSP Report: operator M1/M2/Z0 is absorbed into DSP M1/M2/Z0.
+DSP Report: Generating DSP M1/M1/Z0, operation Mode is: A*B.
+DSP Report: operator M1/M1/Z0 is absorbed into DSP M1/M1/Z0.
+DSP Report: Generating DSP M1/M4/Z0, operation Mode is: A*B.
+DSP Report: operator M1/M4/Z0 is absorbed into DSP M1/M4/Z0.
+DSP Report: Generating DSP M1/M3/Z0, operation Mode is: A*B.
+DSP Report: operator M1/M3/Z0 is absorbed into DSP M1/M3/Z0.
+DSP Report: Generating DSP M1/M2/Z0, operation Mode is: A*B.
+DSP Report: operator M1/M2/Z0 is absorbed into DSP M1/M2/Z0.
+DSP Report: Generating DSP M1/M1/Z0, operation Mode is: A*B.
+DSP Report: operator M1/M1/Z0 is absorbed into DSP M1/M1/Z0.
+DSP Report: Generating DSP M1/M4/Z0, operation Mode is: A*B.
+DSP Report: operator M1/M4/Z0 is absorbed into DSP M1/M4/Z0.
+DSP Report: Generating DSP M1/M3/Z0, operation Mode is: A*B.
+DSP Report: operator M1/M3/Z0 is absorbed into DSP M1/M3/Z0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 860.105 ; gain = 481.688
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 908.676 ; gain = 529.496
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 ROM:
-+------------+---------------------------+---------------+----------------+
-|Module Name | RTL Object                | Depth x Width | Implemented As | 
-+------------+---------------------------+---------------+----------------+
-|ROM_64      | TF_real                   | 64x12         | LUT            | 
-|ROM_64      | TF_imag                   | 64x11         | LUT            | 
-|fft_top     | nolabel_line8/rom/TF_imag | 64x11         | LUT            | 
-|fft_top     | nolabel_line8/rom/TF_real | 64x12         | LUT            | 
-+------------+---------------------------+---------------+----------------+
++------------+-------------+---------------+----------------+
+|Module Name | RTL Object  | Depth x Width | Implemented As | 
++------------+-------------+---------------+----------------+
+|ROM_64      | TF_real     | 64x12         | LUT            | 
+|ROM_64      | TF_imag     | 64x11         | LUT            | 
+|stage_1     | rom/TF_imag | 64x11         | LUT            | 
+|stage_1     | rom/TF_real | 64x12         | LUT            | 
++------------+-------------+---------------+----------------+
 
 
 DSP: Preliminary Mapping  Report (see note below)
@@ -178,6 +246,10 @@ DSP: Preliminary Mapping  Report (see note below)
 |multiplier_15bits | A*B         | 15     | 12     | -      | -      | 27     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |multiplier_15bits | A*B         | 15     | 12     | -      | -      | 27     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |multiplier_15bits | A*B         | 15     | 11     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiplier_17bits | A*B         | 17     | 11     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiplier_17bits | A*B         | 17     | 12     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiplier_17bits | A*B         | 17     | 12     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiplier_17bits | A*B         | 17     | 11     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 +------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
@@ -188,6 +260,10 @@ INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM bloc
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_1.v:47]
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_1.v:47]
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_1.v:47]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v:48]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v:48]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v:48]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v:48]
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -199,7 +275,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 860.984 ; gain = 482.566
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 909.516 ; gain = 530.336
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -214,8 +290,12 @@ INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM bloc
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_1.v:47]
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_1.v:47]
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_1.v:47]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v:48]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v:48]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v:48]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_2.v:48]
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 861.129 ; gain = 482.711
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 909.746 ; gain = 530.566
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -239,7 +319,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 861.129 ; gain = 482.711
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 909.746 ; gain = 530.566
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -252,7 +332,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 861.129 ; gain = 482.711
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 909.746 ; gain = 530.566
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -264,41 +344,49 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 861.129 ; gain = 482.711
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 909.746 ; gain = 530.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 861.129 ; gain = 482.711
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 909.746 ; gain = 530.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 861.129 ; gain = 482.711
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 909.746 ; gain = 530.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 861.129 ; gain = 482.711
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 909.746 ; gain = 530.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Static Shift Register Report:
-+------------+-------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|Module Name | RTL Name                            | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
-+------------+-------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|fft_top     | nolabel_line8/real_reg1_reg[15][14] | 16     | 15    | YES          | NO                 | YES               | 15     | 0       | 
-|fft_top     | nolabel_line8/imag_reg1_reg[15][14] | 16     | 15    | YES          | NO                 | YES               | 15     | 0       | 
-|fft_top     | nolabel_line8/real_reg2_reg[15][14] | 16     | 15    | YES          | NO                 | YES               | 15     | 0       | 
-|fft_top     | nolabel_line8/imag_reg2_reg[15][14] | 16     | 15    | YES          | NO                 | YES               | 15     | 0       | 
-|fft_top     | nolabel_line8/real_reg3_reg[15][14] | 16     | 15    | YES          | NO                 | YES               | 15     | 0       | 
-|fft_top     | nolabel_line8/imag_reg3_reg[15][14] | 16     | 15    | YES          | NO                 | YES               | 15     | 0       | 
-+------------+-------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
++------------+------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                     | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|fft_top     | stage1/real_reg1_reg[15][14] | 16     | 15    | YES          | NO                 | YES               | 15     | 0       | 
+|fft_top     | stage1/imag_reg1_reg[15][14] | 16     | 15    | YES          | NO                 | YES               | 15     | 0       | 
+|fft_top     | stage1/real_reg3_reg[15][14] | 16     | 15    | YES          | NO                 | YES               | 15     | 0       | 
+|fft_top     | stage1/imag_reg3_reg[15][14] | 16     | 15    | YES          | NO                 | YES               | 15     | 0       | 
+|fft_top     | stage1/real_reg2_reg[15][14] | 16     | 15    | YES          | NO                 | YES               | 15     | 0       | 
+|fft_top     | stage1/imag_reg2_reg[15][14] | 16     | 15    | YES          | NO                 | YES               | 15     | 0       | 
+|fft_top     | one_two_real_reg[14][14]     | 15     | 15    | YES          | NO                 | YES               | 15     | 0       | 
+|fft_top     | one_two_imag_reg[14][14]     | 15     | 15    | YES          | NO                 | YES               | 15     | 0       | 
+|fft_top     | stage2/real_reg1_reg[3][16]  | 4      | 17    | YES          | NO                 | YES               | 17     | 0       | 
+|fft_top     | stage2/imag_reg1_reg[3][16]  | 4      | 17    | YES          | NO                 | YES               | 17     | 0       | 
+|fft_top     | stage2/real_reg3_reg[3][16]  | 4      | 17    | YES          | NO                 | YES               | 17     | 0       | 
+|fft_top     | stage2/imag_reg3_reg[3][16]  | 4      | 17    | YES          | NO                 | YES               | 17     | 0       | 
+|fft_top     | stage2/real_reg2_reg[3][16]  | 4      | 17    | YES          | NO                 | YES               | 17     | 0       | 
+|fft_top     | stage2/imag_reg2_reg[3][16]  | 4      | 17    | YES          | NO                 | YES               | 17     | 0       | 
++------------+------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
@@ -318,56 +406,64 @@ Report Cell Usage:
 |      |Cell    |Count |
 +------+--------+------+
 |1     |BUFG    |     1|
-|2     |CARRY4  |    56|
-|3     |DSP48E1 |     4|
-|4     |LUT1    |     1|
-|5     |LUT2    |   208|
-|6     |LUT3    |   127|
-|7     |LUT4    |   167|
-|8     |LUT5    |    63|
-|9     |LUT6    |   132|
-|10    |SRL16E  |    90|
-|11    |FDCE    |   177|
-|12    |FDRE    |    90|
+|2     |CARRY4  |   126|
+|3     |DSP48E1 |     8|
+|4     |LUT1    |     2|
+|5     |LUT2    |   537|
+|6     |LUT3    |   270|
+|7     |LUT4    |   376|
+|8     |LUT5    |   133|
+|9     |LUT6    |   256|
+|10    |SRL16E  |   222|
+|11    |FDCE    |   374|
+|12    |FDRE    |   222|
 |13    |IBUF    |    28|
-|14    |OBUF    |    30|
+|14    |OBUF    |   170|
 +------+--------+------+
 
 Report Instance Areas: 
-+------+----------------+------------------------+------+
-|      |Instance        |Module                  |Cells |
-+------+----------------+------------------------+------+
-|1     |top             |                        |  1174|
-|2     |  nolabel_line8 |stage_1                 |  1115|
-|3     |    B1          |butterfly_radix4        |   568|
-|4     |    M1          |Complex_multiplier_64pt |    65|
-|5     |      M1        |multiplier_15bits       |    16|
-|6     |      M2        |multiplier_15bits_0     |     1|
-|7     |      M3        |multiplier_15bits_1     |    12|
-|8     |      M4        |multiplier_15bits_2     |    13|
-+------+----------------+------------------------+------+
++------+---------+------------------------+------+
+|      |Instance |Module                  |Cells |
++------+---------+------------------------+------+
+|1     |top      |                        |  2725|
+|2     |  stage1 |stage_1                 |  1115|
+|3     |    B1   |butterfly_radix4        |   593|
+|4     |    M1   |Complex_multiplier_64pt |    65|
+|5     |      M1 |multiplier_15bits       |    16|
+|6     |      M2 |multiplier_15bits_3     |     1|
+|7     |      M3 |multiplier_15bits_4     |    12|
+|8     |      M4 |multiplier_15bits_5     |    13|
+|9     |  stage2 |stage_2                 |  1277|
+|10    |    B1   |butterfly_radix4_2      |   622|
+|11    |    M1   |Complex_multiplier_16pt |    49|
+|12    |      M1 |multiplier_17bits       |    19|
+|13    |      M2 |multiplier_17bits_0     |     1|
+|14    |      M3 |multiplier_17bits_1     |     1|
+|15    |      M4 |multiplier_17bits_2     |     1|
+|16    |    rom  |ROM_16                  |    17|
++------+---------+------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 861.129 ; gain = 482.711
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 909.746 ; gain = 530.566
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 18 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 861.129 ; gain = 482.711
-Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 861.129 ; gain = 482.711
+Synthesis finished with 0 errors, 0 critical warnings and 21 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 909.746 ; gain = 530.566
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 909.746 ; gain = 530.566
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 60 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 134 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 944.348 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 957.738 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-29 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+47 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 944.348 ; gain = 590.812
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 944.348 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 957.738 ; gain = 602.410
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 957.738 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.runs/synth_1/fft_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file fft_top_utilization_synth.rpt -pb fft_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Jan  4 11:44:08 2023...
+INFO: [Common 17-206] Exiting Vivado at Wed Jan  4 17:20:21 2023...

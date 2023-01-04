@@ -5,15 +5,18 @@ reg clk, rst;
 reg in_en;
 reg [8:0] cnt;
 reg signed [12:0] in_real, in_imag;
-wire signed [14:0] out_real, out_imag;
+wire signed [16:0] out_real, out_imag;
 reg signed [14:0] real_mem[191:0], imag_mem[191:0];
 integer i;
 //stage1 dft(clk, rst, in_real, out_real, in_imag, out_imag);  
 //stage_1 dft(clk, rst, in_real, out_real, in_imag, out_imag, bin_real1, bin_real2, bin_real3, bin_real4, bin_imag1, bin_imag2, bin_imag3, bin_imag4, b_real1, b_real2, b_real3, b_real4, b_imag1, b_imag2, b_imag3, b_imag4);
-fft_top dft(clk, rst, in_real, out_real, in_imag, out_imag);
+//fft_top dft(clk, rst, in_real, out_real, in_imag, out_imag);//, butterfly_real1, butterfly_real2, butterfly_real3, butterfly_real4, butterfly_imag1, butterfly_imag2, butterfly_imag3, butterfly_imag4);
+fft_top dft(clk, rst, in_real, out_real, in_imag, out_imag, butterfly_real1, butterfly_real2, butterfly_real3, butterfly_real4, butterfly_imag1, butterfly_imag2, butterfly_imag3, butterfly_imag4);
 wire signed [14:0]  b_real1, b_real2, b_real3, b_real4, b_imag1, b_imag2, b_imag3, b_imag4;
 wire signed [14:0]  bin_real1, bin_real2, bin_real3, bin_real4, bin_imag1, bin_imag2, bin_imag3, bin_imag4;
-
+wire signed [16:0] stage_one_real, stage_one_imag;
+wire signed [16:0] butterfly_real1, butterfly_real2, butterfly_real3, butterfly_real4;
+wire signed [16:0] butterfly_imag1, butterfly_imag2, butterfly_imag3, butterfly_imag4;
 
 always #10 clk = ~clk;
 
@@ -531,7 +534,7 @@ imag_mem[188] = 13'd236;
 imag_mem[189] = -13'd61;
 imag_mem[190] = -13'd352;
 imag_mem[191] = -13'd361;
-#103
+#105
         for(i=0;i<192;i=i+1)
         begin
             #20
