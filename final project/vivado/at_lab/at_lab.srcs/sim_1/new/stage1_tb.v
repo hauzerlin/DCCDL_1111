@@ -9,8 +9,8 @@ wire signed [14:0] out_real, out_imag;
 reg signed [14:0] real_mem[191:0], imag_mem[191:0];
 integer i;
 //stage1 dft(clk, rst, in_real, out_real, in_imag, out_imag);  
-stage_1 dft(clk, rst, in_real, out_real, in_imag, out_imag, bin_real1, bin_real2, bin_real3, bin_real4, bin_imag1, bin_imag2, bin_imag3, bin_imag4, b_real1, b_real2, b_real3, b_real4, b_imag1, b_imag2, b_imag3, b_imag4);
-
+//stage_1 dft(clk, rst, in_real, out_real, in_imag, out_imag, bin_real1, bin_real2, bin_real3, bin_real4, bin_imag1, bin_imag2, bin_imag3, bin_imag4, b_real1, b_real2, b_real3, b_real4, b_imag1, b_imag2, b_imag3, b_imag4);
+fft_top dft(clk, rst, in_real, out_real, in_imag, out_imag);
 wire signed [14:0]  b_real1, b_real2, b_real3, b_real4, b_imag1, b_imag2, b_imag3, b_imag4;
 wire signed [14:0]  bin_real1, bin_real2, bin_real3, bin_real4, bin_imag1, bin_imag2, bin_imag3, bin_imag4;
 

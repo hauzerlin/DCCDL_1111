@@ -1,6 +1,6 @@
 
 *** Running vivado
-    with args -log stage_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source stage_1.tcl
+    with args -log fft_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fft_top.tcl
 
 
 ****** Vivado v2019.1 (64-bit)
@@ -8,16 +8,33 @@
   **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
-source stage_1.tcl -notrace
-Command: synth_design -top stage_1 -part xc7a200tfbg676-1
+source fft_top.tcl -notrace
+Command: synth_design -top fft_top -part xc7a200tfbg676-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 14456 
+INFO: Helper process launched with PID 12568 
+WARNING: [Synth 8-992] b_real1 is already implicitly declared earlier [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:13]
+WARNING: [Synth 8-992] b_real2 is already implicitly declared earlier [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:13]
+WARNING: [Synth 8-992] b_real3 is already implicitly declared earlier [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:13]
+WARNING: [Synth 8-992] b_real4 is already implicitly declared earlier [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:13]
+WARNING: [Synth 8-992] b_imag1 is already implicitly declared earlier [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:13]
+WARNING: [Synth 8-992] b_imag2 is already implicitly declared earlier [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:13]
+WARNING: [Synth 8-992] b_imag3 is already implicitly declared earlier [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:13]
+WARNING: [Synth 8-992] b_imag4 is already implicitly declared earlier [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:13]
+WARNING: [Synth 8-992] bin_real1 is already implicitly declared earlier [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:14]
+WARNING: [Synth 8-992] bin_real2 is already implicitly declared earlier [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:14]
+WARNING: [Synth 8-992] bin_real3 is already implicitly declared earlier [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:14]
+WARNING: [Synth 8-992] bin_real4 is already implicitly declared earlier [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:14]
+WARNING: [Synth 8-992] bin_imag1 is already implicitly declared earlier [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:14]
+WARNING: [Synth 8-992] bin_imag2 is already implicitly declared earlier [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:14]
+WARNING: [Synth 8-992] bin_imag3 is already implicitly declared earlier [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:14]
+WARNING: [Synth 8-992] bin_imag4 is already implicitly declared earlier [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:14]
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 563.996 ; gain = 184.504
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 567.766 ; gain = 189.348
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fft_top' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:2]
 INFO: [Synth 8-6157] synthesizing module 'stage_1' [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_1.v:2]
 	Parameter input_length bound to: 13 - type: integer 
 	Parameter output_length bound to: 15 - type: integer 
@@ -34,22 +51,23 @@ INFO: [Synth 8-6155] done synthesizing module 'Complex_multiplier_64pt' (4#1) [D
 WARNING: [Synth 8-6014] Unused sequential element cnt4_reg was removed.  [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_1.v:102]
 WARNING: [Synth 8-6014] Unused sequential element cnt3_reg was removed.  [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_1.v:103]
 INFO: [Synth 8-6155] done synthesizing module 'stage_1' (5#1) [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_1.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'fft_top' (6#1) [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/fft_top.v:2]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 627.160 ; gain = 247.668
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 610.156 ; gain = 231.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 627.160 ; gain = 247.668
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 610.156 ; gain = 231.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tfbg676-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 627.160 ; gain = 247.668
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 610.156 ; gain = 231.738
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a200tfbg676-1
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 627.160 ; gain = 247.668
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 610.156 ; gain = 231.738
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -84,6 +102,18 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
+Module butterfly_radix4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     15 Bit       Adders := 2     
+	   3 Input     15 Bit       Adders := 4     
+	   5 Input     15 Bit       Adders := 2     
+	   4 Input     15 Bit       Adders := 4     
+Module Complex_multiplier_64pt 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     15 Bit       Adders := 1     
+	   2 Input     15 Bit       Adders := 1     
 Module stage_1 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -97,18 +127,6 @@ Detailed RTL Component Info :
 	   2 Input     15 Bit        Muxes := 8     
 	   4 Input     15 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 2     
-Module butterfly_radix4 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     15 Bit       Adders := 2     
-	   3 Input     15 Bit       Adders := 4     
-	   5 Input     15 Bit       Adders := 2     
-	   4 Input     15 Bit       Adders := 4     
-Module Complex_multiplier_64pt 
-Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     15 Bit       Adders := 1     
-	   2 Input     15 Bit       Adders := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -126,30 +144,30 @@ No constraint files found.
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-DSP Report: Generating DSP M1/M2/Z0, operation Mode is: A*B.
-DSP Report: operator M1/M2/Z0 is absorbed into DSP M1/M2/Z0.
-DSP Report: Generating DSP M1/M1/Z0, operation Mode is: A*B.
-DSP Report: operator M1/M1/Z0 is absorbed into DSP M1/M1/Z0.
-DSP Report: Generating DSP M1/M4/Z0, operation Mode is: A*B.
-DSP Report: operator M1/M4/Z0 is absorbed into DSP M1/M4/Z0.
-DSP Report: Generating DSP M1/M3/Z0, operation Mode is: A*B.
-DSP Report: operator M1/M3/Z0 is absorbed into DSP M1/M3/Z0.
+DSP Report: Generating DSP nolabel_line8/M1/M2/Z0, operation Mode is: A*B.
+DSP Report: operator nolabel_line8/M1/M2/Z0 is absorbed into DSP nolabel_line8/M1/M2/Z0.
+DSP Report: Generating DSP nolabel_line8/M1/M1/Z0, operation Mode is: A*B.
+DSP Report: operator nolabel_line8/M1/M1/Z0 is absorbed into DSP nolabel_line8/M1/M1/Z0.
+DSP Report: Generating DSP nolabel_line8/M1/M4/Z0, operation Mode is: A*B.
+DSP Report: operator nolabel_line8/M1/M4/Z0 is absorbed into DSP nolabel_line8/M1/M4/Z0.
+DSP Report: Generating DSP nolabel_line8/M1/M3/Z0, operation Mode is: A*B.
+DSP Report: operator nolabel_line8/M1/M3/Z0 is absorbed into DSP nolabel_line8/M1/M3/Z0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 863.691 ; gain = 484.199
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 860.105 ; gain = 481.688
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 ROM:
-+------------+-------------+---------------+----------------+
-|Module Name | RTL Object  | Depth x Width | Implemented As | 
-+------------+-------------+---------------+----------------+
-|ROM_64      | TF_real     | 64x12         | LUT            | 
-|ROM_64      | TF_imag     | 64x11         | LUT            | 
-|stage_1     | rom/TF_imag | 64x11         | LUT            | 
-|stage_1     | rom/TF_real | 64x12         | LUT            | 
-+------------+-------------+---------------+----------------+
++------------+---------------------------+---------------+----------------+
+|Module Name | RTL Object                | Depth x Width | Implemented As | 
++------------+---------------------------+---------------+----------------+
+|ROM_64      | TF_real                   | 64x12         | LUT            | 
+|ROM_64      | TF_imag                   | 64x11         | LUT            | 
+|fft_top     | nolabel_line8/rom/TF_imag | 64x11         | LUT            | 
+|fft_top     | nolabel_line8/rom/TF_real | 64x12         | LUT            | 
++------------+---------------------------+---------------+----------------+
 
 
 DSP: Preliminary Mapping  Report (see note below)
@@ -181,7 +199,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 864.121 ; gain = 484.629
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 860.984 ; gain = 482.566
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -197,7 +215,7 @@ INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM bloc
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_1.v:47]
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/1111/DCCDL/final project/vivado/at_lab/at_lab.srcs/sources_1/new/stage_1.v:47]
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 864.293 ; gain = 484.801
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 861.129 ; gain = 482.711
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -221,7 +239,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 864.293 ; gain = 484.801
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 861.129 ; gain = 482.711
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -234,7 +252,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 864.293 ; gain = 484.801
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 861.129 ; gain = 482.711
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -246,41 +264,41 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 864.293 ; gain = 484.801
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 861.129 ; gain = 482.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 864.293 ; gain = 484.801
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 861.129 ; gain = 482.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 864.293 ; gain = 484.801
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 861.129 ; gain = 482.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 864.293 ; gain = 484.801
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 861.129 ; gain = 482.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Static Shift Register Report:
-+------------+-----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|Module Name | RTL Name              | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
-+------------+-----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|stage_1     | real_reg1_reg[15][14] | 16     | 15    | YES          | NO                 | YES               | 15     | 0       | 
-|stage_1     | imag_reg1_reg[15][14] | 16     | 15    | YES          | NO                 | YES               | 15     | 0       | 
-|stage_1     | real_reg3_reg[15][14] | 16     | 15    | YES          | NO                 | YES               | 15     | 0       | 
-|stage_1     | imag_reg3_reg[15][14] | 16     | 15    | YES          | NO                 | YES               | 15     | 0       | 
-|stage_1     | real_reg2_reg[15][14] | 16     | 15    | YES          | NO                 | YES               | 15     | 0       | 
-|stage_1     | imag_reg2_reg[15][14] | 16     | 15    | YES          | NO                 | YES               | 15     | 0       | 
-+------------+-----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
++------------+-------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                            | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|fft_top     | nolabel_line8/real_reg1_reg[15][14] | 16     | 15    | YES          | NO                 | YES               | 15     | 0       | 
+|fft_top     | nolabel_line8/imag_reg1_reg[15][14] | 16     | 15    | YES          | NO                 | YES               | 15     | 0       | 
+|fft_top     | nolabel_line8/real_reg2_reg[15][14] | 16     | 15    | YES          | NO                 | YES               | 15     | 0       | 
+|fft_top     | nolabel_line8/imag_reg2_reg[15][14] | 16     | 15    | YES          | NO                 | YES               | 15     | 0       | 
+|fft_top     | nolabel_line8/real_reg3_reg[15][14] | 16     | 15    | YES          | NO                 | YES               | 15     | 0       | 
+|fft_top     | nolabel_line8/imag_reg3_reg[15][14] | 16     | 15    | YES          | NO                 | YES               | 15     | 0       | 
++------------+-------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
@@ -303,52 +321,53 @@ Report Cell Usage:
 |2     |CARRY4  |    56|
 |3     |DSP48E1 |     4|
 |4     |LUT1    |     1|
-|5     |LUT2    |   268|
-|6     |LUT3    |    99|
-|7     |LUT4    |   197|
+|5     |LUT2    |   208|
+|6     |LUT3    |   127|
+|7     |LUT4    |   167|
 |8     |LUT5    |    63|
 |9     |LUT6    |   132|
 |10    |SRL16E  |    90|
 |11    |FDCE    |   177|
 |12    |FDRE    |    90|
 |13    |IBUF    |    28|
-|14    |OBUF    |   270|
+|14    |OBUF    |    30|
 +------+--------+------+
 
 Report Instance Areas: 
-+------+---------+------------------------+------+
-|      |Instance |Module                  |Cells |
-+------+---------+------------------------+------+
-|1     |top      |                        |  1476|
-|2     |  B1     |butterfly_radix4        |   596|
-|3     |  M1     |Complex_multiplier_64pt |    65|
-|4     |    M1   |multiplier_15bits       |    39|
-|5     |    M2   |multiplier_15bits_0     |     1|
-|6     |    M3   |multiplier_15bits_1     |    12|
-|7     |    M4   |multiplier_15bits_2     |    13|
-+------+---------+------------------------+------+
++------+----------------+------------------------+------+
+|      |Instance        |Module                  |Cells |
++------+----------------+------------------------+------+
+|1     |top             |                        |  1174|
+|2     |  nolabel_line8 |stage_1                 |  1115|
+|3     |    B1          |butterfly_radix4        |   568|
+|4     |    M1          |Complex_multiplier_64pt |    65|
+|5     |      M1        |multiplier_15bits       |    16|
+|6     |      M2        |multiplier_15bits_0     |     1|
+|7     |      M3        |multiplier_15bits_1     |    12|
+|8     |      M4        |multiplier_15bits_2     |    13|
++------+----------------+------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 864.293 ; gain = 484.801
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 861.129 ; gain = 482.711
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 864.293 ; gain = 484.801
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 864.293 ; gain = 484.801
+Synthesis finished with 0 errors, 0 critical warnings and 18 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 861.129 ; gain = 482.711
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 861.129 ; gain = 482.711
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 60 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 951.844 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 944.348 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-27 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+29 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 951.844 ; gain = 596.230
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 951.844 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 944.348 ; gain = 590.812
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 944.348 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.runs/synth_1/stage_1.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file stage_1_utilization_synth.rpt -pb stage_1_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Jan  3 22:17:56 2023...
+INFO: [Common 17-1381] The checkpoint 'D:/1111/DCCDL/final project/vivado/at_lab/at_lab.runs/synth_1/fft_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fft_top_utilization_synth.rpt -pb fft_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jan  4 11:44:08 2023...
