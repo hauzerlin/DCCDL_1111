@@ -96,3 +96,4 @@ relaunch_sim
 run 1000 ns
 relaunch_sim
 run 1000 ns
+close_sim

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a200tfbg676-1" LaunchTime="1672834832">
-  <File Type="PA-TCL" Name="fft_top.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="fft_top_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="fft_top_reports.tcl"/>
-  <File Type="RDS-RDS" Name="fft_top.vds"/>
-  <File Type="RDS-UTIL" Name="fft_top_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="fft_top_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="fft_top.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="fft_top_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="fft_top_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a200tfbg676-1" LaunchTime="1672841871">
+  <File Type="PA-TCL" Name="top_top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="top_top_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="top_top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="top_top.vds"/>
+  <File Type="RDS-UTIL" Name="top_top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="top_top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="top_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="top_top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/Butterfly_4pt.v">
@@ -83,6 +83,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/bit_rev.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/butterfly_radix4.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../SDF_64points_FFT/SDF_64points_FFT.srcs/sources_1/new/butterfly_radix4.v"/>
@@ -96,6 +103,15 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../at_lab/at_lab.srcs/sources_1/new/butterfly_radix4_2.v"/>
         <Attr Name="ImportTime" Val="1672805131"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fft_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../at_lab/at_lab.srcs/sources_1/new/fft_top.v"/>
+        <Attr Name="ImportTime" Val="1672826075"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -137,10 +153,8 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/fft_top.v">
+    <File Path="$PSRCDIR/sources_1/new/top_top.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../at_lab/at_lab.srcs/sources_1/new/fft_top.v"/>
-        <Attr Name="ImportTime" Val="1672826075"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -198,12 +212,19 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="fft_top"/>
+      <Option Name="TopModule" Val="top_top"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/fft_timing_contian.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/fft_timing_contian.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>

@@ -1,0 +1,6 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/1111/DCCDL/final project/vivado/it_work/it_works/it_works.sim/sim_1/impl/timing/xsim/stage1_tb_time_impl.v,1672841174,verilog,,D:/1111/DCCDL/final project/vivado/it_work/it_works/it_works.srcs/sim_1/new/stage1_tb.v,,Complex_multiplier_16pt;Complex_multiplier_64pt;ROM_16;Shift_Regisiter_1;Shift_Regisiter_1_0;Shift_Regisiter_1_1;bit_rev;butterfly_radix4;butterfly_radix4_2;fft_top;glbl;multiplier_15bits;multiplier_15bits_5;multiplier_15bits_6;multiplier_15bits_7;multiplier_17bits;multiplier_17bits_2;multiplier_17bits_3;multiplier_17bits_4;stage_1;stage_2;top_top,,,,,,,,
+D:/1111/DCCDL/final project/vivado/it_work/it_works/it_works.srcs/sim_1/new/stage1_tb.v,1672837528,verilog,,,,stage1_tb,,,,,,,,

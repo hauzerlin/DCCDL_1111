@@ -379,7 +379,8 @@ ST = fclose('all');
 
 %% verilog input    (3sequence)
 
-
+file_demo_in_real = fopen('demo_in_real.txt','w')
+file_demo_in_imag = fopen('demo_in_imag.txt','w')
 file_input = fopen('./input_3_sequences.txt','w');
 file_in_real = fopen('./input/input_real.txt','w');
 file_in_imag = fopen('./input/input_imag.txt','w');
@@ -539,6 +540,72 @@ for k =1:64
     fprintf(file_input,'\n');
     end
 end
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+for k =1:64
+    fprintf(file_demo_in_real,'%d\n', ...
+    (2^input_length)*truncation(real(s_in(k)),input_length));
+    if(mod(k,4)==0 )
+    fprintf(file_demo_in_real,'\n');
+    end
+end
+ fprintf(file_demo_in_real,'\n');
+for k =1:64
+    fprintf(file_demo_in_imag,'%d\n', ...
+    (2^input_length)*truncation(imag(s_in(k)),input_length));
+    if(mod(k,4)==0 )
+    fprintf(file_demo_in_imag,'\n');
+    end
+end
+    fprintf(file_demo_in_imag,'\n\n');
+
+for k =1:64
+    fprintf(file_demo_in_real,'%d\n', ...
+    (2^input_length)*truncation(real(s_in2(k)),input_length));
+    if(mod(k,4)==0 )
+    fprintf(file_demo_in_real,'\n');
+    end
+end
+ fprintf(file_demo_in_real,'\n');
+for k =1:64
+    fprintf(file_demo_in_imag,'%d\n', ...
+    (2^input_length)*truncation(imag(s_in2(k)),input_length));
+    if(mod(k,4)==0 )
+    fprintf(file_demo_in_imag,'\n');
+    end
+end
+
+for k =1:64
+    fprintf(file_demo_in_real,'%d\n', ...
+    (2^input_length)*truncation(real(s_in3(k)),input_length));
+    if(mod(k,4)==0 )
+    fprintf(file_demo_in_real,'\n');
+    end
+end
+
+for k =1:64
+    fprintf(file_demo_in_real,'%d\n', ...
+    0);
+%     if(mod(k,4)==0 )
+%     fprintf(file_demo_in_real,'\n');
+%     end
+end
+ fprintf(file_demo_in_imag,'\n');
+for k =1:64
+    fprintf(file_demo_in_imag,'%d\n', ...
+    (2^input_length)*truncation(imag(s_in3(k)),input_length));
+    if(mod(k,4)==0 )
+    fprintf(file_demo_in_imag,'\n');
+    end
+end
+for k =1:64
+    fprintf(file_demo_in_imag,'%d\n', ...
+    0);
+%     if(mod(k,4)==0 )
+%     fprintf(file_demo_in_imag,'\n');
+%     end
+end
+st = fclose('all')
 %% stage1
 clc
 
@@ -721,3 +788,24 @@ end
 
 ST = fclose('all');
 
+%% bit reversel
+
+clc 
+clear
+
+  order = [0 16 32 48 4 20 36 52  8 24 40 56 12 28 44 60 ...
+           1 17 33 49 5 21 37 53  9 25 41 57 13 29 45 61 ...
+           2 18 34 50 6 22 38 54 10 26 42 58 14 30 46 62 ...
+           3 19 35 51 7 23 39 55 11 27 43 59 15 31 47 63];
+
+  file_bit_rev = fopen('bit_rev.txt','w');
+
+  for k=0:63
+  fprintf(file_bit_rev,'6''d%d:\nbegin\n\tmem_a_real[%d] <= in_real;\n\tmem_a_imag[%d] <= in_imag;\nend\n\n',k, order(k+1), order(k+1));
+  end
+    fprintf(file_bit_rev,'\n\n');
+
+  for k=0:63
+  fprintf(file_bit_rev,'6''d%d:\nbegin\n\tmem_b_real[%d] <= in_real;\n\tmem_b_imag[%d] <= in_imag;\nend\n\n',k, order(k+1), order(k+1));
+  end
+St = fclose('all')

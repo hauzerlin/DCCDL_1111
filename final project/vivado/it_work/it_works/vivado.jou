@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jan  4 22:16:14 2023
+# Process ID: 1656
+# Current directory: D:/1111/DCCDL/final project/vivado/it_work/it_works
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23592 D:\1111\DCCDL\final project\vivado\it_work\it_works\it_works.xpr
+# Log file: D:/1111/DCCDL/final project/vivado/it_work/it_works/vivado.log
+# Journal file: D:/1111/DCCDL/final project/vivado/it_work/it_works\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/1111/DCCDL/final project/vivado/it_work/it_works/it_works.xpr}
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+open_run synth_1 -name synth_1
+create_clock -period 10.000 -name clk -waveform {0.000 5.000} [get_ports clk]
+file mkdir {D:/1111/DCCDL/final project/vivado/it_work/it_works/it_works.srcs/constrs_1/new}
+close [ open {D:/1111/DCCDL/final project/vivado/it_work/it_works/it_works.srcs/constrs_1/new/fft_timing_contian.xdc} w ]
+add_files -fileset constrs_1 {{D:/1111/DCCDL/final project/vivado/it_work/it_works/it_works.srcs/constrs_1/new/fft_timing_contian.xdc}}
+set_property target_constrs_file {D:/1111/DCCDL/final project/vivado/it_work/it_works/it_works.srcs/constrs_1/new/fft_timing_contian.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+launch_simulation -mode post-synthesis -type timing
+open_wave_config {D:/1111/DCCDL/final project/vivado/it_work/it_works/it_works.srcs/sim_1/imports/SDF_64points_FFT/butterfly_test_tb_time_synth.wcfg}
+source stage1_tb.tcl
+save_project_as project_1 {F:/final project/project_1} -force
+import_files
+close_sim

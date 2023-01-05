@@ -1,14 +1,14 @@
 #-----------------------------------------------------------
-# Webtalk v2020.2 (64-bit)
-# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
-# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Jan  4 17:56:38 2023
-# Process ID: 12436
-# Current directory: D:/DCCL/Final Project/Verilog/at_lab/at_lab.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source D:/DCCL/Final Project/Verilog/at_lab/at_lab.sim/sim_1/behav/xsim/xsim.dir/stage1_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: D:/DCCL/Final Project/Verilog/at_lab/at_lab.sim/sim_1/behav/xsim/webtalk.log
-# Journal file: D:/DCCL/Final Project/Verilog/at_lab/at_lab.sim/sim_1/behav/xsim\webtalk.jou
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jan  4 21:02:39 2023
+# Process ID: 20180
+# Current directory: D:/1111/DCCDL/final project/vivado/it_work/it_works/it_works.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/1111/DCCDL/final project/vivado/it_work/it_works/it_works.sim/sim_1/behav/xsim/xsim.dir/stage1_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/1111/DCCDL/final project/vivado/it_work/it_works/it_works.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/1111/DCCDL/final project/vivado/it_work/it_works/it_works.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source D:/DCCL/Final -notrace
-couldn't read file "D:/DCCL/Final": permission denied
-INFO: [Common 17-206] Exiting Webtalk at Wed Jan  4 17:56:38 2023...
+source D:/1111/DCCDL/final -notrace
+couldn't read file "D:/1111/DCCDL/final": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Wed Jan  4 21:02:39 2023...

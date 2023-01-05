@@ -1464,3 +1464,7 @@ Vivado Simulator 2019.1
 Time resolution is 1 ps
 relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 2106.645 ; gain = 0.000
 run 1000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jan  4 20:52:41 2023...
